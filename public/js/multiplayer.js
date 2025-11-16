@@ -786,8 +786,30 @@ class MultiplayerQuizApp {
         }
     }
 
+    playBuzzSound() {
+        // Create a simple buzzer sound using Web Audio API
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        oscillator.frequency.value = 800; // Hz - buzzer frequency
+        oscillator.type = 'square'; // Square wave for buzzer sound
+
+        gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.3);
+    }
+
     buzz() {
         if (this.buzzedPlayer) return; // Already buzzed
+
+        // Play buzz sound
+        this.playBuzzSound();
 
         // Send buzz to controller
         this.broadcast({
@@ -807,6 +829,9 @@ class MultiplayerQuizApp {
         if (this.buzzedPlayer) return; // Already buzzed
 
         this.buzzedPlayer = player;
+
+        // Play buzz sound for controller
+        this.playBuzzSound();
 
         // Stop streaming and voice
         this.stopStreaming();
@@ -844,6 +869,9 @@ class MultiplayerQuizApp {
     handleBuzzResult(data) {
         if (data.buzzed) {
             this.buzzedPlayer = data.player;
+
+            // Play buzz sound for all players
+            this.playBuzzSound();
 
             // Stop streaming and voice immediately for all players
             this.stopStreaming();

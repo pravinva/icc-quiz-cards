@@ -71,6 +71,66 @@
 
             <main>
                 <div class="game-layout">
+                    <!-- Left Sidebar -->
+                    <div class="game-sidebar-left">
+                        <!-- Player Name Editor -->
+                        <div class="name-editor">
+                            <h4>Your Name</h4>
+                            <div class="name-edit-container">
+                                <input
+                                    type="text"
+                                    id="player-name-input"
+                                    class="name-input"
+                                    placeholder="Enter your name..."
+                                    maxlength="20"
+                                />
+                                <button id="name-save-btn" class="name-save-btn">Save</button>
+                            </div>
+                        </div>
+
+                        <!-- Connected Players -->
+                        <div class="connected-players">
+                            <h4>Players</h4>
+                            <div id="players-list" class="players-list">
+                                <!-- Will be populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Voice Settings (Controller Only) -->
+                        <div class="voice-settings controller-only">
+                            <h4>Voice Settings</h4>
+                            <div class="voice-setting-group">
+                                <label class="voice-type-toggle">
+                                    <input type="checkbox" id="use-ai-voice" />
+                                    <span>Use AI Voice</span>
+                                </label>
+                            </div>
+                            <div class="voice-setting-group" id="browser-voice-group">
+                                <label for="voice-select">Browser Voice:</label>
+                                <select id="voice-select" class="voice-select">
+                                    <option value="">Loading voices...</option>
+                                </select>
+                            </div>
+                            <div class="voice-setting-group" id="ai-voice-group" style="display: none;">
+                                <label for="ai-voice-select">AI Voice:</label>
+                                <select id="ai-voice-select" class="voice-select">
+                                    <option value="en-US-Neural2-F">Female US (Neural2-F)</option>
+                                    <option value="en-US-Neural2-A">Male US (Neural2-A)</option>
+                                    <option value="en-US-Neural2-C">Female US (Neural2-C)</option>
+                                    <option value="en-US-Neural2-D">Male US (Neural2-D)</option>
+                                </select>
+                            </div>
+                            <div class="voice-setting-group">
+                                <label for="voice-speed">Voice Speed: <span id="voice-speed-value">1.2x</span></label>
+                                <input type="range" id="voice-speed" class="speed-dial" min="0.5" max="2.0" step="0.1" value="1.2" />
+                            </div>
+                            <div class="voice-setting-group">
+                                <label for="word-speed">Word Speed: <span id="word-speed-value">200 wpm</span></label>
+                                <input type="range" id="word-speed" class="speed-dial" min="100" max="400" step="10" value="200" />
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Main Game Area -->
                     <div class="game-content">
                         <!-- Buzz Status Bar -->
@@ -155,56 +215,6 @@
                     </label>
                 </div>
 
-                <!-- Voice Settings (Controller Only) -->
-                <div class="voice-settings controller-only">
-                    <div class="voice-setting-group">
-                        <label class="voice-type-toggle">
-                            <input type="checkbox" id="use-ai-voice" />
-                            <span>Use AI Voice (Google Cloud)</span>
-                        </label>
-                    </div>
-                    <div class="voice-setting-group" id="browser-voice-group">
-                        <label for="voice-select">Browser Voice:</label>
-                        <select id="voice-select" class="voice-select">
-                            <option value="">Loading voices...</option>
-                        </select>
-                    </div>
-                    <div class="voice-setting-group" id="ai-voice-group" style="display: none;">
-                        <label for="ai-voice-select">AI Voice:</label>
-                        <select id="ai-voice-select" class="voice-select">
-                            <option value="en-US-Neural2-F">Female US (Neural2-F) - Natural</option>
-                            <option value="en-US-Neural2-A">Male US (Neural2-A) - Natural</option>
-                            <option value="en-US-Neural2-C">Female US (Neural2-C) - Warm</option>
-                            <option value="en-US-Neural2-D">Male US (Neural2-D) - Deep</option>
-                            <option value="en-US-Neural2-E">Female US (Neural2-E) - Energetic</option>
-                            <option value="en-US-Neural2-G">Female US (Neural2-G) - Soft</option>
-                            <option value="en-US-Neural2-H">Female US (Neural2-H) - Professional</option>
-                            <option value="en-US-Neural2-I">Male US (Neural2-I) - Friendly</option>
-                            <option value="en-US-Neural2-J">Male US (Neural2-J) - Authoritative</option>
-                            <option value="en-GB-Neural2-A">Female UK (Neural2-A)</option>
-                            <option value="en-GB-Neural2-B">Male UK (Neural2-B)</option>
-                            <option value="en-GB-Neural2-C">Female UK (Neural2-C)</option>
-                            <option value="en-GB-Neural2-D">Male UK (Neural2-D)</option>
-                            <option value="en-IN-Neural2-A">Female IN (Neural2-A)</option>
-                            <option value="en-IN-Neural2-B">Male IN (Neural2-B)</option>
-                            <option value="en-IN-Neural2-C">Male IN (Neural2-C)</option>
-                            <option value="en-IN-Neural2-D">Female IN (Neural2-D)</option>
-                            <option value="en-AU-Neural2-A">Female AU (Neural2-A)</option>
-                            <option value="en-AU-Neural2-B">Male AU (Neural2-B)</option>
-                            <option value="en-AU-Neural2-C">Female AU (Neural2-C)</option>
-                            <option value="en-AU-Neural2-D">Male AU (Neural2-D)</option>
-                        </select>
-                    </div>
-                    <div class="voice-setting-group">
-                        <label for="voice-speed">Voice Speed: <span id="voice-speed-value">1.2x</span></label>
-                        <input type="range" id="voice-speed" class="speed-dial" min="0.5" max="2.0" step="0.1" value="1.2" />
-                    </div>
-                    <div class="voice-setting-group">
-                        <label for="word-speed">Word Speed: <span id="word-speed-value">200 wpm</span></label>
-                        <input type="range" id="word-speed" class="speed-dial" min="100" max="400" step="10" value="200" />
-                    </div>
-                </div>
-
                 <!-- Navigation -->
                 <div class="navigation controller-only">
                     <button id="prev-btn" class="nav-btn" disabled>
@@ -257,32 +267,8 @@
                     </div>
                     <!-- End of game-content -->
 
-                    <!-- Sidebar with Players and Chat -->
-                    <div class="game-sidebar">
-                        <!-- Player Name Editor -->
-                        <div class="name-editor">
-                            <h4>Your Name</h4>
-                            <div class="name-edit-container">
-                                <input
-                                    type="text"
-                                    id="player-name-input"
-                                    class="name-input"
-                                    placeholder="Enter your name..."
-                                    maxlength="20"
-                                />
-                                <button id="name-save-btn" class="name-save-btn">Save</button>
-                            </div>
-                        </div>
-
-                        <!-- Connected Players -->
-                        <div class="connected-players">
-                            <h4>Players</h4>
-                            <div id="players-list" class="players-list">
-                                <!-- Will be populated dynamically -->
-                            </div>
-                        </div>
-
-                        <!-- Chat Window -->
+                    <!-- Right Sidebar: Chat Only -->
+                    <div class="game-sidebar-right">
                         <div class="chat-window">
                             <h4>Chat</h4>
                             <div class="chat-messages" id="chat-messages">
@@ -300,7 +286,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End of sidebar -->
+                    <!-- End of right sidebar -->
                 </div>
                 <!-- End of game-layout -->
             </main>

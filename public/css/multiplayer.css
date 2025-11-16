@@ -118,14 +118,14 @@
 /* Override container max-width for multiplayer */
 .game-screen .container,
 body:has(.game-screen) .container {
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
-/* Game Layout: Two-column layout with sidebar */
+/* Game Layout: Three-column layout (left sidebar, main content, right sidebar) */
 .game-layout {
     display: grid;
-    grid-template-columns: 1fr 350px;
-    gap: 30px;
+    grid-template-columns: 280px 1fr 320px;
+    gap: 20px;
     align-items: start;
 }
 
@@ -133,12 +133,26 @@ body:has(.game-screen) .container {
     min-width: 0; /* Prevents overflow */
 }
 
-.game-sidebar {
+.game-sidebar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(99, 102, 241, 0.05);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.game-sidebar-right {
     display: flex;
     flex-direction: column;
     gap: 20px;
     position: sticky;
     top: 20px;
+    background: rgba(236, 72, 153, 0.05);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(236, 72, 153, 0.2);
 }
 
 .game-header {
@@ -628,10 +642,31 @@ body.role-player .flashcard {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .game-layout {
-        grid-template-columns: 1fr 300px;
+        grid-template-columns: 250px 1fr 280px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Two-column: left sidebar + main, chat moves below */
+    .game-layout {
+        grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .game-sidebar-left {
+        order: 1;
+    }
+
+    .game-content {
+        order: 2;
+    }
+
+    .game-sidebar-right {
+        order: 3;
+        position: static;
     }
 
     .chat-window {
@@ -653,13 +688,14 @@ body.role-player .flashcard {
         align-items: stretch;
     }
 
-    /* Stack layout on mobile */
+    /* Single column on mobile */
     .game-layout {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .game-sidebar {
+    .game-sidebar-left,
+    .game-sidebar-right {
         position: static;
     }
 
