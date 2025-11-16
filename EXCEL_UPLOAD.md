@@ -20,11 +20,19 @@ To enable automatic save in production, add these environment variables in Verce
 2. `GITHUB_OWNER` - Your GitHub username (optional, auto-detected from Vercel)
 3. `GITHUB_REPO` - Your repository name (optional, auto-detected from Vercel)
 4. `GITHUB_BRANCH` - Target branch (optional, defaults to 'main')
+5. `ADMIN_PASSWORD` - Admin password for accessing the upload page (required)
 
 **Creating a GitHub Token:**
 1. Go to GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)
 2. Generate new token with `repo` scope
 3. Copy the token and add it to Vercel environment variables
+
+**Setting Admin Password:**
+1. Go to Vercel dashboard → Your project → Settings → Environment Variables
+2. Add new variable: `ADMIN_PASSWORD` = `C@sas123` (or your preferred password)
+3. Redeploy the project for changes to take effect
+
+**Important:** The password is stored securely in Vercel environment variables and is never exposed in the code or browser.
 
 Without these environment variables, the feature falls back to manual mode (download JSON manually).
 
