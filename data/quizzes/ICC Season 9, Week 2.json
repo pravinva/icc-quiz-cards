@@ -1,0 +1,895 @@
+{
+  "metadata": {
+    "title": "ICC Season 9, Week 2",
+    "source": "ICC Season 9, Week 2.pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "When rescuing the goddess Iðunn [EE-thoon] and her magical apples from the giant Þjazi [THYAT -sey] in Jotunheim  [YO-tun-hime] , Loki shapeshifted into a bird, usually considered to be what bird of prey ? Other mythological examples of this bird include Raróg in Slavic mythology, and the Egyptian deities Ra and Horus.",
+              "answer": "falcon",
+              "translations": {
+                "danish": "falkene",
+                "dutch": "valk en",
+                "french": "faucon",
+                "german": "Falke n",
+                "polish": "sokół y",
+                "romanian": "şoim",
+                "swedish": "falken"
+              },
+              "accept": [
+                "any falcon species"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Mohammad Hatta served as vice -president under which politician , who established the autocratic ‘Guided Democracy ’ after gaining independence from the Dutch? This man was influential in the founding of the Non -Aligned movement as an organiser of the Bandung Conference in 1955.",
+              "answer": "Sukarno",
+              "translations": {
+                "dutch": "Soekarno",
+                "french": "Soekarno  Mandarin: Sūkǎnuò"
+              },
+              "accept": [
+                "Bung Karno",
+                "Pak Karno"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Fernando Botero is a Colombian artist known for his exaggerated, inflated -looking figures , and much of his earlier work parodied the Old Masters. His painting Menina features a central character from which Spanish artist ’s masterpiece Las Meninas ?",
+              "answer": "Diego Velázquez",
+              "translations": {
+                "french": "Diego Vélasquez  Mandarin:  Wěilāsīkāizī"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the westernmost of Indonesia ’s Lesser Sunda Islands ? Lying between Java and Lombok, it is known for its distinctive Hindu culture and tourism industry.",
+              "answer": "Bali",
+              "translations": {
+                "mandarin": "Bālí"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "A sequence of various ‘inventions’ comprise the third act of which opera , whose protagonist is driven to madness by the Captain and the Doctor? This was the only opera its composer , a noted serialist,  completed in his lifetime, although his other opera Lulu , was completely posthumously and is performed often.",
+              "answer": "Wozzeck  by Alban Berg",
+              "translations": {
+                "mandarin": "Wǔcǎikè"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which robotic space probe was launched by NASA in 1989 to map the surface and measure the planetary gravitational field of Venus? The mission and probe were named in honour of a 16th-century Portuguese explorer who led a circumnavigation of Earth.",
+              "answer": "Magellan  (accept Ferdinand Magellan , Fernão de Magalhães , Fernando de",
+              "translations": {
+                "mandarin": "Màizhélún  hào jīnxīng tàncè qì"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In physics, bulk macroscopic motion of fluids can be described using advection. In contrast, what term  is used for the stochastic microscopic process that describes a net movement of atoms or molecules from a region of high concentration towards a region of low concentration?",
+              "answer": "diffusion",
+              "translations": {
+                "dutch": "diffusie",
+                "french": "diffusion  de la matière, diffusion",
+                "mandarin": "kuòsàn  zuòyòng  Norwegian: diffusjon",
+                "polish": "dyfuzja",
+                "romanian": "difuziunea , difuzia"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which Roman author  wrote the poem Ars Poetica , in which he dispenses advice on how to write poetry? This man is best known today for his Carmina  (Odes ), a collection of lyric poems described by Quintilian as the only Latin lyrics worth reading.",
+              "answer": "Horace  (or Quintus  Horatius  Flaccus)",
+              "translations": {
+                "danish": "Horats",
+                "german": "Horaz",
+                "mandarin": "Hèlāsī  Norwegian: Horats",
+                "polish": "Horacy",
+                "romanian": "Horațiu"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What name is usually given to the second cranial nerve, which transmits visual information to the brain?",
+              "answer": "optic  nerve  (or nervus  opticus ; accept  optical  nerve )",
+              "translations": {
+                "danish": "syns nerve",
+                "dutch": "gezichtsze nuw",
+                "french": "nerf optique",
+                "german": "Sehnerv",
+                "mandarin": "shìshénjīng  Norwegian: syns nerven",
+                "polish": "nerw wzrokowy",
+                "romanian": "nerv optic",
+                "swedish": "synnerv"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Past, present and future are basic forms of what grammatical category  that expresses when something takes place , typically through the pattern of verb conjugations? Most Chinese languages, Burmese, and Yucatec Maya are among those languages that lack this category, instead relying on aspect, context, or indicator  words.",
+              "answer": "tense s",
+              "translations": {
+                "danish": "tempus",
+                "dutch": "werkwoordstijd , tempus",
+                "french": "temps",
+                "german": "Tempus",
+                "mandarin": "shí tài  Norwegian: tempus , grammatisk tid",
+                "polish": "czas",
+                "romanian": "timp",
+                "swedish": "tempus"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In Russia, republics are federal subdivisions that may have their own language, constitution and legislature, and are typically designated as the home of particular ethnic groups. Which Russian republic  is the largest subnational division  in the world by area, covering much of Siberia and the Russian far east?",
+              "answer": "Sakha  Republic  (or Yakutia )",
+              "translations": {
+                "danish": "Jakutien",
+                "dutch": "Jakoetië , Sacha",
+                "french": "Iakoutie",
+                "mandarin": "Sàhā  gònghéguó, Yǎkùtè",
+                "norwegian": "Jakutia",
+                "polish": "Jakucja , Sacha",
+                "romanian": "Saha , Iacutia",
+                "swedish": "Sacha , Jakutien"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which US president  came to power on the promise of ‘a chicken in every pot ’? This president gave his names to settlements built during the Great Depression .",
+              "answer": "Herbert Hoover",
+              "translations": {
+                "mandarin": "Hèbótè· Húfú"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Described as a ‘canoe plant ’ as it was one of the crops brought by the first Polynesian settlers, which starchy tuber  from the arum family , sometimes referred to as a yam,  is considered the staple crop in many Pacific Island cultures?",
+              "answer": "taro (or Colocasia  esculenta ; prompt on “elephant ear” )",
+              "translations": {
+                "french": "prompt on “ oreille d'éléphant ”",
+                "mandarin": "yù, yùnǎi Polish:  kolokazja  jadalna"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which of the Lesser Sunda Islands  is separated from its western neighbour Sumbawa by the Sape Strait? It gives its name to large, predatory lizard also found on the islands of Rinca and Padar.",
+              "answer": "Komodo",
+              "translations": {
+                "mandarin": "Kēmòduō  dǎo"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which Chilean author wrote La poesía  (Poetry ), a poem about his literary awakening which opens “Y fue a esa edad... Llegó la poesía a buscarme ” (“And it was at that age … Poetry arrived in search of me ”)? This man ’s noted works include Veinte poemas  de amor y una canción desesperada  (Twenty Love Poems and a Song of Despair ).",
+              "answer": "Pablo Neruda",
+              "translations": {
+                "mandarin": "Bābóluó· Nièlǔdá"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Also known by the style name Kǒngm íng, which  Chinese scholar  was revered as a legendarily talented military strategist and is known for inventing types of landmine and repeating crossbow? A modern Chinese proverb refers to him, saying \"three tanners are enough to overcome one\" of this person.",
+              "answer": "Zhūgě  Liàng",
+              "translations": {
+                "french": "Tchou -kö Lieang, Tchou -ko"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Into w hat animal  did Loki transform  to lure away Svaðilfari [SVAH -thil-FAR -ee] to prevent his owner, a mason, from finishing the wall around Asgard? In this form, Loki became the mother, and Svaðilfari the father, to the eight -legged Sleipnir.",
+              "answer": "horse",
+              "translations": {
+                "danish": "hest , hoppe",
+                "dutch": "paard , merrie",
+                "french": "cheval , jument",
+                "german": "Pferd , Stute",
+                "mandarin": "mǎ Norwegian: hest , hoppe",
+                "polish": "koń, klacz",
+                "romanian": "cal, iapă",
+                "swedish": "häst , sto"
+              },
+              "accept": [
+                "mare"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which Russian republic  contains Russia ’s southernmost point and borders Georgia and Azerbaijan, as well as other Russian republics such as Chechnya? This highly diverse Republic has its capital at Makhachkala and has a Muslim -majority population.",
+              "answer": "Dagestan",
+              "translations": {
+                "french": "Daghestan",
+                "mandarin": "Dájísītǎn gòngh éguó Romanian: Daghestan"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In one of its extended ‘Chautauquas [shuh -TAWK -wuhz] on Quality ’, what book  coined the term “gumption trap ” for experiences and obstacles that “destroy enthusiasm and leave you so discouraged you want to forget the whole business ”?",
+              "answer": "Zen and the Art of Motorcycle Maintenance : An Inquiry into Values  by Robert M.",
+              "translations": {
+                "danish": "Zen og kunsten at vedligeholde en",
+                "dutch": "Zen en de Kunst van het Motoronderhoud",
+                "french": "Traité du zen et de l'entretien des",
+                "german": "Zen und die Kunst ein Motorrad zu warten  Mandarin: Chán yǔ mótuō chē wéixiū Yìshù, Fùzǐ de",
+                "norwegian": "Zen og kunsten å vedlikeholde en",
+                "polish": "Zen i sztuka oporządzania motocykla",
+                "romanian": "Zen si arta repararii motocicletei",
+                "swedish": "Zen och konsten att sköta en motorcykel"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What name is given to the class of words  that may refer to a thing, person, place, event, substance, or quality? Some Salishan  [SAY -lish-an] languages of the Pacific Northwest have no clear distinction between this part of speech and verbs.",
+              "answer": "noun  (or substantive , nominal )",
+              "translations": {
+                "danish": "navneord , substantiv",
+                "dutch": "zelfstandig naamwoord",
+                "french": "nom , substantif",
+                "german": "Substantiv , Hauptwort ,",
+                "norwegian": "substantiv",
+                "polish": "rzeczownik",
+                "romanian": "substantiv",
+                "swedish": "substantiv , namnord"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "While the Bandung Conference established the principles behind the non -aligned movement, the movement was not formally founded until 1961 at a conference headed by which European leader ? While this man, who served as his country ’s president from 1953 until his death in 1980, was a communist, he split with Stalin following World War II and remained apart  from the Soviet hegemony over much of Eastern Europe.",
+              "answer": "Josip Broz  Tito",
+              "translations": {
+                "mandarin": "Yuēsèpǔ·Bùluózī·Tiětuō"
+              },
+              "accept": [
+                "either part"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Botero painted a work titled for the study of which artist , whose painting Meisjeskopje (Study of a Young Woman ) is featured? This painter of the Dutch Golden Age is also known for Meisje met de parel  (Girl with a Pearl Earring ).",
+              "answer": "Johannes Vermeer  (or Jan Vermeer )",
+              "translations": {
+                "mandarin": "Yáng· Fúměiěr"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The name of one of  the title characters in which serialist opera  may have been changed from its Biblical source because of the composer’s fear of the number 13? This opera employs its composer ’s 12-tone technique, which he had dev eloped after writing his earlier opera Erwartung  [air-VAR -toong] .",
+              "answer": "Moses und Aron  by Arnold Schönberg",
+              "translations": {
+                "danish": "Moses og Aron",
+                "dutch": "Mozes en Aäron",
+                "french": "Moïse et Aaron",
+                "mandarin": "Móxī yǔ Yǎlún Norwegian: Moses og Aron",
+                "polish": "Mojżesz i Aaron",
+                "romanian": "Moise și Aron",
+                "swedish": "Moses och Aron"
+              },
+              "accept": [
+                "Moses and Aron"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which robotic space probe , engineered and built jointly by the ESA and NASA, was launched in 1990 to orbit the sun and perform latitude scans? It bears the Roman name for Odysseus .",
+              "answer": "Ulysses",
+              "translations": {
+                "dutch": "Ulixes",
+                "french": "Ulysse",
+                "mandarin": "Yóulìxīsī  hào Polish:  Ulisses",
+                "romanian": "Ulise"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What name  is given to a word that can substitute for a noun or a noun phrase? The Yuchi language, now spoken in Oklahoma, lacks freestanding examples of these words such as “I”, “you”, or “they”, with person and number being expressed exclusively through verbal mor phology.",
+              "answer": "pronoun  (or pronominal )",
+              "translations": {
+                "danish": "stedord , pronomen",
+                "dutch": "voornaamwoord , pronomen",
+                "french": "pronom",
+                "german": "Pronomen , Fürwort",
+                "mandarin": "dàicí , dàimíngcí  Norwegian: pronomen",
+                "polish": "zaimek",
+                "romanian": "pronume le",
+                "swedish": "pronomen"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In 207 and 208, Zhuge Liang was visited three times by what warlord , who would go on to found the state of Shu Han? This general respected Zhuge greatly, saying “Now that I have Kongming, I am like a fish that has found water ”. Both names required .",
+              "answer": "Liú Bèi",
+              "translations": {
+                "french": "Lieou Pei"
+              },
+              "accept": [
+                "Xuándé",
+                "Liú Xuándé",
+                "Emperor Zhāoliè  Hàn",
+                "Hàn  Zhāoliè  dì"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which Scottish physical chemist is often credited as performing the first experiments into the physical phenomenon of diffusion? His experiments with gases resulted in his eponymous law describing molecular effusion of a single gas.",
+              "answer": "Thomas Graham",
+              "translations": {
+                "mandarin": "Tuōmǎsī·Géléimǔ"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The optic nerve transmits information from what light -sensitive layer  at the back of the eye? The fovea centralis is a depression in this layer that is responsible for sharp central vision.",
+              "answer": "retina",
+              "translations": {
+                "danish": "nethinde",
+                "dutch": "netvlies",
+                "french": "rétine",
+                "german": "Netzhaut  Mandarin: shìwǎngm ó, shì yī , yǎnqiú nèi",
+                "norwegian": "netthinne",
+                "polish": "siatkówka",
+                "swedish": "näthinna"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The leaves of which plant  in the pepper family  are commonly chewed alongside the areca nut and slaked lime ? The resulting mild narcotic is consumed by hundreds of millions of people from South Asia to Melanesia, and  has been described as a public health emergency. Perhaps confusingly, the areca nut is commonly referred to by this name.",
+              "answer": "betel  (or Piper betle , sirih , )",
+              "translations": {
+                "danish": "betel peberplanten",
+                "dutch": "betel peper",
+                "french": "bétel",
+                "german": "Betel pfeffer  Mandarin:  Lóu yè , lǎo téng, lóu zǐ, jǔ zǐ, jǔ",
+                "norwegian": "betel pepper",
+                "polish": "pieprz  żuwny , pieprz betelowy",
+                "swedish": "betel peppar"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Botero has painted several reworkings of works by which Italian Renaissance painter , such as his Portrait of Pope Leo X  and La Fornarina ? Also known for works such as Scuola di Atene  (The School of Athens ), this artist is widely considered one of the three greats of the High Renaissance alongside Leonardo and Michelangelo.",
+              "answer": "Raphael  (or Raffaello  Sanzio  da Urbino , accept either part )",
+              "translations": {
+                "danish": "Raffaello  Santi  either part",
+                "dutch": "Rafaël",
+                "french": "Raphaël",
+                "german": "Raffael",
+                "mandarin": "Lāfěiěr  Norwegian : Rafael",
+                "romanian": "Rafael",
+                "swedish": "Rafael"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Into  what sort of fish did Loki transform into to escape the Aesir ’s revenge after causing Baldr ’s death, eventually being caught by Thor? In Irish mythology Fionn mac Cumhaill (Finn McCool) gained knowledge from eating one of these fish.",
+              "answer": "salmon",
+              "translations": {
+                "danish": "laks",
+                "dutch": "zalm",
+                "french": "saumon",
+                "german": "Lachse , Salm",
+                "mandarin": "guīyú , sānwènyú  Norwegian: laks",
+                "polish": "łosoś",
+                "romanian": "somon i",
+                "swedish": "lax"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which one -act opera , sometimes performed alongside Schoenberg’s expressionist monodrama Erwartung , uses coloured light flooding the stage and a minor second motif representing blood when each of seven doors is opened? It is the only opera by its composer , and has only two sung roles, the title character and Judith.",
+              "answer": "Duke  Bluebeard ’s Castle  by Béla Bartók  (or A kékszakállú herceg vára )",
+              "translations": {
+                "danish": "Hertug Blåskægs borg",
+                "dutch": "Hertog Blauwbaards burcht",
+                "french": "Le Château de Barbe -Bleue",
+                "german": "Herzog Blaubarts Burg",
+                "mandarin": "Lán húzǐ gōngju é de ch éngbǎo Norwegian: Ridder Blåskjeggs borg",
+                "polish": "Zamek Sinobrodego",
+                "romanian": "Castelul Prințului Barbă -",
+                "swedish": "Riddar Blåskäggs borg"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "To combat the depression, Hoover introduced one of what kind of policy  named after Smoot –Hawley? A policy of this kind named after  Oscar Underwood significantly cut rates set by an earlier one introduced by the Republicans.",
+              "answer": "tariff s (or import tax )",
+              "translations": {
+                "danish": "tarif",
+                "dutch": "Douanerecht en, invoerrechten ,",
+                "french": "droit de douane , taxe douanière ,",
+                "german": "Zoll Mandarin:  guānshuì",
+                "norwegian": "toll, innførselstoll",
+                "polish": "taryf y",
+                "romanian": "tarif e",
+                "swedish": "tullavgift , importtull"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which American poet  wrote the poem opening, “I think I was enchanted —When first a sombre Girl — I read that Foreign Lady ”, which was supposedly written after she read the works of Elizabeth Barrett Browning?  In one of her best -known works, this woman described Hope as “the thing with feathers ”.",
+              "answer": "Emily  Dickinson",
+              "translations": {
+                "mandarin": "Àimìlì· Díjīnshēng"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "After a posting in India as a diplomat that inspired the extended exploratory essay ‘El mono gramático ’ (‘The Monkey Grammarian’ ), what author also explored Buddhist philosophical notions of self -negation in poems such as ‘Nagarjuna’?",
+              "answer": "Octavio Paz",
+              "translations": {
+                "mandarin": "Àokètǎwéiào·Pàsī"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1964, which man  was made president of the Non -Aligned Movement? Following a 1954 assassination attempt, this man had Mohamed Naguib put under house arrest and cracked down on the Muslim Brotherhood.",
+              "answer": "Gamal Abdel  Nasser",
+              "translations": {
+                "mandarin": "Jiǎmàilēi·Ābod ù-Nàsài'ěr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Kazan is the capital and largest city of which Russian republic , named after a Turkic - speaking people of the Volga -Ural region who are Russia ’s second largest ethnic group, after Russians?",
+              "answer": "Tatarstan",
+              "translations": {
+                "dutch": "Tatarije  Mandarin:  Dádásītǎn gònghéguó"
+              },
+              "accept": [
+                "Tataria ; accept Volga Tatars"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which mission , named after  the NASA space orbiter probe and an ESA spacecraft lander that studied Saturn and its moons, was successful in 2005 in performing the first landing ever accomplished in the outer solar system? The probe and lander were respectively named after  Italian and Dutch renaissance astronomers that discovered and studied the rings and moons of Saturn.",
+              "answer": "Cassini –Huygens",
+              "translations": {
+                "mandarin": "Kǎxīní-Huìgèngsī hào"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "A decade after a trip to the Himalayas that resulted in the prize -winning book The Snow Leopard , what author  became an ordained Buddhist priest of the White Plum Asanga? Despite being a CIA agent, this co -founder of the literary magazine The Paris Review openly criticised FBI conduct in his book In the Spirit of Crazy Horse .",
+              "answer": "Peter Matthiessen",
+              "translations": {
+                "mandarin": "Bǐdé·Mǎxīsēn"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Another key figure in the establishment of the Non-Aligned Movement was which West African independence leader , who served as his country ’s first head of government from 1957 until 1966 as the leader of the Convention People ’s Party? A keen proponent of Pan -Africanism, he also established the Organisation of African Unity, which later became the African Union.",
+              "answer": "Kwame Nkrumah",
+              "translations": {
+                "mandarin": "Kèwǎmǐ·Ēnkèlǔmǎ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Graham’s Law of diffusion was improved by which German physicist , who posited his namesake first and second laws? His generalised model of diffusion directly corresponds to specific models of diffusion such as Ohm’s law and Fourier’s law, describing charge and heat diffusion respectively.",
+              "answer": "Adolf  Fick",
+              "translations": {
+                "mandarin": "Ādàofū· Fēikè"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1932, th e Hooverville in Anacostia Flats in Washington, DC house d 17,000 people who  had previously held what occupation  as they marched on Washington in demand of a bonus that the government owed them ? It was said t hat group of these people were “cheered in ’17, and jeered in ’32”.",
+              "answer": "soldier s, military  etc.",
+              "translations": {
+                "danish": "soldat , militær",
+                "dutch": "soldaat , militair , veteraan",
+                "french": "soldat , militaire , veteran , ancien",
+                "german": "Soldat , Militär  Mandarin: shìbīng , jūnshì , tuìwǔ jūnrén",
+                "norwegian": "soldat , militær",
+                "polish": "żołnierz , wojskowy , weteran",
+                "romanian": "soldat , militar",
+                "swedish": "soldat , militär"
+              },
+              "accept": [
+                "World War I veteran s"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which is the easternmost of the major Lesser Sunda Islands ? Since 2002, it has been divided between Indonesia and another country, and it is separated from Australia by a namesake shallow sea.",
+              "answer": "Timor",
+              "translations": {
+                "mandarin": "Dìwèn  dǎo"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Fernando Botero produced two reworkings of The Arnolfini Portrait , a work by which Flemish painter  considered one of the pioneers of oil painting?",
+              "answer": "Jan van  Eyck",
+              "translations": {
+                "mandarin": "Yáng· Fàn'Àikè"
+              },
+              "accept": [
+                "Jean van Eyck",
+                "Johannes de Eyck"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "This plant in the pepper family, native to the Pacific Islands, has a name that can refer to either the plant or a beverage made from its root, which is consumed across much of Polynesia and Melanesia for its sedative, anaesthetic, and mild euphoriant prop erties and is commonly touted as an antidepressant. This is which plant or beverage ?",
+              "answer": "kava  (or kava kava , Piper methysticum )",
+              "translations": {
+                "dutch": "kawa , kawa -kawa",
+                "german": "Rauschpfeffer   Mandarin: kǎwǎ zuìjiāo",
+                "polish": "Pieprz metystynowy"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The fovea is a pit packed with what type of photoreceptor cells , respo nsible for colour vision? They are contrasted with rod cells, which function in lower light.",
+              "answer": "cone  cells",
+              "translations": {
+                "danish": "tapcellerne",
+                "dutch": "kegeltje",
+                "french": "cône s",
+                "german": "Zapfen zelle",
+                "mandarin": "shìzhuī  xìbāo  Norwegian: tapp er",
+                "polish": "czopki",
+                "romanian": "celulele cu conuri",
+                "swedish": "tapp ar"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "After Loki steals the torc or necklace Brísingamen [BREE -zing -ah-men] from Freyja, he turns into what sort of animal  to escape? Heimdal also turns into one of these creatures and they fight each other in this form. In Celtic and Icelandic mythology, selkies are creatures that can appear as humans on land and these creatures in the sea.",
+              "answer": "seal",
+              "translations": {
+                "danish": "sæler",
+                "dutch": "zeehond en, robben",
+                "french": "phoque",
+                "german": "Robbe n, Seehund",
+                "mandarin": "hǎibào Norwegian: seler, steinkobbe , havert",
+                "polish": "foka",
+                "romanian": "focă , vițel de mare",
+                "swedish": "sälar"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Zhuge Liang advised Liu Bei to go to war with Cao Cao  [tsao tsao] , who had already pacified large parts of northern China. Although he died in 220 before he could take control, Cao Cao laid the groundwork for the foundation of what dynastic state , which would be formally established later that year by his son Cao Pi?",
+              "answer": "Cáo Wèi  (Dà Wèi , Wèi  Cháo, Wèi Guó, Wei  Kingdom, Wei  dynasty etc. )"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Although it is more tonal than works by Second Viennese School composers, which 1905 one -act opera  could be described as expressionist due to its gruesome plot and use of dissonance, such as a ‘sickening’ polytonal chord heard at the moment its title character is crushed to death? This opera's libretto is a direct translation of an 1891 play about a Bi blical figure.",
+              "answer": "Salome  by Richard Strauss",
+              "translations": {
+                "dutch": "Salomé",
+                "french": "Salomé  Mandarin: Shālèměi",
+                "romanian": "Salomeea"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The retina also contains intrinsically photosensitive retinal ganglion cells. These cells play an important role in what ‘biological clock’ , 24-hour sleep -wake cycles that influence our sleep patterns.",
+              "answer": "circadian  rhythms",
+              "translations": {
+                "danish": "døgnrytme r",
+                "dutch": "circadiaan  ritme ; prompt on “24 -",
+                "french": "rythme circadien",
+                "german": "circadiane  Rhythmik, zirkadianer",
+                "mandarin": "zhòuyè  jiélǜ, rìyè jiélǜ, jìnrì jiélǜ, gài rì",
+                "polish": "rytm dobowy , cykl dobowy , rytmika",
+                "romanian": "ritmul circadian , ritmul nictemeral",
+                "swedish": "dygnsrytmer , cirkadianska  rytmer"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The US economy laboured until Franklin Roosevelt introduced what wide -ranging group of policy changes ? This group of reforms introduced a number of alphabetical agencies like the Agricultural Adjustment Administration.",
+              "answer": "New Deal",
+              "translations": {
+                "danish": "literally “ ny aftale ”",
+                "dutch": "literally “ Nieuwe overeenkomst ” “Nieuwe",
+                "french": "Nouvel accord , Nouvelle donne",
+                "german": "Neuer Deal",
+                "mandarin": "Luósīfú Xīnzhèng , Sān R Xīnzhèng",
+                "norwegian": "literally “ ny avtale ” Polish:  Nowy Ład",
+                "romanian": "Noua Înțelegere",
+                "swedish": "Den nya given"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What Russian author  of science -fiction  wrote  Chapayev i Pustota  (variously translated as Chapayev and Void , Buddha’s Little Finger  and Clay Machine Gun ), whose  Russian title refers to “Pustota ”, a translation of the Buddhist concept of emptiness or sunyata ? The title character of this author ’s Omon Ra  attends a cadet school that amputates the feet of its trainees, echoing the pain suffered by heroic figure Aleksey Maresey.",
+              "answer": "Victor  Pelevin",
+              "translations": {
+                "danish": "Viktor Pelevin",
+                "dutch": "Viktor Pelevin",
+                "french": "Viktor Pelevine",
+                "german": "Wiktor Olegowitsch Pelewin  Mandarin: Wéikètuō· Pèilièwēn",
+                "norwegian": "Viktor Pelevin",
+                "polish": "Wiktor Pielewin",
+                "swedish": "Viktor Pelevin"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which German -Swiss  author opens his 1911 poem ‘Der Dichter ’ (‘The Poet ’), with the lines “Nur mit dem Einsamen/Scheinen des Nachts die unendlichen Sterne ” (“Only on me, the lonely one/The unending stars of the night shine ”)? The poem appeared in the collection Die Gedichte  (Poems ), which deals with loneliness and homesickness, themes which would be further explored in his 1927 novel Steppenwolf .",
+              "answer": "Herman n Hesse",
+              "translations": {
+                "mandarin": "Hèěrmàn· Hēisāi"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What name is given to a word that shows the relationship between a noun (or pronoun) and another word in the sentence, such as “in”, “under”, or “before”? Standalone examples of this part of speech are absent in some polysynthetic languages, such as Inuktitut, where relational concepts are incorporated into verb morphology.",
+              "answer": "adposition s or preposition s",
+              "translations": {
+                "danish": "forholdsord , præposition",
+                "dutch": "voorzetsel , prepositie , adpositie",
+                "french": "préposition",
+                "german": "Präposition , Verhältniswörter ,",
+                "norwegian": "preposisjon",
+                "polish": "przyimek",
+                "romanian": "prepoziția"
+              },
+              "accept": [
+                "postposition s"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Lying to the north of Dagestan bordering the Caspian Sea, which Russian republic  has its capital at Elista? It takes its name from a Mongolic ethnic group, and it is the only polity in Europe where Buddhism is the largest religion, with around half the population practi sing.",
+              "answer": "Kalmykia",
+              "translations": {
+                "danish": "Kalmykija",
+                "dutch": "Kalmukkië , Kalmoekië",
+                "french": "Kalmoukie",
+                "german": "Kalmückien , Kalmükien ,",
+                "polish": "Kałmucja",
+                "romanian": "Kalmîkia",
+                "swedish": "Kalmuckien"
+              },
+              "accept": [
+                "Kalmyk s"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which space probe , engineered by the ESA as part of Horizon 2000, was the first to orbit a comet nucleus and fly alongside a comet? It was named, like its lander module Philae , after a stele featuring ancient scripts.",
+              "answer": "Rosetta",
+              "translations": {
+                "mandarin": "Luósāitǎ hào"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In Romance of the Three Kingdoms, Zhuge Liang is depicted as having extraordinary abilities beyond his gift for strategy. In one case, he prays for wind and is said to have summoned it in Liu Bei ’s favour at what naval battle , fought in 208 AD, in which Liu Bei and ally Sun Quan defeated Cao Cao ’s forces?",
+              "answer": "Battle of  Red Cliffs  (or Chìbì  zhī zhàn , Battle  of Chibi )",
+              "translations": {
+                "danish": "Slaget ved de Røde Klipper",
+                "dutch": "Slag bij de Rode Muur",
+                "french": "bataille de la Falaise rouge",
+                "german": "Schlacht am Roten Felsen ,",
+                "norwegian": "Slaget ved De røde klippene  Polish:  Bitwa o Czerwone Klify",
+                "romanian": "Bătălia  de la Faleza Roșie",
+                "swedish": "slaget vid Röda klipporna"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which species of nut tree was domesticated on the island of Timor around 13,000 years ago and has been used as widely as India and Hawaii? In many languages, its common name is derived from the fact its oily nuts can be used as a light source. Other traditional uses include using the timber for making small canoes and carvings , the sap for varnish and resins , and the nut shells for ornamentation (most notably as lei).",
+              "answer": "candlenut  tree  (or kemiri , kukui , balucanat , Indian walnut , candleberry , Aleurites",
+              "translations": {
+                "danish": "bankul træ",
+                "dutch": "kemiri noot",
+                "french": "bancoulier",
+                "german": "Lichtnuss baum , Kukuinuss ,",
+                "polish": "Tung molukański",
+                "swedish": "ljusbär , indisk val  Mandarin: shílì , zhú guǒshù, hēi tóngyóu"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Diffusion coefficients can be measured by a ‘tube ’ named after  which Slovene - Austrian scientist ? He is best known for a law of thermal radiation that he co-names with Ludwig Boltzmann.",
+              "answer": "Josef  Stefan  (or Jožef Štefan )",
+              "translations": {
+                "mandarin": "Yuēsèfū· Sītèfán"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The sea that separates the Lesser Sunda Islands from Sulawesi  to the north is named after which island ? This island gives its name to a species of human that lived here until around 50,000 years ago and which stood around 1.1 metres (3 foot 7 inches) tall.",
+              "answer": "Flores",
+              "translations": {
+                "french": "Florès  Mandarin:  Fúluòlèsī  dǎo"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which Chinese city  is, by many measures, the world’s most populous non -capital city, the site of the world’s largest container port, and home to the world’s busiest metro system?",
+              "answer": "Shanghai  (Shànghǎi)"
+            },
+            {
+              "question_number": 2,
+              "question_text": "The noblewoman Caterina di Jacopo di Benincasa  is better known as Saint Catherine of which Italian city ? She dictated the work Il Dialogo della divina Provvidenza  (Dialogue of Divine Providence ) and influenced Pope Gregory XI  to leave Avignon and return the papacy to Rome.",
+              "answer": "Siena  (or Sienna )",
+              "translations": {
+                "french": "Sienne  Mandarin:  Xīyénà"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which chemical element , number 75, is named after a notable geographical feature in western Germany, in honour of its discoverer Ida Noddack?",
+              "answer": "rhenium  (or Re)",
+              "translations": {
+                "dutch": "renium",
+                "french": "rhénium",
+                "mandarin": "Lái Polish:  ren",
+                "romanian": "reniu"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "What is the shared given name  of the playwrights with the surnames Strindberg  and Wilson, who wrote the plays Spöksonaten  (The Ghost Sonata ) and The Piano Lesson , respectively?",
+              "answer": "August",
+              "translations": {
+                "mandarin": "Àogǔsītè"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which ancient Anatolian kingdom  gives its name to a soft conical cap  associated with the French revolution , a musical mode , and a long -distance hiking trail through central Turkey?",
+              "answer": "Phrygia  (or Phrygian )",
+              "translations": {
+                "danish": "Frygien",
+                "dutch": "Frygië",
+                "french": "Phrygie",
+                "german": "Phrygien",
+                "mandarin": "Fúlǐjíyà wánggu ó Norwegian: Frygia",
+                "polish": "Frygia",
+                "romanian": "Frigia",
+                "swedish": "Frygien"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which Polish Art Deco artist  painte d a self -portrait driving a green Bugatti  for the German fashion magazine Die Dame ?",
+              "answer": "Iran",
+              "translations": {
+                "mandarin": "Yīlǎng"
+              },
+              "accept": [
+                "Lynn Alexander"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

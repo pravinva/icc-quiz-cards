@@ -1,0 +1,948 @@
+{
+  "metadata": {
+    "title": "ICC-Season-9-Week-6",
+    "source": "ICC-Season-9-Week-6.pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The tenor Peter Pears [peers] was the life partner of which English composer , with whom he collaborated on the libretto for A Midsummer Night ’s Dream ? Pears also sang the lead role in many of this composer ’s operas such as Billy Budd  and Death in Venice .",
+              "answer": "Benjamin Britten"
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which archaeological site  in the Mexican state of Oaxaca [wa -HA-ca] was the centre of the Zapotec civilization from around 700 BC E until 700 CE, around which time it was abandoned in favour of other sites such as Mitla? It consists of a central plaza surrounded by a series of platforms.",
+              "answer": "Monte Albán",
+              "translations": {
+                "mandarin": "Ā'ěr wàn Shān  yízhǐ"
+              },
+              "accept": [
+                "Danipaguache",
+                "Ocelotopec"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In the human body, the Cori cycle is also named after  which organic acid  that it cyclically metabolises? This acid is found in many fermented foods , including yoghurts, sourdough bread and some beers , and is also associated with muscle tiredness.",
+              "answer": "lactic  acid",
+              "translations": {
+                "danish": "mælke syre , laktat",
+                "dutch": "Melk zuur , 2-hydroxypropaan zuur",
+                "french": "acides lactiques , acides",
+                "german": "Milch säure , 2-",
+                "mandarin": "nyūsan, rǔsan Norwegian: melke syre , laktat , 2-",
+                "polish": "kwas mlekowy , 2-",
+                "romanian": "acid lactic , acid 2 -",
+                "swedish": "mjölk syra , ɑ-"
+              },
+              "accept": [
+                "lactate",
+                "2-hydroxypropanoic  acid",
+                "milk  acid"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which astronomer and polymath  from present -day Poland published De revolutionibus orbium coelestium  (On the Revolutions of the Heavenly Spheres ) shortly before his death in 1543? Th at work posited that the Sun was at the centre of our Solar System, marking a shift away from the Ptolemaic geocentric model that was widely accepted at that time .",
+              "answer": "Nicolaus  Copernicus  (or Mikołaj  Kopernik , Nikolaus Kopernikus )",
+              "translations": {
+                "dutch": "Nicolaas Copernicus",
+                "french": "Nicolas Copernic",
+                "mandarin": "Nígǔlā·Gēbáiní Romanian: Nicolaus Copernic"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In which 1962 travelogue  is the titular individual a standard poodle who takes a road trip around the United States with his owner in a camper van named Rocinante?",
+              "answer": "Travels with Charley : In Search of America  by John Steinbeck",
+              "translations": {
+                "danish": "På rejse  med Charley",
+                "dutch": "Op reis met Charley",
+                "french": "Voyage avec Charley",
+                "german": "Die Reise mit Charley : Auf der",
+                "mandarin": "Chálǐ yǔ wǒ: Shǐtǎnbèikè xié",
+                "polish": "Podróże z Charleyem : w",
+                "romanian": "Eu și Charley  descoperim",
+                "swedish": "Resa med Charley  – för att"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In an application of the institutional theory of art, the critic Arthur Danto argued that what piece , signed ‘R. Mutt ’, was a work of art because it simultaneously raised questions about the definition  of art while embodying the “transfiguration of the commonplace ”? Please answ er with the work ’s title .",
+              "answer": "Fountain",
+              "translations": {
+                "danish": "Fontæne",
+                "dutch": "Fontein",
+                "french": "Fontaine",
+                "german": "Brunnen , Quelle",
+                "mandarin": "Pēnquán  Norwegian: Fontene",
+                "polish": "Fontanna",
+                "romanian": "Fântână",
+                "swedish": "Fontän"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The calendar of which religion  is made up of nineteen months, each of nineteen days, and a varying number of intercalary days known as Ayyám -i-Há? This calendar ’s current year, 182, began on 20 March 2025.",
+              "answer": "Baháʼí  Faith",
+              "translations": {
+                "french": "bahaïsme , foi bahá’íe",
+                "german": "Bahaitum , Bahaismus",
+                "polish": "Bahaizm  Mandarin: Bāhāyī  xìnyǎng, Bāhāyī  jiào,"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Indo -European language family is a large group of languages that originally spanned much of Europe and Asia and is spoken by over 40% of the world ’s population. It is divided into ten main branches , one of which  consists of the dead languages Illyrian and Messapic, and which still extant language  spoken by 7.5 million people in southeastern Europe? This language ’s two main dialects are Gheg and Tosk.",
+              "answer": "Albanian  (or Shqip , gjuha shqipe )",
+              "translations": {
+                "danish": "Albansk",
+                "dutch": "Albanees",
+                "french": "L'albanais",
+                "german": "Albanisch e Sprache",
+                "mandarin": "Ā'ěrbāníy ǎ yǔ Norwegian: Albansk",
+                "polish": "język albański",
+                "romanian": "Limba albaneză",
+                "swedish": "Albanska"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The bonfire of the vanities was a 1497 mass burning of objects that were considered possible temptations to sin, including many books, artworks and musical manuscripts. It was led by Girolamo Savonarola in which Italian city , considered the birthplace of the Renaissance, which was ruled by the powerful Medici family at the time?",
+              "answer": "Florenc e",
+              "translations": {
+                "danish": "Florens",
+                "german": "Florenz",
+                "mandarin": "Fóluólúnsà  Polish:  Florencja",
+                "romanian": "Florența",
+                "swedish": "Florens"
+              },
+              "accept": [
+                "Firenze"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which mountain range  in eastern North America runs from northern Alabama up to Newfoundland, but is particularly associated with a cultural area spanning much of West Virginia, Virginia, Kentucky, Tennessee, North Carolina and Ohio?",
+              "answer": "Appalachia n Mountains",
+              "translations": {
+                "danish": "Appalacherne",
+                "dutch": "Appalachen",
+                "french": "Appalaches",
+                "german": "Appalachen",
+                "mandarin": "Ābālāqìyà  shānmài , Āpàlāqì",
+                "polish": "Appalachy",
+                "romanian": "Munții Apalași",
+                "swedish": "Appalacherna"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which species  has the densest fur of any cat? That  thick fur helps this small cat cope with the low temperatures of its range, which includes much of Central Asia, the Himalayas and Mongolia?",
+              "answer": "Pallas ’s cat",
+              "translations": {
+                "danish": "Pallas ' kat",
+                "dutch": "manoel , pallaskat",
+                "french": "chat de Pallas , chat de",
+                "german": "Pallaskatze  Mandarin: tù sūn",
+                "norwegian": "Pallas katt, steppe katt",
+                "polish": "manul  stepowy",
+                "romanian": "pisică manul , pisică de stepă",
+                "swedish": "Pallaskatt , stäppkatt"
+              },
+              "accept": [
+                "man ul (or Otocolobus  manual )"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Christina (or Kristina) was the queen of which European country  from 1632 –54 until she abdicated, in part so she could convert to Catholicism? Dubbed the ‘Minerva of the North ’, she is known for her strong support of art and academia and corresponded with many of Europe ’s leading thinkers, such as Blaise Pascal and Pierre Gassendi.",
+              "answer": "Sweden",
+              "translations": {
+                "dutch": "Zweden",
+                "french": "Suède",
+                "german": "Schweden  Mandarin: Ruìdiǎn",
+                "polish": "Szwecja",
+                "romanian": "Suedia"
+              },
+              "accept": [
+                "Sverige"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The novels Bayn al -Qasrayn  (Palace Walk ), Qasr al -Shawq  (Palace of Desire ), and Al- Sukkariyya  (Sugar Stree t), published between 1956 and 1957, make up a trilogy named after which capital city ?",
+              "answer": "Cairo  Trilogy  by Naguib Mahfouz  (or al-Qāhirah , thulathia al -Qahra )",
+              "translations": {
+                "danish": "Kairo",
+                "dutch": "De Caïro -trilogie",
+                "french": "Trilogie du Caire",
+                "german": "Kairo , Kairoer  Trilogie",
+                "mandarin": "Kāiluó sān bù q ǔ Norwegian: Kairo -trilogien",
+                "polish": "Kair , Trylogia kairska",
+                "romanian": "Trilogiei din Cairo",
+                "swedish": "Kairo trilogin"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which  famous  Italian astronomer and physicist  observed that Venus goes  through phases similar to  the Moon and therefore orbit s the Sun, supporting Copernicus ’s heliocentric model? He was later put on trial by the Catholic Church and forced to recant his views.",
+              "answer": "Galileo  Galilei",
+              "translations": {
+                "french": "Galilée",
+                "mandarin": "Jiālìlüè ·Jiālìlái  Polish:  Galileusz"
+              },
+              "accept": [
+                "either name"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In terms of population, Indo -Iranian is probably the largest branch of the Indo - European languages, being widely spoken between Iran and Bangladesh. This branch also includes a language group of about 60 dialects spoken by people (about 3 to 5 million) who  don’t have a country of their own. This is which language , spoken by diverse populations across Europe and with diaspora population in the Americas?",
+              "answer": "Romani  (or Romanes , Roma , Rom , Rromani  ćhib )",
+              "translations": {
+                "mandarin": "Luó mǔ yǔ, jíbǔsài  yǔ, cígāng  yǔ",
+                "polish": "język romski  Romanian: țigănească"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In Sumerian myth, who is the goddess of fertility, love, and war  who descends into the Underworld to overthrow the ‘Queen of the Dead ’, her sister Ereshkigal? This goddess is killed but revived by Enki on condition that her consort, Dumuzid (or Tammuz) takes her place in the Underworld. This story is also told in an Akkadian myth derived from the Sumerian version and you may answer with either her Sumerian or Akkadian names.",
+              "answer": "Ishtar",
+              "translations": {
+                "dutch": "Isjtar , Astghi ,",
+                "german": "Ištar ,",
+                "mandarin": "Yīnán nà , Yī sī tǎ, Yī shén tǎ ěr,",
+                "romanian": "Iștar"
+              },
+              "accept": [
+                "Inanna (accept Irnini , Ninanna , Niniana , Ninsianna ; do not accept"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Lotte Lenya was an actor and singer well  known for her performances in the works of which German -born composer , her first husband? These include Aufstieg und Fall der Stadt Mahagonny  (Rise and Fall of the City of Mahagonny ), and Die Dreigroschenoper (The Threepenny Opera ).",
+              "answer": "Kurt  Weil l",
+              "translations": {
+                "mandarin": "Kòutè· Wēiěr"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Pallas ’s cat, or the manul , was first described in the west by German naturalist Peter Simon Pallas. Pallas was also the first westerner to discover which family of small lagomorphs  found in Asia and North America? These are the principal prey animal for Pallas ’s cat in parts of its range, and some species primarily graze on flowers.",
+              "answer": "pika  (or Ochotonidae , Ochotona )",
+              "translations": {
+                "danish": "pibehare r; do not just “harer”",
+                "dutch": "Fluithazen , fluithaas ; do not just",
+                "french": "lièvres siffleurs , lièvres criards ; do",
+                "german": "Pfeifhase n; do not just “hasen”",
+                "mandarin": "Shǔ tù, míng tù , míng shēng sh ǔ, shí tù ,",
+                "polish": "szczekuszka",
+                "romanian": "iepure fluierător , iepuri șoareci , iepuri",
+                "swedish": "pipharar ; do not just “harar”"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What kind of rhetoric al fallacy  is known in European languages by the Latin for ‘to the person ’, and involves dismissing an argument by attacking the motive or the character of the person mak ing the argument, rather than its substance? This term  is often used nowadays to refer to insulting personal attacks.",
+              "answer": "argumentum ad hominem",
+              "translations": {
+                "mandarin": "Sù zhū  rénshēn , duì rén bùduì"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Appalachian Mountains are a remnant of a mountain range that spanned the supercontinent of Pangaea and was  formed around 340 million years ago. Another remnant of those mountains is the southern part of which mountain range in North Africa  that stretches 2,500 k ilometres  from Morocco to Tunisia?",
+              "answer": "Atlas  Mountains (specifically the Anti -Atlas )",
+              "translations": {
+                "mandarin": "Ātèlāsī  shānmài"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which archaeological site  in the state of Tabasco succeeded San Lorenzo Tenochtitlan [ten -osh-TEET -llan]  as the central city of the Olmec civilization from the Olmec Middle period, around 900 BCE, until it was abandoned around 500 years later? It is centred around a Great Pyramid made of clay, and  it is the site of four colossal basalt heads.",
+              "answer": "La Venta",
+              "translations": {
+                "mandarin": "Lā Běntǎ"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Lactic acid is produced in the body as a byproduct during what specific process ? This type of cellular respiration takes place in the absence of oxygen , and it is the use of this process during exercise that leads to lactic acid build -up.",
+              "answer": "anaerobic  respiration",
+              "translations": {
+                "danish": "anaerob  respiration",
+                "dutch": "anaerobe  dissimilatie",
+                "french": "respiration anaérobie",
+                "german": "anaerobe  Atmung",
+                "mandarin": "Quē yǎng hūxī, Yàn yǎng hūxī  Norwegian: anaerob  cellulær respirasjon",
+                "polish": "oddychanie beztlenowe ,",
+                "romanian": "respirație anaerobă",
+                "swedish": "anaerob  andning"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Virginia Woolf ’s 1933 book Flush: A Biography  is a semi -fictional biography of the title cocker spaniel who had belonged to which 19th-century English poet ? Woolf used this writer ’s poems ‘To Flush, My Dog ’ and ‘Flush or Faunus ’ as the basis of the biography.",
+              "answer": "Elizabeth Barrett  Browning",
+              "translations": {
+                "mandarin": "Yīlìshābái· Bāléitè ·Bólǎngn íng"
+              },
+              "accept": [
+                "either surname"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "What is the nationality  of the artist who engaged in institutional critique by creating a fictional Museum of Modern Art featuring a “department of eagles ” labelled “this is not a work of art ”? After a depiction of oysters was rejected from a salon, another artist from this country painted increasingly bold images, such as one in which Christ enters the capital.",
+              "answer": "Belgian",
+              "translations": {
+                "danish": "Belgisk , Belgien",
+                "dutch": "Belgisch , België",
+                "french": "Belge , Belgique",
+                "german": "Belgisch , Belgien",
+                "mandarin": "Bǐlìshí Norwegian: Belgisk , Belgia",
+                "polish": "Belgijski , Belgia",
+                "romanian": "Belgian , Belgia",
+                "swedish": "Belgisk , Belgien"
+              },
+              "accept": [
+                "Belgium ; artists are Marcel Broodthaers and Jame s Ensor"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Europe ’s longest mountain range (excluding the transcontinental Urals) is also a remnant of the Central Pangaea n mountains. That range runs the length of which large peninsula in Northern Europe ? The name of this peninsula is also used for a cultural area consisting of Sweden, Denmark and Norway.",
+              "answer": "Scandinavia n Peninsula",
+              "translations": {
+                "danish": "Skandinaviske  halvø ,",
+                "dutch": "Scandinavisch  Schiereiland ,",
+                "french": "Péninsule Scandinave , Scandinavie",
+                "german": "Skandinavische  Halbinsel ,",
+                "mandarin": "Sīkāndìnàwéiy ǎ bàndǎo Norwegian: Den skandinaviske  halvøy ,",
+                "polish": "Półwysep Skandynawski ,",
+                "romanian": "Peninsula Scandinavă",
+                "swedish": "Skandinaviska  halvön ,"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In Japanese mythology, which creator deity  descends into the Underworld to rescue his twin sister only to find that she is a rotting corpse, having eaten the food of the dead?",
+              "answer": "Izanagi  (or Izanaki , Izanagi -no-Mikoto ; do not accept “Izanami ”)",
+              "translations": {
+                "mandarin": "Yīxiénàqí"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "New Year is known by the names Kudus Yohannes  and Enkutatash and begins the month of Mäskäräm in the calendar of which country ?",
+              "answer": "Ethiopia",
+              "translations": {
+                "danish": "Etiopien",
+                "dutch": "Ethiopië",
+                "french": "Éthiopie , Érythrée",
+                "german": "Äthiopien",
+                "mandarin": "Āisāi'ébǐyǎ, Èlìtèlǐyǎ  Norwegian: Etiopia",
+                "polish": "Etiopia , Erytrea",
+                "romanian": "Etiopia , Eritreea",
+                "swedish": "Etiopien"
+              },
+              "accept": [
+                "Eritrea"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Al -Azhar University was founded in 970 in Cairo . In the 12th century , it saw the burning of Shia texts from the Fatimid dynasty, perhaps as many as 2 million, during the reign of  which ruler , the founder of the Sunni Ayyubid dynasty,  who is  known for defeating the Crusader states at the Battle of Hattin?",
+              "answer": "Saladin  (or Salah ad -Din Yusuf ibn Ayyub)",
+              "translations": {
+                "mandarin": "Sà lading  Polish:  Saladyn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "A 2003 memoir by Azar Nafisi recounts the story of her secretly teaching her female students about Western literature. It is titled Reading Lolita in  ... which capital city ?",
+              "answer": "Tehran",
+              "translations": {
+                "danish": "Teheran",
+                "dutch": "Teheran",
+                "french": "Téhéran",
+                "german": "Teheran  Mandarin:  Déhēilán",
+                "norwegian": "Teheran",
+                "polish": "Teheran",
+                "romanian": "Teheran"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In the Cori cycle, lactic acid is transported from the muscles to the hepatocyte cells, which form most of  the tissue making up which major organ ?",
+              "answer": "liver",
+              "translations": {
+                "danish": "lever",
+                "dutch": "lever",
+                "french": "foie",
+                "german": "Leber",
+                "mandarin": "gānzàng  Norwegian: lever",
+                "polish": "wątroba",
+                "romanian": "ficat",
+                "swedish": "lever"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Gian Carlo Menotti was an Italian -born American composer known for his television opera Amahl and the Night Visitors . He was the partner of which American composer , for whom he wrote the librettos for the operas Vanessa  and A Hand of Bridge ?",
+              "answer": "Samuel Barber",
+              "translations": {
+                "mandarin": "Sāimóuěr· Bābó"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Who wrote the novella  Sobach'ye serdtse  (Heart of a Dog ) in 1925 (although it was not published until the 1960s) in which a stray dog named Sharik undergoes surgery to transform him into a human? Another dog created by this author is Banga, a pet belonging to Pontius Pilate in a novel in which that dog is over shadowed by a cat.",
+              "answer": "Mikhail Bulgakov",
+              "translations": {
+                "dutch": "Michail Boelgakov",
+                "french": "Mikhaïl Boulgakov",
+                "german": "Michail Afanassjewitsch",
+                "polish": "Michaił Bułhakow",
+                "romanian": "Mihail Bulgakov",
+                "swedish": "Michail Bulgakov"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Queen Christina of Sweden was the daughter of which king , credited with transforming Sweden into a great power and leading the country during the Thirty Years War?",
+              "answer": "Gustavus Adolphus  (or Gustav II  Adolf )",
+              "translations": {
+                "danish": "Gustav 2.  Adolf  af Sverige",
+                "dutch": "Gustaaf II  Adolf  van Zweden",
+                "french": "Gustave II  Adolphe",
+                "german": "Gustav II.  Adolf",
+                "mandarin": "Gǔsītǎfū Èr shì·Ādàofū",
+                "norwegian": "Gustav II  Adolf  av Sverige  Polish:  Gustaw II  Adolf",
+                "romanian": "Gustav Adolf , Gustav al II -lea"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Another branch of the Indo -European family consists of the Celtic languages. These include the Gaelic languages, as well as Welsh, Cornish  and which language  still spoken in parts of northwest France?",
+              "answer": "Breton  (or Brezhoneg )",
+              "translations": {
+                "danish": "Bretonsk",
+                "dutch": "Bretons , Bretoens",
+                "german": "Bretonische  Sprache",
+                "mandarin": "Bùliètǎní yǔ Norwegian: Bretonsk",
+                "polish": "język bretoński",
+                "romanian": "limba bretona",
+                "swedish": "Bretonska"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What term , derived from the Greek for ‘wisdom ’, was used for the arbitrary arguments of a class of Greek teachers, and is now used pejoratively for a clever but misleading argument?",
+              "answer": "sophistry",
+              "translations": {
+                "danish": "sofisteri , sofist , sofisme",
+                "dutch": "sofisterij , sofist , sofisme",
+                "french": "sophisme , sophistique",
+                "german": "Sophisten , Sophistik",
+                "mandarin": "guǐbiàn shì, guǐbiàn  jiā, zhì biàn",
+                "polish": "sofistyka , sofiści , sofista ,",
+                "romanian": "sofism , sofist , sofisticărie",
+                "swedish": "sofist , sofisteri , sofism"
+              },
+              "accept": [
+                "sophism  or sophist"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which archaeological site  in the state of Hidalgo was the capital of the Toltec Empire? It is the site of four Atlantean figures : columns in the shape of Toltec warriors.",
+              "answer": "Tula  (or Tollan  Xicocotitlan",
+              "translations": {
+                "mandarin": "Túlā , Tuōlán -Xīkēkēdìtèlán ,"
+              },
+              "accept": [
+                "Mämeni ; accept Tula  de Allende )"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Peter Simon Pallas was also the first westerner to classify which antelope  of the Indian subcontinent, the largest antelope in Asia? Known by a name meaning ‘blue cow’, these antelopes bear the scientific name Boselaphus tragocamelus , which, confusingly, means ‘ox-deer goat -camel ’.",
+              "answer": "nilgai  (or rojh , roz, rangal , neelagorre , neelamadu , neelagari )",
+              "translations": {
+                "danish": "nilghai -antilope",
+                "dutch": "nijlgau",
+                "french": "antilope nilgaut",
+                "german": "Nilgau antilope  Mandarin:  lán niú líng",
+                "norwegian": "nilgau",
+                "polish": "nilgau  indyjski",
+                "swedish": "nilgau"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Daniel Buren uses what geometric forms  as the centrepiece of his institutional critique works, such as using them to adorn a massive banner he hung in the Guggenheim in New York in 1971? These forms are termed ‘zips ’ in the work of Barnett Newman and they make up the entirety of Frank Stella ’s Black Paintings .",
+              "answer": "stripe s",
+              "translations": {
+                "danish": "stribe r, linje r",
+                "dutch": "strepen , streep , lijnen",
+                "french": "rayure s, ligne s",
+                "german": "Streifen , Linie n",
+                "mandarin": "tiáowén  Norwegian: striper , linje r",
+                "polish": "paski , pasek , linie , linia",
+                "romanian": "dungi , dungă , linii, linie",
+                "swedish": "ränd er, linje r"
+              },
+              "accept": [
+                "lines"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "What kind of logical fallacy  involves a person believing they should continue with a plan of action because they have invested a lot of time or resources into it even though giving up would likely be a better option?",
+              "answer": "sunk cost  fallacy",
+              "translations": {
+                "danish": "irreversible omkostninger",
+                "dutch": "verzonken kosten",
+                "french": "coûts irrécupérables",
+                "german": "versunkene Kosten , irreversible",
+                "mandarin": "chénmò chéngběn , chéndiàn",
+                "polish": "koszty utopione",
+                "romanian": "costuri irecuperabile",
+                "swedish": "förlorade kostnader"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Around 1200 CE, a group of Toltec exiles fled Tula and took over which city  in the modern -day state of Puebla, perhaps the oldest continuously inhabited city in the Americas? This city is known for its Great Pyramid, the largest such structure on Earth at almost twice the volume of the taller Great Pyramid of Giza.",
+              "answer": "Cholul a",
+              "translations": {
+                "mandarin": "Qiáolúlā"
+              },
+              "accept": [
+                "Cholōllān",
+                "Cholula  de Rivadavia",
+                "Mä'ragi"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The festivals of Rosh Hashanah, Yom Kippur and Sukkot all fall in what month of the Jewish calendar ? This is the first month of the civil year but the seventh in the ecclesiastical year, which instead begins with Nisan.",
+              "answer": "Tishrei  (or Tishri )",
+              "translations": {
+                "dutch": "Tisjri",
+                "german": "Tischri",
+                "mandarin": "Tísīlì  yuè",
+                "norwegian": "tisjré , tisjri  Polish:  Tiszri",
+                "romanian": "Tișrei",
+                "swedish": "Tischri"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Christina was the last Swedish monarch from which royal dynasty  that had ruled the country since 1523, when it was founded by Gustav I?",
+              "answer": "House of  Vasa  (or Wasa , Vasaätten )",
+              "translations": {
+                "mandarin": "Wǎsà wángch áo Polish:  Wazowie , Waza"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The earliest known heliocentric model is one proposed by Aristarchus of Samos in the third century BCE. This is attested to in Psammites  (The Sand Reckoner ), a work by which Ancient Greek mathematician and inventor  known for his screw pump and buoyancy principle , which was  his ‘Eureka!’ moment ?",
+              "answer": "Archimedes  of Syracuse",
+              "translations": {
+                "french": "Archimède",
+                "mandarin": "Ā jī mǐ dé",
+                "norwegian": "Arkimedes  Romanian: Arhimede",
+                "swedish": "Arkimedes"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "When lactic acid reaches the hepatocyte cells in the Cori cycle, it is first converted into pyruvate before being converted into which essential sugar for ATP production?",
+              "answer": "glucose",
+              "translations": {
+                "danish": "glukose, druesukker",
+                "mandarin": "pútáotáng , xiětáng , yùmǐ pú",
+                "norwegian": "glukose, druesukker  Polish:  glukoza",
+                "romanian": "glucoza",
+                "swedish": "glukos , glykos , druvsocker ,"
+              },
+              "accept": [
+                "dextrose"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "A 2002 non -fiction work by Norwegian journalist Åsne Seierstad tells the story of Sultan Khan and his family life, prompting Khan to unsuccessfully sue Seierstad for defamation. That book was titled Bokhandleren i  ... (The Bookseller of  ...) which capital city?",
+              "answer": "Kabul",
+              "translations": {
+                "dutch": "Kaboel",
+                "french": "Kaboul   Mandarin:  Kābù'ěr , Gāofù",
+                "polish": "Kabulu"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A modern example of a book burning took place in the Jaffna Public Library in 1981, resulting in the destruction of 97,000 texts including an important archive. Seen as an attack on Tamil culture, it took place amid violence betwe en members of the Tamil and Sinhalese communities  in which country ?",
+              "answer": "Sri Lanka",
+              "translations": {
+                "mandarin": "Sīlǐlánkǎ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which Russian composer  was married to the poet Mira Mendelson and collaborated with her on the librettos for his operas Obrucheniye v monastïre  (Betrothal in a Monastery ) and Voyna i mir  (War and Peace )? His other operas include L’amour des trois oranges  (The Love for Three Oranges ).",
+              "answer": "Sergei Prokofiev",
+              "translations": {
+                "danish": "Sergej Prokofjev",
+                "dutch": "Sergej Prokofjev",
+                "french": "Sergueï Prokofiev",
+                "german": "Sergei Sergejewitsch Prokofjew",
+                "mandarin": "Xièěrgài· Pǔluókēfēiyéfū Norwegian: Sergej Prokofjev",
+                "polish": "Siergiej Prokofjew",
+                "romanian": "Serghei Prokofiev",
+                "swedish": "Sergej Prokofjev"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In Roman mythology, who  employed the services of the Cumaean  Sibyl in his attempt to descend into the Underworld to consult his deceased father, Anchises?",
+              "answer": "Aeneas",
+              "translations": {
+                "danish": "Æneas",
+                "french": "Énée",
+                "mandarin": "Āinièāsī  Norwegian: Aineias",
+                "polish": "Eneasz",
+                "romanian": "Enea"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In which 1891 novel by the Brazilian author Machado de Assis  does the title name refer both to a philosopher who promotes “humanitism ”, and to a dog of the same name that must be cared for by Rubião if he is to be heir to the philosopher? In English, this novel is sometimes known as Philosopher or Dog?  but we are looking for the original title, which is the name shared by the philosopher and the dog.",
+              "answer": "Quincas Borba",
+              "translations": {
+                "mandarin": "Jīnkǎsī·Bóěrbā"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In Chinese history, the Hundred Schools of Thought were a diverse range of philosophies that flourished in the Spring and Autumn and Warring States Period s. They were ended with an event known as the burning of books and burying of scholars at the beginning of which dynasty , the first imperial dynasty, whose founding emperor unified China in 221 BCE? This dynasty succeed ed the Zhou and precede d the Han.",
+              "answer": "Qin dynasty [chin] (",
+              "accept": [
+                "Qín cháo , Yíng Qín; do not accept “Qing”)"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Christina strongly disagreed with her Lord High Chancellor Axel Oxenstierna over the need for peace in the Thirty Years War , and eventually sent her own delegate, Johan Adler Salvius, to negotiate which peace treaties  that brought an end to that war? These treaties were signed in the German cities of Osnabrück and Münster and are named after  a region of Germany.",
+              "answer": "Peace of  Westphalia  (or Der Westfälischer  Friede , Pax Westphalica , Der",
+              "translations": {
+                "danish": "westfalske  fred",
+                "dutch": "De Vrede van Westfalen",
+                "french": "traités de Westphalie , paix de",
+                "mandarin": "Wēisītèfálìy ǎ héyuē, Xīfālǐyǎ Norwegian: Freden i Westfalen",
+                "polish": "pokój westfalski , Westfalia",
+                "romanian": "Pacea Westfalică , Westfalia",
+                "swedish": "Westfaliska  freden"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What kind of informal fallacy  involves citing the opinion of a perceived expert to support the argument, but provid ing no evidence beyond that opinion? It is typically considered a fallacious argument when the figure doesn ’t have relative expertise, their opinion contradicts the evidence, or there is no consensus among experts in the field.",
+              "answer": "argument from  authority  (or appeal to authority  etc.,",
+              "translations": {
+                "danish": "autoritets argument",
+                "dutch": "beroep op autoriteit",
+                "french": "l’argument d' autorité",
+                "german": "Autoritäts argument",
+                "mandarin": "sù zhū quánwēi , wěituō quánwēi , yuán",
+                "polish": "argument do autorytetu , argument do",
+                "romanian": "Apelul la autoritate , argument din",
+                "swedish": "Auktoritets argument"
+              },
+              "accept": [
+                "argumentum ad"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "One branch of the Indo -European family has just one language. This is which language , with around 5 million speakers, whose alphabet was invented in the 5th century CE by a monk called Mesrop Mashtots in order to translate the Bible?",
+              "answer": "Armenian  (or Hayeren ; accept  Grabar , Ashkahabar )",
+              "translations": {
+                "danish": "Armensk",
+                "dutch": "Armeens",
+                "french": "L'arménien",
+                "german": "armenische  Sprache",
+                "mandarin": "Yàměiníy ǎ yǔ Norwegian: Armensk",
+                "polish": "język ormiański",
+                "romanian": "Limba armeană",
+                "swedish": "Armeniska"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "One of the main mountain building events in the formation of the Pangaean Central Mountains was the Variscan orogeny. One remnant of the European Variscan Belt is which mountain range  that runs along the border between France and Spain and contains the microstate of Andorra?",
+              "answer": "Pyrenees",
+              "translations": {
+                "danish": "Pyrenæerne",
+                "dutch": "Pyreneeën",
+                "french": "Pyrénées",
+                "german": "Pyrenäen",
+                "mandarin": "Bǐlìniúsī shānmài Norwegian: Pyreneane",
+                "polish": "Pireneje",
+                "romanian": "Munții Pirinei",
+                "swedish": "Pyrenéerna"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Pallas also described and gave his name (in English) to a species of which birds  that make up the  family Pteroclidae ? These relatives of pigeons are found in Africa and Asia, typically living in deserts, savannas and other open environments.",
+              "answer": "sandgrouse",
+              "translations": {
+                "danish": "sandhøne , steppehøne",
+                "dutch": "steppehoen , zandhoen ,",
+                "french": "syrrhapte , ganga",
+                "german": "Steppenhuhn , Steppenflughuhn ,",
+                "norwegian": "sandhøn e, steppehøne",
+                "polish": "pustynnik , stepówki",
+                "romanian": "găinușă de stepă",
+                "swedish": "stäppflyghöna , flyghöna"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What art group engaged  in institutional critique when they placed adverts on New York buses that featured Ingre ’s Grande Odalisque wearing a mask and the text “Do women have to be naked to get into the Met. Museum? ”?",
+              "answer": "Guerrilla Girls",
+              "translations": {
+                "mandarin": "Yóu jí duì n ǚhái"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In the mythology of the Kʼicheʼ Maya, the Hero Twins Hunahpu and Xbalanque descend to the Underworld to avenge the murder of their father, Hun Hunahpu , finally defeating the lords of the Underworld in a ballgame. This story is recounted in what sacred narrative  of the Maya, recorded as a text by the Dominican friar Francisco Ximénez ?",
+              "answer": "Popol Vuh  (or Popul Vuh , Pop Vuj , Popol Wu'uj )",
+              "translations": {
+                "mandarin": "Bōbōěr· Wū"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Following the US -led invasion of Iraq, the journalist Ahmed Saadawi visited a morgue and met a young man who wished to find the corpse of his brother but was told to simply take any body parts he could find. Saadawi drew upon that experience to write a con temporary retelling, set in Baghdad, of which 1818 novel ?",
+              "answer": "Frankenstein ; or, The Modern Prometheus  by Mary Shelley ( accept  Frankishtayn  fi",
+              "translations": {
+                "french": "Frankenstein  ou le Prométhée"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "This year corresponding to the period between 30 March and 28 April, what month follows Ramadan in the Islamic calendar? Eid al -Fitr, which celebrates the end of Ramadan fasting, is the first day of this month.",
+              "answer": "Shaww āl",
+              "translations": {
+                "french": "Chawwal",
+                "german": "Schawwāl",
+                "mandarin": "Shǎn wǎ lǔ yuè Polish:  szawwal",
+                "romanian": "Șawwāl"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Some scholars believe  that the fifth -century Indian mathematician Āryabha ṭa include d a heliocentric model in his magnum opus Āryabhaṭīya, although this is a controversial claim. That work also contains an approximation for which value  accurate to three decimal places, as he suggested that a circle with a diameter of 20,000 units would have a circumference of 62,832?  This value is sometimes known as Archimedes ’ constant.",
+              "answer": "pi",
+              "translations": {
+                "german": "Kreiszahl , Ludolphsche  Zahl",
+                "mandarin": "Yuánzhōul ǜ Polish: ludolfina"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which major political figure of the late twentieth century  was married three times, to Evelyn Ntoko Mase , Winnie Madikizela , and Graça Machel ?",
+              "answer": "Nelson  Rolihlahla  Mandela",
+              "translations": {
+                "mandarin": "Nà'ěrxùn· Màndélā"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Plasmodium  parasites that cause malaria in humans are carried by females of which genus of mosquito  that has a name meaning ‘useless’ in Greek?",
+              "answer": "Anopheles",
+              "translations": {
+                "french": "anophèle",
+                "mandarin": "Nüè wén , Àn wén  Polish:  widliszek",
+                "romanian": "tânțarul anofel"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Helen Mack Chang is a human rights activist who became active when her sister Myrna, an anthropologist, was killed by the military of which country  in 1990? This country fought a civil war between 1960 and 1996.",
+              "answer": "Guatemala",
+              "translations": {
+                "mandarin": "Wēidìmǎlā Polish: Gwatemala"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Former Filipino President Rodrigo Duterte has returned to his former role  as the mayor of which city  – the country’s third largest and the largest on the island of Mindanao? His daughter Sara, now the vice -president, has also served as this city’s mayor.",
+              "answer": "Davao  City (or Dakbayan sa Dabaw )",
+              "translations": {
+                "mandarin": "Dáwò  shì"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Published in 1961, A House for Mr Biswas  was the breakthrough novel for which novelist ?",
+              "answer": "V. S.  Naipaul  (or Vidiadhar Surajprasad Naipaul )",
+              "translations": {
+                "mandarin": "V·S·Nàibōěr"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Dido, also known as Elissa, was the legendary founder and first queen of which city state in North Africa , later ruled by Hannibal?",
+              "answer": "Cremona",
+              "translations": {
+                "danish": "Antarktis",
+                "dutch": "Carthago",
+                "german": "Antarktika",
+                "mandarin": "Àilìsī Lǐ",
+                "polish": "Antarktyda",
+                "romanian": "Antarctida",
+                "swedish": "Antarktis",
+                "french": "Crémone   Mandarin: Kèléimònà"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

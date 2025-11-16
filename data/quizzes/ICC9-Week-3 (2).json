@@ -1,0 +1,923 @@
+{
+  "metadata": {
+    "title": "ICC9-Week-3 (2)",
+    "source": "ICC9-Week-3 (2).pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Founded by Joseph Smith in New York State in 1830, the Church of Jesus Christ of Latter -Day Saints is today better known by what name ? One of this movement's religious texts, written by Smith, is entitled Book of [BLANK] .",
+              "answer": "Mormon  Church",
+              "translations": {
+                "mandarin": "móěr mén  jiàotú  Polish: Mormoni"
+              },
+              "accept": [
+                "Mormons"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Bronze work in South Asia is generally considered to have reached its apex during which largely maritime Tamil dynasty  that ruled much of Sri Lanka and what is now Southern India from the 9th to 13th centuries CE?",
+              "answer": "Chola  dynasty",
+              "translations": {
+                "mandarin": "zhū luó  wángcháo  Polish: Ćolowie"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Christ the Redeemer of the Andes statue lies on the border between Chile and which Argentine province , famed for its winemaking? This province's namesake capital was almost entirely destroyed by an earthquake in 1861.",
+              "answer": "Mendoza",
+              "translations": {
+                "mandarin": "ménduōsà"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "An author , Spinell , conducts an affair with Gabriele fuelled by the music of Wagner in the novella Tristan , by which writer ? This man  also wrote a musically themed novel – influenced by Schoenberg and Adorno – about the fictional composer Adrian Leverkühn.",
+              "answer": "Thomas Mann",
+              "translations": {
+                "mandarin": "tuōmǎsī · màn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Telling of the struggle between the Taira and Minamoto clans at the end of the Genpei War, Heike Monogatari (The Tale of Heike)  is considered the national folk epic of which country ?",
+              "answer": "Japan",
+              "translations": {
+                "french": "Japon",
+                "mandarin": "Rìběn  Polish: Japonia",
+                "romanian": "Japonia"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Léon Bakst designed the set and costumes for which ballet  choreographed by Vasily Nijinsky which caused controversy in 1912 due to its sexually suggestive final scene? This ballet is set to a symphonic ‘prelude’ written by Claude Debussy.",
+              "answer": "L'Après -midi d'un faune  (or The Afternoon of the Faun ,",
+              "translations": {
+                "danish": "En fauns eftermiddag",
+                "dutch": "Voorspel op de namiddag van een",
+                "german": "Vorspiel zum Nachmittag eines",
+                "mandarin": "mùshén w ǔhòu Norwegian: Faunens ettermiddag",
+                "polish": "Popołudnia fauna",
+                "romanian": "Preludiu la după amiaza unui",
+                "swedish": "Förspel till en fauns eftermiddag"
+              },
+              "accept": [
+                "Prélude à l' après -midi"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In computer programming, what name  is given to a program that translates code written in one (usually high -level) language into a lower -level  language in order to execute the source code instructions?",
+              "answer": "compiler",
+              "translations": {
+                "danish": "also oversætter",
+                "french": "compilateur",
+                "german": "also Kompilierer",
+                "mandarin": "biānyìqì  Norwegian: kompilator",
+                "polish": "kompilator",
+                "romanian": "compilator",
+                "swedish": "kompilator"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The arm of the Indian Ocean that separates Madagascar from mainland Africa is a channel named after which country  that lies on the opposite side of the channel from Madagascar?",
+              "answer": "Mozambique",
+              "translations": {
+                "german": "Mosambik",
+                "mandarin": "mòsāngb ǐkè",
+                "norwegian": "Mosambik  Polish: Mozambik",
+                "romanian": "Mozambic",
+                "swedish": "Moçambique"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In which chronic autoimmune condition  does the body attack its own melanocytes, causing unpigmented patches on the skin? This name is sometimes used interchangeably with 'leucaderma', although the latter term is more properly reserved for a loss of pigmentation following a physical trauma.",
+              "answer": "vitiligo",
+              "translations": {
+                "german": "also accept",
+                "polish": "pielactwo nabyte"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the national flower  of India? The ruling Bharatiya Janata Party (BJP) uses this flower as its party symbol.",
+              "answer": "lotus  (or pink lotus , sacred lotus , Indian lotus , Nelumbo nucifera ; do not accept",
+              "translations": {
+                "german": "Lotos blume",
+                "mandarin": "lián Polish: lotos"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which king  succeeded Conrad I as ruler of East Francia in 918, supposedly having been fixing bird traps when told of his election? Through his son , Otto the Great, he began the Ottonian dynasty.",
+              "answer": "Henry the Fowler",
+              "translations": {
+                "danish": "Henrik 1  or Henrik Fuglefænger",
+                "dutch": "Hendrik I  or Hendrik de Vogelaar",
+                "french": "Henri I  or Henri Ier de Saxe  or",
+                "mandarin": "hēnglì yísh ì Norwegian:  Henrik I  or Henrik",
+                "polish": "Henryk I  or Henryk Ptasznik",
+                "romanian": "Henric I  or Henric Păsărarul",
+                "swedish": "Henrik I  or Henrik"
+              },
+              "accept": [
+                "Henry I  (accept Heinrich I",
+                "Heinrich der Vogler",
+                "Heinrich"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which Tuscan artist  painted several outdoor versions of the Annunciation, including one commissioned by Cosimo de Medici for the San Marco convent  (pictured) ? Another version by him includes a reference to the Garden of Eden on its left side.",
+              "answer": "Fra Angelico  (accept Angelico  if offered; accept Gui do di  Pietro",
+              "translations": {
+                "mandarin": "ānjié lìkē  xiūshì"
+              },
+              "accept": [
+                "Beato"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which very soft mineral , composed of hydrated magnesium silicate, is the reference mineral for 1 on the Mohs scale of mineral hardness?",
+              "answer": "talc",
+              "translations": {
+                "mandarin": "huáshí"
+              },
+              "accept": [
+                "talcum"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which novel ’s first volume features the recurring theme of the fictional Vinteuil Sonata , where it represents the protagonist’s love for Odette?",
+              "answer": "In Search  of Lost  Time",
+              "translations": {
+                "danish": "På sporet af den tabte tid",
+                "dutch": "Op zoek naar de verloren tijd",
+                "german": "Auf der Suche nach der",
+                "mandarin": "Zhuīyì sì shu ǐ niánhu á",
+                "norwegian": "På sporet av den tapte tid  Polish:  W poszukiwaniu straconego czasu",
+                "romanian": "În căutarea timpului pierdut",
+                "swedish": "På spaning efter den tid som"
+              },
+              "accept": [
+                "Remembrance  of Things  Past",
+                "À la recherche  du temps"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "The northern Mozambique Channel is home to the island of Mayotte, an overseas territory of which European country ?",
+              "answer": "France",
+              "translations": {
+                "danish": "Frankrig",
+                "dutch": "Frankrijk",
+                "german": "Frankreich",
+                "romanian": "Fran ța Mandarin: Fǎlánxī",
+                "norwegian": "Frankrike",
+                "polish": "Francja",
+                "swedish": "Frankrike"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In the Brothers Grimm fairy tale Die Bremer Stadtmusikanten (Town Musicians of Bremen) , four domestic animals leave their homes with the dream of becoming musicians in the title German city. The first animal to set out is which domesticated equine  that appears in a philosophical paradox named after the French priest Jean Buridan, who used it to satirize moral determinism?",
+              "answer": "ass",
+              "translations": {
+                "danish": "tam æsel",
+                "dutch": "ezel",
+                "french": "âne commun",
+                "german": "Haus esel",
+                "mandarin": "lǘ Norwegian: tam esel",
+                "polish": "osioł  zwyczajny",
+                "romanian": "măgar",
+                "swedish": "åsna"
+              },
+              "accept": [
+                "donkey"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "In 2009, the Mormon Church built a temple in Brigham City, a settlement named after which man , who succeeded Smith as Mormon leader and who led his people from Illinois to the Salt Lake Valley?",
+              "answer": "Brigham Young",
+              "translations": {
+                "mandarin": "yáng bǎihàn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Otto the Great’s early rule was marked by repeated military failure and war with his brother, but he managed to earn legitimacy and the support of his nobles following which battle  of 955 when he decisively defeated the Magyars?",
+              "answer": "Battle of Lechfeld",
+              "translations": {
+                "dutch": "Lechveld",
+                "mandarin": "láixī fēiěrdé  Polish: Lech"
+              },
+              "accept": [
+                "Second Battle of Lechfeld"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What unrecognised state , a successor to one of the many British colonial holdings in Africa, gained independence in 1980 as the nation of Zimbabwe?",
+              "answer": "Rhodesia  (accept Southern Rhodesia  if offered  but do not accept",
+              "translations": {
+                "dutch": "Rhodesië",
+                "french": "Rhodésie",
+                "german": "Rhodesien  Mandarin: luódé xīyà",
+                "polish": "Rodezja"
+              },
+              "accept": [
+                "prompt on"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which Hindu deity  is often depicted sitting on a lotus throne and holding a lotus flower? Radha and Rukmini are among the eight avatars of this deity.",
+              "answer": "Lakshmi",
+              "translations": {
+                "mandarin": "jíxiáng tiānn ǚ Polish: Lakszmi"
+              },
+              "accept": [
+                "Shri  (or Mahalakshmi",
+                "Bhargavi",
+                "Kamala",
+                "Padma",
+                "Narayani  or"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "The subject of repatriation requests since Nigerian independence in 1960, several thousand sculptures and plaques (collectively described as 'bronzes' despite mostly being made of brass) were taken from the Royal Palace of the Oba of which kingdom around the turn of the 20th century and distributed between Western museums?",
+              "answer": "Kingdom of Benin",
+              "translations": {
+                "mandarin": "bèiníng  wángguó"
+              },
+              "accept": [
+                "Great Benin  (do not accept",
+                "prompt on Dahomey)"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In terms of both population and area, which is the smallest of the provinces of Argentina ? Its capital c ity is often claimed  to be the world's southernmost city.",
+              "answer": "Tierra del Fuego",
+              "translations": {
+                "danish": "Ildlandet",
+                "dutch": "Vuurland",
+                "french": "Terre de Feu",
+                "german": "Feuerland",
+                "mandarin": "huǒdì qúndǎo Norwegian: Ildlandet",
+                "polish": "Ziemia Ognista",
+                "romanian": "Țara de Foc",
+                "swedish": "Eldslandet"
+              },
+              "accept": [
+                "Land of Fire  or Fireland"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Mabinogion  was compiled in the 12th and 13th centuries CE from earlier oral traditions and is considered a folk -epic of which language ? Among the stories told is that of Pwyll [poo -ull] Prince of Dyfed.",
+              "answer": "Welsh",
+              "translations": {
+                "danish": "walisisk  or kymrisk",
+                "french": "Gallois",
+                "german": "Walisisch  or Kymrisch",
+                "mandarin": "wēiěrshì y ǔ Norwegian: walisisk  or kymrisk  or velsk",
+                "polish": "walijsk",
+                "romanian": "galeză",
+                "swedish": "kymriska  or walesiska"
+              },
+              "accept": [
+                "Cymraeg",
+                "y Gymraeg"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Léon Bakst designed the set for which 1910 ballet  that starred Nijinsky as the Golden Slave and was set to a symphonic poem by Nikolai Rimsky -Korsakov? In this work, the title character is represented by a rhapsodic solo violin theme, whereas the Sultan is represented by a whole -tone theme played on bass  instruments, which softens as the piece progresses.",
+              "answer": "Scheherazade  (or Shekherazada )",
+              "translations": {
+                "dutch": "Sjeherazade",
+                "mandarin": "shě hèlā chá dá  Polish: Szeherezada"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "As well as being the official national flower of India, the lotus is also the unofficial national flower of which other Asian nation , where it inspired the design of the Bitexco Financial Tower, once the country ’s tallest skyscraper? Tatjana Soli’s The Lotus Eaters  tells the story of a photojournalist who enters into a love triangle in this country.",
+              "answer": "Vietnam",
+              "translations": {
+                "french": "Viêt Nam",
+                "mandarin": "Yuènán  Polish: Wietnam"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The second animal to set out in the Brothers Grimm tale is which creature  whose tendency to salivate upon hearing a bell won a Russian physiologist a Nobel Prize?",
+              "answer": "domestic dog",
+              "translations": {
+                "danish": "hund",
+                "dutch": "hond",
+                "french": "chien ne",
+                "german": "Hund",
+                "mandarin": "gǒu Norwegian:  hund",
+                "polish": "pies",
+                "romanian": "câine",
+                "swedish": "hund"
+              },
+              "accept": [
+                "hound"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "What name  is given to a computer program that is able to directly execute script or code instructions without requiring them to be compiled?",
+              "answer": "interpreter",
+              "translations": {
+                "danish": "fortolker",
+                "french": "interprète  or interpréteur",
+                "mandarin": "zhíyì qì  Norwegian: kommandotolk",
+                "swedish": "also programtolk"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Addison's disease is an autoimmune condition affecting the adrenal glands, leading to a lack of the production of aldosterone and which steroid hormone  that plays a crucial role in regulating stress, metabolism, and the body's \"fight -or-flight\" response?",
+              "answer": "cortisol",
+              "translations": {
+                "mandarin": "pízhìchún  Polish:  kortyzol"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The reference mineral for 2 on the Mohs scale of mineral hardness is which form of calcium sulfate dihydrate ? One fine -grained variety of this mineral is known as alabaster and is used in sculpture.",
+              "answer": "gypsum",
+              "translations": {
+                "danish": "gips",
+                "dutch": "gips",
+                "french": "gypse",
+                "german": "Gips",
+                "mandarin": "shígāo  Norwegian: gips",
+                "polish": "gips",
+                "romanian": "ghips ul",
+                "swedish": "gips"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The grape is also the main crop in this Argentine province, named after a winemaking region of Spain. Sharing its northern border with Catamarca in the country's northwest, this is which province  whose largest cities are its namesake capital and Chilecito, separated by the Sierra de Velasco mountains?",
+              "answer": "La Rioja",
+              "translations": {
+                "mandarin": "lālǐào hā  shěng"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Brigham City and the Salt Lake Valley are in which state  of the USA that is today closely associated with Mormonism?",
+              "answer": "Utah",
+              "translations": {
+                "mandarin": "yóutāzhōu"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Mahābhārata  and the Rāmāyaṇa are epics from the Indian subcontinent originally written in which ancient language ?",
+              "answer": "Sanskrit",
+              "translations": {
+                "mandarin": "fànyǔ",
+                "polish": "sanskryt  Romanian: sanscrită"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "As with Fra Angelico’s versions, which artist  included a partially outdoor setting of the Annunciation as part of the fresco sequence The Legend of the True Cross  in which the Virgin Mary appears taken aback at the arrival of Gabriel? Christ carries a white flag with a red cross in this man’s version of The Resurrection.",
+              "answer": "Piero  della Francesca",
+              "translations": {
+                "mandarin": "píyēluó  · délá · fúl ǎng qiē sīk ǎ"
+              },
+              "accept": [
+                "Francesca  if offered; accept Piero  di Benedetto"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Mayotte is claimed by this country, consisting of three islands in the Mozambique Channel. Moroni is the capital of which nation , the only country in the Arab League to be situated entirely in the Southern Hemisphere?",
+              "answer": "Comoros",
+              "translations": {
+                "danish": "Comorerne",
+                "dutch": "Comoren",
+                "french": "Comores",
+                "german": "Komoren",
+                "mandarin": "gě mó  Norwegian: Komorene",
+                "polish": "Komory",
+                "romanian": "Comore",
+                "swedish": "Komorerna"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Before Kenya gained independence in 1963, it was the site of a rebellion against British colonial rule known by what name ? The main belligerent was the Kenya Land and Freedom Army, who were known by this nickname.",
+              "answer": "Mau Mau  Rebellion",
+              "translations": {
+                "mandarin": "Máo máo  qǐyì Mau Mau  is all that is needed, and that is"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Tajaderos  are bronze artefacts found in western Mesoamerica and the northern Andes, sometimes known as ‘axe -money’ or ‘hoe money’, that served as a standardized currency. According to the Smithsonian, by the time of the Spanish Conquest, one tajadero  had a fixed worth equal to 8,000 of which seeds ? These seeds, important in Mesoamerican cuisine, were also commonly used as currency throughout the region.",
+              "answer": "cacao  or cocoa  bean",
+              "translations": {
+                "mandarin": "kěkě dòu"
+              },
+              "accept": [
+                "chocolate  bean"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Otto’s conquests of Italy were prompted by the desire for a marriage alliance with Adelaide, who had been imprisoned by the second Italian king of what name , who he deposed and forced to swear fealty to him?",
+              "answer": "Berengar",
+              "translations": {
+                "dutch": "Berengarius",
+                "french": "Bérenger  Mandarin: bèilún jiāěr",
+                "romanian": "Berengario"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Léon Bakst designed the set and costumes for Daphnis et Chloé , a ballet and concert piece by which composer ? One of this man's most famous compositions was commissioned by the dancer Ida Rubinstein , and choreographed by Bronislava Nijinska , and is built around an ostinato rhythm played on the snare drum.",
+              "answer": "Maurice Ravel",
+              "translations": {
+                "mandarin": "mòlǐsī · lāwēiěr"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Although Ethiopia was never colonised, a British military administrative body occupied the nation after Italian forces were repelled in 1941. This agreement was signed by which man  on behalf of Ethiopia? He ruled as Emperor until he was ousted in a 1974 coup.",
+              "answer": "Haile Selassie  I (or Tafari Makonnen",
+              "translations": {
+                "french": "Haïlé Sélassié  Ier",
+                "mandarin": "hǎiěr · sàilā xī  yíshì  Polish: Hajle Syllasje  I"
+              },
+              "accept": [
+                "Lij Tafari )"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Bronzetti  are bronze sculptures created by the Nuragic civilization that inhabited which European island  from the 18th century BCE until Roman times? The civilization takes its name from stone towers called nuraghe , around 7,000 of which have been identified on the island.",
+              "answer": "Sardinia",
+              "translations": {
+                "danish": "Sardin ien",
+                "dutch": "Sardinië",
+                "german": "Sardinien  Mandarin: sǎ dīng",
+                "polish": "Sardynia",
+                "swedish": "Sardinien"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "A program with strictly numerical instructions that can directly control the central processing unit of a computer, at the lowest level of abstraction, is written in  a type of language given what name ? The specific format of the instructions will depend on the computer’s instruction set architecture.",
+              "answer": "machine code",
+              "translations": {
+                "danish": "maskinkode",
+                "dutch": "machinetaal",
+                "french": "langage machine  or code machine",
+                "german": "Maschinensprache  or",
+                "mandarin": "jīqì yǔyán or jīqìmǎ or",
+                "polish": "język maszynowy  or kod",
+                "romanian": "limbajul mașină  or codul",
+                "swedish": "maskinkod  or maskinspråk  or"
+              },
+              "accept": [
+                "machine language  or native code"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Annunciation is depicted in the central panel of  the Annunc iation Triptych attributed to Robert Campin , which contains many symbolic elements such as a towel hanging next to a washbasin and an extinguished candle . By what name , after the aristocratic family that once owned the work, is this triptych better known?",
+              "answer": "Mérode  Altarpiece",
+              "translations": {
+                "mandarin": "mài luò dé  jìtán huà"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which novel  features repeated references to Beethoven’s 16th string quartet through its protagonist’s quoting of the ‘weighty resolution’ ‘es muss sein’? This allusion serves to bring him back to his partner following affairs, including one with the artist Sabina.",
+              "answer": "The Unbearable Lightness of Being",
+              "translations": {
+                "danish": "Tilværelsens ulidelige lethed",
+                "dutch": "De ondraaglijke lichtheid van het",
+                "french": "L'Insoutenable Légèreté de l'être",
+                "german": "Die unerträgliche Leichtigkeit des",
+                "mandarin": "shēngmìngzhōng",
+                "polish": "Nieznośna lekkość bytu",
+                "romanian": "Insuportabila ușurătate a",
+                "swedish": "Varats olidliga lätthet"
+              },
+              "accept": [
+                "Nesnesitelná lehkost bytí"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The name of which Argentine province  on the Paraguayan border, and its eponymous capital, come from an archaic Spanish word for ‘beautiful ’? The same name was once also used by Europeans for an island in East Asia that is the  antipode of this province .",
+              "answer": "Formosa",
+              "translations": {
+                "mandarin": "fú mò sà  sheng"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The reference mineral for 10, the highest value, on the Mohs scale of mineral hardness is an allotrope of which chemical element ?",
+              "answer": "carbon",
+              "translations": {
+                "dutch": "koolstof",
+                "french": "carbone",
+                "german": "Kohlenstoff",
+                "mandarin": "tàn Norwegian: karbon",
+                "polish": "węgiel",
+                "swedish": "kol"
+              },
+              "accept": [
+                "C"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Both Graves' disease and Hashimoto's disease are autoimmune conditions that affect what endocrine gland ? Graves' disease causes overproduction of hormones from this body part, while Hashimoto's disease leads to underproduction.",
+              "answer": "thyroid  gland",
+              "translations": {
+                "danish": "skjoldbruskkirtlen",
+                "dutch": "schildklier  or thyroidea  or thyroïd",
+                "french": "thyroïde",
+                "german": "Schilddrüse",
+                "mandarin": "jiǎzhuàngxiàn  Norwegian: skjoldkjertelen or",
+                "polish": "tarczyca  or gruczoł tarczowy",
+                "romanian": "g landă tiroidă",
+                "swedish": "sköldkörteln  or tyreoidea"
+              },
+              "accept": [
+                "glandula thyreoidea"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "What object , a popular symbol in Mormonism, provides the nickname of the state of Utah, and appears at the centre of the state's flag? This structure is seen as a symbol of industry, diligence, and unity.",
+              "answer": "beehive",
+              "translations": {
+                "danish": "bistade",
+                "dutch": "bijenkorf",
+                "french": "ruche",
+                "german": "Bienenstock",
+                "mandarin": "fēngcháo  Norwegian: bikube",
+                "polish": "ule",
+                "romanian": "stup",
+                "swedish": "bikupa"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The third animal to set out in the Brothers Grimm tale is which creature  that was trapped inside a box in a famous thought experiment named after an Austrian physicist?",
+              "answer": "domestic cat",
+              "translations": {
+                "danish": "kat",
+                "dutch": "kat",
+                "french": "chat te",
+                "german": "Katze",
+                "mandarin": "māo  Norwegian: katt",
+                "polish": "kot",
+                "romanian": "pisica",
+                "swedish": "katt"
+              },
+              "accept": [
+                "pussy cat"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The folk epic of the Malinke people, the Epic of Sundiata  tells the story of Sundiata Keita, the founder of which African Empire  that shared its name with a modern African nation with its capital at Bamako?",
+              "answer": "Mali  Empire",
+              "translations": {
+                "mandarin": "mǎlǐ dìguó"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Pernicious anaemia is an autoimmune disease that causes the production of insufficient red blood cells due to a deficiency of which vitamin , also known as cobalamin?",
+              "answer": "B12"
+            },
+            {
+              "question_number": 3,
+              "question_text": "An unusual depiction of the Annunciation, choosing the moment at which Gabriel explains how the conception is possible, was the final work by an artist with the first name Ambrogio. What is the surname  of this artist and his brother, Pietro, who were important members of the 14th century Sienese School?",
+              "answer": "Lorenzetti",
+              "translations": {
+                "mandarin": "luòlún zé dì"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Federation of Rhodesia and Nyasaland  existed as a British protectorate between 1953 and 1963. Following its dissolution, Nyasaland become independent under the leadership of Hastings Banda and adopted what new name ?",
+              "answer": "Malawi",
+              "translations": {
+                "mandarin": "mǎlāwéi"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Mozambique Channel was created around 180 million years ago when Madagascar separated from mainland Africa during the fragmentation of which supercontinent ? Along with Laurasia, this had been one of the two primary supercontinents created from the breakup of Pangaea during the Triassic.",
+              "answer": "Gondwana",
+              "translations": {
+                "mandarin": "gāng wǎnà dàlù"
+              },
+              "accept": [
+                "Gondwanaland"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "The lotus -eaters are a race of carefree people, whose apathy is induced by eating from the lotus tree, described in Homer's Odyssey . They inspired The Lotos -Eaters , an 1832 poem by which English poet  who composed the work following a trip to Spain with his friend, Arthur Henry Hallam, whose death inspired another of this man's noted works ?",
+              "answer": "Alfred, Lord Tennyson"
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In seeking better relations with the Byzantine Empire, Otto wanted to secure a marriage alliance for his son but was ignored by Nikephoros Phokas. However, after Nikephoros’s assassination, his successor, John Tzimiskes, arranged for which woman , his niece, to wed the future Otto II, after which she became an important influence in the German court, especially on her son, Otto III?",
+              "answer": "Theophanu  Skleraina",
+              "translations": {
+                "mandarin": "sài ào fǎnuò",
+                "polish": "Teofano  Swedish: Teofano"
+              },
+              "accept": [
+                "Theophania",
+                "Theophana",
+                "Theophane",
+                "Theophano"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Scheherazade  and Daphnis et Chloé  were choreographed by which dancer and choreographer , perhaps best known for choreographing the original production of L'Oiseau de feu (The Firebird) , for which Léon Bakst designed the sets? This Russian is also known for choreographing Le cygne (The Dying Swan)  for Anna Pavlova, as well as Petrushka  and Le Spectre de la rose  for the Ballets Russes.",
+              "answer": "Michel Fokhine",
+              "translations": {
+                "mandarin": "mǐhā yīěr · fújīn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The fourth animal to set out in the Brothers Grimm tale is which male domesticated bird ? The behavioural endocrinologist Frank A. Beach introduced the term ‘Coolidge effect ’ – to describe increased sexual vigour seen when an animal mates with multiple partner s – in honour of a story linking this bird to a quip made by President Calvin Coolidge.",
+              "answer": "rooster",
+              "translations": {
+                "danish": "hane  or hanen",
+                "dutch": "also haan",
+                "french": "coq",
+                "german": "Hahn  or Gockel",
+                "mandarin": "gōngjī  Norwegian: hane  or hanen",
+                "polish": "kogut",
+                "romanian": "cocoș",
+                "swedish": "hane  or tupp  or tuppen"
+              },
+              "accept": [
+                "cock erel (prompt on chicken)"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Rubies and sapphires are varieties of which mineral , a crystalline form of aluminium oxide, that serves as the reference mineral for 9 on the Mohs scale of mineral hardness?",
+              "answer": "corundum",
+              "translations": {
+                "danish": "korund",
+                "dutch": "korund",
+                "french": "corindon",
+                "german": "Korund",
+                "mandarin": "gāngyù  Norwegian:  korund",
+                "polish": "korund",
+                "romanian": "corindon",
+                "swedish": "korund"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What term  is used for a low -level programming language that has a close correspondence to machine code, but also uses mnemonic statements to represent machine instructions to improve human -readability?",
+              "answer": "assembly  language",
+              "translations": {
+                "danish": "assembler sprog or assembler -",
+                "dutch": "assembleer taal",
+                "french": "langage d' assemblage  or langage",
+                "mandarin": "huìbiānyǔyán",
+                "romanian": "limbaj de asamblare",
+                "swedish": "also assemblator"
+              },
+              "accept": [
+                "assembler  language",
+                "ASM  (accept symbolic machine"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which author wrote about Eloise McCormick, who pretends to be a virtuoso to give lessons to Tibor in the short story Cellists ? A musically themed novel by this author centres on the pianist, Mr Ryder, who arrives in an unnamed European town to give a concert he does not remember agreeing to.",
+              "answer": "Kazuo Ishiguro",
+              "translations": {
+                "mandarin": "shí hēi  yìxióng"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which legendary sea monster  of gigantic size, said to live off the coast of Norway, was first described in 1752 by the Norwegian bishop Pontoppidan?",
+              "answer": "kraken",
+              "translations": {
+                "mandarin": "nuówēi h ǎiguài or kèlā kěn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In November 1978, the American  Congressman Leo Ryan was shot and killed after leading a fact -finding mission to which settlement ?",
+              "answer": "Jonestown",
+              "translations": {
+                "mandarin": "qióngsī zhēn"
+              },
+              "accept": [
+                "Peoples Temple Agricultural Project"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "A surprising discovery as it had been held that these states should have the same energy, what name is given to the phenomenon of quantum electrodynamics  in which the 2 P one-half electron has a slightly lower energy than the 2 S? The phenomenon is named after its co -discoverer who would win the Nobel Prize in Physics for this discovery.",
+              "answer": "Lamb  shift",
+              "translations": {
+                "mandarin": "lánmǔ wèiyí The word for ‘shift’ varies from language"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which Spanish city  was the birthplace of the Islamic scholar Ibn Rush d (Averroes ), the Jewish philosopher Maimonides , and the Roman poet Lucan?",
+              "answer": "Córdoba",
+              "translations": {
+                "french": "Cordoue",
+                "mandarin": "kēěr duōw ǎ Polish: Kordoba"
+              },
+              "accept": [
+                "Cordova"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Awarded the Prix Goncourt in 1954, which roman -à-clef by Simone de Beauvoir follows the personal lives of a close -knit group of French intellectuals from the end of WWII to the mid -1950s?",
+              "answer": "Les Mandarins",
+              "translations": {
+                "danish": "Mandarinerne",
+                "german": "Die Mandarins  von Paris",
+                "mandarin": "míngshìfēngliú  Norwegian: Mandarinene",
+                "polish": "Mandaryni",
+                "swedish": "Mandarinerna"
+              },
+              "accept": [
+                "The Mandarins"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "During World War II, the Fat Man atomic bomb was dropped on Nagasaki because thick clouds prevented the bomb being dropped on the original target.  That original target had been which ancient castle town  on Kyushu?",
+              "answer": "Malabo",
+              "translations": {
+                "mandarin": "gǔshénxīng"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

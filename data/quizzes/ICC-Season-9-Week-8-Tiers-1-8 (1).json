@@ -1,0 +1,910 @@
+{
+  "metadata": {
+    "title": "ICC-Season-9-Week-8-Tiers-1-8 (1)",
+    "source": "ICC-Season-9-Week-8-Tiers-1-8 (1).pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In 1961, which Central Asian city  was named Tselinograd, from the Russian for ‘city of virgin lands ’? In 1991, when Kazakhstan declared independence, this city ’s name was changed to Akmola, and  it has also been named Nur -Sultan after President Nursultan Nazarbayev  [nur-sul-TAHN nah -zar-BYE -ev].",
+              "answer": "Astana"
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Chinese emperor Kangxi gives his name to the authoritative Chinese dictionary, and his reign also saw the end of the Tungning dynasty ’s control over Taiwan. That dynasty had been founded by which Southern Ming general  who had seized control of the island from the Dutch shortly before his death in 1662 ?",
+              "answer": "Koxinga  or Zhèng  Chénggōng",
+              "accept": [
+                "Zheng  Sēn",
+                "Míng yǎn",
+                "Dàmù"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Tanzimat  was a period of legal, military, tax and social reforms in which major empire in the 19th century? They were built upon the reforms of Sultan Mahmud II, whose reign had seen the disbandment of the janissary corps and the Greek War of Independence.",
+              "answer": "Ottoman  Empire",
+              "translations": {
+                "danish": "Det Osmanniske  Rige,",
+                "dutch": "Ottomaanse  Rijk,  Osmaanse  Rijk",
+                "french": "Empire ottoman",
+                "german": "Osmanische s Reich ,",
+                "mandarin": "Ètúmàn  dìguó  Norwegian: Det osmanske  rike, Det",
+                "polish": "Imperium Osmańskie",
+                "romanian": "Imperiul Otoman",
+                "swedish": "Osmanska  riket , Ottomanska"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Pacific Plate and its surrounding tectonic plates , such as the Nazca and Australian plate s, comprise the largest active zone of which geological plate tectonic process that occurs at convergent boundaries ? Within this region, this led to the formation of the “Ring of Fire”.",
+              "answer": "subduction",
+              "translations": {
+                "danish": "subduktion",
+                "dutch": "subductie",
+                "german": "Subduktion",
+                "mandarin": "yǐnmò zuòyòng Norwegian: subduksjon",
+                "polish": "subdukcja",
+                "romanian": "subducție",
+                "swedish": "subduktion"
+              },
+              "accept": [
+                "subduction  zone"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "There are two books of the Bible that are considered canonical but have Greek additions that are considered apocryphal by Protestants. They are the Book of Daniel and which other book  that is set in Persia during the reign of Ahasuerus [uh-haz-yoo- EER -us] and involves the plot of Haman to kill the Jews? This book ’s title character is the subject of a play by Jean Racine and poetry by Lucrezia Tornabuoni [loo-KRETS -yah tor-nah-BWOH -nee] and Christina Rosetti.",
+              "answer": "Book of Esther",
+              "translations": {
+                "danish": "Ester s Bog",
+                "dutch": "Ester",
+                "french": "Livre d' Esther",
+                "german": "Buch Ester",
+                "mandarin": "Yǐsītiē jì, Àisīdé'ěr chuán Norwegian: Ester s bok",
+                "polish": "Księga Estery , Estera",
+                "romanian": "Estera",
+                "swedish": "Esters  bok"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Oshima is a 21 -year -old gay trans man, haemophiliac, and librarian who becomes the mentor to the title character in which Japanese novel ?",
+              "answer": "Kafka on the Shor e (or Umibe no Kafuka  by Haruki Murakami )",
+              "translations": {
+                "danish": "Kafka på stranden",
+                "dutch": "Kafka  op het strand",
+                "french": "Kafka sur le rivage",
+                "german": "Kafka am Strand",
+                "mandarin": "Hǎibiān de Kǎfūkǎ Norwegian: Kafka på stranden",
+                "polish": "Kafka nad morzem",
+                "romanian": "Kafka pe malul mării",
+                "swedish": "Kafka på stranden"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Clement Greenberg was an essayist and art critic closely associated with the abstract expressionist movement. Among the artists he promoted included a ‘golden couple ’ of Helen Frankenthaler and which artist , her then husband, known for his largely black - and-white series of Elegies to the Spanish Republic ?",
+              "answer": "Robert Motherwell",
+              "translations": {
+                "danish": "Luóbótè· Mǎsèwéiěr"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Eleusinian [el-yoo-SIN-ee-un] Mysteries were annual initiation rites held in the city of Eleusis as part of a cult to Persephone and which other goddess , her mother?",
+              "answer": "Demeter",
+              "translations": {
+                "french": "Démeter",
+                "mandarin": "Démòtèěr  Polish: Demetra",
+                "romanian": "Demetra"
+              },
+              "accept": [
+                "Deo"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Blue holes are marine sinkholes  that typically appear in limestone bedrock . The most famous example is the Great Blue Hole , which is found along the coast of which country ? It is found in this country ’s namesake barrier reef.",
+              "answer": "Belize",
+              "translations": {
+                "mandarin": "Bólìzī"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Some plants, such as many species of legume, have symbiotic relationships with bacteria that contribute to the ‘fixation ’ of which chemical element ? That process involves converting the molecular form of this element, which forms about 78% of Earth ’s atmosphere, into compounds that can be processed by the plant.",
+              "answer": "nitrogen",
+              "translations": {
+                "danish": "kvælstof",
+                "dutch": "stikstof",
+                "french": "azote",
+                "german": "Stickstoff",
+                "mandarin": "dàn Norwegian: kvelstoff",
+                "polish": "azot",
+                "romanian": "azot",
+                "swedish": "kväve"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which director  made the hour -long completely silent documentary Hotel Monterey while in a short self -imposed exile in New York? Shortly after returning home she made Je Tu Il Elle , one of several films dealing with lesbian identity.",
+              "answer": "Chantal  Akerman",
+              "translations": {
+                "mandarin": "Xiāngtèěr· Ākèmàn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Bloch ’s theorem states that Bloch functions serve as a basis for what function in quantum mechanics ? In an antiquated interpretation of quantum mechanics, a phenomenon named after  this quantity is caused by consciousness.",
+              "answer": "wavefunction",
+              "translations": {
+                "danish": "bølgefunktion",
+                "dutch": "golffunctie",
+                "french": "fonction d'onde",
+                "german": "Wellenfunktion",
+                "mandarin": "bō hánshù  Norwegian: bølgefunksjon",
+                "polish": "funkcja falowa",
+                "romanian": "funcție de undă",
+                "swedish": "vågfunktion"
+              },
+              "accept": [
+                "wavefunction  collapse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Orlando Gibbons and Carlo Gesualdo [je-zoo-AL-do] were leading exponents of what form of composition : short secular unaccompanied polyphonic choral music popular from the 15th to 17th centuries? Thomas Weelkes wrote a piece in this genre, As Vesta was from Latmos Hill Descending , in honour of Elizabeth I of England.",
+              "answer": "madrigal",
+              "translations": {
+                "dutch": "madrigaal",
+                "mandarin": "mùgē  Polish:  madrygał"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Subduction occurs when what rocky portion of the Earth , a shell consisting of the crust and uppermost parts of the mantle, is recycled into the underlying asthenosphere? When the oceanic part of this structure is subducted under the continental  part , it forms a volcanic continental arc, such as along the coast of Chile.",
+              "answer": "lithosphere",
+              "translations": {
+                "danish": "lithosfære",
+                "dutch": "lithosfeer , steenschaal",
+                "french": "lithosphère",
+                "german": "Lithosphäre",
+                "mandarin": "yánshí quān  Norwegian: litosfære",
+                "polish": "litosfera , sklerosfera",
+                "romanian": "litosferă",
+                "swedish": "litosfär"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which legendary Greek musician and poet  was the subject of a cult whose members may have included Pythagoras? That religion may have developed from the Dionysian Mysteries although this hero, who travelled with the Argonauts, is generally more associated with Apollo.",
+              "answer": "Orpheus",
+              "translations": {
+                "danish": "Orfeus",
+                "french": "Orphée",
+                "mandarin": "Éěrf ǔsī",
+                "norwegian": "Orfeus  Polish:  Orfeusz",
+                "romanian": "Orfeu",
+                "swedish": "Orfeus"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "1960 was dubbed the ‘Year of Africa ’ with all remaining French colonies gaining independence.  In August of that year, David Dacko became  the first president of which country ? He resumed the role in 1979 after French forces removed Jean -Bédel Bokassa from power.",
+              "answer": "Central Africa n Republic",
+              "translations": {
+                "danish": "Centralafrika nske Republik",
+                "dutch": "Centraal -Afrikaa nse Republiek",
+                "french": "République centrafricaine ,",
+                "german": "Zentralafrika nische Republik,",
+                "norwegian": "Den sentralafrika nske",
+                "polish": "Republika Środkowoafrykańska",
+                "romanian": "Republica  Centrafrica nă",
+                "swedish": "Centralafrika nska republiken"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Bolshevik  Pavel Poltoratskiy [PAH -vel pol -toh-RAT -skee ] gave his name to Poltoratsk, an old name for which Asian city ? While Poltoratskiy was mostly active in Uzbekistan, he was from near this city, the capital of  Turkmenistan.",
+              "answer": "Ashgabat",
+              "translations": {
+                "danish": "Asjkhabad",
+                "dutch": "Asjchabad",
+                "french": "Achgabat , Achkhabad",
+                "german": "Aşgabat , Aschgabat",
+                "mandarin": "Āshénh ǎbādé Norwegian: Asjkhabad",
+                "polish": "kras , krasowienie",
+                "romanian": "Aşgabat",
+                "swedish": "Achkhabad , Asjgabat"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Although he was born in Lithuania, which filmmaker  has been called ‘the godfather of American avant -garde cinema’ for his role in supporting many important American experimental filmmakers , although he has also been criticised as a Nazi apologist ? Most of his films are very short diary films, made with his beloved Bolex camera, although he documented a return trip to his home in the longer Reminiscences of a Journey to Lithuania .",
+              "answer": "Jonas  Mekas",
+              "translations": {
+                "mandarin": "Yuēnásī· Méik ǎsī"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Mind -body dualism is closely associated with René Descartes who held that the physical body and the nonphysical mind are composed of distinct types of substance connected by which specific part of the brain ?",
+              "answer": "pineal  gland  (or epiphysis  cerebri )",
+              "translations": {
+                "danish": "koglekirtel , epifysen",
+                "dutch": "pijnappelklier , epifyse",
+                "french": "glande pinéale , épiphyse",
+                "german": "Zirbeldrüse , Glandula pinea lis,",
+                "mandarin": "sōng gu ǒ tǐ, sōng guǒ  xiàn,  nǎo",
+                "polish": "szyszynka",
+                "romanian": "epifiza , glanda pineală",
+                "swedish": "tallkottkörteln , epifysen"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Biological nitrogen fixation involves the nitrogenase enzyme converting atmospheric nitrogen into which molecule with formula NH 3? The Haber process also converts atmospheric nitrogen into this compound, and is essential in the production of many fertilisers.",
+              "answer": "ammonia",
+              "translations": {
+                "danish": "ammoniak",
+                "dutch": "ammoniak",
+                "french": "ammoniac",
+                "german": "Ammoniak",
+                "mandarin": "ān, ān qì, wúshu ǐ ān, āmóníy ǎ Norwegian: ammoniakk",
+                "polish": "amoniak",
+                "romanian": "amoniac",
+                "swedish": "ammoniak"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Some sources state that the Kangxi Emperor chose Yongzheng as his successor to bring which of his grandsons  to the throne? This man restricted western trade by implementing the Canton system, and he abdicated in 1796 so as not to reign longer than his grandfather .",
+              "answer": "Qianlong  Empero r or Qiánlóng  Dì",
+              "translations": {
+                "french": "Kien -long"
+              },
+              "accept": [
+                "Míng Hónglì",
+                "Gāozōng"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In 1858, the Tanzimat introduced a secular law code based on the Napoleonic Code to replace what body of religious law in Islam ?",
+              "answer": "Sharia  (or Sharī'ah )",
+              "translations": {
+                "french": "charia",
+                "german": "Scharia",
+                "mandarin": "Shālǐyǎ , Yīsīlán jiào f ǎ, Huí jiào",
+                "romanian": "Șaria"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Deuterocanonical books are those which are considered canonical by the Catholic and Orthodox churches but not by Protestants. Which Deuterocanonical book  concerns a pious blind man from Nineveh? This book is often read during weddings, and was depicted in a series of paintings by Rembrandt.",
+              "answer": "Book of Tobit",
+              "translations": {
+                "danish": "Tobit s Bog",
+                "dutch": "Tobia",
+                "french": "Livre de Tobie",
+                "german": "Buch Tobit , Tobias , Tob",
+                "mandarin": "Duōb ǐyà chuán Norwegian: Tobit s bok",
+                "polish": "Księga Tobiasza , Księga Tobita",
+                "romanian": "Cartea lui Tobit , Cartea lui"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Almost certainly based on Oscar Wilde, the hedonistic Ménalque acts as a mentor to young men in several works by which Nobel Prize -winning author ? Ménalque  first appeared in this man ’s prose -poem Les nourritures terrestres  (The Fruits of the Earth ).",
+              "answer": "André  Gide",
+              "translations": {
+                "mandarin": "Āndéliè· Jìdé"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Many fertilisers are label led NPK in reference to the three main m acronutrients they contain. N, P and K are the chemical symbols for those elements: nitrogen, phosphorous , and which other ?",
+              "answer": "potassium",
+              "translations": {
+                "danish": "kalium",
+                "dutch": "kalium",
+                "german": "Kalium",
+                "polish": "potas",
+                "romanian": "potasiu , kaliu",
+                "swedish": "kalium"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which country  gained independence on 1 January 1960 under Ahamdou Ahidjo? Ahidjo is one of only two presidents of this country, as his successor, Paul Biya, has held the role since 1982.",
+              "answer": "Cameroon",
+              "translations": {
+                "danish": "Cameroun",
+                "dutch": "Kameroen",
+                "french": "Cameroun",
+                "german": "Kamerun",
+                "mandarin": "Kāmàilóng  Norwegian: Kamerun",
+                "polish": "Kamerun",
+                "romanian": "Camerun",
+                "swedish": "Kamerun"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Although Clement Greenberg had promoted her in her early career, which artist  was prompted to create her Umber Series  after she was excluded from one of the critic ’s exhibitions? Working at night due to her insomnia led her to shift from bright colours to muted hues.",
+              "answer": "Lee Krasner  (or L ena Kras sner, Lenore Krasner )",
+              "translations": {
+                "mandarin": "Lǐ·Kèlāsīnà"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Sima Humboldt and Sima Martel are two enormous sink holes located on Cerro Sarisariñama  [SEH -roh sah -ree-sah-ree-NYAH -mah ] in Venezuela. Cerro Sarisariñama is an example of what type  of table -top mountain or mesa  found in Venezuela, Guyana and northern Brazil?",
+              "answer": "tepu i (or tepuy )",
+              "translations": {
+                "mandarin": "Tèpǔyī shān"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which composer  wrote Spem in Alium , a motet in 40 parts, which may have been first performed on Elizabeth  I’s 40th birthday?",
+              "answer": "Thomas Tallis",
+              "translations": {
+                "mandarin": "Tuōm ǎsī·Tǎlìsī"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Tanzimat reforms saw the formal recognition of millets , systems of law for minority groups within the Ottoman Empire. Which ethnic group  was recognised by a national constitution and national assembly in 1863, in which women were given the right to vote? Growing national sentiment among this group led to a series of clashes with the Ottoman state and eventually the genocide of 1915 –17.",
+              "answer": "Armenia ns (or Hayer )",
+              "translations": {
+                "danish": "Armeniere",
+                "dutch": "Armeniër s, Armenen",
+                "french": "Arméniens",
+                "german": "Armenier",
+                "mandarin": "Yàměiníy ǎ rén Norwegian: Armenere",
+                "polish": "Ormianie",
+                "romanian": "Armeni",
+                "swedish": "Armenier"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Several  cities were named in honour of Joseph Stalin and then renamed during de - Stalinisation . Among th ose is which city , the capital of Tajikistan, which was named Stalinabad from 1929 to 1961?",
+              "answer": "Dushanbe",
+              "translations": {
+                "danish": "Dusjanbe",
+                "dutch": "Doesjanbe",
+                "french": "Douchanbé",
+                "german": "Duschanbe",
+                "mandarin": "Dùshàngbié  Norwegian: Dusjanbe",
+                "polish": "Duszanbe",
+                "romanian": "Dușanbe",
+                "swedish": "Dusjanbe"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which deuterocanonical book  is the longest surviving ‘wisdom book ’ and consists of the teachings of a 2nd -century Hellenistic Jewish scribe? The title of James Agee ’s book Let Us Now Praise Famous Men  is taken from a line of this book, which is also the source of the line “ Their name liveth for evermore ”, commonly found on war memorials.",
+              "answer": "Book of Sirach  (or Ecclesiasticus , Ben Sira , The Wisdom of Jesus the Son of",
+              "translations": {
+                "danish": "Sirak s Bog",
+                "dutch": "Wijsheid van Jezus Sirach , De wijsheid van",
+                "french": "Siracide , l'Ecclésiastique , Le Livre de Ben",
+                "german": "Jesus Sirach , der Siracide , das Sirach buch  Mandarin:  Biàn Xīlā  zhì xùn, Xīlā shū, Dé xùn piān",
+                "norwegian": "Sirak s bok, Jesu Sirak s sønns visdom",
+                "polish": "Mądrość Syracha , Eklezjastyka",
+                "romanian": "Înțelepciunea lui Sirach",
+                "swedish": "Jesus Syrak s vishet"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The idea that consciousness causes collapse is generally attributed to which physicist ? This physicist extended the Schrödinger ’s cat thought experiment with a situation in which the namesake observer sees another observer make a quantum measurement.",
+              "answer": "Eugene  Wigner",
+              "translations": {
+                "mandarin": "Yóu jīn· Wéigénà"
+              },
+              "accept": [
+                "Wigner ’s friend experiment"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which Phrygian mother goddess , who may have originated in Çatalhöyük  [CHA -tal-huh- YOOK ], was incorporated into Greek and Roman mythology, becoming the subject of cults under the name Magna Mater? The Phrygian orgies to this goddess, whose consort was Attis, involved frantic dancing and ritual mutilation, but they were toned down to suit Greek and Roman sensibilities.",
+              "answer": "Cybele  (or Matar Kubileya , Kybele )",
+              "translations": {
+                "french": "Cybèle  Mandarin:  Kùbǎilēi"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Consciousness -nonconsciousness dualism (the separation of Purusha  and Prakriti ) is an important concept in two of the six āstika  (major orthodox schools) of Indian philosophy. One of those schools is Samkhya, while the other is which school  that separated from the Samkhya school sometime around the 9th century CE? Patanjali compiled the namesake sutras of this school.",
+              "answer": "Yoga",
+              "translations": {
+                "mandarin": "Yújiā  Polish:  Joga"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Qianlong accepted which embassy  from the British, that aimed to establish an island for trading and the end of the Canton system? This embassy was blighted by the failure of the British to kowtow , or bow, to the emperor, and it was followed by the equally unsuccessful Amherst Embassy.",
+              "answer": "Macartney  Embassy (or Macartney  Mission)",
+              "translations": {
+                "mandarin": "Mǎjiáěrní shǐ tuán There are different words for “Embassy”"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "After having been exiled from Poland for making controversial films like Trzecia część nocy  (The Third Part of the Night ), Andrzej Żuławski  [AHN -zhey zhoo -WAHF -skee ] made which film  in 1981? It was the only English language film he made, and its spy protagonist and Berlin setting reflect his own experiences with leaving home and divorce.",
+              "answer": "Possession",
+              "translations": {
+                "mandarin": "Zháomó",
+                "polish": "Opętanie  Romanian: Posedată"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Each mentoring the central character and vying for influence over his worldview, the Italian humanist Lodovico Settembrini and the Jewish Jesuit Communist Leo Naphta are characters in which 1924 German novel ?",
+              "answer": "The Magic Mountain",
+              "translations": {
+                "danish": "Trolddomsbjerget , Troldfjeldet",
+                "dutch": "De Toverberg",
+                "french": "La Montagne magique",
+                "mandarin": "Mó Shān  Norwegian: Trolldomsfjellet",
+                "polish": "Czarodziejska góra",
+                "romanian": "Muntele vrăjit",
+                "swedish": "Bergtagen"
+              },
+              "accept": [
+                "Der Zauberberg  by Thomas Mann"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Form -matter dualism was influential in the theories of Norbert Wiener  when he contrasted ‘Manichean devils ’ with ‘Augustinian devils ’ in developing the ‘dualism ’ of which transdisciplinary field ? The name of this field, which studies feedback systems where outputs also serve as inputs, was coined by Wiener in a book subtitled Or Control and Communication in the Animal and the Machine .",
+              "answer": "cybernetic s",
+              "translations": {
+                "danish": "kybernetik",
+                "dutch": "Cybernetica",
+                "french": "cybernétique",
+                "german": "Kybernetik",
+                "mandarin": "Kòngzhì lùn  Norwegian: kybernetikk",
+                "polish": "cybernetyka",
+                "romanian": "cibernetică",
+                "swedish": "cybernetik"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Both Kangxi and Qianlong  [CHYAN -long ] took aggressive stances against what group of Mongols , who were  led by Galdan  Khan when they were defeated at the Battle of Jao Modo? Qianlong ordered a genocide of this group after a 1755 revolt led by Amursana.",
+              "answer": "Dzungar  Mongols  (or Junggar , Zunghar , Zöün ɣar, Züüngar , Eleuth s",
+              "translations": {
+                "danish": "Dzungar erne",
+                "dutch": "Dzjoengar en, Tsoengar en",
+                "french": "Dzoungar s, Züüngar s",
+                "german": "Dsungar ische",
+                "mandarin": "Zhǔngá'ěr Norwegian: Dzungar ene, dsongar",
+                "polish": "Dżungar ii",
+                "romanian": "Dzungar ilor⁠",
+                "swedish": "Dzungar erna"
+              },
+              "accept": [
+                "Ööled )"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Clement Greenberg curated a 1964 exhibition at LACMA titled ‘Post -Painterly Abstraction ’: a term Greenberg applied to the new movement following Abstract Expressionism. One artist featured in this show was which painter and sculptor , known for large arrays of multicolo ured rectangles, supposedly inspired by a lifelong birdwatching habit?",
+              "answer": "Ellsworth Kelly",
+              "translations": {
+                "mandarin": "Āiěrsīwòsī· Kǎilì"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Wavefunction collapse corresponds to the projection of operators to a single subspace in which ‘picture’ of quantum mechanics ? In this representation of quantum mechanics, observables rather than states depend on time.",
+              "answer": "Heisenberg  picture",
+              "translations": {
+                "mandarin": "Hǎisēnbǎo huì jǐng “Picture” or “representation” varies, but"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "As well as earthquakes and oceanic trenches, subduction zones lead to volcanic belts. Many of the active volcanoes in the Ring of Fire are what type , characterised by steep conical profiles and explosive eruptions? Famous examples of this type of volcano include Krakatoa and Vesuvius.",
+              "answer": "strato volcano",
+              "translations": {
+                "danish": "strato vulkan, kegle vulkan",
+                "dutch": "strato vulkaan",
+                "french": "strato volcan, volcan composite",
+                "german": "Schicht vulkan, Strato vulkan",
+                "mandarin": "fùshì  huǒshān, Chéngcéng",
+                "polish": "strato wulkan",
+                "romanian": "strato vulcan , vulcan compozit",
+                "swedish": "strato vulkan, komposit vulkan"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Some of the Tanzimat  reforms came about due to British and French pressure following which conflict  of 1853 –56, fought around the Black Sea, in which an alliance of the Ottomans, France and Britain defeated the Russian Empire?",
+              "answer": "Crimea n War",
+              "translations": {
+                "danish": "Krim krigen",
+                "dutch": "Krim oorlog",
+                "french": "guerre de Crimée",
+                "german": "Krim krieg",
+                "mandarin": "Kèlǐmǐyà zhànzhēng, Dōngfāng",
+                "polish": "Wojna krymska",
+                "romanian": "Războiul Crimeii",
+                "swedish": "Krim krige t"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Despite being Roman Catholics, Thomas Tallis and which other composer , Tallis ’s pupil, were granted a monopoly on printed music by Elizabeth I? This composer ’s works include My Ladye Nevells Booke  and the consort song Ye Sacred Muses , written as an elegy to Tallis.",
+              "answer": "William  Byrd",
+              "translations": {
+                "mandarin": "Wēilián· Bódé"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A foiba  is a type of sinkhole found in northeastern Italy, Slovenia and the Dinaric alps, typically with a small opening and a larger cave below. They are a feature of what type of landscape  formed by the dissolution of carbonate rocks?",
+              "answer": "karst",
+              "translations": {
+                "danish": "karst landskab",
+                "mandarin": "kāsītè  dìmào , yánróng  dìmào,",
+                "romanian": "carst"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Now the capital of Kyrgyzstan, which central Asian city  was named Frunze between 1926 and 1991, in honour of Bolshevik revolutionary Mikhail Frunze?",
+              "answer": "Bishkek",
+              "translations": {
+                "danish": "Bisjkek",
+                "dutch": "Bisjkek",
+                "french": "Bichkek",
+                "german": "Bischkek",
+                "mandarin": "Bǐshénkǎikè Norwegian: Bisjkek",
+                "polish": "Biszkek",
+                "romanian": "Bișkek",
+                "swedish": "Bisjkek"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1960, the Mali Federation gained independence from France under the leadership of Modibo Keïta. It was a federation comprised of Mali and which other country , whose leader Léopold Sédar Senghor was a supporter of federalism? However the federation lasted only two months after gaining independence before this country withdrew.",
+              "answer": "Senegal",
+              "translations": {
+                "french": "Sénégal  Mandarin:  Sàinèijiā'ěr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which ancient Jewish apocryphal text  is only considered canonical by the Ethiopian Orthodox church, and the Ge ʽez [GEH -ez] texts were the earliest known version until the discovery of fragments in the Dead Sea Scrolls? This work covers much of the same subject matter as Genesis in divisions of 49 years each.",
+              "answer": "Book of Jubilees",
+              "translations": {
+                "danish": "Jubilæer bogen",
+                "dutch": "Jubileeën , De Openbaring van Mozes",
+                "french": "Livre des Jubilés",
+                "german": "Buch der Jubiläen",
+                "mandarin": "Xǐ nián sh ū, Xiǎo Chuàngshìjì  Norwegian: Boken om Jubelårene , Jubileer boken",
+                "polish": "Księga Jubileuszów",
+                "romanian": "Cartea Jubilee lor, Geneza Mică ,",
+                "swedish": "Jubileer boken, Lilla Genesis ,"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What word of Yucatec Maya origin  is used for a sinkhole that is formed when limestone collapses to reveal groundwater? There are around 10,000 of these formations in the Yucatán peninsula.",
+              "answer": "cenote  (or tsʼonoʼot )",
+              "translations": {
+                "danish": "ferskvandshul",
+                "french": "cénote  Mandarin: shíhuī j ǐng, yándòng jǐng,"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In which quantum experiment  does detection by a detector not cause wavefunction collapse, but observation of the detectors after detection does? The collapse causes the interference pattern to disappear from this experiment, which is the quantum analogue of Young ’s double slit experiment.",
+              "answer": "quantum eraser  experiment",
+              "translations": {
+                "danish": "kvanteviskelæder -eksperiment,  quantum",
+                "dutch": "kwantumwisser -experiment",
+                "french": "gomme quantique",
+                "german": "Quantenradierer",
+                "mandarin": "Liàngz ǐ cā chú shíyàn Norwegian: kvanteviskelær -eksperiment",
+                "polish": "gumki kwantowej",
+                "romanian": "radierea cuantică",
+                "swedish": "kvant -suddgummi -experimentet,"
+              },
+              "accept": [
+                "delayed choice quantum eraser  experiment"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Later developed by Plato and Aristotle, the form -matter dualism influential in cybernetics was first proposed by which pre -Socratic Greek philosopher  who introduced the concept of ‘Nous ’ (cosmic mind) as the agent responsible for the rotation and separation of the primordial mixture?",
+              "answer": "Anaxagoras",
+              "translations": {
+                "french": "Anaxagore",
+                "mandarin": "Ānàkèsàgēlā  Polish:  Anaksagoras",
+                "romanian": "Anaxagora"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which deity of Zoroastrian Persian origin  became the subject of a mystery religion popular among the Roman army from the 1st to the 4th centuries CE? The religion dedicated to this figure was seen as an early rival to Christianity, and its  temples  can be found throughout the former Roman empire, often situated in caves.",
+              "answer": "Mithras",
+              "translations": {
+                "mandarin": "Mìtèlā  Polish: Mitra"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Another common source of nitrogen in fertilisers is which compound  with formula CO(NH 2)2? This compound is used for nitrogen excretion in mammals, being the main nitrogen -containing substance in urine.",
+              "answer": "urea  (or carbamide )",
+              "translations": {
+                "danish": "urinstof , carbamid",
+                "dutch": "ureum",
+                "french": "urée",
+                "german": "Harnstoff",
+                "mandarin": "niào sù Norwegian: urinstoff",
+                "polish": "mocznik",
+                "romanian": "uree , carbamidă , carbonil",
+                "swedish": "urinämne , karbamid"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which film by Andrei Tarkovsky  contains a scene in which a man tries to cross a drained pool while holding a lit candle? It was the first film Tarkovsky made after leaving the Soviet Union, reflected in it centring on a Russian translator in Italy.",
+              "answer": "Nostalghia  (or Nostalgia )",
+              "translations": {
+                "danish": "Nostalgija  Mandarin:  Xiāngchóu"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In which Pulitzer Prize -winning novel  does the central character, John Ames, attempt to provide mentorship to his son through a series of letters? In the letters, Ames draws upon the mentorship he received from his own father and grandfather, coming to appreciate the extent to which this has shaped his own role as mentor.",
+              "answer": "Gilead  by Marilynne Robinson",
+              "translations": {
+                "mandarin": "Yí'àijīliè  Romanian: Galaad"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which French colony  had achieved independence earlier, in 1958, when it rejected the constitu tion of the new Fifth French Republic? Socialist independence leader Ahmed Sékou Touré became the first president, and remained in power until his death in 1984.",
+              "answer": "Guinea",
+              "translations": {
+                "dutch": "Guinee",
+                "french": "Guinée",
+                "mandarin": "Jǐnèiyǎ Polish:  Gwinea",
+                "romanian": "Guineea"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "William Byrd wrote many pieces for which keyboard instrument , collected in My Lady Nevells Booke , which includes many grounds, pavans and galliards? This typically rectangular member of the harpsichord family  is distinguis hed from harpsichords and spinets by the strings being parallel to the keyboard.",
+              "answer": "virginal",
+              "translations": {
+                "dutch": "virginaal",
+                "mandarin": "Wéi jīnnà qín  Polish:  wirginał"
+              },
+              "accept": [
+                "muselar",
+                "ottavino"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Also featured at the ‘Post -Painterly Abstraction ’ exhibit, which artist and co -founder of the Washington DC Color School  adopted Frankenthaler ’s soa k stain technique in many of his own works? Another recurring theme was a ‘target ’ motif, as in 1958 ’s Beginning .",
+              "answer": "Kenneth Noland",
+              "translations": {
+                "mandarin": "Kěnnísī ·Nuòlán"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The andesite line divides the Pacific into two regions: the centre, which is dominated by felsic andesitic rock; and the margins, which are dominated by mafic basaltic rock. Andesite is primarily composed of what form of feldspar , which is contrasted with orthoclase  and is comprised of sodium -rich albite and calcium rich anorthite?",
+              "answer": "plagioclase",
+              "translations": {
+                "danish": "plagioklas",
+                "dutch": "plagioklaas",
+                "german": "Plagioklase",
+                "mandarin": "xié cháng  shí Norwegian: plagioklas",
+                "polish": "plagioklazy",
+                "romanian": "feldspați plagioclazi",
+                "swedish": "plagioklas"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Housing works such as Hieronymus Bosch ’s De tuin der lusten  (The Garden of Earthly Delights ) and Goya’s Pinturas negras  (Black Paintings ), the Museo del Prado is an art gallery in which capital city ?",
+              "answer": "Madrid",
+              "translations": {
+                "mandarin": "Mǎdélǐ Polish: Madryt"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Often identified as a cow, which goddess of space, consciousness, the past, the future, and fertility  in Hindu mythology is said to support the sky and to be the mother of all things?",
+              "answer": "Aditi",
+              "translations": {
+                "mandarin": "Ādǐtí"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The most influential proponent of geological catastrophism in the early 19th century, which French naturalist  is credited with establishing extinction as a fact in a 1796 lecture to the French Institute?",
+              "answer": "Georges  Cuvier",
+              "translations": {
+                "mandarin": "Qiáozhì· Jūwéiyè"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Known for an annual  migration of over 1.5 million wildebeest, the Serengeti National Park  is found in the north of which country ?",
+              "answer": "Tanzania",
+              "translations": {
+                "french": "Tanzanie",
+                "german": "Tansania  Mandarin:  Tǎnsāngn íyǎ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The two co -Princes of Andorra are the President of the French Republic and the bishop of which Catalonian diocese ?",
+              "answer": "Urgell",
+              "translations": {
+                "mandarin": "Wūhèěr"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Living to the age of 122 years and 164 days, which French woman , who died in 1997, had the longest confirmed lifespan in history?",
+              "answer": "Alejandro Toledo",
+              "translations": {
+                "mandarin": "Yàlìhángdéluó· Tuōláiduō",
+                "danish": "hidjra",
+                "dutch": "hidjra",
+                "french": "hégire",
+                "german": "Hidschra , Hedschra  Mandarin:  Xījílā",
+                "polish": "Hidżra",
+                "romanian": "Hegiră"
+              },
+              "accept": [
+                "Hegira"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,908 @@
+{
+  "metadata": {
+    "title": "ICC9-Week-5",
+    "source": "ICC9-Week-5.pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which Persian poet  wrote the Haft Peykar ( The Seven Beauties)  and Eskandar -Nâmeh (The Book of Alexander)  as part of his Khamsa ? The third  poem in the Khamsa  contains a popular telling of the story of Leyla and Majnun.",
+              "answer": "Nizami  Ganjavi",
+              "translations": {
+                "mandarin": "ní zhā m ǐ"
+              },
+              "accept": [
+                "Nezāmi"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "While in Slavic, Baltic, and Uralic languages , some days of the week are named after numbers, in Greek, Latin, and most Romance and Germanic languages, they are named after planets, and ultimately, therefore, deities . Although named after Tiw  or Týr in Germanic languages , Tuesday is instead named after which Roman god  in Romance languages , such as French, Spanish, and Italian ?",
+              "answer": "Mars",
+              "translations": {
+                "mandarin": "mǎ ěr sī  Romanian: Marte"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Loch Ness is not the only lake in the world home to a famous monster. Which lake  in Turkey is supposedly home to a mosasaur -like monster that is often thought to have originated from an Armenian legend of a water dragon called the Vishap? If you are (un) lucky enough to miss the monster, you may see another of this lake ’s unusual sights; its namesake swimming cats, which have an atypical love of water.",
+              "answer": "Lake Van",
+              "translations": {
+                "mandarin": "fánhú Polish: Wan"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Not to be confused with a stolon (or runner), what name  is given to a horizontal, typically subterranean , plant stem that sends out roots and shoots from its nodes? Rhubarb, lily of the valley, and many irises have this type of stem.",
+              "answer": "rhizome",
+              "translations": {
+                "danish": "rhizome",
+                "dutch": "wortelstok  or rizoom",
+                "german": "Rhizom  or Wurzelstock",
+                "mandarin": "gēnjīng  Norwegian: jordstengel  or rhizome",
+                "polish": "kłącze",
+                "romanian": "rizom",
+                "swedish": "jordstam"
+              },
+              "accept": [
+                "creeping rootstalk"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which Indian economist and social thinker , best known for his work in welfare economics, wrote the 1981 book Poverty and Famines  in which he argue s that famines occur not only from a lack of food, but also because of inequalities in the distribution of food?",
+              "answer": "Amartya Sen",
+              "translations": {
+                "mandarin": "āmǎ dìyà · sēn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "According to tradition, Numa Pompilius appointed the first pair of women to serve in what role ? Women appointed to this role were required to look after the sacred flame of their namesake Roman goddess.",
+              "answer": "Vestal Virgins",
+              "translations": {
+                "danish": "Vestalinde rne",
+                "dutch": "Vestalinnen  of Vestaalse maagden",
+                "french": "vestale",
+                "mandarin": "wéisīt ǎ zhēnn ǚ or hù huǒ",
+                "norwegian": "Vestalinnene",
+                "polish": "Westalka",
+                "romanian": "Virginele vestale",
+                "swedish": "Vestal erna"
+              },
+              "accept": [
+                "Vestals",
+                "virgo vestalis  (prompt on Vesta)"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Up, down, top, bottom, charm, and strange are the six ‘flavours ’ of which subatomic particles ?",
+              "answer": "quark s",
+              "translations": {
+                "danish": "kvark er",
+                "mandarin": "kuākè",
+                "norwegian": "kvark er Polish: kwark",
+                "swedish": "kvark"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What stage of embryonic development  involves a rearrangement of the cells of the blastula to form a layered embryo with a primitive gut? Most organisms are triploblastic, meaning that they organise into three germ layers, but some groups – such as Cnidaria [nih -DAIR -ee-uh] and Ctenophora [t en-OFF -or-uh] – are known as diploblastic, as they only form two.",
+              "answer": "gastrulation",
+              "translations": {
+                "dutch": "gastrulatie",
+                "mandarin": "yuán cháng pēi xíngchéng",
+                "norwegian": "gastrulasjon  Polish: gastrulacj",
+                "romanian": "gastrulație"
+              },
+              "accept": [
+                "gastrula"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Who  wrote the 1943  play  Leben des Galilei ( The Life of Galileo ), which was  believed to be inspired by the Moscow show trials of the late 1930s ? An “American version ” of the play, produced in 1947 , in collaboration with Charles Laughton, coincided with this man ’s subpoena and appearance before the House Un -American Activities Committe e.",
+              "answer": "Bertolt Brecht",
+              "translations": {
+                "mandarin": "bèi tuōěrtè · bù láixītè"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The War of the Austrian Succession was fought between 1740 and 1748 ostensibly over the right of which woman  to succeed her father, Karl  VI (Charles VI) ?",
+              "answer": "Maria Theresa",
+              "translations": {
+                "mandarin": "mǎlìyà · tè lěi xīyà  Romanian: Maria Terezia"
+              },
+              "accept": [
+                "Maria Theresia"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "In electrical engineering, what quantity , usually represented as a complex number with real and imaginary parts and symbolised by Z, must be matched to maximise power transmission between two connected circuits?",
+              "answer": "electrical impedance",
+              "translations": {
+                "danish": "impedans",
+                "dutch": "impedantie",
+                "french": "impédance",
+                "german": "Impedanz",
+                "mandarin": "zǔkàng  Norwegian: impedans  or",
+                "polish": "impedancja",
+                "romanian": "impedanța",
+                "swedish": "impedans"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The tagelmust  is an indigo -coloured garment  – covering the lower part of the face  – that has traditionally been worn by which nomadic, pastoralist people  of Berber origin who inhabit the Sahara Desert in a vast area between southwestern Libya and northern Nigeria?",
+              "answer": "Tuareg",
+              "translations": {
+                "danish": "also det blå folk",
+                "dutch": "Toeareg",
+                "german": "also Targi  or Targia  Mandarin: túā léigé  rén",
+                "polish": "Tuaregowie"
+              },
+              "accept": [
+                "Twareg  (or Kel Tamajeq",
+                "Imuha ɣ, Imuša ɣ, Imaše ɣăn,",
+                "Imaje ɣăn)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What word  – the name of a meal  – appears in the titles of Pierre -Auguste Renoir ’s painting Le [BLANK]  des canotiers ( [BLANK] of the Boating Party ) and Éd ouard Manet ’s Le [BLANK] sur l ’herbe ([BLANK] on the Grass )?",
+              "answer": "déjeuner  or luncheon",
+              "translations": {
+                "danish": "frokost",
+                "german": "Frühstück",
+                "mandarin": "wǔcān or wǔyàn",
+                "norwegian": "frokost  Polish: śniadanie",
+                "romanian": "prânzul",
+                "swedish": "frukost"
+              },
+              "accept": [
+                "lunch"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The unique rhizome -dependent system of which subfamily of evergreen perennial flowering plants  has allowed some species to become the largest of all members of the grass family (Poaceae), reaching lengths of 46 metres?",
+              "answer": "bamboo",
+              "translations": {
+                "danish": "bambus",
+                "dutch": "bamboe",
+                "french": "bambou",
+                "german": "Bambus",
+                "mandarin": "zhúzi  or zhú Norwegian: bambus",
+                "polish": "bambus  or bambusowe",
+                "romanian": "bambus",
+                "swedish": "bambu"
+              },
+              "accept": [
+                "Bambusoideae"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In early gastrulation, some epiblast cells migrate towards the midline of the blastoderm and then move inwards. The resulting pile -up of cells creates what thickened, longitudinal groove , which establishes bilateral symmetry and initiates germ layer formation? This structure arose independently in birds and mammals and is equivalent to the amphibian blastopore.",
+              "answer": "primitive streak",
+              "translations": {
+                "danish": "Primitivstreifen",
+                "dutch": "primitieve streep  or stria primitiva",
+                "french": "ligne primitive",
+                "german": "Primitivstreifen",
+                "mandarin": "yuán xiàn  or yuán tiáo  Norwegian: primitivfuren  or",
+                "polish": "smuga pierwotna",
+                "romanian": "linea primitiva  or stria",
+                "swedish": "primitivstrimma"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Appalachian dulcimer, the Finnish kantele, central European cimbalom, and the Malagasy valiha are all examples of what family of instruments , that first appeared in China in the 5th century BCE? These are stringed instruments, often flat, that are distinguished from lutes by the absence of a neck, and from harps by the strings running along a resonating sound box.",
+              "answer": "zither",
+              "translations": {
+                "danish": "citar",
+                "dutch": "citer  or zither achtige",
+                "french": "cithare",
+                "mandarin": "jì tè qín  Norwegian: siter  or citer",
+                "polish": "cytra",
+                "romanian": "țiteră",
+                "swedish": "cittra"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The second poem of the Khamsa , possibly written for Nizami ’s first wife , Afaq, tells of the romance between the Sasanian king, Khosrow  II, and which Christian princess ? Nizami ’s version of this story focuses on  romance and makes this woman  a more sympathetic character than previous depictions.",
+              "answer": "Shirin",
+              "translations": {
+                "french": "Chirine",
+                "german": "Schirin",
+                "mandarin": "hé xílín  Polish:  Szirin",
+                "romanian": "Șirin"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In radio frequency  (RF)  engineering, impedance matching is important for maximising signal transmission. What chart , named after an American engineer, is used as a graphical calculator for solving transmission line and circuit matching problems?",
+              "answer": "Smith  chart",
+              "translations": {
+                "mandarin": "shǐmì sītú The word for ‘chart ’ differs from"
+              },
+              "accept": [
+                "Smith  diagram  (accept Mizuhashi  chart , Mizuhashi –Smith  chart ,"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Chinese currency unit yuan  is usually divided into ten jiao, which is itself divided into ten fēn. Much as British pounds and pence are the units of the British currency, sterling, the yuan , jiao, and fēn are units of the Chinese currency, given what name ?",
+              "answer": "renminbi",
+              "accept": [
+                "rénmínbì"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Maria Theresa succeeded her father as ruler of which important European dynasty that traced its history back to the election of Rudolf I as King of Germany in 1273? This royal house is sometimes known as the House of Austria, but it is better known by the name of the Swiss fortress that served as its original seat.",
+              "answer": "Habsburg",
+              "translations": {
+                "french": "Habsbourg  Mandarin: hā bù sīb ǎo wángcháo"
+              },
+              "accept": [
+                "Hapsburg"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In Germanic languages, Thursday is named after Donner or Thor , but  which Roman god  names Thursday in Romance languages?",
+              "answer": "Jupiter",
+              "translations": {
+                "mandarin": "zhūbìtè"
+              },
+              "accept": [
+                "Jove"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Found in the folklore of Ohio and Michigan, Bessie is a serpentine monster said to inhabit which lake , the southernmost of the North American Great Lakes?",
+              "answer": "Lake Erie",
+              "translations": {
+                "french": "Érié  Mandarin: yīlì"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Amartya Sen described the 2011 book Poor Economics  as “a marvellously insightful book by the two outstanding researchers on the real nature of poverty ”. The book was co-authored by the husband -and-wife team of Abhijit Banerjee and which Paris -born economist ?",
+              "answer": "Esther Duflo",
+              "translations": {
+                "mandarin": "ài sī tè · dù fú ruò"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Often held up as the prototypically virtuous woman, Cornelia was the daughter of a member of which prominent family ? A member of this family defeated Hannibal at the Battle of Zama and was the grandfather of the Gracchi brothers.",
+              "answer": "Scipio",
+              "translations": {
+                "french": "Scipion  Mandarin: dà xī bì ā"
+              },
+              "accept": [
+                "Scipio Africanus"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "During the War of the Austrian Succession, Maria Theresa lost control of Silesia after it was occupied by which power , ruled by Frederick the Great?",
+              "answer": "Prussia",
+              "translations": {
+                "danish": "Preussen",
+                "dutch": "Pruisen",
+                "french": "Prusse",
+                "german": "Preußen",
+                "mandarin": "pǔlǔshì Norwegian: Pruessen",
+                "polish": "Prusy",
+                "romanian": "Prusia",
+                "swedish": "Pruessen"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The đàn môi in Vietnam, the Ainu mukkuri, and the Estonian parmupill  are among the many examples of which family of instruments  that are found across Europe and Asia? They consist of a strip of flexible bamboo or metal in a frame, with the mouth cavity acting as the amplifying sound box.",
+              "answer": "jew’s harp",
+              "translations": {
+                "danish": "jødeharpe",
+                "dutch": "mondharp",
+                "french": "guimbarde",
+                "german": "Maultrommel",
+                "mandarin": "kǒu huáng qín  Norwegian: munnharpe",
+                "polish": "drumla",
+                "romanian": "drâmba  or drâng",
+                "swedish": "mungiga  or munharpa  or"
+              },
+              "accept": [
+                "jaw harp  (accept juice harp , mouth harp , Ozark harp , murchunga ,"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Quarks are the only elementary particles in the Standard Model of particle physics to experience all four fundamental interactions: namely electromagnetism, the strong interaction (or strong force), the weak interaction (or weak force), and which other ? This interaction is the mutual attraction between all particles with mass.",
+              "answer": "gravity",
+              "translations": {
+                "dutch": "zwaartekracht , gravitatie",
+                "french": "gravitation",
+                "german": "Gravitation , Massenanziehung",
+                "mandarin": "Yǐnlì Norwegian: gravitasjon",
+                "polish": "grawitacja  or ciążenie powszechne",
+                "romanian": "gravitația",
+                "swedish": "gravitation"
+              },
+              "accept": [
+                "gravitation"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which playwright ’s 1961 satire  Die Physiker (The Physicists) , is set in a German psychiatric facility where characters, seemingly convinced they are Isaac Newton and Albert Einstein, lament the plight of humanity? Like Brecht, this Swiss playwright was a strong proponent of “epic theatre ”, in works such as Der Besuch der alten Dame (The Visit) .",
+              "answer": "Friedrich  Dürrenmatt",
+              "translations": {
+                "mandarin": "fúlǐdélǐxī · dílún m ǎtè"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In Paul  Cézanne ’s painting, which in 2011 became the (then) most expensive painting ever sold, the two titular men are holding what objects , central to  a variety of games ? In a series of popular kit sch paintings by Cassius Marcellus Coolidge, a group of dogs are seen holding these objects .",
+              "answer": "playing cards",
+              "translations": {
+                "danish": "spille kort",
+                "dutch": "speel kaart en",
+                "french": "carte  à jouer",
+                "german": "Spiel karte n",
+                "mandarin": "yóuxì pái Norwegian: spill kort",
+                "polish": "karty  do gry",
+                "romanian": "carte  de joc",
+                "swedish": "spel kort"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Nyami Nyami is a dragon -like monster said to inhabit the Zambezi River, and is sometimes sighted in which reservoir , the world ’s largest artificial lake, created in the 1950s by the construction of its namesake dam? The area ’s indigenous Tonga people believe Nyami Nyami left the Zambezi in anger at the creation of the dam and are sceptical of supposed sightings in this lake.",
+              "answer": "Lake Kariba",
+              "translations": {
+                "mandarin": "kǎ lǐbā shuǐkù"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Nizami ’s inclusion of the stories of Khosrow and Shirin, and Alexander in his Khamsa were influenced by which earlier poem , which also includes the story of Fereydun overthrowing the evil tyrant Zahak?",
+              "answer": "Shahnameh",
+              "translations": {
+                "dutch": "Sjahnama",
+                "french": "also Livre des Rois  Mandarin: Lièwángjì"
+              },
+              "accept": [
+                "Šāhnāme  (by Ferdowsi)"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Amartya Sen wrote the 2009 book The Idea of Justice , in which he critiqued the ideas contained in A Theory of Justice , an influential 1971 work by which American philosopher ?",
+              "answer": "John Rawls",
+              "translations": {
+                "mandarin": "yuēhàn · luóěrsī"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What is the Tuareg name  for the area claimed as the Tuareg homeland, especially the northern half of Mali and northern and western Niger? This name was used for the short -lived and unrecognised state proclaimed by Tuareg militants, the MNLA, in 2012.",
+              "answer": "Azawad",
+              "translations": {
+                "mandarin": "āzhā w ǎdé"
+              },
+              "accept": [
+                "Azawagh",
+                "Azawa ɣ"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the name of the elastic rod -like structure  that forms in late gastrulation in chordates and induces the process of neurulation? In vertebrates, this structure disintegrates and is replaced by the vertebral column, but it persists much longer in lancelets and some other chordates.",
+              "answer": "notochord  (or notochorda",
+              "translations": {
+                "french": "chorde  or notochorde",
+                "german": "also Achsenstab  or",
+                "mandarin": "jǐsuǒ Norwegian: ryggstreng",
+                "polish": "struna grzbietowa  or chorda",
+                "romanian": "also coarda dorsală",
+                "swedish": "ryggsträng  or korda"
+              },
+              "accept": [
+                "chorda dorsalis )"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "While it also has a smaller subunit  xu that is based on the number one hundred, which currency  with the ISO code VND is usually divided into ten hào?",
+              "answer": "Vietnamese  đồng",
+              "translations": {
+                "mandarin": "dùn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Named in Germanic languages after the Norse goddess Frīg, or in some cases after Freya, Friday takes its name in Romance languages from  which Roman goddess ?",
+              "answer": "Venus",
+              "translations": {
+                "mandarin": "wéinàsī  Polish: Wenus"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "50 ohms is a standard termination impedance for what general category of electrical cables , which often have BNC or SMA type connectors?",
+              "answer": "coaxial  cables",
+              "translations": {
+                "danish": "koaksial kabel",
+                "dutch": "coax kabel  or coaxiale  kabel",
+                "french": "câble coaxial  or ligne coaxiale",
+                "german": "Koaxial kabel  or Koax kabel",
+                "mandarin": "tóngzhóu diànlǎn Norwegian: koaksial kabel  or coax kabel",
+                "polish": "kabel koncentryczny  or kablem",
+                "romanian": "cablul coaxial",
+                "swedish": "koaxial kabel"
+              },
+              "accept": [
+                "coax"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Often represented as a prototypical manipulative mother, Agrippina the Younger may have been killed after Nero deliberately had what kind of object  sabotaged? Biremes and triremes were ancient examples of these objects.",
+              "answer": "ship s (or boat s)",
+              "translations": {
+                "danish": "skib e or bade",
+                "dutch": "schip  or schepen  or boot  or boten",
+                "french": "navire s or bateau x",
+                "german": "Schiff e or Boot e",
+                "mandarin": "chuán  or chuánzhī  or chuánbó  or",
+                "polish": "statek  or łódź  or statki  or łodzie",
+                "romanian": "nave  or bărci",
+                "swedish": "fartyg  or båtar"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The currency unit of Uganda was officially divided in 100 cents until 2013, when inflation led to the currency having no subdivision. What is the name of th at currency ?",
+              "answer": "Ugandan shilling",
+              "translations": {
+                "german": "Schilling",
+                "mandarin": "wūgāndá xiānlìng  Polish: szyling",
+                "romanian": "șilingul"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Germanic tradition kept the Latin name for the day the Greeks dedicated to Cronus, (e.g. Saturda y in English and Samstag in German) , while Romance languages derived the name from which Jewish day ? This is somewhat surprising as , in Roman Catholicism, th e equivalent day is Sunday rather than Saturday.",
+              "answer": "Shabbat",
+              "translations": {
+                "danish": "sabbat  or shabbes",
+                "dutch": "sjabbat  or sjabbes  or sjabbos",
+                "french": "also Chabbat",
+                "german": "Schabbat  or Schabbes  or",
+                "norwegian": "Sabbat",
+                "polish": "Szabat  or Szabas",
+                "romanian": "Șabat",
+                "swedish": "Sabbat"
+              },
+              "accept": [
+                "Sabbath",
+                "Shabbos"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "While chargeless neutrons are composed of one up quark and two down quarks, which subatomic particles  with positive charge are composed of two up quarks and one down quark?",
+              "answer": "proton s",
+              "translations": {
+                "mandarin": "zhìzǐ"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Although Gao was the largest city and provisional capital of Azawad, the MNLA intended which city  to become the state ’s permanent capital? In the early 15th century, Tuaregs had taken control of this ancient city from the Mali Empire.",
+              "answer": "Timbuktu",
+              "translations": {
+                "dutch": "Timboektoe",
+                "french": "Tombouctou  Mandarin: tōng bù tú",
+                "romanian": "Tombouctou"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Some rhizomes are used directly in cooking, such as ginger, turmeric, and galangal. This is also true of which brassica , Eutrema japonicum , found along stream beds in Japanese mountain river valleys, whose rhizome is ground into a paste?",
+              "answer": "wasabi",
+              "translations": {
+                "german": "also Japanischer",
+                "mandarin": "shānkuí  or shān yú cài  Polish: chrzan japoński",
+                "romanian": "also hrean japonez"
+              },
+              "accept": [
+                "Japanese horseradish ; do not accept ‘horseradish ’ alone"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "A white mare transformed into a humped saurian beast, Issie is a monster said to inhabit Lake Ikeda, 40 km south of Kagoshima. It is the largest lake on which island , the most southerly of Japan ’s four major islands?",
+              "answer": "Kyūshu",
+              "translations": {
+                "mandarin": "jiǔzhōu"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What word  appears in the title of a Eugène Delacroix painting depicting Sardanapale (Sardanapalus), a Benjamin West painting depicting General Wolfe, and Jacques -Louis David paintings depicting Socrates and Jean -Paul Marat?",
+              "answer": "death",
+              "translations": {
+                "danish": "død",
+                "dutch": "dood",
+                "german": "Tod",
+                "mandarin": "zhīsǐ Norwegian: død",
+                "polish": "śmierć",
+                "romanian": "moartea",
+                "swedish": "död"
+              },
+              "accept": [
+                "mort"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The 1998 play Copenhagen  is a historical retelling of the 1941 meeting of the physicists Niels Bohr and Werner Heisenberg in the namesake city. Which playwright , also known for the 1982 farce Noises Off, wrote Copenhagen ?",
+              "answer": "Michael Frayn",
+              "translations": {
+                "mandarin": "màikèěr · fú láiēn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Both the Khamsa  and Shahnameh use what Persian verse form  which consists of rhyming couplets which were often used by poets to compose long historical works? This verse form also names a 13th century six -volume collection of Sufi poetry.",
+              "answer": "masnavi  (or masnowi",
+              "translations": {
+                "french": "Couplets rimés d ’une",
+                "german": "Geistige Zweizeiler",
+                "mandarin": "Mǎ sī nà wéi, Mǎ sī nà wéi·Mǎ"
+              },
+              "accept": [
+                "Mas̲navī-e ma ʻnavī, Mathnawi , Mesnevi , Mathnavi ;"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Instruments consisting of wooden bars struck with mallets have developed independently several times, with examples including the Western xylophone, the West African balafon, and the Zambian silimba, but the earliest known examples are from Southeast Asia.  The gambang is an example used in what type of ensemble music  of Java and Bali?",
+              "answer": "gamelan",
+              "translations": {
+                "mandarin": "gānměi lán"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Cited often in The Idea of Justice , which 18th century English philosopher and social theorist  has been described by Amartya Sen as “the most underestimated thinker of the Enlightenment ”? In 2021, Sen gave the inaugural ‘Lecture ’ of the society named after this author of Thoughts on the Education of Daughters .",
+              "answer": "Mary Wol lstone craft",
+              "translations": {
+                "mandarin": "mǎlì · wò sītōng k è lāfū tè"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Thomasina Coverley, a young prodigy with prescient knowledge of entropy and chaos theory, plays a leading role in which playwright ’s 1993 work Arcadia ? Thomasina was based on Ada Lovelace, the pioneering mathematician and daughter of Lord Byron, himself an unseen character in the play.",
+              "answer": "Tom Stoppard",
+              "translations": {
+                "mandarin": "tāngmǔ · sītuō pàdé"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Tuaregs lost control of Timbuktu in the mid -15th century when it was absorbed by which expanding empire ? Sonni Ali proclaimed Gao as the capital of this empire.",
+              "answer": "Songhai  Empire",
+              "translations": {
+                "mandarin": "sāng h ǎi dìguó  Polish: Songhaj"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Unusually, the Libyan dinar ’s primary subunit is worth one -thousandth of the dinar. What is the name of that subunit , a name it shares with the primary units of Morocco (divided into 100 centimes) and the UAE (divided into 100 fils)?",
+              "answer": "dirham",
+              "translations": {
+                "mandarin": "dílām ǔ Polish: dirhem"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Gastrulation sees the formation of an internal cavity called the archenteron, the open end of which is called the blastopore. In the group of animals called protostomes (which includes arthropods, molluscs , and annelids), the blastopore develops into the mouth; what name is given to the group of animals  (including chordates and echinoderms), where the blastopore develops into the anus?",
+              "answer": "deuterostome s (or Deuterostomia ; accept enterocoelomates )",
+              "translations": {
+                "french": "deutérostomiens",
+                "german": "Neumünder",
+                "mandarin": "hòu k ǒu dòngwù  Norwegian: deuterostomier",
+                "polish": "wtórouste  or wtórnogębowce"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Maria Theresa attempted, unsuccessfully, to recover Silesia from Prussia during which primarily European war  that began in 1756, and which resulted from the general dissatisfaction felt by the signatories to the Treaty of Aix -la-Chapelle that had ended the War of the Austrian Succession eight years earlier?",
+              "answer": "Seven Years ’ War",
+              "translations": {
+                "danish": "Syvårs krigen",
+                "dutch": "Zevenjarige  Oorlog",
+                "french": "guerre de Sept Ans",
+                "german": "Siebenjähriger  Krieg",
+                "mandarin": "qī nián zhànzhēng  Norwegian: syvårs krigen or sjuårs krigen",
+                "polish": "Wojna siedmioletnia",
+                "romanian": "Războiul de șapte ani",
+                "swedish": "Sjuårs kriget"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The tendency of an alternating current in a conductor to be distributed such that the current density is higher at the surface is known as what effect ? In coaxial cables this can cause frequency -dependent impedance issues.",
+              "answer": "skin  effect",
+              "translations": {
+                "french": "effet de peau  or effet pelliculaire",
+                "german": "also Stromverdrängungs -",
+                "mandarin": "jí fū xiàoyìng or qū fū  xiàoyìng",
+                "polish": "naskórkowość",
+                "romanian": "efectul pelicular"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The first woman to have coins minted bearing her face was Fulvia, who was married to which leader ? This man led the winning side at the Battle of Phillipi, and he later married Octavia the Younger, who was celebrated for her virtue.",
+              "answer": "Mark  Antony",
+              "translations": {
+                "french": "Marc Antoine",
+                "mandarin": "mǎkè · āndōngní  Polish: Marek Antoniusz"
+              },
+              "accept": [
+                "Marcus Antonius"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "The earliest known examples of what family of instruments  – simple clay vessel flutes with finger holes and a mouthpiece  – are believed to come from China, but other examples developed independently in Europe, Central America, and New Zealand? They are known in most languages by a word of Italian origin.",
+              "answer": "ocarina  (prompt on ‘potato flute ’)",
+              "translations": {
+                "mandarin": "táodí  Polish: okaryna"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Paolo V eronese has painted a famous one “at Cana ”, Pieter Brueghel has painted a “peasant ” one, and Jan van Eyck ’s portrait of the Arnolfinis depicts a scene from one. What type of event  do they have in common?",
+              "answer": "wedding",
+              "translations": {
+                "danish": "bryllup",
+                "dutch": "bruiloft",
+                "french": "noces  or mariage",
+                "german": "Hochzeit",
+                "mandarin": "hūnl ǐ Norwegian: bryllup",
+                "polish": "wesele",
+                "romanian": "nuntă",
+                "swedish": "bröllop"
+              },
+              "accept": [
+                "marriage"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Quarks are fermions because they have 1/2 integer values for which property ? This intrinsic form of angular momentum describes how many symmetrical facets a particle has in one full rotation.",
+              "answer": "spin",
+              "translations": {
+                "mandarin": "zìxuán"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Although rhizomes are typically defined as being subterranean, the term is also used for the above -ground stems of which vascular plants  of the class Polypodiopsida ? These plants often have feather -like leaves and have neither seeds nor flowers, reproducing via spores.",
+              "answer": "fern s",
+              "translations": {
+                "danish": "bregne r",
+                "dutch": "varen s",
+                "french": "fougère s or Filicophyte s",
+                "german": "Farne",
+                "mandarin": "zhēn juélèi  or liàn shù zhíwù  or",
+                "polish": "paproc ie or paproc iowe",
+                "romanian": "ferigile  or ferigă  or ferigi  or",
+                "swedish": "ormbunksväxter  or ormbunke"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Formerly known as Godthåb , the town of Nuuk is the capital and largest settlement on which large island ?",
+              "answer": "Greenland",
+              "translations": {
+                "danish": "Grønland",
+                "dutch": "Groenland",
+                "french": "Groenland",
+                "german": "Grönland",
+                "mandarin": "gélínglán  Norwegian: Grønland",
+                "polish": "Grenlandia",
+                "romanian": "Groenlanda",
+                "swedish": "Grönland"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Named after a Swedish medical physicist, what is the SI derived unit  of equivalent dose?",
+              "answer": "sievert",
+              "translations": {
+                "mandarin": "xīfú"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Negro Matapacos [negg -roh matta -pack -oss] was a riot dog that participated in which country ’s student protests between 2011 and 2013? He became a prominent symbol of this country ’s later 2019 -20 protests, with graffiti and sculpture created depicting him wearing his iconic red neckerchief, standing out against his jet -black fur.",
+              "answer": "Chile",
+              "translations": {
+                "dutch": "Chili",
+                "french": "Chili  Mandarin : Zhìlì"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Étienne Lantier is the central character i n an  1885 novel  that shares its original French title with which  month of the French Revolutionary calendar ?",
+              "answer": "Germina l (by Émile Zola )",
+              "translations": {
+                "mandarin": "méngyá"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Although the killings also occurred i n the Kalinin and Kharkiv , which forest  near Smolensk gives its name to the massacre of o ver 20,000 Polish nationals on the orders of Stalin in the spring of 1940?",
+              "answer": "Katyn  Forest",
+              "translations": {
+                "mandarin": "kǎtíng dàtúshā"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1977, which Indian mathematician  and gay rights advocate , known for her extraordinary computational skills, computed the 23rd root of a 201 -digit number in 50 seconds , which was 12 seconds faster than the UNIVAC  computer used to confirm her answer?",
+              "answer": "Giovanni Battista Piranesi",
+              "translations": {
+                "mandarin": "qiáo fánní · bā tí sīt ǎ · pílā nài qí",
+                "german": "Chadidscha  Mandarin: hǎidí chè"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "metadata": {
+    "title": "ICC-Season-8Week-6",
+    "source": "ICC-Season-8Week-6.pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Swiss alchemist and toxicologist Paracelsus  [pa-ra-SELL -sus]  wrote a treatise in which he described beings associated with the classical elements. What name , that of real-world animals in the order Urodela  [euro -DELL -a], did he give to his elemental beings of fire?",
+              "answer": "salamander",
+              "translations": {
+                "danish": "salamandre",
+                "french": "salamandr e",
+                "romanian": "salamandra  Mandarin: shāluó màn dá , shālā màn dá ,"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "When taking a thermodynamic limit, what quantity  is set proportional to volume and sent to infinity? With volume and temperature, this quantity is a thermodynamic variable of the canonical ensemble in statistical mechanics.",
+              "answer": "particle number  (or number of particles ; prompt on “N” ; prompt on “amount of",
+              "translations": {
+                "danish": "partikelantal",
+                "dutch": "deeltjesaantal",
+                "french": "nombre de particules",
+                "german": "Teilchenzahl  Mandarin: lìzǐ shù",
+                "norwegian": "partikkelnummer , antall",
+                "romanian": "numărul de particule",
+                "swedish": "partikelantal , antal partiklar"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Volga is the primary inflow of which very large endorheic  lake  that is known in Iran as the Mazandaran [mah -ZAN -da-RAN] Sea after the historic Mazandaran Province at its southern shores?",
+              "answer": "Caspian  Sea",
+              "translations": {
+                "danish": "Kaspiske  Hav",
+                "dutch": "Kaspische  Zee",
+                "french": "Mer Caspienne",
+                "german": "Kaspisches  Meer , Kaspisee  Mandarin: Lǐhǎi",
+                "norwegian": "Det kaspiske  hav, Kaspi havet",
+                "romanian": "Marea Caspică",
+                "swedish": "Kaspiska  havet , Kaspiska  sjön"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Including the serratus anterior and the subclavius, what muscle group  sits at the front of the upper body and connects it with the shoulder and the upper arm? The largest muscle in this group, pictured, is responsible for the movement of the humerus.",
+              "answer": "pectoral  muscles  (or pecs; accept  pectoralis  major)",
+              "translations": {
+                "danish": "Den store brystmuskel",
+                "dutch": "grote borstspier",
+                "french": "muscle grand pectoral",
+                "german": "vorderer Brustmuskel , großer",
+                "norwegian": "store brystmuskel en",
+                "romanian": "muschii pectoral , mușchiul",
+                "swedish": "bröstmuskulaturen , stora"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which group of people  – historically referred to as “bushmen”  – are often grouped with the Khoekhoe [KOY -koy] as the non -Bantu speaking indigenous people of southern Africa ? However, unlike the pastoralist Khoekhoe, they have traditionally lived as hunter -gatherers and have a name meaning “gatherer”.",
+              "answer": "San people",
+              "accept": [
+                "Khoisan",
+                "Basarwa",
+                "Batwa"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which historical figure  is the subject of Jean Anouilh’s  [a-NOO -ee] play L'Alouette  (The Lark )? Other plays she features in include  Shakespeare’s Henry VI, Part 1 , a sung mystery play by Paul Claudel [clo-dell] and Arthur Honegger  [on-egg-er], and a play considered George Bernard Shaw’s only tragedy.",
+              "answer": "Joan  of Arc (or Jeanne  d’Arc)",
+              "translations": {
+                "german": "Johanna  von Orléans  Mandarin: Shèngn ǚ Zhēn dé",
+                "romanian": "Ioana  d'Arc"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In which 1953 film , widely acclaimed as a masterpiece of world cinema, do the siblings Kōichi [ko-ee-chee] and Shige [shee -gay] pay for their visiting parents to stay at a hot spring spa at Atami so they do not have to entertain them ?",
+              "answer": "Tokyo Story",
+              "translations": {
+                "dutch": "De reis naar Tokio",
+                "french": "Voyage à Tokyo",
+                "german": "Die Reise nach Tokyo  Mandarin: Dōngjīng wùy ǔ",
+                "norwegian": "Foreldre",
+                "romanian": "Poveste din Tokyo",
+                "swedish": "Föräldrarna"
+              },
+              "accept": [
+                "Tōkyō Monogatari"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "African -American vernacular English, or AAVE, is the variety of English spoken by many African Americans in the United States.  One feature of AAVE is a reduction in what type of vowel  that consists of two adjacent vowel sounds in the same syllable? As with Southern White Vernacular English, the reduction of these vowels is particularly common before an ‘L’.",
+              "answer": "diphthong  (or gliding vowel )",
+              "translations": {
+                "danish": "diftong , tvelyd",
+                "dutch": "tweeklank , diftong",
+                "french": "diphtongue",
+                "german": "Doppellaut , Zwielaut ,",
+                "norwegian": "diftong , tvelyd",
+                "romanian": "diftong",
+                "swedish": "diftong"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 2021, an episode of the Croatian version of Who Wants to be a Millionaire ? asked the question “Which of the following paintings doesn ’t depict any female figures?”. One of the option s presented  was which 1930 Grant Wood painting , displayed in the Art Institute of Chicago, which the contestant correctly identified as depicting one woman, alongside a man holding a pitchfork, in front of a rural house.",
+              "answer": "American Gothic"
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Some species of butterflies in the genus Caligo  are known for their huge eyespots. They take their common English name from which nocturnal predatory birds  from the order Strigiformes  [stridge -ee-forms] ?",
+              "answer": "owls",
+              "translations": {
+                "danish": "ugle",
+                "dutch": "uilen, oehoe",
+                "french": "hibou , chouette , chevêche",
+                "german": "Eule n, Uhu, Kauz Mandarin: xiāo , māotóuyīng",
+                "norwegian": "ugle",
+                "romanian": "bufniță , buh ă, cucuvea ,",
+                "swedish": "uggla , uv"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Along with mazurkas, Chopin wrote several examples of what dance  from his homeland, including those nicknamed “Military” and “Heroic”? This dance in 3/4 time is traditionally performed first at a student ball called a studniówka  [stood -NYOFF -ka], and gives its name to a slow ballet step that travels diagonally across the stage. An example of a typical rhythm is pictured.",
+              "answer": "polonaise",
+              "translations": {
+                "danish": "polonæse",
+                "mandarin": "Bōlán w ǔqǔ Norwegian: polonese",
+                "romanian": "poloneză",
+                "swedish": "polonesse"
+              },
+              "accept": [
+                "polonez",
+                "chodzony",
+                "alla polacca ; do not accept “polka”"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 2014, which Indian state  was separated from Andhra Pradesh, becoming India ’s first new state since the year 2000? This state is centred around its capital Hyderabad.",
+              "answer": "Telangana",
+              "translations": {
+                "mandarin": "Tè lún gān nà  bāng"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which battle , fought on the present -day border between Lebanon and Syria, may have featured 6,000 chariots and is considered the largest chariot battle in history? Fought between the Egyptians under Rameses the Great and the Hittites, this battle sometimes gives its name to the oldest surviving peace treaty.",
+              "answer": "Battle of Kadesh",
+              "translations": {
+                "french": "Qadesh",
+                "german": "Kadesch  Mandarin: Kǎ dié shí zhànyì",
+                "norwegian": "Kadesj"
+              },
+              "accept": [
+                "Treaty of Kadesh"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Sometimes known simply as the “common shoulder muscle”, what large muscle  lies on top of the clavicle, scapula and humerus? In European languages, this muscle’s name derives from the name of a letter of the Greek alphabet.",
+              "answer": "deltoid  muscle (or delt s, musculus deltoideus )",
+              "translations": {
+                "danish": "delta musklen",
+                "dutch": "deltavormige  spier",
+                "french": "muscle deltoïde",
+                "german": "Deltamuskel  Mandarin: sānjiǎo jī",
+                "norwegian": "delta muskelen",
+                "romanian": "mușchiul deltoid",
+                "swedish": "Delta muskel"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What name  is given to a fully -developed  language that develops from a simple pidgin over generations following contact between speakers of different languages? Although some scholars disagree, the linguist John McWhorter has argued that AAVE is not one of these languages and instead has its origins in various regional dialects of British English to which enslaved Africans were exposed.",
+              "answer": "creole",
+              "translations": {
+                "danish": "kreolsprog , kreolsk",
+                "dutch": "creoolse  talen",
+                "french": "langue créole",
+                "german": "Kreolsprache , Kreol , Kreolisch  Mandarin: Kè lǐ ào ěr yǔ, Guī róng  yǔ,",
+                "norwegian": "kreolspråk , kreol",
+                "romanian": "limbă creolă",
+                "swedish": "kreol språk"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A group of travellers go to the moon where they find themselves caught between two warring factions in Alēthē diēgēmata  (A True Story ), considered one of the first works of science fiction. This is a work by which Syrian -born author  who also parodied Socratic dialogues in works such as Nekrikoí Diálogoi  (Dialogues of the Dead )?",
+              "answer": "Lucian  of Samosata  (or Loukianòs  ho Samosateús )",
+              "translations": {
+                "danish": "Lukian",
+                "dutch": "Lucianus  van Samosata",
+                "french": "Lucien",
+                "german": "Lukian  von Samosata  Mandarin: Liú shàn",
+                "norwegian": "Lukian",
+                "romanian": "Lucian  din Samosata",
+                "swedish": "Lukianos"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What name , taken from a Latin name for the pygmies of Greek mythology, did Paracelsus use for his elemental beings of earth? Adopted from the German miner’s legend Bergmännlein  [BAIRG -men -line] , these creatures have been widely adopted in modern fantasy literature, and give their name to a movement of Modest Mussorgsky’s Kartinki s vïstavski  (Pictures at an Exhibition ).",
+              "answer": "gnome",
+              "translations": {
+                "danish": "gnom",
+                "dutch": "gnom",
+                "german": "Gnom  Mandarin: dejīng , dì líng , nuò m ǔ",
+                "norwegian": "gnom",
+                "romanian": "gnom",
+                "swedish": "gnom"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What lively dance in 6/8 time  originated in southern Italy, supposedly as a folk remedy for a sort of dancing mania brought on by a spider bite?  George Balanchine [BAL -un- sheen] choreographed a ballet with this name set to a “Grande” example of this dance by Louis Moreau Gottschalk.",
+              "answer": "tarantella  (or tarentelle , tarantelle )",
+              "translations": {
+                "danish": "tarantel  Mandarin: tǎ lǎng t ài lā, tǎ lǎng t ài lā, tǎ"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Who  was the final Frankish king from the Merovingian dynasty? The third of his name, he reigned from 743 to 751, when he was deposed by Pepin the Short, father of Charlemagne.",
+              "answer": "Childeric  III",
+              "translations": {
+                "danish": "Childerik  3.",
+                "dutch": "Childerik  III",
+                "french": "Childéric  III German: Childerich  III.",
+                "mandarin": "Xī ěr dél ǐ kè sānshì",
+                "norwegian": "Childerik  III",
+                "swedish": "Childerik  III"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Danaus genutia  is recognised by its dark orange wings with  distinct black stripes. It take s its common English name from which species of cat , an apex predator native to Asia?",
+              "answer": "tiger",
+              "translations": {
+                "dutch": "tijger",
+                "french": "tigre  Mandarin: hǔ",
+                "romanian": "tigru"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Particle number is conjugate to what thermodynamic quantity , which measures the amount of energy needed to add a particle to a system? It is one of the thermodynamic variables of the grand canonical ensemble.",
+              "answer": "chemical potential  (prompt on “potential”; prompt on “nu”)",
+              "translations": {
+                "danish": "Kemisk potential",
+                "dutch": "chemische potentiaal",
+                "french": "potentiel chimique",
+                "german": "chemische Potential  Mandarin: huàxué shì",
+                "norwegian": "kjemisk potensial",
+                "romanian": "potențial chimic",
+                "swedish": "kemisk potential"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Jordan River flows south through the Sea of Galilee before draining into which hypersaline endorheic lake  that lies on the borders of Jordan, Israel, and the West Bank?",
+              "answer": "Dead  Sea",
+              "translations": {
+                "danish": "Det Døde  Hav",
+                "dutch": "Dode  Zee",
+                "french": "Mer Morte",
+                "german": "Totes  Meer  Mandarin: Sǐhǎi",
+                "norwegian": "Døde havet",
+                "romanian": "Marea Moartă",
+                "swedish": "Döda  havet"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The San people were displaced from large parts of Namibia in the 18th century by which pastoralist Bantu group ? These people later fought a series of colonial wars against Germany between 1904 and 1908, and, along with the Nama people, were the subject of a campaign of ethnic cleansing at that time.",
+              "answer": "Herero  people  (or Ova Herero )",
+              "translations": {
+                "french": "Héréros  Mandarin: Hè léi luó rén"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which German playwright  wrote about Joan of Arc in Die Gesichte  der Simone Machard (The Visions of Simone Machard ) and Die heilige Johanna der Schlachthöf  (Saint Joan of the Stockyards )? He also adapted Anna Seghers’ radio play Der Prozess der Jeanne D'Arc zu Rouen, 1431  (The Trial of Joan of Arc at Rouen, 1431 ).",
+              "answer": "Bertolt  Brecht",
+              "translations": {
+                "mandarin": "Bèi tuō ěr tè· Bù lái xī tè"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Aglais io  is known for its large blue and yellow ‘eyes’ on each upperwing. It takes its common English name from which bird  from the Indian subcontinent, the males of which have long, colourful tails with eyespots?",
+              "answer": "peacock  (or peafowl , peahen )",
+              "translations": {
+                "danish": "påfugl",
+                "dutch": "pauw",
+                "french": "paon",
+                "german": "Pfau  Mandarin: kǒngqu è",
+                "norwegian": "påfugl",
+                "romanian": "păun",
+                "swedish": "påfågel"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The moon appears in the form of a woodcutter with a white face in act three of which play , in which she predicts death following the title event?  This play is often regarded as part of a ‘Rural Trilogy’ along with La casa de Bernarda Alba  (The House of Bernarda Alba ) and Yerma .",
+              "answer": "Blood Wedding  (or Bodas de sangre  by Federico García Lorca)",
+              "translations": {
+                "danish": "Blodbryllup",
+                "dutch": "Bloedbruiloft",
+                "french": "Noces de sang",
+                "german": "Bluthochzeit  Mandarin: Xuè hūn",
+                "norwegian": "Blodbryllaup",
+                "romanian": "Nunta însângerată",
+                "swedish": "Blodsbröllop"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which director of Taiwan’s New Wave cinema movement  used Yasujirō Ozu’s Tōkyō Monogatari  (Tokyo Story ) as inspiration for his 1985 film Qīngméizhúm ǎ (Taipei Story )? Many of the  themes in Ozu’s masterpiece were also revisited in this man ’s 2000 film Yi Yi (A One and a Two ), for which he won the Best Director Award at the Cannes Film Festival.",
+              "answer": "Edward Yang  (or Yáng  Déchāng )"
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Option b) for the WWTBAM?  question “Which of the following paintings doesn ’t depict any female figures?” was which 1937 Pablo Picasso painting , now displayed at Museo Reina Sof ía in Madrid? The painting depicts a grieving woman as one of the victims of the bombing of the titular Basque town.",
+              "answer": "Guernica",
+              "translations": {
+                "mandarin": "Gé ěr ní kǎ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Despite having more cavalry and scythed chariots, which Persian king , the third of his name, was defeated by Alexander the Great at the Battle of Gaug amela [GAW -ga-MEE - la]? This final king of the Achaemenid dynasty was killed by the satrap Bessus.",
+              "answer": "Darius  III (do not accept “Darius the Great”)",
+              "translations": {
+                "danish": "Dareios  3.",
+                "german": "Dareios  III. Mandarin: Dà liú shì  sānshì",
+                "norwegian": "Dareios  III",
+                "swedish": "Dareios  III"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Salton Sea is a highly saline endorheic lake and is the largest lake in which state of the USA ? This state’s second largest lake, Tahoe, lies on its border with Nevada.",
+              "answer": "California",
+              "translations": {
+                "danish": "Californien",
+                "dutch": "Californië",
+                "french": "Californie  German: Kalifornien",
+                "mandarin": "Jiālìfúníy ǎ zhōu",
+                "swedish": "Kalifornien"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What name  did Paracelsus coin for his elemental beings of air? These creatures give their name to two ballets: one with original choreography by Filippo Taglioni  [tal-YO- nee] , and the other with music by Chopin arranged by Alexander Glazunov.",
+              "answer": "sylph  or sylphid",
+              "translations": {
+                "danish": "sylfer",
+                "dutch": "sylfide , sylf",
+                "french": "sylphe s",
+                "german": "Sylphe  Mandarin: xī ěr fú , fēng jīnglíng , qì",
+                "norwegian": "sylfer , sylphider",
+                "romanian": "silfide",
+                "swedish": "sylf"
+              },
+              "accept": [
+                "La Sylphide",
+                "or Les Sylphides"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "What name , meaning “crushing” or “scattering” in Sesotho, was given to the period of turmoil, warfare and forced migration in Southern Africa in the early 19th century associated with the rise of the Zulu state? This period was preceded by the displacement of the K hoekhoe and the San due to encroachment of cattle raiders from the Dutch Cape Colony.",
+              "answer": "Mfecane  (or Difaqane , Lifaqane )",
+              "translations": {
+                "mandarin": "Mǔ fèi kǎ nèi"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1997, China separated which directly -administered municipality  from the neighbouring state of Sichuan? Due to its classification  as a single city , this is the largest ‘city proper ’ in the world with a population of around 30 million people, however much of the population do es not live in the urban centre.",
+              "answer": "Chongqing  (or Chóngqìng , Chungking ; accept Yú)"
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What linguistic term , often used to describe transitions between AAVE and Standard American English, describes alternating between two or more languages or language varieties within an interaction? A 2019 Harvard Business Review  article by Courtney L. McCluney about the “costs” of this practice of self -adjustment deemed it “necessary for advancement — but it takes a great psychological toll”.",
+              "answer": "code -switch ing",
+              "translations": {
+                "danish": "kodeskift",
+                "dutch": "codewisseling , codeswitchen",
+                "french": "alternance codique",
+                "german": "Sprachwechsel ,",
+                "norwegian": "kodeveksling",
+                "romanian": "schimbare de cod",
+                "swedish": "kodväxling"
+              },
+              "accept": [
+                "code shifting"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Abu Abdallah Muhammad XII, also known as Boabdil, was the final ruler of which dynasty , the last Arab Emirate of Granada and last Muslim dynasty on the Iberian Peninsula?",
+              "answer": "Nasrid",
+              "translations": {
+                "danish": "Nasride",
+                "dutch": "Nasriden",
+                "french": "Nasrides  German: Nasriden",
+                "mandarin": "Nài sī ěr  wángcháo",
+                "norwegian": "Nasrider",
+                "swedish": "nasridane"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In both the canonical and grand canonical ensembles, what name is given to the normalisation constant , denoted Z? This quantity gives macroscopic information about an ensemble by dividing up each of its microstates.",
+              "answer": "partition function",
+              "translations": {
+                "danish": "tilstandssum",
+                "dutch": "partitiefunctie",
+                "french": "fonction de partition",
+                "german": "Partitionsfunktion  Mandarin: pèifēn hánshù",
+                "norwegian": "partisjonsfunksjon",
+                "romanian": "funcție de partiție",
+                "swedish": "partitionsfunktion ,"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The name of which lively dance of Spanish or South American origin  came to be used almost interchangeably with “passacaglia”  [pass -a-KAHL -ya] to refer to a piece in triple metre with a short, repeating theme? This dance gives its name to a ballet by George Balanchine that uses the music from the finale to Gluck’s Orfeo ed Euridice , and perhaps the most famous example is the fifth movement of Bach’s Partita for Violin No. 2.",
+              "answer": "chaconne  (or chacona , chacony , ciaccona )",
+              "translations": {
+                "mandarin": "qià kōng"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Written in 1429, the patriotic poem Ditié de Jehanne d’Arc  (The Tale of Joan of Arc ) may be the only work of literature about Joan dating from her lifetime. It was the final work by which Italian -born French writer  best known for her Le Livre de la Cité des Dames (The Book of the City of Ladies )?",
+              "answer": "Christine  de Pizan",
+              "accept": [
+                "either part  ; or Christine  de Pisan",
+                "Cristina  da Pizzano"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Who  was the final Huey Tlatoani  [WAY -yee TLAT -oh-WANN -ee], or ‘Great Ruler’, of the Aztec Empire? This cousin of Moctezuma II acceded to the throne in 1520, at a time when Tenochtitlan [ten -osh-TEET -llan] was under siege and suffering a smallpox epidemic, and he was executed in 1521, by Hernán Cortés.",
+              "answer": "Cuauhtémoc  (or Cuauhtemotzín , Guatimozín , Guatémoc )",
+              "translations": {
+                "mandarin": "Kuā wū tè mò kè"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The expected value of the total energy equals the negative derivative of the natural logarithm of the partition function with respect to what quantity ? The Boltzmann factor equals the negative exponential of energy times this quantity.",
+              "answer": "thermodynamic beta",
+              "translations": {
+                "dutch": "inverse temperatuur",
+                "french": "bêta  thermodynamique,",
+                "german": "thermodynamisches  Beta ,",
+                "norwegian": "beta  termodynamisk",
+                "romanian": "beta termodinamic ,",
+                "swedish": "termodynamisk beta ,"
+              },
+              "accept": [
+                "inverse temperature  prompt on “coldness”"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The lead role in Edward Yang ’s Qīngméizhúm ǎ (Taipei Story ) was taken by which fellow film -maker ? This man ’s 2003 film Kōhī Jikō (Café Lumi ère), described by the director Steve McQueen as the greatest film of the 21st century, was created in homage to Ozu ’s Tōkyō Monogatari  (Tokyo Story ) and he won the 2015 Cannes Film Festival Award for Best Director for Cìkè Niè Yǐnniáng (The Assassin ).",
+              "answer": "Hou  Hsiao -hsien (",
+              "accept": [
+                "Hóu  Xiàoxián , Hâu  Hàu -hiân ; prompt on “Hsiao -hsien”)"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "On 8 October 1974, Mexico admitted two new states when Baja California Sur was split from Baja California, and which state  was split from Yucatán? This is the only Mexican state to have a Caribbean coastline, and its capital of Chetumal lies just to the north of the border with Belize.",
+              "answer": "Quintana Roo",
+              "translations": {
+                "mandarin": "Jīn t ǎ nà luó ào zhōu"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Also taking its name from its shape, what large pair of muscles  are spread from the base of the neck, across the shoulders and down the spine? Each muscle is split into three parts : the descending, which supports the weight of each arm; the ascending, which helps the shoulder blade rotate; and the middle or transverse, which retracts the shoulder blade.",
+              "answer": "trapezius  muscles (or trap s)",
+              "translations": {
+                "danish": "trapez musklen",
+                "dutch": "monnikskapspier",
+                "french": "muscle trapèze",
+                "german": "Trapez muskel ,",
+                "norwegian": "trapesmuskelen ,",
+                "romanian": "mușchi trapez , mușchi cucular",
+                "swedish": "kappmuskeln"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which endorheic lake , sandwiched between Kazakhstan and Uzbekistan, was once the world’s third largest , but now consists of three (or sometimes four) separate lakes totalling about 10% of its earlier size?",
+              "answer": "Aral  Sea"
+            },
+            {
+              "question_number": 3,
+              "question_text": "Tacitus imagined Boudica giving a rousing speech to her troops from a chariot before the Battle of Watling Street, which ended her rebellion against which Roman emperor ? This son of Agrippina the Younger had his tutor Seneca executed after the Pisonian Conspiracy.",
+              "answer": "Nero  (or Nero  Claudius Caesar Augustus Germanicus )",
+              "translations": {
+                "french": "Néron  Mandarin: Ní lù"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Another possible answer for the WWTBAM?  question “Which of the following paintings doesn ’t depict any female figures?” was Le Déjeuner sur l’herbe  (The Luncheon on the Grass ) by which French artist ? That work, along with Olympia , place s this artist at the beginning of modern art, bridging the Realist and Impressionist movements.",
+              "answer": "Édouard  Manet  (do not accept “Monet”)",
+              "translations": {
+                "mandarin": "Àidéhuá· Mǎ nài"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What are Paracelsus’s elemental beings of water ? Later writers used their name to refer to water nymphs, one of which is the title figure of a novel by Friedrich de la Motte Fouqué, which was an inspiration for Hans Christian Andersen’s ‘Den lille havfrue’ (‘The Little Mermaid’).",
+              "answer": "undine s",
+              "translations": {
+                "mandarin": "wēn dì nī  Swedish:  undin"
+              },
+              "accept": [
+                "ondine s"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "A love triangle involving people jump ing between the Moon and Earth as it drifts apart is the subject of La distanza della luna  (The Distance of the Moon ), the first story in which collection by Italo Calvino ? Most of the stories in this collection are narrated by the character Qfwfq.",
+              "answer": "Cosmicomics  (or Le cosmicomiche )",
+              "translations": {
+                "danish": "De kosmikomiske  historier",
+                "dutch": "Kosmikomische  verhalen  Mandarin: Yǔzhòu liánhu án tú, Yǔzhòu qí",
+                "romanian": "Cosmicomicării",
+                "swedish": "Kosmokomik"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What was the Afrikaans name  of the Khoekhoe woman who was exhibited across Western Europe in the early 19th century in an example of scientific racism? Her story has been retold many times in popular culture and widely discussed in feminist literature. Please answer with her name ra ther than her nickname.",
+              "answer": "Sarah Baartman",
+              "translations": {
+                "mandarin": "Sà lā· Bātè màn , Sà ěr tè jié"
+              },
+              "accept": [
+                "Saartj ie"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The final answer to the WWTBAM ? question “Which of the following paintings doesn ’t depict any female figures? ”, which proved to be correct, was which artist ’s 1632 painting De anatomische les van Dr. Nicolaes Tulp  (The Anatomy Lesson of Dr Nicolaes Tulp )? This painting doesn't depict any women, who were excluded  from the practice of medicine in the Netherlands at that time.",
+              "answer": "Rembrandt  Van Rijn",
+              "translations": {
+                "mandarin": "Lún bó l ǎng"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1992, Brazil added four stars to its flag, representing the new states of Amapá, Tocantins  [tock -an-CHEENS] , Rondônia [hon -DO-nya] and which other state  that has its capital at Boa Vista? This state shares its name with a tepui  [TEP -wee] that is on the tripoint of Brazil, Venezuela and Guyana.",
+              "answer": "Roraima",
+              "translations": {
+                "mandarin": "Luó lài m ǎ zhōu"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which queen of the Kamehamehan [ka-may -ha-MAY -han] dynasty  was the final monarch of the Kingdom of Hawai ʻi? She was overthrown in an 1893 coup that led to Hawaiʻi becoming a US territory in 1900.",
+              "answer": "Liliʻuokalani",
+              "translations": {
+                "mandarin": "Lì liú k ǎlā ní"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What name  is given to the consonant sounds “m”, “n”, or “ng”, that are produced with a lowered soft palate , meaning that air can escape  but not through the mouth? Some of the most distinct vowel pronunciation patterns in AAVE concern vowels preceding these consonants .",
+              "answer": "nasal  consonants  (or nasal  occlusive, nasal  stop)",
+              "translations": {
+                "dutch": "nasaal , neusklank",
+                "french": "consonne nasale  Mandarin: bíyīn",
+                "romanian": "consoană nazală"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "This species of butterfly in the genus Heliconius  is characterised by its bold black and white striped wing pattern. It takes its common English name from what African members  of the horse family?",
+              "answer": "zebra",
+              "translations": {
+                "french": "zèbre  Mandarin: bānm ǎ",
+                "norwegian": "sebra"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The name of which French dance  – similar to a gavotte, except it has a quarter -bar rather than half -bar anacrusis – is used in ballet to refer to a to a rapid series of tiny steps on almost straight legs that make the dancer appear to glide? Perhaps the most famous example of this danc e comes from Bach’s Lute Suite in E minor and has been widely used in popular music.",
+              "answer": "bourrée  (or borrèia , bory , bore ; accept pas de bourrée , bourrée  en couru)",
+              "translations": {
+                "dutch": "boertig   Mandarin: Bùléi  wǔqǔ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which American playwright  translated Jean Anouilh’s L’Alouette  (The Lark ) for a 1955 Broadway production? She is also known for her play The Little Foxes  and her controversial fictionalised autobiography Pentimento  which recounts her time in wartime Europe and her relationship with Dashiell Hammett .",
+              "answer": "Lillian Hellman",
+              "translations": {
+                "mandarin": "Lì lián· Hǎi'ěr màn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Aomame [ow -ma-may] leaves a taxi during a traffic jam, only to find that she has entered a parallel world with two moons in which novel by Haruki Murakami ? In this novel, the child Erika Fukada writes Kūki Sanagi  (Air Chrysalis ), which involves creatures called ‘Little People’.",
+              "answer": "1Q84"
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Chariots were eventually replaced by war wagons, which were employed by the Hussites during their namesake war after an event in which city ? The Thirty Years ’ War began after a  similar  event in this city, and the Battle of White Mountain was fought just outside this city.",
+              "answer": "Prague  (or Praha )",
+              "translations": {
+                "danish": "Prag",
+                "dutch": "Praag",
+                "german": "Prag  Mandarin: Bùlāgé",
+                "romanian": "Praga",
+                "swedish": "Prag"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Yasujirō Ozu ’s Tōkyō Monogatari  (Tokyo Story ) was itself a loose remake of the 1937 American film Make Way for Tomorrow , by which film -maker , better known for directing screwball comedies such as the Marx Brothers classic Duck Soup ?",
+              "answer": "Leo McCarey",
+              "translations": {
+                "mandarin": "Lǐ ōu·Mài kǎ ruì"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What is the name of the group of three muscles  responsible for the extension, abduction and rotation of the hip joint? The outermost of these muscles is the largest muscle in the human body.",
+              "answer": "gluteal  muscles (or glute s; accept gluteus  maximus)",
+              "translations": {
+                "danish": "den store ballemuskel",
+                "dutch": "grote bilspier",
+                "french": "muscle glutéaux , muscles fessiers",
+                "german": "größter Gesäßmuskel  Mandarin: tún jī, tún dà  jī",
+                "norwegian": "sete muskle r",
+                "romanian": "mușchiul gluteu  mare",
+                "swedish": "sätes musklerna"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "What was the surname  of Luca, his nephew Andrea, and Andrea’s sons Giovanni and Girolamo who were pioneers of colourful tin -glazed terracotta statues in Renaissance Florence? The ir surname is now used for a shade of blue.",
+              "answer": "Della Robbia",
+              "translations": {
+                "mandarin": "Dé lā·Luó bǐ yǎ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What word , from the Quechua for ‘plains’ is given to the large low grasslands that cover over 1 million square kilometres across  Argentina, Brazil and Uruguay?",
+              "answer": "Pampas  (or Pampa )",
+              "translations": {
+                "mandarin": "Péng bā  cǎoyuán"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which philosopher  was the author of the 1677 work Ethica, ordine geometrico demonstrate  (Ethics, Demonstrated in Geometrical Order ) which aims to apply Euclid’s method to philosophy ?",
+              "answer": "Baruch  Spinoza  (or Benedictus de Spinoza )",
+              "translations": {
+                "mandarin": "Bā lǔ hè·Sī bīn nu ò shā"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Each year millions of tourists  flock to see snow statues and ice sculptures at the Odori Park during which Japanese city ’s annual Snow Festival?",
+              "answer": "Sapporo",
+              "translations": {
+                "mandarin": "Zháhu ǎng shì"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What metal  is present in a chlorophyll molecule ?",
+              "answer": "magnesium",
+              "translations": {
+                "french": "magnésium  Mandarin: měi",
+                "romanian": "magneziu"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What word of Sanskrit origin  is used for the concept of musical metre in Indian classical music?",
+              "answer": "Ávila",
+              "translations": {
+                "mandarin": "Ā wéi lā , Yà wéi lā",
+                "french": "Santorin , Théra  German: Santorin",
+                "german": "Kolumbien  Mandarin: Gēlúnb ǐyǎ",
+                "romanian": "Columbia"
+              },
+              "accept": [
+                "Thera",
+                "Thira"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

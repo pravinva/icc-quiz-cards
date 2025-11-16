@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "title": "BOOQL-2025-R4-T3-T8 (2)",
+    "source": "BOOQL-2025-R4-T3-T8 (2).pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": []
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": []
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": []
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": []
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": []
+    }
+  ]
+}

@@ -1,0 +1,917 @@
+{
+  "metadata": {
+    "title": "ICC9 Week 7 T9-20",
+    "source": "ICC9 Week 7 T9-20.pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What name  is given to a many -tiered tower, with overhanging eaves separating each level, that is found through out much of South, East, and Southeast Asia? Although most closely associated with Buddhism, a tower  of this type  can also be Taois t or Hindu.",
+              "answer": "pagoda",
+              "translations": {
+                "danish": "pagode",
+                "dutch": "pagode",
+                "french": "pagoda",
+                "german": "Pagode  Mandarin: tǎ",
+                "norwegian": "pagode",
+                "swedish": "pagod"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which American literary and philosophical movement  was led by Ralph Waldo Emerson, who outlined his philosophy in essays such as ‘Nature’?",
+              "answer": "transcendental ism",
+              "translations": {
+                "danish": "transcendentalisme",
+                "dutch": "transcendentalisme",
+                "french": "transcendentalisme",
+                "german": "Transzendentalismus  Mandarin: chāoyuè zh ǔyì",
+                "norwegian": "transcendentalisme  or",
+                "polish": "transcendentalizm"
+              },
+              "accept": [
+                "American transcendental ism"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Piano  (p) and forte  (f) are the two simplest dynamic notes in music; for what does the letter “m” stand  in the dynamic notes “ mp” and “ mf”? This term literally means ‘half ’ or ‘moderate ’.",
+              "answer": "mezzo"
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In which country  was Paetongtarn Shinawatra suspended as Prime Minister by the Constitutional Court on 1 July 2025 following a leaked phone call she had with Cambodia's former Prime Minister, Hun Sen?",
+              "answer": "Thailand",
+              "translations": {
+                "french": "Thaïlande",
+                "mandarin": "Tàiguó  Polish: Tajlandia",
+                "romanian": "Thailanda"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What was the first chemical element  to be known to humans in its elemental form, having been found in Spanish caves dating to around 40,000 BCE? As well as being found in its native state, this precious metal can also be found alloyed to silver in a naturally occurring alloy called electrum .",
+              "answer": "gold",
+              "translations": {
+                "danish": "guld",
+                "dutch": "goud",
+                "french": "or",
+                "mandarin": "jīn Norwegian: gull",
+                "polish": "złoto",
+                "romanian": "aur or aurul",
+                "swedish": "guld"
+              },
+              "accept": [
+                "au"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In the 2nd century CE, the Syrian author Lucian of Samosata describes life on the Moon and how it is different from life on Earth in which  novel  in which  the protagonists find themselves caught up in a war fought between the kings of the Sun and Moon?",
+              "answer": "A True Story",
+              "translations": {
+                "danish": "Sande Historie",
+                "dutch": "Ware verhalen  or Waargebeurde",
+                "french": "Histoires varie s or Histoire vraie  or",
+                "mandarin": "zhēnshí degùshi",
+                "norwegian": "En sannferdig historie",
+                "polish": "Prawdziwa historia",
+                "swedish": "Sann historia"
+              },
+              "accept": [
+                "True History",
+                "Alēthē diēgēmata",
+                "Vera Historia",
+                "Verae"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which Benin -born singer -songwriter and activist  founded The Batonga Foundation, which  aims to educate and empower adolescent girls in Francophone sub -Saharan Africa? This multi -Grammy -winning performer invented the word ‘Batonga ’ as a response to those who believe girls do not deserve education.",
+              "answer": "Angélique Kidjo",
+              "translations": {
+                "mandarin": "ān rè lì kè · jī qiáo"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which European nation  attempted unsuccessfully to establish a colony on the Isthmus of Panama, in the late 1690s? The scheme was backed by around one -fifth of all the money then circulating in this country, and its collapse was a major factor in the country ceasing to be independent  shortly thereafter.",
+              "answer": "Scotland",
+              "translations": {
+                "danish": "Skotland",
+                "dutch": "Schotland",
+                "french": "Écosse",
+                "german": "Schottland",
+                "mandarin": "sūgélán  Norwegian: Skottland",
+                "polish": "Szkocja",
+                "romanian": "Scoția",
+                "swedish": "Skottland"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Between 1994 and 2025, five ‘Friendship Bridges’ have opened that cross the Mekong River between Thailand and which country ? A sixth such bridge is currently under construction.",
+              "answer": "Laos",
+              "translations": {
+                "mandarin": "lǎowō"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which Geneva -born philosopher  wrote the famous line “L’homme est né libre, et partout il est dans les fers” (“Man is born free; and everywhere he is in chains”)?",
+              "answer": "Jean -Jacques Rousseau",
+              "translations": {
+                "mandarin": "ràng -yǎkè· lúsuō"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which substance , central to the transfer of male gametes in plants , is a n important proxy for determining ancient temperatures  in the discipline of palaeoclimatology  as it fossilises in excellent condition because of its decay -resistant outer wall, called the exine?",
+              "answer": "pollen",
+              "translations": {
+                "dutch": "stuifmeel",
+                "german": "also Blütenstaub",
+                "mandarin": "huāfěn  Polish: pyłek  kwiatowy",
+                "romanian": "polen"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which scientist  was the first to describe Saturn’s rings as a dis c around the planet? A statement co-named after Augustin -Jean Fresnel and this scientist explains diffraction by stating that every point on a wavefront is its elf the source of spherical wavefronts.",
+              "answer": "Christiaan Huygens  [accept Huygens –Fresnel  principle]",
+              "translations": {
+                "mandarin": "kèl ǐsīdìān · huìgēngsī"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Also called the ‘100 Hours War’, which conflict that lasted for about 100 hours between 14th July – 18th July 1969 is named after a two -legged event held in June 1969 between the two belligerent countries?",
+              "answer": "Football  War",
+              "translations": {
+                "danish": "Fodbold krigen",
+                "dutch": "voetbal oorlog",
+                "french": "guerre du footbal l",
+                "german": "Fußball krieg",
+                "mandarin": "zúqiú  zhànzhēng  Norwegian:  fotball krigen",
+                "polish": "wojna futbolowa",
+                "romanian": "Războiul Fotbalului",
+                "swedish": "Fotbolls kriget"
+              },
+              "accept": [
+                "Soccer  War",
+                "La guerra del fútbol"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "In which country  did the Governor General, Sir John Kerr, cause a constitutional crisis in 1975 when he dismissed the serving Prime Minister following the Senate's refusal to pass his government's budget bills?",
+              "answer": "Australia",
+              "translations": {
+                "danish": "Australien",
+                "dutch": "Australië",
+                "french": "Australie  German: Australien",
+                "mandarin": "Àodàlìyǎ",
+                "swedish": "Australien"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Scottish plan to establish New Caledonia in Panama was named after which region of southern Panama and northern Colombia that connects North and South America? This densely forested region serves as the only interruption in the Pan -American Highway.",
+              "answer": "Darién",
+              "translations": {
+                "mandarin": "dá lián  àikǒu"
+              },
+              "accept": [
+                "Darién Gap"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Located in the Brahmaputra River, and recognized by Guinness World Records  as the world's largest inland river island, Majuli is to be found in which Indian state ? Dispur is the capital of this state in northeastern India, known for its namesake tea and silk.",
+              "answer": "Assam",
+              "translations": {
+                "mandarin": "āsàmǔ bang"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Pagoda of Ten Thousand Buddhas, considered the highlight of the Kek Lok Si Temple in Malaysia's Penang state, is noted for its amalgamation of pagoda designs from three different countries : China, Thailand, and which country , that inspired the highest part of the pagoda? This country is home to the Shwedagon Pagoda which, by law, is the tallest building in the largest city.",
+              "answer": "Myanmar",
+              "translations": {
+                "dutch": "Birma",
+                "french": "Birmanie",
+                "mandarin": "Miǎndiàn Polish:  Mjanma , Birma",
+                "romanian": "Birmania"
+              },
+              "accept": [
+                "Burma"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Researchers can study the width and density of tree rings to reconstruct past temperature, rainfall, and drought events for a specific region in a discipline known as “[BLANK]climatology”. Which six -letter prefix  of Greek origin fills the blank? N.B. The same six letters begin the equivalent word in all  of ICC’s  European languages.",
+              "answer": "dendro"
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In which ancient town of Bithynia, located in the district of Istanbul today known as Kadıköy, was the fourth ecumenical council of the Christian church held in 451 CE? This largest and best documented of the first seven councils is known for establishing the Dyophysitism of Christ, defining his human and divine nature as two distinct, inseparable natures.",
+              "answer": "Chalcedon",
+              "translations": {
+                "danish": "Chalkedon",
+                "french": "Chalcédoine",
+                "mandarin": "jiā kè dūn",
+                "norwegian": "Khalkedon  Polish: Chalkedon",
+                "romanian": "Calcedon",
+                "swedish": "Chalkedon"
+              },
+              "accept": [
+                "Calcedonia",
+                "Khalk edon"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which German philosopher  is probably best known today for proclaiming “Gott ist tot” (“God is dead”)?",
+              "answer": "Friedrich Nietz sche",
+              "translations": {
+                "mandarin": "fúlǐdélǐxī · nícǎi"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Ralph Waldo Emerson was a great influence on which author  who wrote about how individuals should respond to unjust laws in ‘Civil Disobedience’ and recounted his experience of living remotely in Walden ?",
+              "answer": "Henry David Thoreau",
+              "translations": {
+                "mandarin": "hēnglì · dàiwéi · suōluó"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A diagonal line connecting two notes on a musical stave is used to indicate what technique , not to be confused with portamento , where the instrument is intended to slide between notes?",
+              "answer": "glissando",
+              "translations": {
+                "mandarin": "huáyīn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The earliest known use of which chemical element  in an elemental form dates to 28,000 years ago when charcoal was used in cave art in Australia? One form of this element, graphite, was first mined in Romania around 4,000 BCE.",
+              "answer": "carbon",
+              "translations": {
+                "dutch": "koolstof",
+                "french": "carbone",
+                "german": "Kohlenstoff",
+                "mandarin": "tàn Norwegian: karbon",
+                "polish": "węgiel",
+                "swedish": "kol"
+              },
+              "accept": [
+                "C"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In Chinese legend, which xian  (immortal being) lost her immortality by travelling to Earth but regained it by fleeing to the Moon with her pet rabbit, Yu Tu, after stealing the elixir of immortality from the Queen Mother of the West?",
+              "answer": "Cháng’é",
+              "accept": [
+                "Heng’e"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which French philosopher  is best known today for his maxim cogito ergo sum , which is usually translated into English as ‘I think therefore I am’?",
+              "answer": "René Descartes",
+              "translations": {
+                "mandarin": "lènèi · dí kǎ er"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Encyclopaedia Britannica  disagrees with Guinness World Records and lists Bananal Island as the world's largest inland river island. It is found where the Araguaia River  forks into two in which country 's Tocantins state?",
+              "answer": "Brazil",
+              "translations": {
+                "danish": "Brasilien",
+                "dutch": "Brazilië",
+                "french": "Brésil",
+                "german": "Brasilien",
+                "mandarin": "Bāxī  Norwegian: Brasil",
+                "polish": "Brazylia",
+                "romanian": "Brazilia",
+                "swedish": "Brasilien"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 2014, Angélique Kidjo endorsed the People's Climate March, joining the march in New York along with which Irish politician , who had previously served as both President of Ireland and United Nations High Commissioner for Human Rights? The previous year, Kidjo had joined this woman in a rendition of John Lennon's “Imagine” to promote  the non -profit network  MasterPeace.",
+              "answer": "Mary Robinson",
+              "translations": {
+                "mandarin": "m ǎlì · luóbīnxùn"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Completed in 1960, the Friendship Bridge crosses the Narva River, connecting the Russian city of Ivangorod to the city of Narva in which country ?",
+              "answer": "Estonia",
+              "translations": {
+                "danish": "Estland",
+                "dutch": "Estland",
+                "french": "Estonie",
+                "german": "Estland  Mandarin: Àishāníyǎ",
+                "norwegian": "Estland",
+                "swedish": "Estland"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Halldór Hallfreðsson , an engineer on board ICGV Ægir , died of electrocution when he was using his welding equipment to repair damages to a compartment of a gunboat that had occurred when it had collided with HMS Apollo . Halldór  is the only casualty of what 20th-century dispute  that involved gunboats fitted with special cutters? The conflict ended with significant concessions to Halldór ’s country.",
+              "answer": "Cod  Wars",
+              "translations": {
+                "danish": "Torske krigen",
+                "dutch": "Kabeljauw oorlogen",
+                "french": "guerre de la morue",
+                "german": "Kabeljau kriege",
+                "mandarin": "xuěyú  zhànzhēng  Norwegian: Torske krigen",
+                "polish": "Wojny dorszowe",
+                "romanian": "Războaiele Morunului  or",
+                "swedish": "Torsk krigen"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What word  is used in musical notation to collectively refer to sharps, flats, and naturals?",
+              "answer": "accidental s",
+              "translations": {
+                "danish": "løst fortegn",
+                "dutch": "toevallig wijzigingsteken  or toevallig",
+                "french": "altération",
+                "german": "Versetzungszeichen  or Akzidentien",
+                "norwegian": "løst fortegn",
+                "polish": "znaki chromatyczne przygodne  or",
+                "romanian": "alterație",
+                "swedish": "tillfälliga förtecken"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Shwedagon Pagoda is a prominent example of a pagoda that also serves as a reliquary and place of meditation in Buddhism. What Sanskrit name  do we use for these dome -shaped religious buildings?",
+              "answer": "stupa s",
+              "translations": {
+                "dutch": "stoepa  Mandarin: sū dǔ pō"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which metallic element  was first used in its native state in Iraq around 9000 –8000 BCE? The earliest human -made alloy, bronze, consists of this element and tin.",
+              "answer": "copper",
+              "translations": {
+                "danish": "kobber",
+                "dutch": "koper",
+                "french": "cuivre",
+                "german": "Kupfer",
+                "mandarin": "tóng  Norwegian: kobber",
+                "polish": "miedź",
+                "romanian": "cupru , aramă",
+                "swedish": "koppar"
+              },
+              "accept": [
+                "Cu"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Cassini Division  is a gap between the rings of Saturn caused by a form of what phenomenon  with the moon Mimas? Harmonic oscillators can experience a form of this phenomenon when driven at their natural frequency.",
+              "answer": "resonances",
+              "translations": {
+                "danish": "bane resonans",
+                "dutch": "baan resonantie",
+                "french": "résonance  orbitale",
+                "german": "Bahn resonanz",
+                "mandarin": "guǐdào gòngzhèn  Norwegian: bane resonans",
+                "polish": "rezonans  orbitalny",
+                "romanian": "rezonanța  orbitală",
+                "swedish": "banresonans"
+              },
+              "accept": [
+                "orbital resonances"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Scottish plan to colonise the Darién region was inspired by which Spanish explorer and conquistador , who, in 1513, crossed the Isthmus of Panama to become the first European to see the Pacific Ocean from the New World?",
+              "answer": "Vasco Núñez de Balboa",
+              "translations": {
+                "mandarin": "wǎ sīkē · nǔnièsī · dé · bā ěr wò"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Oriental Orthodox Churches are a group of Eastern Christian churches who rejected the d yophysitism of the Chalcedon Council. One of these churches is the Syriac Orthodox Church whose supreme head is the Patriarch of which ancient Greek city in modern -day Turkey? This city served as the capital of the Seleucid Empire and Roman Syria.",
+              "answer": "Antioch  on the Orontes",
+              "translations": {
+                "danish": "Antiokia",
+                "dutch": "Antiochië aan de Orontes",
+                "french": "Antioche  or Antioche -sur-l'Oronte",
+                "german": "Antiochia  am Orontes or",
+                "mandarin": "ān tiáo kè  Norwegian: Antiokia  ved Orontes",
+                "polish": "Antiochia",
+                "romanian": "Antiohia  pe Orontes",
+                "swedish": "Antiokia  or Antiochia"
+              },
+              "accept": [
+                "Antiókheia"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Transcendentalist ideas influenced which New York -born poet , who used free verse in a poetry collection intended as an American epic? He also responded to the assassination of Abraham Lincoln with the poem “O Captain, My Captain” .",
+              "answer": "Walt Whitman",
+              "translations": {
+                "mandarin": "wòěrtè · huìtèmàn"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Paleoclimate records derived from the mostly mid -latitude tree -ring network can be complemented by which calcium carbonate structures , found in tropical regions, that form annual growth bands similar to tree rings, which can provide information about past sea surface temperatures and salinity?",
+              "answer": "coral reefs",
+              "translations": {
+                "danish": "koral rev or bioherm",
+                "dutch": "koraal rif",
+                "french": "récif corallien  or barrière de corail",
+                "german": "Korallen riff",
+                "mandarin": "shānhú jiāo Norwegian: korall rev or bioherm  or koral hav",
+                "polish": "rafa koralowa",
+                "romanian": "recif de corali",
+                "swedish": "korall rev"
+              },
+              "accept": [
+                "coral"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "In which 1 0th-century Japanese folktale , typically considered the oldest surviving monogatari and thought to be inspired by the Chinese tale of Chang'e, does a princess from the Moon grow up on Earth after being found by an old man inside a glowing stalk of the plant that appears in its best -known  title?",
+              "answer": "The Tale of the Bamboo Cutter",
+              "translations": {
+                "danish": "Bambusfælderens  fortælling",
+                "dutch": "prompt on  De maanprinses",
+                "french": "Le Conte du coupeur de bamboo  or Le conte",
+                "german": "Die Geschichte vom Bambussammler  or",
+                "mandarin": "zhúqǔwùyǔ Norwegian: Fortellingen om bambuskutteren",
+                "polish": "Opowieść o zbieraczu bambusu",
+                "romanian": "Povestea tăietorului de bambus  or",
+                "swedish": "Sagan om bambuhuggaren  or Sagan om"
+              },
+              "accept": [
+                "Taketori  Monogatari  (accept  The Tale of Princess Kaguya"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Prior to 1959, the Tewahedo Church in Ethiopia was administratively a part of the Coptic Church. Their joint head had been the Pope of Alexandria, who is also known as the Patriarch of the See of which saint  who founded the episcopal see of Alexandria in the 1st century?",
+              "answer": "Saint Mark  the Evangelist",
+              "translations": {
+                "danish": "Markus",
+                "dutch": "Marcus",
+                "french": "Marc",
+                "german": "Markus",
+                "mandarin": "mǎkě Norwegian: Markus",
+                "polish": "Marek",
+                "romanian": "Marcu",
+                "swedish": "Markus"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which author ’s upbringing surrounded by transcendentalist and abolitionist teaching is reflected in the progressive activities of the March family in her most famous novel?",
+              "answer": "Louisa May Alcott",
+              "translations": {
+                "mandarin": "lù yì shā · méi · àoěr kētè"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Angélique Kidjo has performed at the Nobel Peace Prize concerts honouring Jimmy Carter and Ellen Johnson Sirleaf, but first performed in 1996 when the prize was awarded to Carlos Filipe Ximenes Belo and José Ramos -Horta for their work in which (then) Indonesian province ?",
+              "answer": "East Timor",
+              "translations": {
+                "danish": "Østtimor",
+                "dutch": "Oost -Timor",
+                "french": "Timor oriental",
+                "german": "Osttimor",
+                "mandarin": "Dōngdìwèn  mínzhǔ gònghéguó  Norwegian: Øst-Timor",
+                "polish": "Timor Wschodni",
+                "romanian": "Timorul de Est",
+                "swedish": "Östtimor"
+              },
+              "accept": [
+                "Timor Leste"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "One hypothesis is that the inner rings of Saturn were created when a moon was destroyed by what kind of phenomenon ? This phenomen on exceed s an object's internal binding force beyond the Roche limit and is strongest during syzygy.",
+              "answer": "tidal force  (accept tide -generating force ; prompt on ‘force’, ‘differential force’,",
+              "translations": {
+                "danish": "tidevandskraft",
+                "dutch": "getijdenveld",
+                "french": "force de marée",
+                "german": "Gezeitenkraft",
+                "mandarin": "cháoxī lì  Norwegian: tidekraft",
+                "polish": "siła pływowa",
+                "romanian": "forța mareică",
+                "swedish": "tidvattenkrafter"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In which country  was the Prime Minister dismissed in August 1990 by President Ghulam Ishaq Khan amidst unemployment, labour strikes, and reports of corruption? That same PM, the first woman to hold the role in this country, would see her second term ended in 1996 when she  was dismissed by President Farooq Leghari.",
+              "answer": "Pakistan",
+              "translations": {
+                "mandarin": "Bājīsītǎn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Notated by two lines that angle towards one another as they move to , and ultimately join at,  the right, what  Italian  word  is used in musical notation to denote a steady decrease in volume?",
+              "answer": "diminuendo",
+              "accept": [
+                "decrescendo"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "The War of the Golden Stool was fought in 1900 between the British and which Akan Empire in modern -day Ghana for whom the Golden Stool had long symbolized governing power? This empire fell in 1901 after Britain annexed its territories, King Prempeh I was deposed, and the state's leaders were sent into exile in the Seychelles.",
+              "answer": "Asante  Empire",
+              "translations": {
+                "german": "Aschanti reich",
+                "mandarin": "ā sàn dì  dìguó  Polish:  Imperium Aszanti",
+                "romanian": "Imperiul Așanti"
+              },
+              "accept": [
+                "Ashanti  Empire"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Opened in 1965, the Friendship Bridge crosses the Paraná River, connecting the Brazilian city of Foz do Iguaçu to Ciudad del Este in which country ?",
+              "answer": "Paraguay"
+            },
+            {
+              "question_number": 2,
+              "question_text": "Many modern Asian skyscrapers are inspired by pagoda designs, including the Petronas Towers, and which skyscraper  that, in 2004, replaced the Petronas Towers as the world's tallest building?",
+              "answer": "Taipei 101",
+              "accept": [
+                "Taipei World Financial Center"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Anticosti Island is the largest island in the St Lawrence River but the second largest is which island  situated at the river’s confluence with the Ottawa River? Canada's most populous island, it shares its name with the major Francophone city that is mostly situated upon it.",
+              "answer": "Island of Montreal",
+              "translations": {
+                "mandarin": "méngtèlìěr  dǎo"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Dating back to 7000 –6500 BCE, which metallic element  was the first to be smelted from an ore, in this case galena? This metal was used for sculpture by early peoples because it is soft and malleable, qualities that meant it was later used in plumbing, although its use has been reduced in modern times due to  its toxicity.",
+              "answer": "lead",
+              "translations": {
+                "danish": "bly",
+                "dutch": "lood",
+                "french": "plomb",
+                "german": "Blei",
+                "mandarin": "qiān  Norwegian: bly",
+                "polish": "ołów",
+                "romanian": "plumb",
+                "swedish": "bly"
+              },
+              "accept": [
+                "Pb"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Since 1982, the Afghanistan - [BLANK] Friendship Bridge has crossed the Amu Darya River (a .k.a. Oxus River), connecting the  Afghan  town of Hairatan to the city of Termez (founded  as Alexandria on the Oxus) in which modern country ?",
+              "answer": "Uzbekistan",
+              "translations": {
+                "dutch": "Oezbekistan",
+                "french": "Ouzbékistan  Mandarin:  wūzībiékèsīt ǎn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "James Clark Maxwell showed that Saturn’s rings are made up of independent particles, so cannot be modelled as this kind of object . In standard models of active galactic nuclei, cold material near a black hole forms what kind of object ?",
+              "answer": "accretion disc",
+              "translations": {
+                "danish": "akkretionsskive",
+                "dutch": "accretieschijf",
+                "french": "disque d'accrétion",
+                "german": "Akkretionsscheibe",
+                "mandarin": "xī jī pán  Norwegian: akkresjonsskive  or tilvekstskive",
+                "polish": "dysk akrecyjny",
+                "romanian": "disc de acreție",
+                "swedish": "ackretionsskiva or insamlingsskiva"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Oriental Orthodox churches each use their own version of the Bible as scripture. The Coptic and Armenian Orthodox churches have based their versions of the Old Testament on which c . 3rd-century BCE Greek translation  of the Hebrew Bible?",
+              "answer": "Septuagint",
+              "translations": {
+                "french": "Sept ante  Mandarin: qīshí shì yìběn"
+              },
+              "accept": [
+                "Septuag inta",
+                "The Translation of the Seventy"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "In 1821, the northern half of the Darién Gap joined the southern portion as part of which republic  that had come into being two years earlier? This state encompassed much of northern South America and southern Central America until 1831 when it was dissolved and the Darién Gap became part of New Gr anada.",
+              "answer": "Gran Colombia  (prompt on ‘Colombia’)",
+              "translations": {
+                "danish": "Storcolombia",
+                "dutch": "Groot -Colombia",
+                "french": "Grande Colombie",
+                "german": "Großkolumbien",
+                "mandarin": "dà gēlúnb ǐyà Norwegian: Stor -Colombia",
+                "polish": "Wielka Kolumbia",
+                "romanian": "Columbia Mare",
+                "swedish": "Storcolombia"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "“The philosophers have only interpreted the world, in various ways. The point, however, is to change it” are words that appear on the London gravestone of which thinker ? This is the English translation of words this man originally wrote in German.",
+              "answer": "Karl Marx",
+              "translations": {
+                "mandarin": "kǎěr · mǎkèsī"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What name  is given to a cylinder of compressed snow and ice removed from an ice sheet or a high mountain glacier using an auger or drill? Air trapped in tiny bubbles within a sample can be analysed to determine the historical levels of atmospheric gases such as car bon dioxide and reconstruct temperatures over large periods of time.",
+              "answer": "ice core",
+              "translations": {
+                "danish": "is kerne",
+                "dutch": "ijs kern",
+                "french": "carotte  de glace",
+                "german": "Eis bohrkern",
+                "mandarin": "bīng xīn Norwegian: is kjerneprøve",
+                "polish": "rdzeń  lodowy",
+                "romanian": "carotă  de gheață",
+                "swedish": "iskärna"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In which 1516 epic  does the English knight Astolfo fly to the Moon in Elijah's fiery chariot in order to find a cure for the madness of the title character?",
+              "answer": "Orlando Furioso",
+              "translations": {
+                "danish": "also Den rasende Roland",
+                "french": "also Roland furieux",
+                "german": "Der rasende Roland",
+                "mandarin": "fēngkuáng àolánduō  Norwegian: also Den rasende",
+                "polish": "Orland szalony",
+                "swedish": "Den rasande Roland"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Csepel [CHEP -el] is an island in the Danube that officially became a district of which capital city  in 1950? According to legend, the island is named after the horse groom of the military leader, Árpád.",
+              "answer": "Budapest",
+              "translations": {
+                "mandarin": "bùdápèisī",
+                "polish": "Budapeszt  Romanian: Budapesta"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In 1838, the trigger for which war  was a petition sent by Monsieur Remontel, a businessman in the outskirts of Mexico City, to the French king, citing damages to his property by Mexican soldiers, and the refusal of the Mexican government to compensate? The first of the French -Mexican Wars of the 19th century, it is named after the main business of M. Remontel.",
+              "answer": "Pastry  War",
+              "translations": {
+                "danish": "Kage krigen",
+                "dutch": "Gebak oorlog",
+                "french": "guerre des Pâtisseries",
+                "german": "Kuchen krieg",
+                "mandarin": "gāodiǎn zhànzhēng  Norwegian: Konditor krigen",
+                "polish": "wojny ciastkowej",
+                "romanian": "Războiul patiseriei",
+                "swedish": "Bakelse kriget"
+              },
+              "accept": [
+                "guerre des Pâtisseries",
+                "Guerra de los pasteles"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "In 2014, Angélique Kidjo presented, and performed at, a “Mama Africa” concert at Carnegie Hall honouring which South African singer and activist , known for songs such as “Pata Pata”? This woman argued passionately against Apartheid and testified against the South African government at the United Nations in 1962.",
+              "answer": "Miriam Makeba",
+              "translations": {
+                "mandarin": "mǐ ruìān · mǎkǎ bèi"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In which country  was a constitutional crisis brought about by President Maithripala Sirisena's appointment of the former president, Mahinda Rajapaksa, as prime minister in October 2018, before he had officially dismissed the incumbent PM?",
+              "answer": "Sri Lanka",
+              "translations": {
+                "mandarin": "Sīlǐlánkǎ"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Also serving as Secretary of State from 2009 to 2013, who is the only first lady of the United States to have run for elected office?",
+              "answer": "Hillary Rodham Clinton",
+              "translations": {
+                "mandarin": "xīlālǐ · dàiān · luò xián · kèlíndùn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In Norse mythology, Njord, Freyr , and Freyja are all members of which group of gods who fought against the Æsir  (a.k.a. Ese or Ase) in a war that led to the unification of the two tribes?",
+              "answer": "Vanir",
+              "translations": {
+                "danish": "Vaner",
+                "dutch": "Wanen",
+                "french": "Vanes",
+                "german": "Wanen  Mandarin: huánà shénzú",
+                "norwegian": "Vaner",
+                "polish": "Wanowie",
+                "swedish": "Vaner"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What name , after the Danish scientist who developed the technique in 1882, is given to the empirical method of differentiating bacterial species into two large groups based on the chemical and physical properties of their cell walls?",
+              "answer": "Gram  staining",
+              "accept": [
+                "Gram’s  method"
+              ]
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which large island  forms much of the eastern limit of the Gulf of Tonkin?",
+              "answer": "Hainan",
+              "translations": {
+                "polish": "Hajnan"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Famous for its rich collection of fossils dating from the last ice age, which cluster of asphalt pits  is located in Hancock Park in the centre of urban Los Angeles?",
+              "answer": "Rancho La Brea  Tar Pits",
+              "translations": {
+                "mandarin": "lābù léiyà  lìqīng kēng"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which 1 2th-century Italian -born scholastic theologian and bishop was known as Magister Sententiarum  following the publication of his Sententiae in quatuor IV libris distinctae  (Four Books of Sentences ), a systematic compilation of theology?",
+              "answer": "Kente  cloth",
+              "translations": {
+                "danish": "Peter Lombarderen",
+                "mandarin": "níěrsī",
+                "polish": "Piotr Lombard"
+              },
+              "accept": [
+                "Pierre Lombard",
+                "Pietro Lombardo",
+                "Petrus Lombardus"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

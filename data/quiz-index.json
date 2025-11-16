@@ -1,9 +1,79 @@
 {
   "quizzes": [
     {
-      "name": "Sample Quiz - ICC Quiz Example",
-      "file": "/data/quizzes/sample_quiz.json",
-      "description": "Sample quiz demonstrating the format"
+      "name": "Document",
+      "file": "/data/quizzes/Document.json",
+      "description": "0 rounds, 0 questions"
+    },
+    {
+      "name": "ICC9-Week-9-T1-8 (2)",
+      "file": "/data/quizzes/ICC9-Week-9-T1-8 (2).json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC-Season-9-Week-8-Tiers-1-8 (1)",
+      "file": "/data/quizzes/ICC-Season-9-Week-8-Tiers-1-8 (1).json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC9-Week-5",
+      "file": "/data/quizzes/ICC9-Week-5.json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC9 Week 7 T9-20",
+      "file": "/data/quizzes/ICC9 Week 7 T9-20.json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC Season 9, Week 2",
+      "file": "/data/quizzes/ICC Season 9, Week 2.json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC9-Week-3 (2)",
+      "file": "/data/quizzes/ICC9-Week-3 (2).json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC-Season-8Week-6",
+      "file": "/data/quizzes/ICC-Season-8Week-6.json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC-Season-9-Week-6",
+      "file": "/data/quizzes/ICC-Season-9-Week-6.json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC-Season-9-Week-4",
+      "file": "/data/quizzes/ICC-Season-9-Week-4.json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC9 Week 1 (2)",
+      "file": "/data/quizzes/ICC9 Week 1 (2).json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "BOOQL-2025-R4-T3-T8 (2)",
+      "file": "/data/quizzes/BOOQL-2025-R4-T3-T8 (2).json",
+      "description": "5 rounds, 0 questions"
+    },
+    {
+      "name": "ICC9-Week-9-T1-8 (2) (1)",
+      "file": "/data/quizzes/ICC9-Week-9-T1-8 (2) (1).json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC9-Week-9-T9-20 (3)",
+      "file": "/data/quizzes/ICC9-Week-9-T9-20 (3).json",
+      "description": "5 rounds, 66 questions"
+    },
+    {
+      "name": "ICC-Season-9-Week-8-Tiers-9-20 (1)",
+      "file": "/data/quizzes/ICC-Season-9-Week-8-Tiers-9-20 (1).json",
+      "description": "5 rounds, 66 questions"
     }
   ]
 }

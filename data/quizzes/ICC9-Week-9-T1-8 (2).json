@@ -1,0 +1,852 @@
+{
+  "metadata": {
+    "title": "ICC9-Week-9-T1-8 (2)",
+    "source": "ICC9-Week-9-T1-8 (2).pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A hafiz or hafiza  is someone who has completely memorised which major religious text ?",
+              "answer": "Quran",
+              "translations": {
+                "danish": "Koranen",
+                "french": "Coran",
+                "mandarin": "gǔlánjīng  Norwegian: Koranen",
+                "romanian": "Coran",
+                "swedish": "Koranen"
+              },
+              "accept": [
+                "Koran"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The International Criminal Court (ICC) is an intergovernmental organization and international tribunal seated in The Hague, Netherlands. It was established in 2002 following a multilateral \"statute\" adopted at, and named after, a diplomatic conference held  in what European capital city , on 17 July 1998?",
+              "answer": "Rome",
+              "translations": {
+                "danish": "Rom",
+                "german": "Rom",
+                "mandarin": "luómǎ Polish: Rzym",
+                "swedish": "Rom"
+              },
+              "accept": [
+                "Roma"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Among many examples of the literary archetype known as the “superfluous man ” is the title character of  what 1859 Russian novel  who spends almost the entire novel doing nothing except talking to visiting friends or his servant, Sachar?",
+              "answer": "Oblomov",
+              "translations": {
+                "german": "Oblomow  Mandarin: ào bó luò mò fū"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Opened in 1967 to strengthen the country’s irrigation system, the Mangla Dam was constructed by Pakistan in Pakistani -controlled Kashmir on which river , the westernmost of the five major rivers of the Punjab region?",
+              "answer": "Jhelum  (accept Hydaspes , Bidaspes , Vitastā , Bihat , Vehat , Bihatab , Biyatta ,",
+              "translations": {
+                "mandarin": "jié hèlè m ǔ hé Polish: Dźhelam"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What word , originally coined by Auguste Comte to mean the opposite of 'egoism', is used in biology to refer to any behaviour that increases the fitness of another at the expense of decreasing one’s own fitness? Kin selection and reciprocity are mechanisms by which this behaviour can evolve.",
+              "answer": "altruism",
+              "translations": {
+                "danish": "altruisme",
+                "dutch": "altruïsme",
+                "french": "altruisme",
+                "german": "Altruismus  Mandarin:  lìtā zhǔyì",
+                "norwegian": "altruisme",
+                "polish": "altrui zm"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Pinky Madam, an Americanized Indian woman who evades the law after killing a child in a hit -and-run accident, is a major character in which best -selling 2008 novel  by Aravind Adiga?",
+              "answer": "The White Tiger",
+              "translations": {
+                "danish": "Den Hvide Tiger",
+                "dutch": "De witte tijger",
+                "french": "Le Tigre blanc",
+                "german": "Der weiße Tiger",
+                "mandarin": "bái lǎohǔ Norwegian: Hvit tiger",
+                "polish": "Biały Tygrys",
+                "romanian": "Tigrul alb",
+                "swedish": "Den vita tigern"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which 1831 woodblock print  by the Japanese ukiyo -e artist Hokusai is the first, and best known, of his series Fugaku Sanjūrokkei (Thirty -six Views of Mount Fuji) ?",
+              "answer": "The Great Wave  off Kanagawa",
+              "translations": {
+                "danish": "Den store bølge ud for Kanagawa",
+                "dutch": "Onder de golf voor de kust van",
+                "french": "La Grande Vague  de Kanagawa  or",
+                "german": "Die große Welle  vor Kanagawa  or",
+                "polish": "Wielka fala  w Kanagawie  or Fala",
+                "romanian": "Marele val  de la Kanagawa  or",
+                "swedish": "Under vågen utanför Kanagawa"
+              },
+              "accept": [
+                "Kanagawa -oki Nami Ura  (accept Under the Wave"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Home to the brands Pol Roger and Perrier -Jouet, the French town of Épernay is considered the centre of the industry making which product , named after the former province in northeastern France to which Épernay  belonged between 1314 and 1790?",
+              "answer": "Champagne  (prompt on ‘sparkling wine’)",
+              "translations": {
+                "german": "Champagner",
+                "mandarin": "xiāngbīnji ǔ Polish: Szampan",
+                "romanian": "Șampania"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which American Marxist feminist philosopher  wrote the 1981 book Women, Race and Class  that analyses US history between the abolitionist movement and the women's liberation movement?",
+              "answer": "Angela Davis",
+              "translations": {
+                "mandarin": "ānjílā · dàiwéisī"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What word , the name given to the currency of  several nations, derives from a large silver coin first minted in Bohemia in around 1520 , and subsequently used across the Holy Roman Empire and parts of the Habsburg holdings?",
+              "answer": "dollar  (prompt on ‘thaler’",
+              "accept": [
+                "‘daler’",
+                "‘tolar’ )"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The occurrence of constructive interference when the path difference between scattered X -rays is equal to an integer multiple of the wavelength is an expression of which eponymous law  underpinning X -ray crystallography, formulated by a father and son who shared the 1915 Nobel Prize in Physics?",
+              "answer": "Bragg ’s law",
+              "translations": {
+                "mandarin": "bùlāgé  dìnglǜ The word for ‘law ’ differs from language"
+              },
+              "accept": [
+                "Wulff –Bragg 's condition or Laue –Bragg  interference"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Known for its extreme placidity, which has seen the species achieve  internet celebrity, which semi -aquatic South American mammal  is the world's largest rodent?",
+              "answer": "greater capybara",
+              "translations": {
+                "danish": "kapivar  or kapibara  or flodsvin",
+                "dutch": "capibara  or waterzwijn",
+                "french": "also cabiaï",
+                "german": "also Wasserschwein  or",
+                "mandarin": "shuǐ tún Norwegian: flodsvin  or kapivar  or",
+                "polish": "kapibara  wielka",
+                "romanian": "capibara  or porc de apă",
+                "swedish": "kapybara  or vattensvin"
+              },
+              "accept": [
+                "Hydrochoerus  hydrochaeris"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which medieval kingdom – which spanned the African parts of the Red Sea, Yemen, and northern Ethiopia – was conquered in 960 CE when it was invaded by a Jewish queen named Gudit from the Simien Mountains? This kingdom took its name from the city that served as its capital for mo st of its history.",
+              "answer": "Kingdom of Aksum",
+              "translations": {
+                "french": "Aksoum  Mandarin: ākèsū mǔ wángguó"
+              },
+              "accept": [
+                "Aksumite  Empire",
+                "Axum"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "This major Punjabi river  was assigned to India by the historic Indus Water Treaty of 1960 and the Rajasthan Canal project diverted its waters into previously unirrigated areas of India. Which river  that runs along the border between Pakistan and India in Punjab is home to the manmade Ropar wetland?",
+              "answer": "Sutlej",
+              "translations": {
+                "mandarin": "sàtè láijié  hé Polish: Satledź"
+              },
+              "accept": [
+                "Satluj",
+                "Satadru"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Although, contrary to popular myth , he did not discover the Champagne method, this French Benedictine monk did make important improvements to the quality of sparkling wine production. This is which man , who died in 1715 ?",
+              "answer": "Dom Pérignon",
+              "translations": {
+                "mandarin": "táng péi lǐ nóng"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The 'Paganini' section of which composer 's 1835 piano piece Carnaval  contains an early example of extended piano technique when the performer silently depresses a chord related to the overtone series of previous chords, and then depresses the sustain pedal to produ ce the sound of sympathetically vibrating strings? Chopin described Carnaval as 'not real music at all' but is the dedicatee of another of this composer's solo piano pieces, Kreisleriana .",
+              "answer": "Robert Schumann",
+              "translations": {
+                "mandarin": "luóbótè · shūmàn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What name  is used for the 114 chapters that make up the Quran? These chapters may be further divided into verses or ayat .",
+              "answer": "sura h",
+              "translations": {
+                "french": "sourate",
+                "german": "Sure  Mandarin: sūlā"
+              },
+              "accept": [
+                "suwar"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "One PhD student of Sir William Henry Bragg was which Irish X -ray crystallographer who was the first to demonstrate the planar hexagonal structure of the benzene ring using X -ray diffraction methods on hexamethylbenzene? She was one of the first two women, alongside biochemist Margory Stephenson, to be elected a fellow of the Royal Soci ety and she gives her name to a particularly hard allotrope of carbon – also known as hexagonal diamond – that is found only in meteorite debris .",
+              "answer": "Kathleen Lonsdale",
+              "translations": {
+                "mandarin": "Kǎisèlín· Lǎngsīdàiěr"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which city , Panama's second largest, lies at the Atlantic end of the Panama Canal and has been the site of a namesake free trade zone since 1948?",
+              "answer": "Colón",
+              "translations": {
+                "mandarin": "kēlóng"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What unit of currency , used in ancient Mesopotamia, originally denoted a small unit of weight of around 11 grams? The same name is shared by a currency that was adopted by a UN member state in 1980, when it replaced the previous currency, known as the pound.",
+              "answer": "shekel  or sheqel",
+              "translations": {
+                "dutch": "sjekel",
+                "french": "sicel",
+                "mandarin": "xiè kèěr  Polish: szekel",
+                "swedish": "sikel"
+              },
+              "accept": [
+                "‘new shekel ’"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "What EU country  announced its withdrawal from the ICC in April 2025, in conjunction with a visit from the Israeli PM Benjamin Netanyahu, who is currently sought under an ICC arrest warrant? Unless retracted, the withdrawal will become effective in April 2026, coinciding with the country's parliamentary elections.",
+              "answer": "Hungary",
+              "translations": {
+                "danish": "Ungarn",
+                "dutch": "Hongarije",
+                "french": "Hongrie",
+                "german": "Ungarn",
+                "mandarin": "xiōngyálì  Norwegian: Ungarn",
+                "polish": "Węgry",
+                "romanian": "Ungaria",
+                "swedish": "Ungern"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Another example of a “superfluous man” is the Byron -like figure, Pechorin, the protagonist of what 1840 Russian novel ? Though he claims to “despise women to avoid loving them ”, he appears to legitimately care for an old lover, Vera.",
+              "answer": "A Hero of Our Time",
+              "translations": {
+                "danish": "Vor Tids Helt",
+                "dutch": "Een held van onze tijd",
+                "french": "Un héros de notre temps",
+                "german": "Ein Held unserer Zeit",
+                "mandarin": "dāngdài yīngxióng  Norwegian: Vår tids helt",
+                "polish": "Bohater naszych czasów",
+                "romanian": "Un erou al timpului nostru",
+                "swedish": "Vår tids hjälte"
+              },
+              "accept": [
+                "Gerój nášego vrémeni"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which biologist  gives his name to a 'rule' that explains how kin selection can lead to altruistic behaviour, in which rB > C  [r b is greater than C] where  r is the coefficient of relatedness, B is the benefit of an altruistic act to the recipient , and C is the cost of the act to the performer? It can be summarised by a joke made by J. B. S. Haldane which states that he would willingly die for at least two of his brothers or at least eight of his cousins.",
+              "answer": "W. D. Hamilton",
+              "translations": {
+                "mandarin": "wēilián · tángnà · hàn míěrdùn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The daughter of TimTam, Pinky befriends Ness at Thomas Allan Stockham's plantation in which acclaimed 2016 novel  by the Ghanaian -American author Yaa Gyasi?",
+              "answer": "Homegoing",
+              "translations": {
+                "dutch": "Weg naar huis",
+                "french": "No Home",
+                "german": "Heimkehren  Mandarin: guī qù lái xī",
+                "polish": "Droga do domu"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What was the name  of the first silver coin struck by the Roman Empire? The word for \"money\" in a number of Romance languages ultimately derives from the name of this coin, valued at 10 assēs .",
+              "answer": "denarius  (or denarii )",
+              "translations": {
+                "french": "denier",
+                "german": "Denar",
+                "mandarin": "dì nà lǐ wūsī  Polish: denar",
+                "romanian": "denar"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "George Crumb's Makrokosmos  is an avant -garde work that includes extended piano techniques such as plucking the strings, using objec ts like  plectrums and thimbles, and whistling. Makrokosmos was a response to which European composer 's Mikrokozmosz (Mikrokosmos) , a collection of 153 piano pieces, written between 1926 and 1939, some of which use extended techniques such as silent pressing ?",
+              "answer": "Béla Bartók",
+              "translations": {
+                "mandarin": "bātuōkè  · bèilā"
+              },
+              "accept": [
+                "Bartók  Béla"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Hokusai's Fugaku Sanjūrokkei  (Thirty -six Views of Mount Fuji)  greatly influenced which artist 's Meisho Edo Hyakkei (One Hundred Famous Views of Edo)  which, despite its title, consists of 119 ukiyo -e prints?",
+              "answer": "Utagawa Hiroshige",
+              "translations": {
+                "mandarin": "gē chuān guǎng zhòng"
+              },
+              "accept": [
+                "Andō Hiroshige"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Angela Davis studied at the university in which European city  where Max Horkheimer led the Institut für Sozialforschung (Institute for Social Research)?",
+              "answer": "Frankfurt  am Main",
+              "translations": {
+                "french": "Francfort  Mandarin: měi yīn hépàn fǎlánkèfú"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The final ruler of Aksum before Gudit's invasion was Dil Na'od. He was the holder of what title , derived from the Ge ʽez for 'to reign', that was used by kings in a number of Ethiopian polities?",
+              "answer": "Negus  of Aksum  (do not accept ‘Atse’",
+              "accept": [
+                "‘ Negusa Nagast ’)"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Superfluous man and noble Dmitrii Nikolevich Rudin is the central figure of Rudin , the first full-length novel published by what author ? This author had written one of the earliest depictions of a superfluous man six years earlier, in a novella centring on the terminally  ill Tchulkaturin.",
+              "answer": "Ivan Turgenev",
+              "translations": {
+                "dutch": "Ivan Toergenjev",
+                "french": "Ivan Tourgueniev",
+                "german": "Iwan Turgenew",
+                "mandarin": "yīwàn · túgénièfū  Polish: Iwan Turgieniew",
+                "romanian": "Ivan Turgheniev",
+                "swedish": "Ivan Turgenjev"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What term , meaning 'in the name of God', is repeated before each surah  except the ninth, At -Tawbah? Tasmiyah  refers to the act of saying this term , which is also recited before certain religious practices and daily activities.",
+              "answer": "bismillah",
+              "translations": {
+                "mandarin": "tài sī mǐ"
+              },
+              "accept": [
+                "bi-smi llāh",
+                "basmala"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Kin selection explains the co -operative behaviour of eusocial insects. Insects in the order Hymenoptera (bees, wasps, ants) use which sex -determination system  in which males hatch from unfertilised eggs containing only genetic information from their mother, and females hatch from fertilised eggs, containing genetic information from both parents? This means that the workers in a colony are more closely related t o their sisters than to their own offspring.",
+              "answer": "haplodiploidy",
+              "translations": {
+                "danish": "haplodiploidi",
+                "dutch": "haplodiploïdie",
+                "french": "haplodiploïde",
+                "mandarin": "rǎnsètǐ bèi xìng  xìngbié juédìng",
+                "polish": "haplodiploidalność",
+                "romanian": "haplodiploidie",
+                "swedish": "haplodiploidi"
+              },
+              "accept": [
+                "arrhenotoky"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Despite their size, adult capybaras still have plenty of predators. One such predator is which mammal , the largest cat species in the Americas? It shares much of its southern range with another predator of the capybara, the cougar or puma, from which it can be distinguished by its larger size and the rosettes on its fur.",
+              "answer": "jaguar",
+              "translations": {
+                "danish": "jaguaren",
+                "mandarin": "měizhōubào  Norwegian: jaguaren",
+                "swedish": "jaguaren"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Madame de Pompadour was among the best customers of which French wine merchant , who served the royal court at Versailles during the 1730s and who became the first winemaker in Champagne to exclusively produce sparkling wine? Best known for its  Dom Pérignon label, t he Champagne house he created  is now owned by LVMH and his surname provides one of the letters in the name of that company.",
+              "answer": "Claude Moët"
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which Malaysian city , one of the country's most populous, is the country's largest special economic zone despite gaining city status only in 1994? Often abbreviated 'JB', it shares the world's busiest international border crossing with Singapore.",
+              "answer": "Johor Bahru",
+              "translations": {
+                "mandarin": "xīnshān"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 2005, the ICC issued its first arrest warrants. These targeted Joseph Kony, Vincent Otti, and three other leaders of the Lord's Resistance Army, a Christian extremist organization founded to work  against President Yoweri Museveni  and towards the establishment of a Christian state in what African country ?",
+              "answer": "Uganda",
+              "translations": {
+                "french": "Ouganda  Mandarin: wūgāndá"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Another Irish protege of William Henry Bragg was which biochemist and polymath nicknamed \"Sage\", also important for his logistics work on the WW2 Operation Overlord? His scientific work with his PhD student, Dorothy Hodgkin, on the X -ray diffraction of wet crystals of pepsin, demonstrating an ordered X -ray diffraction pattern, laid the foundations of modern protein crystallography.",
+              "answer": "John  D. Bernal",
+              "translations": {
+                "mandarin": "yuēhàn · bèiěrnà"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The headstrong Pinky is the sister of the protagonist, Sampath, in which Indian author 's 1998 novel Hullabaloo in the Guava Orchard ? This woman's only other novel is the acclaimed 2006 book The Inheritance of Loss .",
+              "answer": "Kiran Desai",
+              "translations": {
+                "mandarin": "jī lán · désài"
+              },
+              "accept": [
+                "‘Desai’ alone but do not accept her mother",
+                "Anita Desai"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which Iranian island  in Hormozgan  province was designated a free trade zone in 1992, allowing foreign ownership, zero -percent tax rates, and more relaxed visa requirements? The Iranian government have sought to develop this island as a tourist destination to rival Dubai and Qatar.",
+              "answer": "Kish  (do not accept ‘Qeshm’)",
+              "translations": {
+                "german": "Kisch",
+                "mandarin": "jīshén  Polish: Kisz"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In November 2024, the ICC issued an arrest warrant for which former head  of the Palestinian Izz al -Din al -Qassam Brigades five months after he was presumed assassinated in an Israeli airstrike? The warrant was cancelled in February 2025, after his death had been confirmed.",
+              "answer": "Mohammed Deif",
+              "translations": {
+                "mandarin": "mùhǎnmòdé · dàifū  Polish: Muhammad Dajf"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Hiroshige is often considered the last great master of ukiyo -e. Along with his Meisho Edo Hyakkei (One Hundred Famous Views of Edo) , he is perhaps best known for his work [BLANK] Gojūsan -tsugi  (The Fifty -Three stations of the [BLANK]) . Which word , the name of a historic road that connected Kyoto with Edo (Tokyo), fills the blank?",
+              "answer": "Tōkaidō",
+              "translations": {
+                "mandarin": "dōnghǎidào"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Another predator of capybaras is which relatively small crocodilian  of the family Alligatoridae, found in the swamps, lakes, and mangrove rivers of South and Central America?",
+              "answer": "caiman",
+              "translations": {
+                "danish": "kaiman",
+                "dutch": "kaaiman",
+                "german": "Kaiman",
+                "mandarin": "kǎi mén  è Norwegian: kaiman",
+                "polish": "kajman",
+                "swedish": "kaiman"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which river  joins the Indus at the point at which the Hindu Kush, the Himalayas, and the Karakoram all meet? A namesake city on this river gives its name to a region that, itself, co -names  an administrative territory of northern Kashmir, administered by Pakistan but subject to a dispute with India.",
+              "answer": "Gilgit",
+              "translations": {
+                "mandarin": "jíěr jí tè  hé"
+              },
+              "accept": [
+                "Gupis  or Ghizer"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Many works centring on superfluous men, including Rudin , were published in what Russian literary magazine ? Both Ivan Turgenev and Ivan Goncharov were hired to work on this magazine by its editor, Nikolay Nekrasov.",
+              "answer": "Sovremennik",
+              "translations": {
+                "danish": "Den Samtidige",
+                "french": "Le Contemporain",
+                "german": "Der Zeitgenosse  Mandarin: xiàndàirén",
+                "polish": "Współcześnik"
+              },
+              "accept": [
+                "The Contemporary"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "It is unclear exactly how long Gudit  and her dynasty reigned after defeating Aksum, but she is sometimes said to have been followed by Mara Takla Haymanot, the founder of which dynasty ? This dynasty, which takes its name from the Ge ʽez name of the Agaw people, controlled much of Ethiopia and Eritrea from 1137 –1270 and saw the construction of the famous rock -hewn churches during the reign of Gebre Meskel Lalibela.",
+              "answer": "Zagwe  dynasty",
+              "translations": {
+                "french": "Zagwés",
+                "mandarin": "zhā gé wéi  wángcháo  Polish: Zague"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Angela Davis's doctoral advisor at the University of Frankfurt was which German -born philosopher  who wrote the English -language works Eros and Civilization  and One - Dimensional Man ?",
+              "answer": "Herbert Marcuse",
+              "translations": {
+                "mandarin": "hèbótè · mǎěrkùsāi"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the name  for the canonical reports of the sayings and the deeds of the Prophet Muhammad? These texts are widely considered the second most important source for Islamic norms and guidance, or Sunnah , after the Quran.",
+              "answer": "hadith",
+              "translations": {
+                "mandarin": "shèngxùn",
+                "polish": "hadis  Romanian: hadis"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In his piece Szabadban (Out of Doors) , Bartók used 'tone clusters', chords containing at least three adjacent tones, typically played by depressing keys with the flat of the hand or the forearm. Which American composer  instructs the performer to use a 14¾ inch - long wooden strip to play tone clusters in 'Hawthorne', the second movement of his Piano Sonata No. 2, known as the Concord Sonata ?",
+              "answer": "Charles Ives",
+              "translations": {
+                "mandarin": "chálǐsī · ài wǔ shì"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In a 1967 paper, W. D. Hamilton coined the term ‘unbeatable strategy’ while describing the effectiveness of 1:1 sex -ratios. John Maynard Smith mathematically formalised the idea of an unbeatable strategy into what concept , which refers a phenotype that, once in place, cannot be replaced or invaded by any other phenotype?",
+              "answer": "evolutionarily stable strategy",
+              "translations": {
+                "danish": "evolutionært stabil strategi",
+                "dutch": "evolutionair stabiele strategie",
+                "french": "stratégie évolutivement stable",
+                "german": "evolutionär stabile Strategie",
+                "mandarin": "jìnhuà wěndìng duìcè  Norwegian:  evolusjonært stabil strategi",
+                "polish": "strategia stabilna ewolucyjnie",
+                "romanian": "strategie stabilă evoluțion ist",
+                "swedish": "evolutionärt stabil strategi"
+              },
+              "accept": [
+                "ESS"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Between 1967 and 1968, Angela Davis attended a series of seminars given at Frankfurt by which German philosopher  to discuss his book Negative Dialektik (Negative Dialectics) ? This man's other works include Dialektik der Aufklärung (Dialectic of Enlightenment) , which he co -wrote with Max Horkheimer.",
+              "answer": "Theodor W. Adorno",
+              "translations": {
+                "mandarin": "dí àoduō · āduōnuò"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Another predator of adult capybaras is which semi -aquatic South American snake  of the genus Eunectes , particularly its 'green' species, which is the world's heaviest snake?",
+              "answer": "anaconda  (accept water boa  but prompt on ‘boa’  and do not accept ‘boa",
+              "translations": {
+                "mandarin": "shuǐ rán shǔ or sēnrán  Swedish: anakondor"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which Chinese city , a special economic zone (SEZ) along the Pearl River Delta in Guangdong province , is now the country's third largest city despite having a population of only 30,000 in 1980? It was chosen as the first SEZ due to its proximity to Hong Kong, which helped it attract foreign investment.",
+              "answer": "Shenzhen"
+            },
+            {
+              "question_number": 2,
+              "question_text": "The first vintage Champagne was created in 1810 by which Frenchwoman , who took on her husband's wine business when she was widowed in 1805 at the age of 27? Also the inventor of the first known blended rosé Champagne, she gives her name to the prestigious Champagne house that she created.",
+              "answer": "Madame  Clicquot  Ponsardin",
+              "translations": {
+                "mandarin": "bā bù -nīkēěr· kè lìkē  - péng"
+              },
+              "accept": [
+                "Widow Clicquot",
+                "Ve uve Clicquot  (accept Barbe -"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "What coin , minted almost entirely from gold, was used widely across medieval Europe for trade purposes after being introduced in Venice in 1284? The coin's name derives from one of the noble titles held by Roger II of Sicily, who had introduced a similar coin the p revious century.",
+              "answer": "ducat",
+              "translations": {
+                "mandarin": "dá kètè"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Inspired by his discussions with John Bernal during a posting to Southeast Asia during WW2, which biochemist and crystallographer  worked closely with one of Lawrence Bragg's PhD students, Max Perutz, sharing a 1962 Nobel Prize in Chemistry for their X - ray crystallographically determined structures of the oxygen carrying macromolecules haemoglobin and myoglobin?",
+              "answer": "John Kendrew",
+              "translations": {
+                "mandarin": "yuēhàn · kěn délǔ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The 17 -year -old sociopath Pinkie Brown is the central character in which 1938 English novel ?",
+              "answer": "Brighton Rock",
+              "translations": {
+                "french": "Rocher de Brighton",
+                "german": "also Am Abgrund des",
+                "polish": "W Brighton",
+                "swedish": "also Lagt kort ligger"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "One of Charles Ives’ biggest supporters was Henry Cowell, who used many extended techniques and is credited with inspiring which other American composer  to develop the 'prepared piano', which involves putting different objects along the piano strings before performing? Pieces this composer wrote for the prepared piano include Bacchanale  and Totem Ancestor .",
+              "answer": "John Cage",
+              "translations": {
+                "mandarin": "yuēhàn · kǎi jí"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Aksum had established itself as a major regional power in 520 during the reign of Kaleb when it invaded which Yemeni kingdom  at the behest of the Byzantine King Justin I in order to end the persecution of Christians? This kingdom was centred around Zafar in the Yemeni highlands.",
+              "answer": "Himyar",
+              "translations": {
+                "mandarin": "xī mùyè",
+                "norwegian": "Himjar  Polish: Himjar"
+              },
+              "accept": [
+                "Himyarite"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Hyakumonogatari (One Hundred Stories of Demons and Spirits)  is a work by which ukiyo - e artist , perhaps best known for his bijin ōkubi -e, that is depictions of the heads of beautiful women? The French Impressionists held this man in as high regard as Hokusai and Hiroshige, and his use of colour and compositional style was enormously influential on the work of Mary Cassatt.",
+              "answer": "Kitagawa Utamaro",
+              "translations": {
+                "mandarin": "Xǐduōchuān Gēmó"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Baglihar Dam , which has been operational since  2008 , lies on which Punjabi  river that  flows through Indian -held Kashmir before reaching Pakistan? Pakistan has objected to the dam claiming it violates the 1960 Indus Water Treaty.",
+              "answer": "Chenab",
+              "accept": [
+                "Chandrabhaga"
+              ]
+            },
+            {
+              "question_number": 1,
+              "question_text": "Created in 1893, Skrik  (The Scream) is the masterpiece of which Norwegian painter ?",
+              "answer": "Edvard Munch",
+              "translations": {
+                "mandarin": "àidéhuá · méngkè"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Henri Moissan was awarded the Nobel Prize for Chemistry in 1906 for his work in isolating which yellowish -brown gaseous element  from its compounds?",
+              "answer": "fluorine",
+              "translations": {
+                "danish": "fluor",
+                "dutch": "fluor",
+                "french": "fluor",
+                "german": "Fluor",
+                "mandarin": "Fú Norwegian: fluor",
+                "polish": "fluor",
+                "romanian": "fluor"
+              },
+              "accept": [
+                "F"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Premiering in Prague in 1921, which science -fiction play  by the Czech author Karel Čapek is best remembered today for having introduced and popularized the word ‘robot’?",
+              "answer": "R.U.R. : Rossumovi Univerzální Roboti",
+              "translations": {
+                "mandarin": "luō suō de wànnéng gōngrén"
+              },
+              "accept": [
+                "R.U.R. : Rossum’s Universal Robots  (accept"
+              ]
+            },
+            {
+              "question_number": 1,
+              "question_text": "In 2004, Indulis Emsis became the first head of government  to represent a Green party when he was elected Prime Minister of which country ?",
+              "answer": "Latvia",
+              "translations": {
+                "danish": "Letland",
+                "dutch": "Letland",
+                "french": "Lettonie",
+                "german": "Lettland  Mandarin:  lā tuō wéiyà",
+                "polish": "Łotwa",
+                "romanian": "Letonia",
+                "swedish": "Lettland"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Located off Tunisia’s Gulf of Gabès  and supposedly Odysseus’ s island  of the Lotus - Eaters, what is the name of the largest island  off the North African coast?",
+              "answer": "Djerba",
+              "accept": [
+                "Jarbah",
+                "Jirba",
+                "Meninge",
+                "or Meninx"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Many Inca villages would keep an oddly  shaped example of which foodstuff  in order to worship the deity Axomamma, who is the Incan goddess of that  foodstuff?",
+              "answer": "Devon  Island",
+              "translations": {
+                "danish": "kartoffel",
+                "dutch": "bilirubine",
+                "french": "bilirubine",
+                "german": "Kartoffel",
+                "mandarin": "déwén  dǎo",
+                "polish": "ziemniak",
+                "romanian": "bilirubină",
+                "swedish": "potatis"
+              },
+              "accept": [
+                "BR"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

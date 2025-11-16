@@ -1,0 +1,947 @@
+{
+  "metadata": {
+    "title": "ICC-Season-9-Week-4",
+    "source": "ICC-Season-9-Week-4.pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which religion  developed in Haiti as a syncretism of West African belief systems and Catholicism, and revolves around belief in spirits called Lwa or Loas? This religion also gave rise to a similar belief system in Louisiana.",
+              "answer": "Vodou  (or Voodoo",
+              "translations": {
+                "french": "vaudou",
+                "romanian": "vaudou"
+              },
+              "accept": [
+                "Vodun )"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "What extinct genus  with a distinctive ‘sail’ formed from bony spines connected to its vertebrae has a name derived from the Greek for ‘two measures of teeth ’? Though often portrayed as a type of dinosaur in popular culture, these creatures were actually early synapsids, closely related to the ancestors of modern mammals.",
+              "answer": "Dimetrodon",
+              "translations": {
+                "mandarin": "Yìch ǐlóng shǔ"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What form of transport  names the ‘problem’ in an influential thought experiment put forward by Philippa Foot , and given its name by Judith Jarvis Thomson , which asks whether it is moral to sacrifice one person in order to save others?",
+              "answer": "trolley  problem",
+              "translations": {
+                "danish": "sporvogn sproblemet",
+                "dutch": "trolley probleem",
+                "french": "dilemme du tramway",
+                "german": "also Weichensteller fall",
+                "mandarin": "Yǒu guǐ diànchē nántí Norwegian: sporvogns problemet",
+                "polish": "dylemat wagonika , dylemat",
+                "romanian": "Dilema tramvai ului",
+                "swedish": "Spårvagn sproblemet"
+              },
+              "accept": [
+                "tram  problem"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Imprisoned for several years for a crime he didn’t commit, Edmond Dantès is the title character of which 1844 adventure novel  by Alexandre Dumas?",
+              "answer": "The Count of Monte Cristo",
+              "translations": {
+                "danish": "Greven af Monte Cristo",
+                "dutch": "De graaf van Monte -Cristo",
+                "german": "Der Graf von Monte Christo",
+                "mandarin": "Jī dù shān ēn chóu jì  Norwegian: Greven av Monte Cristo",
+                "polish": "Hrabia Monte Christo",
+                "romanian": "Contele de Monte -Cristo"
+              },
+              "accept": [
+                "Le Comte de Monte -Cristo"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Molecular oxygen , or O 2, is the most common allotrope of elemental oxygen. It is a diradical molecule, resulting from its ground state electron configuration with two electrons occupying degenerate molecular orbitals to form what type of spin state ?",
+              "answer": "triplet  (or triplet  state, spin triplet , triplet  oxygen)",
+              "translations": {
+                "danish": "triplet -tilstand, triplet -ilt",
+                "dutch": "triplett oestand, triplet zuurstof",
+                "french": "état triplet ,  oxygène triplet",
+                "german": "Triplett -Zustand, Triplett -",
+                "mandarin": "sānxiàn tài  yang, sāi sān",
+                "polish": "stan trypletowy , tlen  trypletowy",
+                "romanian": "stare triplet , oxygen triplet",
+                "swedish": "triplett illstånd , triplett syre"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Tuttomundo  in Pisa is one of the last outdoor works by which American artist  who began his career in the 1980s graffiti scene in New York City  and who died from AIDS - related complications in 1990?",
+              "answer": "Keith Haring",
+              "translations": {
+                "mandarin": "Kǎisī·Hālín"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Georges Cousineau  was an 18th-century maker of what kind of musical instrument , which was in vogue at the time because it was Marie Antoinette’s instrument of choice? In 1782 , Cousineau came up with a 14 -pedal version of this instrument, which allowed users to play in all keys, and is an important predecessor to the modern concert version , which has seven pedals .",
+              "answer": "harp",
+              "translations": {
+                "danish": "harpe",
+                "french": "harpe",
+                "german": "Harfe",
+                "mandarin": "shùqín  Norwegian: harpe",
+                "polish": "harfa",
+                "romanian": "harpă , harfă , arpă , arfă",
+                "swedish": "harpa"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In mathematics, what name is given to a number  that can be used to measure a continuous, o ne-dimensional quantity , or in other words, correspond s to a point along a line? The  set of these numbers is denoted R.",
+              "answer": "real  number",
+              "translations": {
+                "danish": "reelle  tal",
+                "dutch": "reële  getallen",
+                "french": "nombre réel",
+                "german": "reellen  Zahlen",
+                "mandarin": "shí shù Norwegian: reelt  tall",
+                "polish": "liczby rzeczywiste",
+                "romanian": "număr real",
+                "swedish": "reella  tal"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "‘Tortues’ (‘Tortoises’), ‘L’Éléphant’ (‘The Elephant’), ‘Aquarium’ and ‘Fossiles’ (‘Fossils’) are movements taken from what humorous musical suite  of 14 movements written for two pianos, a chamber ensemble , and a glass harmonica?",
+              "answer": "The Carnival of the Animals",
+              "translations": {
+                "danish": "Dyrenes Karneval",
+                "dutch": "Het Carnaval der Dieren",
+                "german": "Karneval der Tiere",
+                "mandarin": "Dòngwù Kuánghuān Jié  Norwegian: Dyrenes karneval",
+                "polish": "Karnawał zwierząt",
+                "romanian": "Carnavalul animalelor",
+                "swedish": "Djurens karneval"
+              },
+              "accept": [
+                "Le Carnaval des animaux  by Camille Saint -Saëns"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Resulting in sweeping reforms to the political system and wider society, the Meiji [may - jee] restoration was an event of 1868 that saw the re -establishment of Imperial rule in which country , ending the control of the shoguns?",
+              "answer": "Japan",
+              "translations": {
+                "french": "Japon",
+                "mandarin": "Rìběn  Polish: Japonia",
+                "romanian": "Japonia"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In 2025, the United States implemented a series of tariffs against most of its trading partners. One territory that received a lot of attention at this time was which external Australian territory  that was tariffed despite being uninhabited? This territory consists of one larger island and a smaller archipelago over 4,000 kilometres from Perth in the southern Indian Ocean.  Your answer should contain the name of both the island and the archipelago .",
+              "answer": "Heard  Island and  McDonald  Islands  (accept Heard and McDonald  Islands; prompt",
+              "translations": {
+                "mandarin": "Hèdé  dǎo hé Màikètángn à"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1949, the CIA began a decade -long covert effort against which country ’s government when they installed a pro -American colonel, Adib Shishakli, who lasted for four years before the Ba'ath Party overthrew him? Ba'athism was established in this country by intellectuals such as Michel Aflaq before spreading to its eastern neighbour.",
+              "answer": "Syria",
+              "translations": {
+                "danish": "Syrien",
+                "dutch": "Syrië",
+                "french": "Syrie",
+                "german": "Syrien  Mandarin:  Xùlìy ǎ",
+                "romanian": "Siria",
+                "swedish": "Syrien"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Louis I of Hungary became the King of Poland in 1370 following the death of which king , Louis’ uncle, who is considered one of the most successful Polish monarchs? This king acquired much of Ruthenia, passed many judicial and military reforms, allowed Jews to settle in Poland , and founded the Jagiellonian University.",
+              "answer": "Casimir III",
+              "translations": {
+                "danish": "Kasimir 3.  den Store",
+                "french": "Casimir le Grand",
+                "german": "Kasimir der Große",
+                "mandarin": "Kǎqímǐrì sānshì, Kǎqímǐrì dàdì Norwegian: Kasimir III den store",
+                "romanian": "Cazimir cel Mare",
+                "swedish": "Kasimir den store"
+              },
+              "accept": [
+                "Casimir the Great  (or Kazimierz  III",
+                "Kazimierz  Wielki ; prompt on"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Jean Valjean spends 19 years in prison for stealing some bread in which 1862 novel  by Victor Hugo?",
+              "answer": "Les Misérables",
+              "translations": {
+                "danish": "De Elendige , De Ulykkelige ,",
+                "dutch": "De Ellendigen, , De",
+                "german": "Die Elenden  Mandarin:  Hisan sekai",
+                "norwegian": "De elendige",
+                "polish": "Nędznicy , Nędzarze",
+                "romanian": "Mizerabilii",
+                "swedish": "Samhällets olycksbarn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "What type of number  is defined as one that can be expressed as a fraction of two integers where the denominator must not be zero? The set of these numbers is denoted by the letter Q and while all of these numbers are real, not all real numbers fall into this set.",
+              "answer": "rational  numbers",
+              "translations": {
+                "danish": "rationale  tal",
+                "dutch": "rationaal  getal",
+                "french": "nombre rationnel",
+                "german": "rationale  Zahl",
+                "mandarin": "Norwegian: rasjonalt  tall",
+                "polish": "liczby wymierne",
+                "romanian": "număr rațional",
+                "swedish": "rationella  tal"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Written around the year 1200, which epic poem  by Shota Rustaveli is an allegory for the reign of Queen Tamar and is considered the masterpiece of medieval Georgian literature?",
+              "answer": "The Knight in the Panther’s Skin  (or Vepkhist'q'aosani )",
+              "translations": {
+                "danish": "Ridderen i tigerskindet",
+                "dutch": "De ridder in het pantervel",
+                "french": "Le Chevalier à la peau de panthère ,",
+                "german": "Der Recke im Tigerfell , Der mit",
+                "mandarin": "Norwegian: Mannen i tigerskinnet",
+                "polish": "Rycerz w tygrysiej skórz e, Witeź w",
+                "romanian": "Viteazul în piele de tigru",
+                "swedish": "Riddaren i tigerskrud"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Candomblé is a syncretic religion sometimes likened to vodou that developed in which South American country  where enslaved Africans incorporated their own beliefs into the state religion of Roman Catholicism?",
+              "answer": "Brazil",
+              "translations": {
+                "danish": "Brasilien",
+                "dutch": "Brazilië",
+                "french": "Brésil",
+                "german": "Brasilien",
+                "mandarin": "Bāxī  Norwegian: Brasil",
+                "polish": "Brazylia",
+                "romanian": "Brazilia",
+                "swedish": "Brasilien"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Another surprising tariff imposed by the United States in 2025 was on the British Indian Ocean territory, the only occupants of which are American service personal on the island of Diego Garcia. Diego Garcia is part of which archipelago ? The government of the United Kingdom has announced it will transfer sovereignty of this archipelago to Mauritius.",
+              "answer": "Chagos  Archipelago",
+              "translations": {
+                "mandarin": "Chágēsī  qúndǎo",
+                "polish": "Czagos  ‘Archipelago’ or ‘Islands’ varies, but"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the name of the series of domed rocks , or bornhardts , in the southern part of Australia’s Northern Territory that give their name to a national park alongside Ulu ṟu?",
+              "answer": "Kata Tju ṯa",
+              "translations": {
+                "mandarin": "Kǎtǎ Qiūtǎ"
+              },
+              "accept": [
+                "Mount Olga  or the Olgas"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Following the Meiji Restoration, the Japanese government gradually abolished what class of soldiers , who had previously been employed by lords? Although many of them accepted their new status, some of those who were unhappy launched the failed Satsuma Rebellion.",
+              "answer": "Samurai  (or Bushi )",
+              "translations": {
+                "dutch": "Samoerai",
+                "french": "Samouraï",
+                "mandarin": "shì Polish:  Samuraj",
+                "swedish": "Samuraj"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Although a common ancestry was long suspected, a 1986 paper by Jacques Gauthier theorized that modern birds were, in fact, a type of ‘dinosaur’, leading to a major upheaval in dinosaur phylogenetics classification. Distinct from  the bird -hipped dinosaurs ( Ornithischia ) and the s auropod s; which of the three major dinosaur clades (groups) , with a name meaning ‘beast -footed’, did Gauthier classify birds under?",
+              "answer": "Theropod s (or Theropoda )",
+              "translations": {
+                "danish": "Theropoder",
+                "french": "Théropodes",
+                "german": "Theropoden",
+                "mandarin": "Shòu ji ǎo yà mù Norwegian: Theropoder",
+                "polish": "Teropody",
+                "swedish": "Theropoder"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The ship of which Greek hero appears in an influential thought experiment described by Plutarch – and repopularised by Thomas Hobbes – which questions whether an object is the same object after having all of its original components replaced over time?",
+              "answer": "Ship of  Theseus",
+              "translations": {
+                "danish": "Theseus ' Skib",
+                "dutch": "Schip van Theseus",
+                "french": "Bateau de Thésée",
+                "german": "Schiff des Theseus",
+                "mandarin": "Tèxiūsī  zhī chuán , Tèxiūsī  bèi",
+                "polish": "Statek Tezeusza",
+                "romanian": "navei lui Tezeu",
+                "swedish": "Theseuss keppet"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The diradical triplet oxygen has two unpaired electrons. The electrons remain unpaired and spin -parallel to form the triplet or S=1 state, in accordance with which set of rules for electron configuration  named after a German physicist?",
+              "answer": "Hund ’s rules",
+              "translations": {
+                "mandarin": "Hóngdé  guīzé"
+              },
+              "accept": [
+                "Friedrich Hund"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "What is the four -letter name  associated with Jean -Michel Basquiat’s early street art persona? This graffiti was created with collaborator Al Diaz and appeared all over Manhattan in the late 1970s.",
+              "answer": "SAMO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The new Meiji government introduced the ideology of shinbutsu buri , in which Buddhist idols were destroyed as part of a separation with which religion , which came to be the basis of an imperial cult? This religion revolves around supernatural figures called kami , and is considered the main indigenous belief system of Japan.",
+              "answer": "Shinto  (or Shintoism )",
+              "translations": {
+                "dutch": "shinto ïsme",
+                "french": "shinto ïsme",
+                "german": "Shinto ismus  Mandarin:  Shéndào , Chēng shén dàojiào",
+                "polish": "szintoizm",
+                "romanian": "Șintoism"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The title character of which dastan , or epic story, of the Oghuz Turks is a white - bearded sage who is said to have lived for 295 years and attended the election of the Great Khan? This 8th -century collection of stories includes the tale of Basat and a one - eyed giant called Tepegöz, and is considered an important part of the culture of Azerbaijan and parts of Central Asia.",
+              "answer": "The Book of  Dede Korkut  (or Kitabi -Dədə Qorqud , Kitaby Dädem Gorkut ; Dede",
+              "translations": {
+                "danish": "“Dede Korkut s bok ”",
+                "dutch": "Het boek van Dede Korkoet",
+                "french": "Livre de Dede Korkut",
+                "german": "Das Buch von Dede Korkut",
+                "mandarin": "Xiānzǔ Kuòěrkùtè shū Norwegian: “Dede Korkut s bok”",
+                "polish": "Księga mego dziada Korkuta",
+                "romanian": "Kitabi Dede Qorqud",
+                "swedish": "“Dede Korkut s bok ”"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The saung , or saung -gauk , is an arched harp regarded as the national instrument of what Asian country ? The ‘t'na’ is a variant of the saung , played by the Karen (or Kayin) people in this country.",
+              "answer": "Burma",
+              "translations": {
+                "dutch": "Birma",
+                "french": "Birmanie",
+                "mandarin": "Miǎndiàn Polish:  Mjanma , Birma",
+                "romanian": "Birmania"
+              },
+              "accept": [
+                "Myanmar"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "‘Il vecchio castello’ (‘The Old Castle’) , ‘Balet nevylupivshikhsya ptentsov’ (‘Ballet of Unhatched Chicks’) , and ‘Izbushka na kuryikh nozhkakh ’ (‘The Hut of Hen's Legs’) are movements in what piano suite , made up of ten total movements, and later adapted for the orchestra by other composers?",
+              "answer": "Pictures at an Exhibition  by Modest Mussorgsky (or Kartínki s výstavki  –",
+              "translations": {
+                "danish": "Udstillingsbilleder",
+                "dutch": "Schilderijen van een",
+                "french": "Tableaux d’une exposition",
+                "german": "Bilder einer Ausstellung  Mandarin:  Zhǎnlǎn hu ì zhī huà",
+                "norwegian": "Bilder fra en utstilling",
+                "polish": "Obrazki z wystawy",
+                "romanian": "Tablouri dintr -o expoziție",
+                "swedish": "Tavlor på en utställning"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Although he was the founder of the Jagiellonian University, Casimir the Great was the final king of which royal dynasty  that had ruled Poland since the reign of Mieszko I [MYESH -ko] in 960? Branches of this dynasty survived much longer in Masovia and Silesia.",
+              "answer": "Piast  dynasty  (or Piastowie )",
+              "translations": {
+                "dutch": "Piasten",
+                "german": "Piasten  Mandarin:  Píyǎsītè wángch áo"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Many of the earliest known thought experiments – such as that of Achilles and the tortoise – are collected in the ‘paradoxes’ of which 5th-century BCE philosopher from Elea , whose works are known to us through the writings of Plato and Aristotle? This man’s paradoxes were largely devised as a defence of his teacher, Parmenides.",
+              "answer": "Zeno  of Elea  (or Zínon )",
+              "translations": {
+                "danish": "Zenon  fra Elea",
+                "dutch": "Zeno  van Elea",
+                "french": "Zénon  d'Élée",
+                "german": "Zenon  von Elea",
+                "mandarin": "Āilìyǎ de Zhīnuò Norwegian: Zenon  fra Elea",
+                "polish": "Zenon  z Elei",
+                "romanian": "Zenon  din Eleea",
+                "swedish": "Zenon  från Elea"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which syncretic religion  developed among the Afro -Cuban population and involves belief in spirits called orishas ? This religion is known for its use of animal sacrifice.",
+              "answer": "Santería",
+              "translations": {
+                "mandarin": "Sàtàil ǐā jiàopài, shèng zhě zhī"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The triplet oxygen electronic configuration results in molecular oxygen exhibiting which type of magnetism , meaning it becomes weakly attracted to applied magnetic fields?",
+              "answer": "para magnetism",
+              "translations": {
+                "danish": "paramagnetisme",
+                "dutch": "paramagnetisme",
+                "french": "paramagnétisme",
+                "german": "Para magnetismus  Mandarin:  shùn  cíxìng",
+                "norwegian": "paramagnetisme",
+                "polish": "paramagnetyzm"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1953, the CIA and British intelligence gave future prime minister General Fazlollah Zahedi $75,000 and tasked him with forming a military secretariat to mount a coup in which country , leading to the overthrow of an elected prime minister and the strengthening of the rule of a hereditary monarch?",
+              "answer": "Iran",
+              "translations": {
+                "mandarin": "Yīlǎng"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What word  is used to describe the unit i, which is defined as being the square root of -1, and any number formed from the multiplication of i and a real number?",
+              "answer": "imaginary",
+              "translations": {
+                "danish": "rent imaginære  tal",
+                "dutch": "imaginair  getal",
+                "french": "nombre imaginaire  pur",
+                "german": "imaginäre  Zahl",
+                "mandarin": "Xūshù Norwegian: imaginært  tall",
+                "polish": "liczby urojone",
+                "romanian": "număr imaginar",
+                "swedish": "imaginära  tal"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What enormous inselberg  is the most prominent outcrop of the Antioquia batholith in Colombia? A popular tourist attraction, it can be climbed via a 708 -step staircase and it overlooks a namesake reservoir.",
+              "answer": "El Peñón de  Guatapé  (or La Piedra  del Peñol , accept either underlined part)",
+              "translations": {
+                "german": "Fels von Guatapé",
+                "mandarin": "Guāt ǎpèi jùyán, Āiěr Pèiníàoěr"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Pterosaurs, including the Pterodactyl  and Pteranodon , are commonly confused as a type of ‘dinosaur’, despite being their own distinct clade. What pterosaur genus , with a name derived from mythology, is the largest known animal capable of self -powered flight, with an estimated wingspan of up to 25.8 meters (85 feet)?",
+              "answer": "Quetzalcoatlus",
+              "translations": {
+                "mandarin": "Fēngshén yì lóng sh ǔ, Yǔ shí"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which overseas collectivity of France  was initially hit with a 99% ‘reciprocal tariff’, later reduced to 50%, as its export of seafood to the US greatly outweighed its imports? Only 5,800 people live in this territory located very close to Newfoundland.",
+              "answer": "Saint Pierre and Miquelon  (or Saint -Pierre -et-Miquelon )",
+              "translations": {
+                "danish": "Saint -Pierre og Miquelon",
+                "dutch": "Saint -Pierre en Miquelon",
+                "german": "Saint -Pierre und Miquelon",
+                "mandarin": "Shèng Píāiěr hé Mìkèlóng  Norwegian: Saint -Pierre og Miquelon",
+                "polish": "Saint -Pierre i Miquelon",
+                "romanian": "Saint Pierre și Miquelon",
+                "swedish": "Saint -Pierre och Miquelon"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Haring’s spontaneous drawing style is contrasted with what style of graffiti  used by artists such as Tavar Zawacki, Banksy, and Shepard Fairey? This style uses an art technique that allows the artwork to be applied very quickly and repeatably.",
+              "answer": "stencil",
+              "translations": {
+                "danish": "skabelon",
+                "dutch": "sjabloon",
+                "french": "pochoir , schablon",
+                "german": "Schablonenkunst",
+                "mandarin": "Múb ǎn pēn hu à, záo mà ,",
+                "polish": "szablon",
+                "romanian": "Șablon",
+                "swedish": "schablon"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which 670 -metre tall inselberg in Namibia  has been dubbed the ‘Matterhorn of Namibia’ due to its distinctive shape?",
+              "answer": "Spitzkoppe  (or Groot Spitzkop )",
+              "translations": {
+                "mandarin": "Sīpícíkēp ǔ"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Sometimes confused with dinosaurs alongside other marine reptiles such as plesiosaurs, which large predatory reptiles  of the Cretaceous are thought to be most closely related to monitor lizards and snakes? The earliest known specimens of this group were mistaken for whales, and they have a name derived from a European river.",
+              "answer": "mosasaur s (or Mosasaur idae; accept Mosasauru s; from Maas",
+              "translations": {
+                "danish": "mosasaurer",
+                "dutch": "maashagedissen",
+                "french": "Mosasauridés",
+                "german": "Mosasaurier",
+                "mandarin": "Cāng lóng  Norwegian: mosasaurer",
+                "polish": "mozazaury",
+                "romanian": "mosazaur",
+                "swedish": "mosasaurider , mosasaurier ,"
+              },
+              "accept": [
+                "Me use)"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "In the Book of Samuel,  which figure is depicted as a young shepherd and skilled harpist who would play the instrument to soothe the ailing King Saul?  In Ethiopian tradition, Menelik I is said to have brought this king’s harp to Ethiopia, where it gave rise to an instrument called the begena.",
+              "answer": "David",
+              "translations": {
+                "mandarin": "Dàwèi  wáng , Dáwèi , Duōhuì"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "During the planning for the 1954 Guatemala coup, the CIA enlisted help from which major American corporation  that felt threatened by President Arbenz’s land reform programme?",
+              "answer": "United Fruit  Company (accept United Brands  Company ,",
+              "translations": {
+                "mandarin": "Liánhé Gu ǒpǐn Gōngsī"
+              },
+              "accept": [
+                "Chiquita , its current"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Alexandre Manette is a doctor who spends 18 years in the Bastille in the build up to the French Revolution after he learns the secrets of an aristocratic family in which 1859 novel by Charles Dickens ?",
+              "answer": "A Tale of Two Cities",
+              "translations": {
+                "danish": "To byer",
+                "dutch": "In Londen en Parijs , De",
+                "french": "Le Conte de deux cités , Le Conte de",
+                "german": "Eine Geschichte aus zwei Städten  Mandarin:  Shuāngchéngjì",
+                "norwegian": "To byer",
+                "polish": "Opowieść o dwóch miastach",
+                "romanian": "Poveste despre două orașe",
+                "swedish": "Två städer"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The name of what language  describes the  ‘room’ in the name of an influential thought experiment put forward by John Searle that attempts to show that we should not assume consciousness on the part of a computer regardless of how humanlike it might behave?",
+              "answer": "Chinese",
+              "translations": {
+                "danish": "Det kinesiske  rum",
+                "dutch": "Chinese  kamer , Chinees",
+                "french": "chambre chinoise",
+                "german": "Chinesisches  Zimmer",
+                "mandarin": "Zhōngwén  fángjiān  Norwegian: det kinesiske  rommet",
+                "polish": "Chiński  pokój",
+                "romanian": "camera chinezească",
+                "swedish": "Det kinesiska  rummet"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Casimir’s successor, Louis, was succeeded in Hungary by his daughter Mary, but in Poland he was succeeded by which other daughter  who became the first woman to be crowned as monarch in Poland in her own right? Her marriage to Władysław [vwa - DISS -wav] II Jagiełło [ya-GYEH-wah] was preceded by the Union of Krewo  [KREV -oh], and led to Lithuania’s conversion to Christianity and began a union of the crowns of Poland and Lithuania.",
+              "answer": "Jadwiga  Andegaweńska (or Hedwig  of Poland",
+              "translations": {
+                "danish": "Hedvig  af Polen",
+                "french": "Hedwige  d'Anjou",
+                "mandarin": "Yǎdéwéijiā Norwegian: St. Hedvig  av Polen",
+                "romanian": "Hedvig  av Polen",
+                "swedish": "Hedvig  av Polen"
+              },
+              "accept": [
+                "Hedwig  of Anjou )"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "‘Åses død’ (‘The Death of Åse’); ‘Solvejgs sang’ (‘Solveig’s Song’); and ‘Bruderovet / Ingrids klage ’ (‘The Abduction of the Bride / Ingrid’s Lament’) are titles of pieces that make up what larger composition , originally written as incidental music for a play and later compiled into two suites?",
+              "answer": "Peer Gynt  by Edvard Grieg",
+              "translations": {
+                "mandarin": "Pí'ěr Jīn  Zǔqǔ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The concept of orishas  in Candomblé and Santería is derived from that of the spirits of the same name in the belief system of which West African people ? The religion of these people, who primarily live in southwestern Nigeria, is sometimes called Ì ṣẹ̀ṣe.",
+              "answer": "Yorùbá",
+              "translations": {
+                "mandarin": "Yuēl ǔbā rén",
+                "norwegian": "Joruba er Polish:  Jorubowie"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which medieval epic poem  in four parts i s considered the national epic of Armenia and tells the story of a hero who repels  an invading Arab force?",
+              "answer": "Daredevils of Sassoun  (or Sasna cṙer, Sassountsi Davit )",
+              "translations": {
+                "danish": "Vovehalsene fra Sassoun , David fra",
+                "dutch": "Waaghalzen van Sassoun , David",
+                "french": "David de Sassoun , Les enragés de",
+                "german": "Draufgänger aus Sasun , David",
+                "norwegian": "David fra Sasun",
+                "polish": "Dawid z Sasunu",
+                "romanian": "David din Sasun , Temerarii din",
+                "swedish": "Sasuns våghalsar , David från"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Singlet oxygen, with all electron spins paired, is the first excited state of molecular oxygen. Unlike triplet oxygen, the more reactive singlet oxygen can participate in what class of reactions  by acting as a dienophile  [dye -EEN -oh-file] ?",
+              "answer": "Diels –Alder  reactions",
+              "translations": {
+                "mandarin": "Díěrsī – Ā'ěrdé  fǎnyìng, shuāng"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "‘Z českých luhů a hájů’ (‘From Bohemia’s Woods and Fields’), ‘Vyšehrad ’ (‘The High Castle’), and ‘Vltava’ (‘The Moldau’) are titles of symphonic poems that make up what larger work ? The six pieces were originally written to be played individually but are commonly performed together, as one work in six movements.",
+              "answer": "Má vlast  by Bedřich Smetana (or My Fatherland , My Country , My Homeland )",
+              "translations": {
+                "danish": "Mit fædreland",
+                "dutch": "Mijn Vaderland",
+                "french": "Ma patrie",
+                "german": "Mein Vaterland",
+                "mandarin": "Wǒ de Zǔguó Norwegian: Mitt fedreland",
+                "polish": "Moja Ojczyzna",
+                "romanian": "Țara mea",
+                "swedish": "Mitt fosterland"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In 1958, the CIA sponsored a coup that failed to overthrow the government in which country , where they  suppo rted a rebel government known as the PRRI, whose leaders included Ahmad Hussein and Maludin Simbolon ? Following the successful coup in this Asian country in 1965, the CIA supplied lists of communists to the army, leading to mass killings that particularly target ed communist party members.",
+              "answer": "Indonesia",
+              "translations": {
+                "danish": "Indonesien",
+                "dutch": "Indonesië",
+                "french": "Indonésie",
+                "german": "Indonesien  Mandarin:  Yìndùníxīyà",
+                "polish": "Indonezja",
+                "romanian": "Indonezia",
+                "swedish": "Indonesien"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which 725-metre tall inselberg  is situated in the town of Madalla, about 10 kilometres west of Nigeria’s capital Abuja? An iconic feature of the landscape, it is featured on the 100 naira note.",
+              "answer": "Zuma  Rock",
+              "translations": {
+                "mandarin": "Zǔmǎ yán"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What kind of number  is defined as having the form  a + bi [b i] , where a and b are both real numbers and i is the imaginary unit of root -1?",
+              "answer": "complex  number",
+              "translations": {
+                "danish": "komplekst  tal",
+                "dutch": "complex  getal",
+                "french": "nombre complexe",
+                "german": "komplexe  Zahl",
+                "mandarin": "fùshù Norwegian: komplekst  tall",
+                "polish": "Liczby zespolone",
+                "romanian": "număr complex",
+                "swedish": "komplexa  tal"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Under the Tokugawa shogunate, eastern and western Japan operated different systems of coinage . In 1870, Emperor Meiji’s government began the introduction of what currency , that remains in place to this day.",
+              "answer": "Japanese  yen (or JPY)",
+              "translations": {
+                "mandarin": "Rìyuán , Rìběn yuán , Rìbì  Polish:  Jen"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which Norwegian territory  around 600 kilometres northeast of Iceland was hit with 10% tariffs alongside Svalbard? This territory has no permanent inhabitants and is named after a Dutch seafarer.",
+              "answer": "Jan Mayen",
+              "translations": {
+                "mandarin": "Yáng M ǎyán"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which French graffiti artist  began using stencils to create large -scale images of a rodent on the streets of Paris in the early 1980s and is considered the ‘father of stencil graffiti’?",
+              "answer": "Blek le Rat",
+              "translations": {
+                "mandarin": "Bùláikè·lēi·Lātè , Zéwéiyé· Pǔlǔ"
+              },
+              "accept": [
+                "Xavier Prou"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Written in medieval Greek, which 12th -century work  is considered the only surviving Byzantine epic poem? Its title is the epithet of the hero, Basil, and refers to the frontier warriors in eastern Anatolia, the very edge of the Byzantine empire.",
+              "answer": "Digenes Akritis  (or Digenis Akritas , Digenes Akrites )",
+              "translations": {
+                "french": "Digénis Akritas",
+                "mandarin": "Díjínísī·Ākèl ǐtè Polish:  Bazyli Digenis Akritas"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Jadwiga vied for the Polish crown with a Holy Roman Emperor with what name ? That man had married Jadwiga ’s sister Mary, however the lords of Lesser Poland did not wish to have a German sovereign and Jadwiga ’s claim was successful. A later Polish king with the same name was known as ‘the Old ’ and his son, also with this name, was the first ruler of the Polish –Lithuanian Commonwealth after the Union of Lublin .",
+              "answer": "Sigismund  (or Zygmunt ; accept Sigismund  of Luxembourg, Sigismund  I the Old,",
+              "translations": {
+                "french": "Sigismond  Mandarin:  Qígéméngtè , Xījísīméngdé"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In a story from mythology  of which island  does a supernatural race of beings called Fomorians steal a harp, Uaithne  [OO -an-yuh] , (and/or the harpist, depending on the translation) from the great god Dagda?",
+              "answer": "Ireland  (or Éire , Irish  mythology)",
+              "translations": {
+                "danish": "Irsk mytologi, Irland",
+                "dutch": "Ierse  mythologie , Ierland",
+                "french": "mythologie celtique irlandaise ,",
+                "german": "Irische  Mythologie , Irland  Mandarin:  Ài'ěrlán  shénhuà",
+                "norwegian": "Irsk mytologi , Irland",
+                "polish": "Mitologia irlandzka , Irlandia",
+                "romanian": "Mitologia irlandeză , Irlanda",
+                "swedish": "Irländsk  mytologi , Irland"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Rodion Raskolnikov is a law student who is eventually imprisoned in Siberia for the murder of a pawn broker and her sister in which 1866 novel by Fyodor Dostoevsky ?",
+              "answer": "Crime and Punishment  (or Prestupleniye i nakazaniye )",
+              "translations": {
+                "danish": "Forbrydelse og straf",
+                "dutch": "Misdaad en straf",
+                "french": "Crime et Châtiment",
+                "german": "Schuld und Sühne , Verbrechen",
+                "norwegian": "Forbrytelse og straff",
+                "polish": "Zbrodnia i kara",
+                "romanian": "Crimă și pedeapsă",
+                "swedish": "Brott och straff"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Siddhartha Gautama  is the name of the figure central to which major world religion ?",
+              "answer": "Buddhism",
+              "translations": {
+                "danish": "Buddhisme",
+                "dutch": "Boeddhisme",
+                "french": "Bouddhisme",
+                "german": "Buddhismus",
+                "mandarin": "Fójiào  Norwegian: Buddhisme",
+                "polish": "Buddyzm",
+                "romanian": "Budism"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the name of the village  in the  Navsari District, Gujarat  that was the destination of Gandhi’s Salt March in 1930?",
+              "answer": "Dandi",
+              "translations": {
+                "mandarin": "Dāndí"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "La Fée aux Choux  (The Fairy of the Cabbages ) is an 1896 short film, generally considered to be the first film directed by a woman . Who was its director?",
+              "answer": "Alice  Guy -Blaché",
+              "translations": {
+                "mandarin": "Àilìsī· Jūyī"
+              }
+            },
+            {
+              "question_number": 1,
+              "question_text": "Corazon Aquino  was the president of which country  between 1986  and 1992?",
+              "answer": "Philippines",
+              "translations": {
+                "danish": "Filippinerne",
+                "dutch": "Filipijnen",
+                "german": "Philippinen",
+                "mandarin": "Fēilǜbīn Norwegian: Filippinene",
+                "polish": "Filipiny",
+                "romanian": "Filipine",
+                "swedish": "Filippinerna"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Urbain Le Verrier  and John Couch [kooch] Adams  independently predicted  the existence of which planet in our Solar System  in the 1840s?",
+              "answer": "Neptune",
+              "translations": {
+                "danish": "Neptun",
+                "dutch": "Neptunus",
+                "german": "Neptun",
+                "mandarin": "Hǎiwángxīng Norwegian: Neptun",
+                "polish": "Neptun",
+                "romanian": "Neptun",
+                "swedish": "Neptunus"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Graham Island and Moresby Island are the two largest islands in which archipelago  in British Columbia, f ormerly known as the Queen Charlotte Islands, that is separated from the mainland by the Hecate Strait ?",
+              "answer": "cholera",
+              "translations": {
+                "mandarin": "huòluàn  Norwegian: kolera",
+                "danish": "kolera",
+                "dutch": "Ethiopië",
+                "french": "choléra",
+                "german": "Äthiopien",
+                "polish": "Etiopia",
+                "romanian": "Holeră",
+                "swedish": "kolera"
+              },
+              "accept": [
+                "C)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

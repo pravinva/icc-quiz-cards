@@ -1,0 +1,883 @@
+{
+  "metadata": {
+    "title": "ICC9 Week 1 (2)",
+    "source": "ICC9 Week 1 (2).pdf",
+    "date": "2025-11-16",
+    "rounds": 5
+  },
+  "rounds": [
+    {
+      "round_number": 1,
+      "round_name": "Round 1",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Jesús Galíndez was a Basque writer and activist who was murdered in 1956 by the Servicio de Inteligencia Militar (SIM), the secret police of which country ? This country had earlier perpetrated the Parsley Massacre against its French -speaking neighbour.",
+              "answer": "Dominican Republic",
+              "translations": {
+                "danish": "Dominikanske Republik",
+                "dutch": "Dominicaanse Republiek",
+                "french": "République dominicaine",
+                "german": "Dominikanische Republik",
+                "mandarin": "duō míng ní jiā  Norwegian:  Den dominikanske",
+                "polish": "Dominikana  or Republika",
+                "romanian": "Republica Dominicană",
+                "swedish": "Dominikanska republiken"
+              },
+              "accept": [
+                "República Dominicana"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Although Metro Manila is much larger, Manila proper is not the most populous city in the Philippines. Which planned city , named after the country ’s second president and built with the intention of replacing Manila as capital, is the most populous?",
+              "answer": "Quezon  City",
+              "translations": {
+                "mandarin": "kuí sōng  shì"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which European chemist  gives his name to an equation that uses temperature and activation energy to calculate the rate constant for a chemical reaction, and contains a pre-exponential factor denoted  A? According to this equation, the reaction rate will double with every 10  °C increase in temperature.",
+              "answer": "Svante Arrhenius",
+              "translations": {
+                "mandarin": "sī wàn tè · ā ruì nísī"
+              },
+              "accept": [
+                "Arrhenius  equation"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "With a name meaning “black sand ”, what desert  occupies about 70% of the land area in Turkmenistan?",
+              "answer": "Karakum",
+              "translations": {
+                "french": "Karakoum  Mandarin: kǎlā kùmǔ"
+              },
+              "accept": [
+                "Qara qum",
+                "Garagum"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "In the first part of Dante Alighieri ’s poem, Divina Commedia  (The Divine Comedy ), Virgil guides Dante through the nine circles of Hell. What is the name given to  the first circle ? This circle contains unbaptised children and those who neither sinned  nor accept ed Jesus.",
+              "answer": "limbo",
+              "translations": {
+                "french": "limbes",
+                "german": "Limbus  Mandarin: líng bó yù"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Who  wrote the 1967 novel A Grain of Wheat , which takes place in the aftermath of Kenyan independence, and in which Mugo and Kihika are symbolically compared to the titular plant?",
+              "answer": "Ngũgĩ  wa Thiong ’o",
+              "translations": {
+                "mandarin": "ēn gǔ jí · wǎ · tí áng gē"
+              },
+              "accept": [
+                "James Ngugi"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The 2025 Pritzker Prize was awarded to the Chinese architect Liu Jiakun  at the Abu Dha bi branch of which famous European art museum ? This building was designed by previous Pritzker winner Jean Nouvel.",
+              "answer": "Louvre",
+              "translations": {
+                "mandarin": "lúfúgōng  bówùguǎn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the name of the Japanese music  that developed in the Kyoto Imperial Court? Its repertoire includes Shinto ceremonial music as well as certain types of folk songs.",
+              "answer": "gagaku",
+              "translations": {
+                "mandarin": "yǎyuè"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Karl G. Jansky Very Large Array in New Mexico is among the telescopes that use what portion of the electromagnetic spectrum ? That telescope is named after Karl Guthe Jansky, who first observed these waves – which have the lowest frequencies and longest wavelengths – emanating from the constellation of Sagittarius in 1932.",
+              "answer": "radio  waves",
+              "translations": {
+                "mandarin": "wúxiàndiàn",
+                "polish": "fale radiowe  In all other languages, the required word,"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which director  of the Neuer Deutscher Film (New German Cinema) is known for epic drama films such as Aguirre, der Zorn Gottes (Aguirre, the Wrath of God)  and Fitzcarraldo ?",
+              "answer": "Werner Herzog",
+              "translations": {
+                "mandarin": "wéi nà · hé suǒ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which Greek philosopher, general, and historian  wrote the Cyropaedia , a fictionalised biography of the young life of Cyrus the Great, in which the author laid out his political and moral philosophy?",
+              "answer": "Xenophon",
+              "translations": {
+                "mandarin": "sè nuò fēn  Polish: Ksenofont"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Adherents of which faith  observe a fasting period from sunrise to sunset for nineteen days in a month called ‘Alá’ (from March 2nd to March 20th in the Western calendar)?",
+              "answer": "Baháʼí",
+              "translations": {
+                "french": "Bahaï sme",
+                "german": "Bahai tum",
+                "mandarin": "Bā hā yī  Polish: Bahai zm",
+                "romanian": "Credința Bahá ’í"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "round_name": "Round 2",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which Baptist minister and civil rights activist  delivered his famous “I Have a Dream ” speech in Washington D.C. in 1963?",
+              "answer": "Martin Luther King , Jr.",
+              "translations": {
+                "mandarin": "m ǎdīng · lùdé · jīn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which mountain range  has its highest point, Jengish Chokusu, at 7349 metres (which is also Kyrgyzstan ’s highest peak), and its lowest point at the Turpan Depression in the Chinese Xinjiang region, 154 metres below sea level?",
+              "answer": "Tian  Shan",
+              "translations": {
+                "dutch": "Tiensjan",
+                "norwegian": "Tian fjellene  Polish:  Tienszan",
+                "romanian": "Tian -Șan"
+              },
+              "accept": [
+                "Tengri Tagh",
+                "Tengir-Too"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "One of the instruments prominently used in gagaku  is a stringed instrument similar to a European zither. The modern form of this instrument is a 13 -string half tube, 6  feet in length, which evolved from the Chinese guzheng . This is which instrument , considered the national instrument of Japan?",
+              "answer": "koto",
+              "translations": {
+                "mandarin": "rìběn zhēng"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What service – typically government -operated – is indicated by the Arabic word barid , which was first used for this purpose during the reign of the Umayyad caliph Mu’awiya? Due to his years of work in this field, Benjamin Franklin was made the first head of this service in the United States.",
+              "answer": "postal  service",
+              "translations": {
+                "danish": "post væsen",
+                "mandarin": "yóuzhèng",
+                "norwegian": "post vesen  Polish: poczta",
+                "romanian": "poșta"
+              },
+              "accept": [
+                "post",
+                "mail"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "The murder of Jesús Galíndez was carried out on the orders of which man , who served as the dictator of the Dominican Republic from 1930 until his assassination in 1961?",
+              "answer": "Rafael Trujillo",
+              "translations": {
+                "mandarin": "lāfěiěr · tè lǔ xī luè"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In her letters to Abelard, Héloïse cites which philosopher ’s conversations with Xenophon, as described in the dialogues of the Attic orator, Aeschines  [esk -in-EEZ] ? This Miletus -born Athenian is remembered for her skill as a rhetorician, and some scholars have argued that Plato based the character of Diotima, in his Symposium , on her.",
+              "answer": "Aspasia",
+              "translations": {
+                "french": "Aspasie  Mandarin: ā sīpà jì y ǎ"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Akagera National Park is one of several places in Africa home to both the black and white species of what very large mammals ? Three further species of these mammals are found in India, Java, and Sumatra, and all species are vulnerable to poachers due to their valuable horns.",
+              "answer": "rhino ceroses",
+              "translations": {
+                "danish": "næsehorn",
+                "dutch": "neushoorn",
+                "french": "rhino céros",
+                "german": "Nashorn",
+                "mandarin": "xīniú  Norwegian: nashorn",
+                "polish": "nosorożec",
+                "romanian": "rino cer",
+                "swedish": "noshörning"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Alice in den Städten (Alice in the Cities)  was the first film in which director ’s “Road Movie trilogy ”? This man ’s 1984 English -language film Paris, Texas  marked the end of the Neuer Deutscher Film (New German Cinema) in the eyes of some critics.",
+              "answer": "Wim Wenders",
+              "translations": {
+                "mandarin": "yún · wēn dásī"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Brussels is the largest metro area in Belgium, but it is not the country ’s largest city when only inhabitants of the city proper are included. That honour goes to which city , the country ’s largest port?",
+              "answer": "Antwerp",
+              "translations": {
+                "mandarin": "āntèwèip ǔ"
+              },
+              "accept": [
+                "Antwerpen",
+                "Anvers"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Boltzmann Constant  and the Planck Constant  appear  in which equation , an extension  of the Arrhenius equation, that relates  the reaction rate constant with Gibbs free e nergy?",
+              "answer": "Eyring  equation",
+              "translations": {
+                "mandarin": "ài lín  Polish: równanie Eyringa -Polanyi ’ego"
+              },
+              "accept": [
+                "Eyring –Polanyi  equation"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Mauvais sang  (Bad Blood ), L’impossible  (The Impossible ); and Delirium  parts I and II are sections of Une saison en enfer  (A Season in Hell) , an extended poem by which French writer ? It was published in 1873, shortly after this man was shot by his lover, Paul Verlaine.",
+              "answer": "Arthur Rimbaud",
+              "translations": {
+                "mandarin": "ā dìěr · lánbō"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "In which Nigerian novel  does the title refer to the plants in Aunty Ifeoma ’s garden symbolizing freedom, love, freewill, and happiness? This plant is contrasted with the same plants that have turned red in Papa Nnukwu ’s flower garden.",
+              "answer": "Purple Hibiscu s (by Chimamanda Ngozi Adichie )",
+              "translations": {
+                "danish": "Lilla hibiscus",
+                "dutch": "Paarse hibiscus",
+                "french": "L’Hibiscus pourpre",
+                "german": "Blauer Hibiskus",
+                "mandarin": "zǐ mùjǐn Norwegian: Dyprød hibiskus",
+                "polish": "Fioletowy hibiskus",
+                "romanian": "Hibiscus purpuriu",
+                "swedish": "Lila hibiskus"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "round_name": "Round 3",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Some of the best -known works in the Neuer Deutscher Film (New German Cinema) movement dealt with LGBT issues, such as Rosa von Paunheim ’s Nicht der Homosexuelle ist pervers, sondern die Situation, in der er lebt  (It Is Not the Homosexual Who Is Perverse, But the Society in Which He Lives)  and which director ’s 1977 made -for- television film Die Konsequenz (The Consequence) ? This man is probably best -known for his 1981 war film Das Boot .",
+              "answer": "Wolfgang Petersen",
+              "translations": {
+                "mandarin": "wòěrfū gāng · bǐdésēn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Learning from the infrastructural ideas developed during the interregnum imposed by Sher Shah Suri ’s rebellion, Akbar the Great introduced the office of Daroga -i-dak-chauki , or postmaster general, to what Muslim empire  in India?",
+              "answer": "Mughal  Empire",
+              "translations": {
+                "danish": "Mogul riget",
+                "dutch": "Mogul reich",
+                "french": "Empire moghol",
+                "german": "Mogul reich",
+                "mandarin": "mò wò er  dìguó  Norwegian:  Mogul riket  or Mughal riket",
+                "polish": "Państwo Wielkich Mogołów",
+                "romanian": "Imperiul Mogul",
+                "swedish": "Mogul riket or Stor mogul s rike"
+              },
+              "accept": [
+                "Mogul  Empire"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "The P ritzker Prize -winning architect Frank Gehry has designed the as yet -unopened Guggenheim Abu Dhabi. Among Gehry ’s most acclaimed works is his design of the branch of the Guggenheim in which Spanish city ?",
+              "answer": "Bilbao",
+              "translations": {
+                "mandarin": "bìěrbāè"
+              },
+              "accept": [
+                "Bilbo"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The aforementioned Karl Jansky  is considered one of the founding fathers of radio astronomy, after he discovered a radio signal coming from somewhere near the centre of the Milky Way in 1933. Today, the source of this signal is known as Sagittarius A, of which the component Sagittarius  A* [A -star] is what type of astronomical object , one of only two ever directly imaged?",
+              "answer": "black hole",
+              "translations": {
+                "danish": "sort hul",
+                "dutch": "zwart gat",
+                "french": "trou noir",
+                "german": "Schwarzes Loch",
+                "mandarin": "Hēidòng  Norwegian: sort hull , svart høl , svart hull",
+                "polish": "czarna dziura",
+                "romanian": "gaură neagră",
+                "swedish": "svart hål"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Martin Luther King, Jr. delivered the “I Have a Dream ” speech on the steps of a memorial to which American President ? King opened his speech with a reference to the Emancipation Proclamation delivered by this man 100 years earlier.",
+              "answer": "Abraham Lincoln",
+              "translations": {
+                "mandarin": "yàbólāhan · línkěn"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Arrhenius equation is derived by integrating an expression similar to an equation named after which Dutch scientist ? This chemist ’s namesake equation gives the value of the rate of change of the natural logarithm of the equilibrium constant.",
+              "answer": "Jacobus Henricus van ‘t Hoff",
+              "translations": {
+                "mandarin": "y ǎgè bùsī · hēng l ǐ kèsī · fàn tuō"
+              },
+              "accept": [
+                "van ‘t Hoff  equation"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Rafael Trujillo caused international outrage in 1960 with the attempted assassination of Rómulo Betancourt, a centre -left politician and leader of which country ? The assassination attempt came about because of Trujillo ’s personal dislike of Betancourt, who had denounced him as a dictator.",
+              "answer": "Venezuela",
+              "translations": {
+                "mandarin": "wěi nà ruìlā  Polish: Wenezuela"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "George Bernard Shaw ’s play Man and Superman  contains four acts; the third act is set in Hell and focuses on a philosophical debate between the Devil and what character , who names th at act? This character has also been the subject of an epic poem by Byron and a Mozart opera.",
+              "answer": "Don Juan",
+              "translations": {
+                "mandarin": "tánghuáng"
+              },
+              "accept": [
+                "Don Giovanni"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In which religion  is Paryushana  an eight -day festival celebrated annually for spiritual reflection and self -purification? The festival is marked by fasting and prayer and one sect in this religion celebrates it over ten days and calls it Das Lakshana.",
+              "answer": "Jain ism",
+              "translations": {
+                "danish": "Jainisme",
+                "dutch": "jaïnisme",
+                "french": "jaïnisme  or jinisme  German: Jainismus",
+                "mandarin": "Qí nà jiao",
+                "polish": "dżinizm"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Gagaku  has several  foreign -influenced styles in its repertoire. One such style, Togaku , is influenced by the music of another country, specifically a period defined by the ruling dynasty of that country. If ‘gaku ’ means  ‘music ’, to which ruling dynasty of the 7th to 10th centuries CE, does the prefix ‘To’ refer?",
+              "answer": "Tang  Dynasty"
+            },
+            {
+              "question_number": 2,
+              "question_text": "The Bwindi Impenetrable National Park in southern Uganda is one of the few places where which two great apes coexist ? Another species of African ape, the bonobo, lives exclusively south of the Congo  River .",
+              "answer": "(eastern",
+              "translations": {
+                "danish": "gorilla  og chimpanse",
+                "dutch": "gorilla  en chimpanse",
+                "french": "gorille  et chimpanzé",
+                "german": "Gorilla  und Schimpanse",
+                "mandarin": "dàxīngxing  hé hēixīngxing  Norwegian: gorilla  og sjimpanse",
+                "polish": "goryl  i szympans",
+                "romanian": "gorilă  și cimpanzeu",
+                "swedish": "gorilla  och schimpans"
+              },
+              "accept": [
+                "mountain)  gorilla  and (common)  chimp anzee"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Although the de jure  capital city is Porto -Novo, the much larger city of Cotonou serves as the de facto capital and seat of government in which West African country ?",
+              "answer": "Benin",
+              "translations": {
+                "mandarin": "bèiníng"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 4,
+      "round_name": "Round 4",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Aspasia also featured in the dialogues of which pupil of Socrates  who was considered the founder of cynicism by Diogenes Laertius? The famous cynic, Diogenes of Sinope, is sometimes called the ‘faithful hound ’ of this man.",
+              "answer": "Antisthenes",
+              "translations": {
+                "french": "Antisthène",
+                "mandarin": "ān tí xī ní  Polish: Antystenes",
+                "romanian": "Antisthene"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "In which Nigerian novel  does the life of the central character revolve around the consumption of an intoxicating beverage fermented from the sap of a local tree? He is so obsessed with the drink that when the man who brews his drink dies, the central character follows him into t he land of the dead.",
+              "answer": "The Palm -Wine Drinkard  (by Amos Tutuola)",
+              "translations": {
+                "danish": "Palmevinsdrankeren",
+                "dutch": "Palmevinsdrankeren",
+                "french": "L’Ivrogne dans la brousse",
+                "german": "Der Palmweintrinker",
+                "mandarin": "zōnglǘ jiǔguǐ Norwegian: Palmevinsdrikkaren",
+                "polish": "Smakosz wina palmowego",
+                "romanian": "Băutorul de vin de palmier",
+                "swedish": "Palmvindrinkaren"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Southern Florida is the only place in the world home to which two large semi -aquatic predatory reptiles ?",
+              "answer": "(American) croc odile and (American) alli gator",
+              "translations": {
+                "danish": "krokodille  og alligator",
+                "dutch": "krokodil en alligator",
+                "french": "crocodile  et alligator",
+                "german": "Krokodil  und Alligator",
+                "mandarin": "èyú hé měizhōu è  Norwegian: krokodille  og alligator",
+                "polish": "krokodyl  i aligator",
+                "romanian": "crocodil  și aligator",
+                "swedish": "krokodil  och alligator"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which Brazilian city  has a population which is by some measures almost four times the size of the country ’s capital, Brasília? By some  measures, t his city is the most populous in the Southern Hemisphere.",
+              "answer": "São Paulo",
+              "translations": {
+                "mandarin": "shèngbǎoluó"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which Pritzker Prize -winning Chinese -American architect  designed the steel -and-glass pyramid that stands outside of the Louvre in Paris?",
+              "answer": "I. M. Pei",
+              "translations": {
+                "mandarin": "bèiyùmíng"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Members of which Hindu denomination keep a fast with no food or water on Ekadashi days, which occur twice a month? Devotees take a single meal in the afternoon a day before Ekadashi and break the fast only on the third day after sunrise. You may also answer with the name of the deity considered the sole supreme being by followers of this denomination .",
+              "answer": "Vaishnavism",
+              "translations": {
+                "mandarin": "also píshīnú  Romanian:  also Vișnu"
+              },
+              "accept": [
+                "Vaiṣṇavasampradāya ḥ",
+                "Vaishnavites",
+                "Vaishnavas",
+                "Vishnu"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which lake , the 11th largest in the world by volume, and a Ramsar site of globally significant biodiversity, lies in the western Tian Shan mountains, in the northeast of Kyrgyzstan?",
+              "answer": "Issyk -Kul",
+              "translations": {
+                "mandarin": "yī sāikè hú"
+              },
+              "accept": [
+                "Ysyk -Köl"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Unlike the Arrhenius equation, the Eyring equation is derived from a theory named after what structures ? These structures, the highest potential energy species within the activated complex of a particular reaction, are denoted by a double dagger  (‡).",
+              "answer": "transition states",
+              "translations": {
+                "danish": "overgangsfase",
+                "dutch": "overgangstoestand  or",
+                "french": "état de transition",
+                "german": "Übergangszustand",
+                "mandarin": "guòdùtài  Norwegian:  overgangstilstand en",
+                "polish": "stan przejściowy",
+                "romanian": "starea de tranziție",
+                "swedish": "övergångstillstånd"
+              },
+              "accept": [
+                "transition state  theory"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "Martin Luther King, Jr. helped organise two of the three protest marches between Selma and which city , the state capital of Alabama?",
+              "answer": "Montgomery",
+              "translations": {
+                "mandarin": "ménggēm ǎlì"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The imaging that, in 2022, confirmed Sagittarius A* as a black hole, was done with a global network of radio observatories named after what boundary  around a black hole, within which its escape velocity is greater than the speed of light?",
+              "answer": "event horizon",
+              "translations": {
+                "dutch": "waarnemingshorizon ,",
+                "french": "horizon des événements  German: Ereignishorizont",
+                "mandarin": "shìjiàn shìjiè",
+                "norwegian": "hendelseshorisont",
+                "romanian": "orizont de evenimente",
+                "swedish": "händelsehorisont"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Trujillo ’s standing was weakened at home after he ordered the murder of three sisters with the first names Patria, Minerva, and María Teresa, who shared what surname ? Minerva and María Teresa were important opposition figures, and they are memorialised by the UN by the International Day for the Elimination of Violence against Women.",
+              "answer": "Mirabal",
+              "translations": {
+                "mandarin": "mǐ lāwǎěr"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Navigated by chasqui  who bore messages in the form of knotted cords termed quipu [kee -poo] , the Qhapaq Ñan [ka-pak-nyan] was the road system of what empire governed from Cuzco?",
+              "answer": "Inca  Empire  (or Tawantinsuyu",
+              "translations": {
+                "danish": "Inka riget",
+                "german": "Inka reich",
+                "mandarin": "Yìnjiā  dìguó",
+                "norwegian": "Inka riket  Polish:  Państwo Inków",
+                "romanian": "Imperiul Inca",
+                "swedish": "Inka riket or Inka imperiet"
+              },
+              "accept": [
+                "Realm of the Four Parts )"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round_number": 5,
+      "round_name": "Round 5",
+      "players": [
+        {
+          "player_number": 1,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "“Hell is other people ” is a famous quote from what Jean -Paul Sartre play ? In it, three sinners are locked forever in a single room, acting as one another ’s own punishment.",
+              "answer": "Huis Clos",
+              "translations": {
+                "danish": "Lukkede døre",
+                "german": "Geschlossene Gesellschaft",
+                "mandarin": "Jiàngé , Mìshì",
+                "norwegian": "Ingen utgang  Polish: Przy drzwiach zamkniętych",
+                "romanian": "Cu u șile închise",
+                "swedish": "Inför lyckta dörrar"
+              },
+              "accept": [
+                "No Exit",
+                "In Camera",
+                "No Way Out",
+                "Vicious Circle",
+                "Behind Closed"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Sagittarius A* is to date the second black hole ever imaged. The first was the one at the centre of a supergiant elliptical galaxy in the constellation Virgo. This galaxy was discovered and numbered in 1781 by which French astronomer , who first catalogued it as a nebula?",
+              "answer": "Charles  Messier",
+              "translations": {
+                "mandarin": "xiàěr · méixī yē"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which day of commemoration  in Islam occurs annually on the tenth of Muharram, the first month of the Islamic calendar? While Shia Islam marks it with mourning rituals and food donation, it is usually observed as a day of non -obligatory fasting in Sunni Islam.",
+              "answer": "Ashura",
+              "translations": {
+                "mandarin": "ā shūlā"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 2,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What are the two largest species of cat  (Felidae) ? The only place where both species can be found is Gujarat, which is also home to leopards. The Gir Forest in Gujarat is home to the only non -African population of one of these species .",
+              "answer": "lion and tiger",
+              "translations": {
+                "danish": "løve  og tiger",
+                "dutch": "leeuw  en tijger",
+                "french": "lion et tigre",
+                "german": "Löwe  und Tiger",
+                "mandarin": "shīzi  hé lǎohǔ Norwegian: løve  og tiger",
+                "polish": "lew i tygrys",
+                "romanian": "leu și tigru",
+                "swedish": "lejon  och tiger"
+              },
+              "accept": [
+                "Bengal tiger"
+              ]
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which short -necked wooden lute , commonly used in  gagaku , originated in China – where it evolved from the pipa  – before arriving in Japan during the Nara period? Played with a pick called a bachi , rather than with the fingers, this instrument is associated with recitals of Heike Monogatari  (The Tale of Heike ).",
+              "answer": "biwa"
+            },
+            {
+              "question_number": 3,
+              "question_text": "The films of which major figure  of the Neuer Deutscher Film (New German Cinema) include Angst essen Seele auf (Ali: Fear Eats the Soul)  and Die Ehe der Maria Braun (The Marriage of Maria Braun) ? This man ’s death at the age of 37 in 1982 coincided with the decline of the Neuer Deutscher Film movement.",
+              "answer": "Rainer Werner Fassbinder",
+              "translations": {
+                "mandarin": "lài nà · wéiěrnà · fǎsībīndé"
+              }
+            }
+          ]
+        },
+        {
+          "player_number": 3,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In which of Plato ’s dialogues , a parody of an Athenian funeral oration, does Socrates deliver a speech to the title character which he claims to have learned from Aspasia? The title character of this dialogue, who also appears in the Lysis  and the Phaedo , should not be confused with Socrates ’ son of the same name.",
+              "answer": "Menexenus",
+              "translations": {
+                "mandarin": "měi niè kè sāi n ǔ"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Who wrote the 1960 novel Les bouts de bois de Dieu (God ’s Bits of Wood) , telling the fictionalised story of a real -life railroad strike in colonial Senegal during the 1940s? The novel ’s huge cast of characters serves as a symbol for the lack of value placed on individual African lives by colonial powers.",
+              "answer": "Ousmane Sembène",
+              "translations": {
+                "mandarin": "wū sīmàn · sāi mǔ bān"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Traversed by riders who bore a signal of authority known as a paiza , the yam  was the postal system of what empire ? Expanded under Ögedei Khan, the yam  network gave the military of this empire a substantial information transfer advantage.",
+              "answer": "Mongol  Empire",
+              "translations": {
+                "danish": "Mongol ske kejserdømme",
+                "dutch": "Mongool se Rijk, Mongolië",
+                "french": "Empire mongol , Mongolie",
+                "german": "Mongol isches Reich, Mongolei",
+                "mandarin": "Ménggǔ Guó, Ménggǔ Dìguó  Norwegian: Mongol riket, mongol ske riket",
+                "polish": "Imperium mongol skie",
+                "romanian": "Imperiul Mongol ,",
+                "swedish": "Mongol väldet, Mongoliet"
+              },
+              "accept": [
+                "Mongolia n or Ikh Mongo l Ulus"
+              ]
+            }
+          ]
+        },
+        {
+          "player_number": 4,
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Ten years prior to the Selma to Montgomery marches, the city of Montgomery had experienced a high -profile bus boycott, which had begun after which woman  was arrested for her refusal to surrender her bus seat to a white person?",
+              "answer": "Rosa Parks",
+              "translations": {
+                "mandarin": "luóshā · pàkèsī"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "The MAXXI Museum in Rome is among the best -known works of which Iraqi -born British architect  who, in 2004, became the first woman to win the Pritzker Prize?",
+              "answer": "Zaha Hadid",
+              "translations": {
+                "mandarin": "sàhā · hā dì"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which river originates in the Tian Shan Mountains in Kyrgyzstan, and flows west and north -west for over 2,000 km, into the northern remnants of the Aral Sea?",
+              "answer": "Syr Darya",
+              "translations": {
+                "danish": "Syrdarja",
+                "dutch": "Syr Darja",
+                "french": "Cach  or Shash  or Sirr",
+                "german": "Syrdarja",
+                "mandarin": "Xī ěr hé    Norwegian: Syr-Darja",
+                "polish": "Syr-daria",
+                "romanian": "Sîrdaria",
+                "swedish": "Syr-Darja"
+              },
+              "accept": [
+                "Sirdaryo",
+                "Jaxartes  (do not accept ‘Amu Darya’",
+                "‘Oxus’ )"
+              ]
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which author  of the novels Beloved  and Song of Solomon  became  the first African American woman to win the Nobel Prize in Literature?",
+              "answer": "Toni Morrison",
+              "translations": {
+                "mandarin": "tuō nī · mòl ǐsēn"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which double -membrane -bound organelles , found in eukaryotic cells, are the site of respiration and oxidative phosphorylation, processes that produce energy for the cell in the form of ATP?",
+              "answer": "mitochondria  (or mitochondrion )",
+              "translations": {
+                "danish": "mitokondrie",
+                "french": "mitochondrie",
+                "german": "Mitochondrium",
+                "mandarin": "Xiànlìtǐ Norwegian: mitokondrium",
+                "polish": "mitochondrium",
+                "romanian": "mitocondrie",
+                "swedish": "mitokondrie"
+              }
+            },
+            {
+              "question_number": 3,
+              "question_text": "Often considered the origin of the modern state of Afghanistan , which empire  – sometimes known colloquially as simply the Afghan Empire – was founded at Kandahar in 1747 by the eponymous Pashtun military commander?",
+              "answer": "Durrani  Empire",
+              "translations": {
+                "mandarin": "dù lánní  dìguó"
+              },
+              "accept": [
+                "Saddozai  Kingdom"
+              ]
+            },
+            {
+              "question_number": 1,
+              "question_text": "In chemistry, what name  from the Greek for ‘same place ’ is given to any of two or more species of atom with the same atomic number, hence constituting the same element, but differing in mass number?",
+              "answer": "isotope",
+              "translations": {
+                "danish": "isotop",
+                "dutch": "isotoop",
+                "german": "Isotop",
+                "mandarin": "tóngwèisù  Norwegian: isotop",
+                "polish": "izotopów  or isotopy",
+                "romanian": "izotop",
+                "swedish": "isotop"
+              }
+            },
+            {
+              "question_number": 2,
+              "question_text": "When Namibia gained independence in 1990 , which  coastal  city – today one of Namibia ’s three largest – remained an exclave of South Africa? In 1994, the city ’s sovereignty was finally transferred to Namibia.",
+              "answer": "Walvis Bay  (or Walvisbaai ,",
+              "accept": [
+                "Walfischbucht",
+                "Walfischbai ,",
+                "Ezorongondo )"
+              ]
+            },
+            {
+              "question_number": 3,
+              "question_text": "In March 1916, while crossing the English Channel between Britain and France, the passenger ferry SS Sussex  was damaged by a German torpedo attack , killing at least fifty passengers, including which Catalan pianist and composer , who wrote the operas María del Carmen  and Goyescas ?",
+              "answer": "German Reichstag  build ing",
+              "translations": {
+                "mandarin": "déguó guóhuì dàshà  Polish: Gmach parlamentu Rzeszy",
+                "danish": "Hejmdal",
+                "dutch": "Hongarije",
+                "french": "Hongrie",
+                "german": "Ungarn",
+                "polish": "Węgry",
+                "romanian": "Ungaria",
+                "swedish": "Ungern"
+              },
+              "accept": [
+                "Rig",
+                "Hallinskiði",
+                "Gullintanni",
+                "Vindlér  or Vindhlér"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
