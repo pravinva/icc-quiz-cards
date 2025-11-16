@@ -754,6 +754,9 @@ class MultiplayerQuizApp {
     streamText(element, text) {
         element.innerHTML = '';
 
+        // Remove paused class to allow animation to start fresh
+        element.classList.remove('paused');
+
         // Normalize text to fix spacing issues from PDF extraction
         text = this.normalizeText(text);
 
@@ -853,6 +856,10 @@ class MultiplayerQuizApp {
     handleBuzzResult(data) {
         if (data.buzzed) {
             this.buzzedPlayer = data.player;
+
+            // Stop streaming and voice immediately for all players
+            this.stopStreaming();
+            this.stopSpeaking();
 
             // Update UI
             const buzzIndicator = document.getElementById('buzz-indicator');
