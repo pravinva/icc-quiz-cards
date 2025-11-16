@@ -1,6 +1,7 @@
 {
   "version": 2,
   "public": true,
+  "buildCommand": "node scripts/build-config.js || true",
   "rewrites": [
     {
       "source": "/(.*)",
