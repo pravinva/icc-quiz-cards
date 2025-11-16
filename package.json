@@ -1,6 +1,6 @@
 {
   "name": "icc-quiz-cards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ICC Quiz Cards - Interactive flashcard quiz application",
   "private": true,
   "scripts": {
