@@ -214,6 +214,16 @@
         </div>
     </div>
 
+    <!-- Configuration (Supabase credentials) -->
+    <script>
+        // Try to load local config first (gitignored), fall back to default config
+        const loadConfig = () => {
+            return fetch('/config.local.js')
+                .then(r => r.ok ? '/config.local.js' : '/config.js')
+                .catch(() => '/config.js');
+        };
+    </script>
+    <script src="/config.js"></script>
     <script src="/js/multiplayer.js"></script>
     <script>
         // Register service worker for PWA

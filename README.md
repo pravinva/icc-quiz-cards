@@ -235,36 +235,40 @@ Access multiplayer mode at `/multiplayer.html`
 - **Buzz Indicators**: Shows who buzzed and when
 - **Auto-Progression**: Moves to next question after scoring
 
-#### Local Testing
+#### Backend Modes
 
-For same-browser testing, open multiple tabs:
-- Tab 1: Select "Controller"
-- Tab 2-5: Select "Player 1", "Player 2", etc.
+The app automatically detects which backend to use:
 
-All tabs will sync via BroadcastChannel API.
+**🏠 Local Mode (Default)**
+- Uses BroadcastChannel API (built into browsers)
+- Works great for **same-browser testing** (multiple tabs)
+- No setup required!
+- Perfect for: testing, local play, single-device demos
 
-#### Production Deployment
+**🌐 Multi-Device Mode (Supabase)**
+- Real-time sync across **different devices and locations**
+- Uses Supabase free tier (no credit card needed)
+- **5-minute setup** - see [`SUPABASE_SETUP.md`](SUPABASE_SETUP.md)
+- Supports: phones, tablets, laptops, different networks
 
-For multi-device support across different locations, integrate a real-time service:
+#### Testing Locally (No Setup)
 
-**Option 1: Firebase Realtime Database**
-```javascript
-// Replace BroadcastChannel with Firebase
-import { getDatabase, ref, onValue, set } from 'firebase/database';
-```
+1. Open `/multiplayer.html` in 5 browser tabs
+2. Tab 1: Select "Controller"
+3. Tabs 2-5: Select "Player 1", "Player 2", etc.
+4. All tabs sync automatically via BroadcastChannel
 
-**Option 2: Supabase Realtime**
-```javascript
-// Use Supabase for real-time sync
-import { createClient } from '@supabase/supabase-js';
-```
+#### Enable Multi-Device (5-Minute Setup)
 
-**Option 3: PartyKit (Recommended for Vercel)**
-- Easy integration with Vercel
-- Built for real-time multiplayer
-- Free tier available
+Want players on different phones/computers?
 
-See [PartyKit Documentation](https://docs.partykit.io/) for setup instructions.
+**Quick Setup:**
+1. Create free account at [supabase.com](https://supabase.com) (no credit card)
+2. Create new project, copy URL and API key
+3. Add to `public/config.local.js` (see [`SUPABASE_SETUP.md`](SUPABASE_SETUP.md))
+4. Done! Now works across any device/network
+
+**Detailed Guide:** See [`SUPABASE_SETUP.md`](SUPABASE_SETUP.md) for step-by-step instructions with screenshots.
 
 ### Installing as PWA on Mobile
 

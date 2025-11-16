@@ -29,9 +29,9 @@ class MultiplayerQuizApp {
         this.autoRead = false;
         this.selectedVoice = null;
 
-        // BroadcastChannel for same-browser communication
-        // For production, replace with Firebase/Supabase
-        this.channel = new BroadcastChannel(`icc-quiz-${this.roomCode}`);
+        // Backend communication (BroadcastChannel or Supabase)
+        this.backend = null;
+        this.backendType = 'broadcast'; // 'broadcast' or 'supabase'
 
         this.init();
     }
@@ -43,9 +43,71 @@ class MultiplayerQuizApp {
             roomCodeEl.textContent = this.roomCode;
         }
 
+        // Initialize backend
+        await this.initializeBackend();
+
         await this.loadQuizList();
         this.initializeVoice();
+    }
+
+    async initializeBackend() {
+        // Check for Supabase configuration
+        const supabaseUrl = window.SUPABASE_URL || null;
+        const supabaseKey = window.SUPABASE_ANON_KEY || null;
+
+        if (supabaseUrl && supabaseKey) {
+            // Use Supabase for real multiplayer
+            try {
+                // Load Supabase backend script
+                await this.loadScript('/js/supabase-backend.js');
+
+                this.backend = new window.SupabaseBackend(supabaseUrl, supabaseKey);
+                await this.backend.init(this.roomCode);
+                this.backendType = 'supabase';
+
+                console.log('✓ Using Supabase for multiplayer (multi-device support)');
+                this.showBackendStatus('Connected via Supabase (Multi-device)');
+            } catch (error) {
+                console.error('Supabase initialization failed, falling back to BroadcastChannel:', error);
+                this.initializeBroadcastChannel();
+            }
+        } else {
+            // Fall back to BroadcastChannel (same-browser only)
+            this.initializeBroadcastChannel();
+        }
+
         this.setupChannelListeners();
+    }
+
+    initializeBroadcastChannel() {
+        this.backend = new BroadcastChannel(`icc-quiz-${this.roomCode}`);
+        this.backendType = 'broadcast';
+        console.log('ℹ Using BroadcastChannel (same-browser only)');
+        this.showBackendStatus('Local Mode (Same browser only)');
+    }
+
+    loadScript(src) {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = src;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+        });
+    }
+
+    showBackendStatus(message) {
+        const roomInfo = document.querySelector('.room-info');
+        if (roomInfo) {
+            const statusEl = roomInfo.querySelector('.backend-status') || document.createElement('p');
+            statusEl.className = 'backend-status';
+            statusEl.style.fontSize = '0.85rem';
+            statusEl.style.opacity = '0.8';
+            statusEl.textContent = `Mode: ${message}`;
+            if (!roomInfo.querySelector('.backend-status')) {
+                roomInfo.appendChild(statusEl);
+            }
+        }
     }
 
     generateRoomCode() {
@@ -94,7 +156,7 @@ class MultiplayerQuizApp {
     }
 
     setupChannelListeners() {
-        this.channel.onmessage = (event) => {
+        const messageHandler = (event) => {
             const data = event.data;
 
             switch (data.type) {
@@ -129,10 +191,22 @@ class MultiplayerQuizApp {
                     break;
             }
         };
+
+        if (this.backendType === 'supabase') {
+            // Supabase uses subscribe
+            this.backend.subscribe(messageHandler);
+        } else {
+            // BroadcastChannel uses onmessage
+            this.backend.onmessage = messageHandler;
+        }
     }
 
     broadcast(data) {
-        this.channel.postMessage(data);
+        if (this.backendType === 'supabase') {
+            this.backend.broadcast(data);
+        } else {
+            this.backend.postMessage(data);
+        }
     }
 
     async loadQuizList() {

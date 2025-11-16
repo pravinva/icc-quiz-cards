@@ -47,6 +47,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# Local configuration (Supabase credentials)
+public/config.local.js
+
 # Temporary files
 *.tmp
 *.temp
