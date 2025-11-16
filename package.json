@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "ICC Quiz Cards - Interactive flashcard quiz application",
   "private": true,
+  "scripts": {
+    "build": "node scripts/build-config.js"
+  },
   "dependencies": {
     "xlsx": "^0.18.5",
     "formidable": "^3.5.1",
