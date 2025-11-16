@@ -196,6 +196,43 @@
     color: white;
 }
 
+/* Microphone Indicator */
+.mic-indicator {
+    background: var(--surface);
+    border-radius: var(--border-radius);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--success);
+    border: 2px solid transparent;
+    transition: var(--transition);
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic-indicator.active {
+    border-color: var(--success);
+    background: rgba(16, 185, 129, 0.1);
+    animation: micPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes micPulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.mic-indicator:empty {
+    display: none;
+}
+
 /* Buzz Button (for players) */
 .buzz-button-container {
     display: flex;

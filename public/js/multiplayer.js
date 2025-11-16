@@ -39,6 +39,13 @@ class MultiplayerQuizApp {
         this.backend = null;
         this.backendType = 'broadcast'; // 'broadcast' or 'supabase'
 
+        // WebRTC for voice answering
+        this.peerConnections = new Map(); // Map of peer connections (player -> RTCPeerConnection)
+        this.localStream = null; // Player's microphone stream
+        this.remoteStreams = new Map(); // Map of remote audio streams
+        this.isMicrophoneActive = false;
+        this.audioElements = new Map(); // Map of audio elements for remote streams
+
         this.init();
     }
 
@@ -200,6 +207,22 @@ class MultiplayerQuizApp {
                         this.currentCardIndex = data.index;
                         this.displayCard();
                     }
+                    break;
+
+                case 'webrtc-offer':
+                    this.handleWebRTCOffer(data);
+                    break;
+
+                case 'webrtc-answer':
+                    this.handleWebRTCAnswer(data);
+                    break;
+
+                case 'webrtc-ice-candidate':
+                    this.handleICECandidate(data);
+                    break;
+
+                case 'stop-voice-answer':
+                    this.stopRemoteVoiceAnswer(data.from);
                     break;
             }
         };
@@ -766,11 +789,12 @@ class MultiplayerQuizApp {
         const scoreItem = document.querySelector(`#score-${playerNum}`)?.parentElement;
         if (scoreItem) scoreItem.classList.add('buzzed');
 
-        // Broadcast to other players
+        // Broadcast to other players to start voice answer
         this.broadcast({
             type: 'buzz-result',
             player: player,
-            buzzed: true
+            buzzed: true,
+            startVoiceAnswer: true
         });
     }
 
@@ -790,11 +814,19 @@ class MultiplayerQuizApp {
             if (buzzBtn) {
                 buzzBtn.disabled = true;
             }
+
+            // Start voice answer if this is the player who buzzed
+            if (data.startVoiceAnswer && this.playerName === data.player) {
+                this.startVoiceAnswer();
+            }
         }
     }
 
     resetBuzz() {
         this.buzzedPlayer = null;
+
+        // Stop voice answer
+        this.stopVoiceAnswer();
 
         // Reset UI
         const buzzIndicator = document.getElementById('buzz-indicator');
@@ -881,6 +913,275 @@ class MultiplayerQuizApp {
                         scoreEl.parentElement.classList.add('leading');
                     }
                 }
+            }
+        }
+    }
+
+    // ============ WebRTC Voice Answering Methods ============
+
+    async requestMicrophone() {
+        try {
+            this.localStream = await navigator.mediaDevices.getUserMedia({
+                audio: {
+                    echoCancellation: true,
+                    noiseSuppression: true,
+                    autoGainControl: true
+                }
+            });
+            this.isMicrophoneActive = true;
+            this.updateMicrophoneIndicator(true);
+            console.log('✓ Microphone access granted');
+            return true;
+        } catch (error) {
+            console.error('Microphone access denied:', error);
+            alert('Microphone access is required to speak your answer. Please allow microphone access and try again.');
+            return false;
+        }
+    }
+
+    createPeerConnection(targetPeer) {
+        const configuration = {
+            iceServers: [
+                { urls: 'stun:stun.l.google.com:19302' },
+                { urls: 'stun:stun1.l.google.com:19302' }
+            ]
+        };
+
+        const peerConnection = new RTCPeerConnection(configuration);
+
+        // Add local stream tracks to peer connection
+        if (this.localStream) {
+            this.localStream.getTracks().forEach(track => {
+                peerConnection.addTrack(track, this.localStream);
+            });
+        }
+
+        // Handle incoming audio stream
+        peerConnection.ontrack = (event) => {
+            console.log('Received remote stream from', targetPeer);
+            const remoteStream = event.streams[0];
+            this.remoteStreams.set(targetPeer, remoteStream);
+            this.playRemoteStream(targetPeer, remoteStream);
+        };
+
+        // Handle ICE candidates
+        peerConnection.onicecandidate = (event) => {
+            if (event.candidate) {
+                this.broadcast({
+                    type: 'webrtc-ice-candidate',
+                    candidate: event.candidate,
+                    from: this.role,
+                    to: targetPeer
+                });
+            }
+        };
+
+        // Handle connection state changes
+        peerConnection.onconnectionstatechange = () => {
+            console.log(`Connection state with ${targetPeer}:`, peerConnection.connectionState);
+            if (peerConnection.connectionState === 'disconnected' ||
+                peerConnection.connectionState === 'failed') {
+                this.cleanupPeerConnection(targetPeer);
+            }
+        };
+
+        return peerConnection;
+    }
+
+    async startVoiceAnswer() {
+        // Request microphone access
+        const micGranted = await this.requestMicrophone();
+        if (!micGranted) return;
+
+        // Create peer connections to all other participants
+        const allParticipants = Array.from(this.connectedPlayers).filter(p => p !== this.role);
+
+        for (const participant of allParticipants) {
+            try {
+                const peerConnection = this.createPeerConnection(participant);
+                this.peerConnections.set(participant, peerConnection);
+
+                // Create and send offer
+                const offer = await peerConnection.createOffer();
+                await peerConnection.setLocalDescription(offer);
+
+                this.broadcast({
+                    type: 'webrtc-offer',
+                    offer: offer,
+                    from: this.role,
+                    to: participant
+                });
+
+                console.log(`Sent WebRTC offer to ${participant}`);
+            } catch (error) {
+                console.error(`Error creating peer connection with ${participant}:`, error);
+            }
+        }
+    }
+
+    async handleWebRTCOffer(data) {
+        // Only handle offers meant for this participant
+        if (data.to !== this.role && data.to !== 'all') return;
+
+        try {
+            const peerConnection = this.createPeerConnection(data.from);
+            this.peerConnections.set(data.from, peerConnection);
+
+            await peerConnection.setRemoteDescription(new RTCSessionDescription(data.offer));
+
+            // Create and send answer
+            const answer = await peerConnection.createAnswer();
+            await peerConnection.setLocalDescription(answer);
+
+            this.broadcast({
+                type: 'webrtc-answer',
+                answer: answer,
+                from: this.role,
+                to: data.from
+            });
+
+            console.log(`Sent WebRTC answer to ${data.from}`);
+        } catch (error) {
+            console.error('Error handling WebRTC offer:', error);
+        }
+    }
+
+    async handleWebRTCAnswer(data) {
+        // Only handle answers meant for this participant
+        if (data.to !== this.role) return;
+
+        try {
+            const peerConnection = this.peerConnections.get(data.from);
+            if (peerConnection) {
+                await peerConnection.setRemoteDescription(new RTCSessionDescription(data.answer));
+                console.log(`Received WebRTC answer from ${data.from}`);
+            }
+        } catch (error) {
+            console.error('Error handling WebRTC answer:', error);
+        }
+    }
+
+    async handleICECandidate(data) {
+        // Only handle ICE candidates meant for this participant
+        if (data.to !== this.role) return;
+
+        try {
+            const peerConnection = this.peerConnections.get(data.from);
+            if (peerConnection && data.candidate) {
+                await peerConnection.addIceCandidate(new RTCIceCandidate(data.candidate));
+            }
+        } catch (error) {
+            console.error('Error handling ICE candidate:', error);
+        }
+    }
+
+    playRemoteStream(peerId, stream) {
+        // Create or reuse audio element
+        let audioElement = this.audioElements.get(peerId);
+
+        if (!audioElement) {
+            audioElement = new Audio();
+            audioElement.autoplay = true;
+            this.audioElements.set(peerId, audioElement);
+        }
+
+        audioElement.srcObject = stream;
+
+        // Update UI to show who is speaking
+        this.updateRemoteVoiceIndicator(peerId, true);
+
+        // Handle stream ended
+        stream.onremovetrack = () => {
+            this.updateRemoteVoiceIndicator(peerId, false);
+        };
+    }
+
+    stopVoiceAnswer() {
+        // Stop local stream
+        if (this.localStream) {
+            this.localStream.getTracks().forEach(track => track.stop());
+            this.localStream = null;
+        }
+
+        // Close all peer connections
+        for (const [peerId, peerConnection] of this.peerConnections) {
+            peerConnection.close();
+        }
+        this.peerConnections.clear();
+
+        this.isMicrophoneActive = false;
+        this.updateMicrophoneIndicator(false);
+
+        // Notify others to stop playing audio
+        this.broadcast({
+            type: 'stop-voice-answer',
+            from: this.role
+        });
+
+        console.log('Voice answer stopped');
+    }
+
+    stopRemoteVoiceAnswer(peerId) {
+        // Stop playing remote stream
+        const audioElement = this.audioElements.get(peerId);
+        if (audioElement) {
+            audioElement.srcObject = null;
+            audioElement.pause();
+        }
+
+        // Remove remote stream
+        this.remoteStreams.delete(peerId);
+
+        // Close peer connection
+        const peerConnection = this.peerConnections.get(peerId);
+        if (peerConnection) {
+            peerConnection.close();
+            this.peerConnections.delete(peerId);
+        }
+
+        this.updateRemoteVoiceIndicator(peerId, false);
+    }
+
+    cleanupPeerConnection(peerId) {
+        const peerConnection = this.peerConnections.get(peerId);
+        if (peerConnection) {
+            peerConnection.close();
+            this.peerConnections.delete(peerId);
+        }
+
+        const audioElement = this.audioElements.get(peerId);
+        if (audioElement) {
+            audioElement.srcObject = null;
+            audioElement.pause();
+            this.audioElements.delete(peerId);
+        }
+
+        this.remoteStreams.delete(peerId);
+        this.updateRemoteVoiceIndicator(peerId, false);
+    }
+
+    updateMicrophoneIndicator(isActive) {
+        const micIndicator = document.getElementById('mic-indicator');
+        if (micIndicator) {
+            if (isActive) {
+                micIndicator.textContent = '🎤 Speaking...';
+                micIndicator.classList.add('active');
+            } else {
+                micIndicator.textContent = '';
+                micIndicator.classList.remove('active');
+            }
+        }
+    }
+
+    updateRemoteVoiceIndicator(peerId, isSpeaking) {
+        const buzzIndicator = document.getElementById('buzz-indicator');
+        if (buzzIndicator && isSpeaking) {
+            const speakerName = peerId.replace('player', 'Player ').replace('controller', 'Controller');
+            buzzIndicator.innerHTML = `<span class="buzzer-name">${speakerName}</span> is speaking 🎤`;
+        } else if (buzzIndicator && !isSpeaking) {
+            // Restore to buzzed state if someone is still buzzed
+            if (this.buzzedPlayer) {
+                buzzIndicator.innerHTML = `<span class="buzzer-name">${this.buzzedPlayer}</span> buzzed!`;
             }
         }
     }
