@@ -1,0 +1,289 @@
+ICC QUIZ CARDS - ARCHITECTURE DIAGRAM
+====================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                           MULTIPLAYER SYSTEM                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+1. ENTRY POINT
+===============
+/public/multiplayer.html
+    ├─ Role Selection Screen
+    │   ├─ Controller button
+    │   └─ Player 1-4 buttons
+    └─ Game Screen (hidden, shown after role selection)
+        ├─ Quiz selector (controller only)
+        ├─ Flashcard display
+        ├─ Buzz button (players only)
+        ├─ Scoring controls (controller, conditional)
+        ├─ Scoreboard
+        ├─ Connected players list
+        └─ Voice controls (controller only)
+
+2. JAVASCRIPT LOGIC LAYER
+==========================
+/public/js/multiplayer.js
+    └─ class MultiplayerQuizApp (1436 lines)
+        ├─ State Management
+        │   ├─ Player identity (role, name)
+        │   ├─ Quiz data (currentQuiz, allCards, currentCardIndex)
+        │   ├─ Game state (buzzedPlayer, scores, connectedPlayers)
+        │   └─ Streaming state (isStreaming, streamingTimeout)
+        │
+        ├─ Backend Selection
+        │   ├─ Supabase (multi-device, if configured)
+        │   └─ BroadcastChannel (same-browser fallback)
+        │
+        ├─ Core Methods
+        │   ├─ Role Selection
+        │   │   └─ selectRole() → set body.role-* class
+        │   │
+        │   ├─ Quiz Management
+        │   │   ├─ loadQuiz() → fetch & parse
+        │   │   └─ prepareCards() → flatten rounds/players
+        │   │
+        │   ├─ Display & Navigation
+        │   │   ├─ displayCard() → show question
+        │   │   ├─ flipCard() → reveal answer
+        │   │   ├─ nextCard() / previousCard()
+        │   │   └─ streamText() → word-by-word animation
+        │   │
+        │   ├─ Buzz System
+        │   │   ├─ buzz() → broadcast buzz event
+        │   │   ├─ handleBuzz() → process buzz
+        │   │   └─ resetBuzz() → clear buzz state
+        │   │
+        │   ├─ Scoring
+        │   │   ├─ scoreAnswer() → +1, 0, -1
+        │   │   └─ updateScoreDisplay()
+        │   │
+        │   ├─ Voice (TTS)
+        │   │   ├─ speak() → wrapper
+        │   │   ├─ speakWithBrowser() → SpeechSynthesis API
+        │   │   ├─ speakWithAI() → Google Cloud TTS
+        │   │   └─ stopSpeaking()
+        │   │
+        │   └─ WebRTC (Voice Answering)
+        │       ├─ startVoiceAnswer() → initiate
+        │       ├─ createPeerConnection()
+        │       ├─ handleWebRTCOffer/Answer/ICE()
+        │       ├─ playRemoteStream()
+        │       └─ stopVoiceAnswer()
+        │
+        └─ Event Listeners
+            ├─ Quiz selection change
+            ├─ Card flip (controller)
+            ├─ Navigation buttons
+            ├─ Buzz button (players)
+            ├─ Scoring buttons (controller)
+            ├─ Voice controls (controller)
+            └─ Keyboard shortcuts (controller)
+
+3. COMMUNICATION LAYER
+======================
+Two-tier architecture:
+
+┌─ Supabase Backend (Multi-device) ──────┐
+│ /public/js/supabase-backend.js         │
+│                                        │
+│ class SupabaseBackend                  │
+│   ├─ init(roomCode)                    │
+│   ├─ subscribe(callback)               │
+│   ├─ broadcast(data)                   │
+│   └─ disconnect()                      │
+│                                        │
+│ Supabase Realtime Channel:             │
+│   room:{roomCode}                      │
+│                                        │
+│ Connection: HTTPS to                   │
+│   wivhfzszyuiisdmbsakm.supabase.co    │
+│                                        │
+│ Enabled when:                          │
+│   window.SUPABASE_URL &&               │
+│   window.SUPABASE_ANON_KEY             │
+└────────────────────────────────────────┘
+          ↓ (if Supabase not available)
+┌─ BroadcastChannel (Same-browser) ─────┐
+│ Native browser API                     │
+│                                        │
+│ new BroadcastChannel(`icc-quiz-${room}`)
+│                                        │
+│ .postMessage(data)                     │
+│ .onmessage = handler                   │
+│                                        │
+│ Limitations:                           │
+│   - Same browser/tabs only             │
+│   - No cross-device support            │
+└────────────────────────────────────────┘
+
+Message Types (abstracted via broadcast()):
+{
+  type: 'player-join',          // New player connects
+  type: 'buzz',                 // Player buzzes
+  type: 'buzz-result',          // Buzz acknowledged
+  type: 'reset-buzz',           // Controller resets
+  type: 'score-update',         // Scores changed
+  type: 'quiz-load',            // New quiz selected
+  type: 'next-question',        // Question index changed
+  type: 'play-sound',           // Text-to-speech broadcast
+  type: 'webrtc-offer',         // WebRTC connection setup
+  type: 'webrtc-answer',        // WebRTC response
+  type: 'webrtc-ice-candidate', // NAT traversal
+  type: 'stop-voice-answer'     // Stop microphone
+}
+
+4. WEB COMPONENTS ARCHITECTURE
+=============================
+
+Controller Instance                Players Instance(s)
+(Single per game)                 (Up to 4 per game)
+
+┌──────────────────────────┐    ┌──────────────────────────┐
+│ MultiplayerQuizApp       │    │ MultiplayerQuizApp       │
+│ - role: 'controller'     │    │ - role: 'player1'        │
+│ - can flip cards         │───→│ - can buzz in             │
+│ - can navigate           │    │ - sees same questions    │
+│ - can judge answers      │    │ - tracks own score       │
+│ - controls TTS settings  │    │ - can speak answers      │
+│ - broadcasts changes     │    │ - receives broadcasts    │
+└──────────────────────────┘    └──────────────────────────┘
+        │                               │
+        └───────── Broadcast ───────────┘
+                Channel
+         (Supabase or BroadcastChannel)
+
+5. DATA FLOW - TYPICAL GAME ROUND
+=================================
+
+SETUP:
+  1. Controller loads quiz
+     ├─ broadcasts quiz-load message
+     └─ players receive and load same quiz
+
+QUESTION:
+  2. Controller displays question
+     ├─ streaming text animation starts
+     └─ message: next-question with index
+
+BUZZ:
+  3. Player clicks buzz button
+     ├─ broadcasts buzz message
+     ├─ controller receives buzz-result
+     ├─ sets buzzedPlayer state
+     ├─ shows scoring controls
+     └─ microphone requested from player
+
+ANSWER:
+  4. Buzzed player speaks answer
+     ├─ WebRTC offer sent to controller
+     ├─ controller replies with answer
+     ├─ ICE candidates exchanged
+     ├─ audio stream established
+     └─ audio elements play remote stream
+
+SCORING:
+  5. Controller judges answer
+     ├─ clicks Correct/Pass/Wrong button
+     ├─ scoreAnswer(+1/0/-1)
+     ├─ broadcasts score-update
+     ├─ all players update scoreboard
+     └─ resets buzz state
+
+NEXT:
+  6. Controller navigates to next question
+     ├─ broadcasts next-question
+     ├─ streaming resumes
+     └─ loop back to BUZZ
+
+6. STYLING ARCHITECTURE
+=======================
+/public/css/multiplayer.css (606 lines)
+    ├─ Role Selection Screen
+    │   ├─ .role-selection
+    │   ├─ .role-card / .role-btn
+    │   └─ .room-info display
+    │
+    ├─ Game Screen Elements
+    │   ├─ .game-screen
+    │   ├─ .game-header
+    │   └─ .role-badge
+    │
+    ├─ Buzz System
+    │   ├─ .buzz-status / .buzz-indicator
+    │   ├─ .buzz-button-container
+    │   ├─ .buzz-btn (large circular)
+    │   └─ .reset-buzz-btn
+    │
+    ├─ Microphone
+    │   └─ .mic-indicator (animated pulse)
+    │
+    ├─ Scoreboard
+    │   ├─ .scoreboard
+    │   ├─ .score-grid (4 items)
+    │   ├─ .score-item (with buzzed/leading states)
+    │   └─ .player-score (color-coded)
+    │
+    ├─ Scoring Controls (conditional)
+    │   ├─ .scoring-controls
+    │   ├─ .score-btn (correct/pass/wrong)
+    │   └─ [shows only when buzzed]
+    │
+    └─ Role-based Visibility
+        ├─ .controller-only → body.role-controller .controller-only
+        ├─ body.role-player .buzz-button-container → displayed
+        └─ body.role-controller .flashcard { cursor: pointer }
+
+7. STATE SYNCHRONIZATION
+========================
+All state changes propagate through:
+
+Local Change
+    ↓
+Update local state
+    ↓
+Call broadcast(data)
+    ↓
+Backend (Supabase/BroadcastChannel)
+    ↓
+setupChannelListeners() catches event
+    ↓
+Handle event based on type
+    ↓
+Update local state
+    ↓
+Update UI (DOM)
+
+Result: All players see same state in near real-time
+
+8. FILE DEPENDENCIES
+====================
+multiplayer.html
+    ├─ /config.js (Supabase credentials)
+    ├─ /js/multiplayer.js
+    │   └─ dynamically loads /js/supabase-backend.js (if Supabase available)
+    ├─ /css/styles.css (base styles)
+    ├─ /css/multiplayer.css (multiplayer styles)
+    └─ /js/app.js (NOT used in multiplayer, for solo mode)
+
+Key Configuration:
+/public/config.js
+    ├─ window.SUPABASE_URL
+    ├─ window.SUPABASE_ANON_KEY
+    └─ Determines backend: Supabase vs BroadcastChannel
+
+9. ROOM CODE FLOW
+================
+URL: multiplayer.html?room=ABC123
+
+generateRoomCode()
+    ├─ Check URL query param
+    │   ├─ YES: use existing code
+    │   └─ NO: generate new one
+    ├─ Generate: Math.random().toString(36).substring(2, 8)
+    ├─ Update URL: window.history.replaceState()
+    └─ Return: 6-char code
+
+Usage:
+    ├─ Supabase channel name: room:ABC123
+    ├─ BroadcastChannel name: icc-quiz-ABC123
+    └─ Display: Show to players for sharing

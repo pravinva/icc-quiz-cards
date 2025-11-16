@@ -115,6 +115,26 @@
     width: 100%;
 }
 
+/* Game Layout: Two-column layout with sidebar */
+.game-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+    align-items: start;
+}
+
+.game-content {
+    min-width: 0; /* Prevents overflow */
+}
+
+.game-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 20px;
+}
+
 .game-header {
     display: flex;
     justify-content: space-between;
@@ -306,23 +326,80 @@
     font-size: 1.5rem;
 }
 
+/* Name Editor */
+.name-editor {
+    background: var(--surface);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.name-editor h4 {
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.name-edit-container {
+    display: flex;
+    gap: 10px;
+}
+
+.name-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 2px solid var(--surface-light);
+    border-radius: 8px;
+    background: var(--surface-light);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.name-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: var(--background);
+}
+
+.name-save-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--success), #059669);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.name-save-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.name-save-btn:active {
+    transform: translateY(0);
+}
+
 /* Connected Players */
 .connected-players {
     background: var(--surface);
     border-radius: var(--border-radius);
     padding: 20px;
-    margin-top: 30px;
 }
 
 .connected-players h4 {
     color: var(--text-primary);
     margin-bottom: 15px;
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .players-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -341,6 +418,11 @@
     border-color: var(--success);
 }
 
+.player-item.offline {
+    border-color: var(--surface-light);
+    opacity: 0.6;
+}
+
 .player-item.controller {
     border-color: var(--primary-color);
 }
@@ -350,6 +432,7 @@
     height: 10px;
     border-radius: 50%;
     background: var(--surface);
+    flex-shrink: 0;
 }
 
 .player-status.online {
@@ -357,10 +440,160 @@
     box-shadow: 0 0 10px var(--success);
 }
 
+.player-status.offline {
+    background: var(--text-secondary);
+    opacity: 0.4;
+}
+
 .player-name {
     color: var(--text-primary);
     font-weight: 600;
     font-size: 0.9rem;
+}
+
+/* Chat Window */
+.chat-window {
+    background: var(--surface);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    max-height: calc(100vh - 300px);
+}
+
+.chat-window h4 {
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+/* Custom scrollbar for chat */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: var(--surface-light);
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+.chat-message {
+    background: var(--surface-light);
+    border-radius: 8px;
+    padding: 10px 12px;
+    border-left: 3px solid var(--primary-color);
+    animation: messageSlideIn 0.2s ease-out;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-message.own-message {
+    border-left-color: var(--secondary-color);
+    background: rgba(236, 72, 153, 0.1);
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.message-player {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--primary-light);
+}
+
+.own-message .message-player {
+    color: var(--secondary-color);
+}
+
+.message-time {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+.message-text {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.chat-input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 2px solid var(--surface-light);
+    border-radius: 8px;
+    background: var(--surface-light);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.chat-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: var(--background);
+}
+
+.chat-send-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.chat-send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.chat-send-btn:active {
+    transform: translateY(0);
 }
 
 /* Controller-only elements */
@@ -389,6 +622,17 @@ body.role-player .flashcard {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .game-layout {
+        grid-template-columns: 1fr 300px;
+        gap: 20px;
+    }
+
+    .chat-window {
+        height: 400px;
+    }
+}
+
 @media (max-width: 768px) {
     .role-options {
         grid-template-columns: 1fr;
@@ -401,6 +645,20 @@ body.role-player .flashcard {
     .game-header {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    /* Stack layout on mobile */
+    .game-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .game-sidebar {
+        position: static;
+    }
+
+    .chat-window {
+        height: 350px;
     }
 
     .buzz-btn {

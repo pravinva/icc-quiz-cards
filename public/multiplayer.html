@@ -70,8 +70,11 @@
             </header>
 
             <main>
-                <!-- Buzz Status Bar -->
-                <div class="buzz-status" id="buzz-status">
+                <div class="game-layout">
+                    <!-- Main Game Area -->
+                    <div class="game-content">
+                        <!-- Buzz Status Bar -->
+                        <div class="buzz-status" id="buzz-status">
                     <div class="buzz-indicator" id="buzz-indicator">
                         Waiting for buzz...
                     </div>
@@ -251,13 +254,55 @@
                     </div>
                 </div>
 
-                <!-- Connected Players -->
-                <div class="connected-players">
-                    <h4>Connected Players</h4>
-                    <div id="players-list" class="players-list">
-                        <!-- Will be populated dynamically -->
                     </div>
+                    <!-- End of game-content -->
+
+                    <!-- Sidebar with Players and Chat -->
+                    <div class="game-sidebar">
+                        <!-- Player Name Editor -->
+                        <div class="name-editor">
+                            <h4>Your Name</h4>
+                            <div class="name-edit-container">
+                                <input
+                                    type="text"
+                                    id="player-name-input"
+                                    class="name-input"
+                                    placeholder="Enter your name..."
+                                    maxlength="20"
+                                />
+                                <button id="name-save-btn" class="name-save-btn">Save</button>
+                            </div>
+                        </div>
+
+                        <!-- Connected Players -->
+                        <div class="connected-players">
+                            <h4>Players</h4>
+                            <div id="players-list" class="players-list">
+                                <!-- Will be populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Chat Window -->
+                        <div class="chat-window">
+                            <h4>Chat</h4>
+                            <div class="chat-messages" id="chat-messages">
+                                <!-- Messages will be added here -->
+                            </div>
+                            <div class="chat-input-container">
+                                <input
+                                    type="text"
+                                    id="chat-input"
+                                    class="chat-input"
+                                    placeholder="Type a message..."
+                                    maxlength="200"
+                                />
+                                <button id="chat-send" class="chat-send-btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of sidebar -->
                 </div>
+                <!-- End of game-layout -->
             </main>
 
             <footer>
