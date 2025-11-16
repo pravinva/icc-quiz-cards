@@ -201,6 +201,12 @@ class MultiplayerQuizApp {
                         this.displayCard();
                     }
                     break;
+
+                case 'play-sound':
+                    if (this.role !== 'controller') {
+                        this.speak(data.text, false); // false = don't re-broadcast
+                    }
+                    break;
             }
         };
 
@@ -625,23 +631,11 @@ class MultiplayerQuizApp {
 
         this.updateProgress();
         this.updateStats();
-            
-            // Broadcast quiz load to all players
-            if (this.role === 'controller') {
-                this.broadcast({
-                    type: 'quiz-load',
-                    quizFile: quiz.file
-                });
-                this.broadcast({
-                    type: 'next-question',
-                    index: this.currentCardIndex
-                });
-            }
 
         // Auto-read if enabled and controller
         if (this.autoRead && this.role === 'controller') {
             setTimeout(() => {
-                this.speak(card.question_text);
+                this.speak(card.question_text, true); // true = broadcast to all players
             }, 300);
         }
 
@@ -1029,11 +1023,19 @@ class MultiplayerQuizApp {
         this.synthesis.speak(this.currentUtterance);
     }
 
-    speak(text) {
+    speak(text, broadcast = false) {
         this.stopSpeaking();
 
         // Normalize text before speaking
         text = this.normalizeText(text);
+
+        // Broadcast to all players if controller and broadcast is enabled
+        if (broadcast && this.role === 'controller') {
+            this.broadcast({
+                type: 'play-sound',
+                text: text
+            });
+        }
 
         // Use AI voice or browser voice
         if (this.useAIVoice) {
@@ -1066,7 +1068,8 @@ class MultiplayerQuizApp {
         } else {
             const card = this.allCards[this.currentCardIndex];
             if (card) {
-                this.speak(card.question_text);
+                // Broadcast to all players when controller manually triggers speech
+                this.speak(card.question_text, this.role === 'controller');
             }
         }
     }
