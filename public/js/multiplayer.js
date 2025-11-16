@@ -22,6 +22,8 @@ class MultiplayerQuizApp {
             player4: 0
         };
         this.connectedPlayers = new Set(['controller']);
+        this.chatMessages = [];
+        this.playerNames = {}; // Map of role -> custom display name
 
         // Text-to-speech
         this.synthesis = window.speechSynthesis;
@@ -142,6 +144,9 @@ class MultiplayerQuizApp {
         this.role = role;
         this.playerName = role === 'controller' ? 'Controller' : role.replace('player', 'Player ');
 
+        // Initialize player name mapping
+        this.playerNames[this.role] = this.playerName;
+
         // Set body class for CSS targeting
         document.body.classList.add(`role-${role.includes('player') ? 'player' : 'controller'}`);
 
@@ -154,13 +159,20 @@ class MultiplayerQuizApp {
         roleBadge.textContent = this.playerName;
         roleBadge.classList.add(role === 'controller' ? 'controller' : 'player');
 
+        // Initialize name input
+        const nameInput = document.getElementById('player-name-input');
+        if (nameInput) {
+            nameInput.value = this.playerName;
+        }
+
         // Setup event listeners
         this.setupEventListeners();
 
         // Announce join
         this.broadcast({
             type: 'player-join',
-            player: this.role
+            player: this.role,
+            displayName: this.playerName
         });
 
         // Add to connected players
@@ -175,6 +187,14 @@ class MultiplayerQuizApp {
             switch (data.type) {
                 case 'player-join':
                     this.connectedPlayers.add(data.player);
+                    if (data.displayName) {
+                        this.playerNames[data.player] = data.displayName;
+                    }
+                    this.updateConnectedPlayers();
+                    break;
+
+                case 'name-change':
+                    this.playerNames[data.player] = data.displayName;
                     this.updateConnectedPlayers();
                     break;
 
@@ -213,6 +233,26 @@ class MultiplayerQuizApp {
                     if (this.role !== 'controller') {
                         this.speak(data.text, false); // false = don't re-broadcast
                     }
+                    break;
+
+                case 'chat-message':
+                    this.addChatMessage(data.player, data.message, data.timestamp);
+                    break;
+
+                case 'webrtc-offer':
+                    this.handleWebRTCOffer(data);
+                    break;
+
+                case 'webrtc-answer':
+                    this.handleWebRTCAnswer(data);
+                    break;
+
+                case 'webrtc-ice-candidate':
+                    this.handleICECandidate(data);
+                    break;
+
+                case 'stop-voice-answer':
+                    this.stopRemoteVoiceAnswer(data.from);
                     break;
             }
         };
@@ -482,6 +522,40 @@ class MultiplayerQuizApp {
                     this.flipCard();
                 }
                 if (e.key === 'r' || e.key === 'R') this.toggleSpeak();
+            });
+        }
+
+        // Chat event listeners
+        const chatInput = document.getElementById('chat-input');
+        const chatSendBtn = document.getElementById('chat-send');
+
+        if (chatSendBtn) {
+            chatSendBtn.addEventListener('click', () => this.sendChatMessage());
+        }
+
+        if (chatInput) {
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    this.sendChatMessage();
+                }
+            });
+        }
+
+        // Name change event listeners
+        const nameInput = document.getElementById('player-name-input');
+        const nameSaveBtn = document.getElementById('name-save-btn');
+
+        if (nameSaveBtn) {
+            nameSaveBtn.addEventListener('click', () => this.changePlayerName());
+        }
+
+        if (nameInput) {
+            nameInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    this.changePlayerName();
+                }
             });
         }
     }
@@ -1419,15 +1493,115 @@ class MultiplayerQuizApp {
 
         playersList.innerHTML = '';
 
-        this.connectedPlayers.forEach(player => {
+        // Always show all 4 player slots + controller
+        const allSlots = ['controller', 'player1', 'player2', 'player3', 'player4'];
+
+        allSlots.forEach(player => {
+            const isConnected = this.connectedPlayers.has(player);
+            const displayName = this.getDisplayName(player);
             const playerItem = document.createElement('div');
-            playerItem.className = `player-item online ${player === 'controller' ? 'controller' : ''}`;
+            playerItem.className = `player-item ${isConnected ? 'online' : 'offline'} ${player === 'controller' ? 'controller' : ''}`;
             playerItem.innerHTML = `
-                <div class="player-status online"></div>
-                <div class="player-name">${player === 'controller' ? 'Controller' : player.replace('player', 'Player ')}</div>
+                <div class="player-status ${isConnected ? 'online' : 'offline'}"></div>
+                <div class="player-name">${displayName}</div>
             `;
             playersList.appendChild(playerItem);
         });
+    }
+
+    sendChatMessage() {
+        const chatInput = document.getElementById('chat-input');
+        if (!chatInput) return;
+
+        const message = chatInput.value.trim();
+        if (!message) return;
+
+        const timestamp = Date.now();
+
+        // Broadcast chat message
+        this.broadcast({
+            type: 'chat-message',
+            player: this.playerName,
+            message: message,
+            timestamp: timestamp
+        });
+
+        // Add to local chat
+        this.addChatMessage(this.playerName, message, timestamp);
+
+        // Clear input
+        chatInput.value = '';
+    }
+
+    addChatMessage(playerName, message, timestamp) {
+        const chatMessages = document.getElementById('chat-messages');
+        if (!chatMessages) return;
+
+        // Add to messages array
+        this.chatMessages.push({ playerName, message, timestamp });
+
+        // Create message element
+        const messageEl = document.createElement('div');
+        messageEl.className = 'chat-message';
+
+        // Add special class if it's from current user
+        if (playerName === this.playerName) {
+            messageEl.classList.add('own-message');
+        }
+
+        const time = new Date(timestamp);
+        const timeStr = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        messageEl.innerHTML = `
+            <div class="message-header">
+                <span class="message-player">${playerName}</span>
+                <span class="message-time">${timeStr}</span>
+            </div>
+            <div class="message-text">${this.escapeHtml(message)}</div>
+        `;
+
+        chatMessages.appendChild(messageEl);
+
+        // Auto-scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    changePlayerName() {
+        const nameInput = document.getElementById('player-name-input');
+        if (!nameInput) return;
+
+        const newName = nameInput.value.trim();
+        if (!newName || newName === this.playerName) return;
+
+        // Update local name
+        this.playerName = newName;
+        this.playerNames[this.role] = newName;
+
+        // Update role badge
+        const roleBadge = document.getElementById('role-badge');
+        if (roleBadge) {
+            roleBadge.textContent = newName;
+        }
+
+        // Broadcast name change
+        this.broadcast({
+            type: 'name-change',
+            player: this.role,
+            displayName: newName
+        });
+
+        // Update UI
+        this.updateConnectedPlayers();
+    }
+
+    getDisplayName(role) {
+        return this.playerNames[role] || (role === 'controller' ? 'Controller' : role.replace('player', 'Player '));
     }
 }
 
