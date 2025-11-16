@@ -571,18 +571,6 @@ class MultiplayerQuizApp {
             this.currentCardIndex = 0;
             this.displayCard();
             this.updateStats();
-            
-            // Broadcast quiz load to all players
-            if (this.role === 'controller') {
-                this.broadcast({
-                    type: 'quiz-load',
-                    quizFile: quiz.file
-                });
-                this.broadcast({
-                    type: 'next-question',
-                    index: this.currentCardIndex
-                });
-            }
         } catch (error) {
             console.error('Error loading quiz from file:', error);
         }

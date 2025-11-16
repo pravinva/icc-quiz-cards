@@ -115,6 +115,12 @@
     width: 100%;
 }
 
+/* Override container max-width for multiplayer */
+.game-screen .container,
+body:has(.game-screen) .container {
+    max-width: 1400px;
+}
+
 /* Game Layout: Two-column layout with sidebar */
 .game-layout {
     display: grid;
