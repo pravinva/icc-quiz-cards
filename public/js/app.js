@@ -13,6 +13,8 @@ class QuizApp {
         this.currentUtterance = null;
         this.autoRead = false;
         this.selectedVoice = null;
+        this.voiceSpeed = 1.2;
+        this.wordSpeed = 200;
 
         // DOM elements
         this.flashcard = document.getElementById('flashcard');
@@ -26,6 +28,11 @@ class QuizApp {
         this.currentRound = document.getElementById('current-round');
         this.currentPlayer = document.getElementById('current-player');
         this.totalCards = document.getElementById('total-cards');
+        this.voiceSelect = document.getElementById('voice-select');
+        this.voiceSpeedSlider = document.getElementById('voice-speed');
+        this.voiceSpeedValue = document.getElementById('voice-speed-value');
+        this.wordSpeedSlider = document.getElementById('word-speed');
+        this.wordSpeedValue = document.getElementById('word-speed-value');
 
         this.init();
     }
@@ -49,6 +56,9 @@ class QuizApp {
 
     selectBestVoice() {
         const voices = this.synthesis.getVoices();
+
+        // Populate voice dropdown
+        this.populateVoiceDropdown(voices);
 
         // Prefer Indian English female voices with neutral accents
         const preferredVoices = [
@@ -76,16 +86,61 @@ class QuizApp {
                 const voice = voices.find(v => v.name === voiceName);
                 if (voice) {
                     this.selectedVoice = voice;
+                    this.updateVoiceDropdown();
                     return;
                 }
             } else if (voiceName) {
                 this.selectedVoice = voiceName;
+                this.updateVoiceDropdown();
                 return;
             }
         }
 
         // Ultimate fallback
         this.selectedVoice = voices[0];
+        this.updateVoiceDropdown();
+    }
+
+    populateVoiceDropdown(voices) {
+        if (!this.voiceSelect) return;
+
+        // Clear existing options
+        this.voiceSelect.innerHTML = '';
+
+        // Group voices by language
+        const englishVoices = voices.filter(v => v.lang.startsWith('en'));
+        const otherVoices = voices.filter(v => !v.lang.startsWith('en'));
+
+        // Add English voices first
+        if (englishVoices.length > 0) {
+            const englishGroup = document.createElement('optgroup');
+            englishGroup.label = 'English';
+            englishVoices.forEach(voice => {
+                const option = document.createElement('option');
+                option.value = voice.name;
+                option.textContent = `${voice.name} (${voice.lang})`;
+                englishGroup.appendChild(option);
+            });
+            this.voiceSelect.appendChild(englishGroup);
+        }
+
+        // Add other voices
+        if (otherVoices.length > 0) {
+            const otherGroup = document.createElement('optgroup');
+            otherGroup.label = 'Other Languages';
+            otherVoices.forEach(voice => {
+                const option = document.createElement('option');
+                option.value = voice.name;
+                option.textContent = `${voice.name} (${voice.lang})`;
+                otherGroup.appendChild(option);
+            });
+            this.voiceSelect.appendChild(otherGroup);
+        }
+    }
+
+    updateVoiceDropdown() {
+        if (!this.voiceSelect || !this.selectedVoice) return;
+        this.voiceSelect.value = this.selectedVoice.name;
     }
 
     async loadQuizList() {
@@ -133,6 +188,25 @@ class QuizApp {
             this.autoRead = e.target.checked;
         });
 
+        // Voice controls
+        this.voiceSelect.addEventListener('change', (e) => {
+            const voices = this.synthesis.getVoices();
+            const selectedVoice = voices.find(v => v.name === e.target.value);
+            if (selectedVoice) {
+                this.selectedVoice = selectedVoice;
+            }
+        });
+
+        this.voiceSpeedSlider.addEventListener('input', (e) => {
+            this.voiceSpeed = parseFloat(e.target.value);
+            this.voiceSpeedValue.textContent = `${this.voiceSpeed.toFixed(1)}x`;
+        });
+
+        this.wordSpeedSlider.addEventListener('input', (e) => {
+            this.wordSpeed = parseInt(e.target.value);
+            this.wordSpeedValue.textContent = `${this.wordSpeed} wpm`;
+        });
+
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') this.previousCard();
@@ -163,7 +237,7 @@ class QuizApp {
         }
 
         // Configure speech parameters
-        this.currentUtterance.rate = 1.2; // Faster to match text streaming
+        this.currentUtterance.rate = this.voiceSpeed;
         this.currentUtterance.pitch = 1.0;
         this.currentUtterance.volume = 1.0;
 
@@ -342,10 +416,8 @@ class QuizApp {
         // Split text into words
         const words = text.split(/\s+/);
 
-        // Reading speed synced with voice rate 1.2
-        // Normal reading: ~150 wpm, with 1.2x rate = 180 wpm
-        const wordsPerMinute = 200; // Slower to match voice reading
-        const delayPerWord = (60 * 1000) / wordsPerMinute;
+        // Use the configured word speed
+        const delayPerWord = (60 * 1000) / this.wordSpeed;
 
         words.forEach((word, index) => {
             const span = document.createElement('span');

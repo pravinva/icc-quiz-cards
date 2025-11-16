@@ -28,6 +28,8 @@ class MultiplayerQuizApp {
         this.currentUtterance = null;
         this.autoRead = false;
         this.selectedVoice = null;
+        this.voiceSpeed = 1.2;
+        this.wordSpeed = 200;
 
         // Backend communication (BroadcastChannel or Supabase)
         this.backend = null;
@@ -253,6 +255,9 @@ class MultiplayerQuizApp {
     selectBestVoice() {
         const voices = this.synthesis.getVoices();
 
+        // Populate voice dropdown
+        this.populateVoiceDropdown(voices);
+
         // Prefer Indian English female voices with neutral accents
         const preferredVoices = [
             // Google Indian voices
@@ -279,15 +284,62 @@ class MultiplayerQuizApp {
                 const voice = voices.find(v => v.name === voiceName);
                 if (voice) {
                     this.selectedVoice = voice;
+                    this.updateVoiceDropdown();
                     return;
                 }
             } else if (voiceName) {
                 this.selectedVoice = voiceName;
+                this.updateVoiceDropdown();
                 return;
             }
         }
 
         this.selectedVoice = voices[0];
+        this.updateVoiceDropdown();
+    }
+
+    populateVoiceDropdown(voices) {
+        const voiceSelect = document.getElementById('voice-select');
+        if (!voiceSelect) return;
+
+        // Clear existing options
+        voiceSelect.innerHTML = '';
+
+        // Group voices by language
+        const englishVoices = voices.filter(v => v.lang.startsWith('en'));
+        const otherVoices = voices.filter(v => !v.lang.startsWith('en'));
+
+        // Add English voices first
+        if (englishVoices.length > 0) {
+            const englishGroup = document.createElement('optgroup');
+            englishGroup.label = 'English';
+            englishVoices.forEach(voice => {
+                const option = document.createElement('option');
+                option.value = voice.name;
+                option.textContent = `${voice.name} (${voice.lang})`;
+                englishGroup.appendChild(option);
+            });
+            voiceSelect.appendChild(englishGroup);
+        }
+
+        // Add other voices
+        if (otherVoices.length > 0) {
+            const otherGroup = document.createElement('optgroup');
+            otherGroup.label = 'Other Languages';
+            otherVoices.forEach(voice => {
+                const option = document.createElement('option');
+                option.value = voice.name;
+                option.textContent = `${voice.name} (${voice.lang})`;
+                otherGroup.appendChild(option);
+            });
+            voiceSelect.appendChild(otherGroup);
+        }
+    }
+
+    updateVoiceDropdown() {
+        const voiceSelect = document.getElementById('voice-select');
+        if (!voiceSelect || !this.selectedVoice) return;
+        voiceSelect.value = this.selectedVoice.name;
     }
 
     setupEventListeners() {
@@ -325,6 +377,37 @@ class MultiplayerQuizApp {
             if (correctBtn) correctBtn.addEventListener('click', () => this.scoreAnswer(1));
             if (passBtn) passBtn.addEventListener('click', () => this.scoreAnswer(0));
             if (wrongBtn) wrongBtn.addEventListener('click', () => this.scoreAnswer(-1));
+
+            // Voice controls
+            const voiceSelect = document.getElementById('voice-select');
+            const voiceSpeedSlider = document.getElementById('voice-speed');
+            const voiceSpeedValue = document.getElementById('voice-speed-value');
+            const wordSpeedSlider = document.getElementById('word-speed');
+            const wordSpeedValue = document.getElementById('word-speed-value');
+
+            if (voiceSelect) {
+                voiceSelect.addEventListener('change', (e) => {
+                    const voices = this.synthesis.getVoices();
+                    const selectedVoice = voices.find(v => v.name === e.target.value);
+                    if (selectedVoice) {
+                        this.selectedVoice = selectedVoice;
+                    }
+                });
+            }
+
+            if (voiceSpeedSlider && voiceSpeedValue) {
+                voiceSpeedSlider.addEventListener('input', (e) => {
+                    this.voiceSpeed = parseFloat(e.target.value);
+                    voiceSpeedValue.textContent = `${this.voiceSpeed.toFixed(1)}x`;
+                });
+            }
+
+            if (wordSpeedSlider && wordSpeedValue) {
+                wordSpeedSlider.addEventListener('input', (e) => {
+                    this.wordSpeed = parseInt(e.target.value);
+                    wordSpeedValue.textContent = `${this.wordSpeed} wpm`;
+                });
+            }
         } else {
             // Player buzz button
             if (buzzBtn) {
@@ -504,10 +587,8 @@ class MultiplayerQuizApp {
         text = this.normalizeText(text);
 
         const words = text.split(/\s+/);
-        // Reading speed synced with voice rate 1.2
-        // Normal reading: ~150 wpm, with 1.2x rate = 180 wpm
-        const wordsPerMinute = 200; // Slower to match voice reading
-        const delayPerWord = (60 * 1000) / wordsPerMinute;
+        // Use the configured word speed
+        const delayPerWord = (60 * 1000) / this.wordSpeed;
 
         this.isStreaming = true;
 
@@ -720,7 +801,7 @@ class MultiplayerQuizApp {
             this.currentUtterance.voice = this.selectedVoice;
         }
 
-        this.currentUtterance.rate = 1.2; // Faster to match text streaming
+        this.currentUtterance.rate = this.voiceSpeed;
         this.currentUtterance.pitch = 1.0;
         this.currentUtterance.volume = 1.0;
 
