@@ -211,6 +211,7 @@ header h1 {
 .card-back {
     background: linear-gradient(135deg, #1e293b 0%, var(--surface) 100%);
     transform: rotateY(180deg);
+    position: relative;
 }
 
 .card-content {
