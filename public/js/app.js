@@ -692,42 +692,27 @@ class QuizApp {
                 this.currentWordIndex = Math.max(0, visibleWords.length - 1);
             }
             
-            // Immediately stop ALL CSS animations and show/hide words
-            const allWords = this.currentStreamingElement.querySelectorAll('.word');
+            // Immediately stop ALL CSS animations by removing words that haven't been shown
+            const allWords = Array.from(this.currentStreamingElement.querySelectorAll('.word'));
             
-            // Use requestAnimationFrame to ensure immediate update
-            requestAnimationFrame(() => {
-                allWords.forEach((wordSpan, index) => {
-                    const wordIndex = parseInt(wordSpan.getAttribute('data-word-index') || index);
-                    
-                    // Completely remove animation by removing the class and re-adding without animation
-                    const originalClass = wordSpan.className;
-                    wordSpan.className = '';
-                    
-                    // Forcefully cancel all CSS animations with !important
-                    wordSpan.style.cssText = `
-                        animation: none !important;
-                        animation-name: none !important;
-                        animation-delay: 0ms !important;
-                        animation-duration: 0ms !important;
-                        transition: none !important;
-                    `;
-                    
-                    // Restore class but without animation
-                    wordSpan.className = originalClass;
-                    
-                    if (wordIndex < this.currentWordIndex) {
-                        // Words that should already be visible - make them visible immediately
-                        wordSpan.style.cssText += 'opacity: 1 !important; display: inline-block !important;';
-                    } else {
-                        // Words that haven't been shown yet - hide them completely
-                        wordSpan.style.cssText += 'opacity: 0 !important; display: none !important;';
-                    }
-                    
-                    // Force reflow
-                    void wordSpan.offsetHeight;
-                });
+            // Remove all words that haven't been displayed yet (this stops their animations)
+            allWords.forEach((wordSpan) => {
+                const wordIndex = parseInt(wordSpan.getAttribute('data-word-index') || '0');
+                
+                if (wordIndex >= this.currentWordIndex) {
+                    // Remove words that haven't been shown yet - this stops their animations
+                    wordSpan.remove();
+                } else {
+                    // For words that should be visible, immediately make them visible
+                    wordSpan.style.animation = 'none';
+                    wordSpan.style.animationDelay = '0ms';
+                    wordSpan.style.opacity = '1';
+                    wordSpan.style.display = 'inline-block';
+                }
             });
+            
+            // Force immediate reflow to stop any pending animations
+            void this.currentStreamingElement.offsetHeight;
         }
     }
     
