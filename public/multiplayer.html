@@ -49,8 +49,21 @@
             </div>
 
             <div class="room-info">
-                <p>Room Code: <strong id="room-code">Loading...</strong></p>
+                <div class="room-code-display">
+                    <p>Room Code: <strong id="room-code" class="room-code-value">Loading...</strong></p>
+                    <button id="copy-room-code-btn" class="copy-btn" title="Copy room code">📋 Copy</button>
+                    <button id="new-room-btn" class="new-room-btn" title="Create new room">🔄 New Room</button>
+                </div>
                 <p class="hint">Share this code with other players to join the same room</p>
+
+                <!-- Join Room Section -->
+                <div class="join-room-section">
+                    <p class="hint" style="margin-top: 1rem;">Or enter a room code to join an existing game:</p>
+                    <div class="join-room-input">
+                        <input type="text" id="join-room-input" placeholder="Enter room code..." maxlength="6" />
+                        <button id="join-room-btn" class="join-btn">Join Room</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -114,10 +127,40 @@
                             <div class="voice-setting-group" id="ai-voice-group" style="display: none;">
                                 <label for="ai-voice-select">AI Voice:</label>
                                 <select id="ai-voice-select" class="voice-select">
-                                    <option value="en-US-Neural2-F">Female US (Neural2-F)</option>
-                                    <option value="en-US-Neural2-A">Male US (Neural2-A)</option>
-                                    <option value="en-US-Neural2-C">Female US (Neural2-C)</option>
-                                    <option value="en-US-Neural2-D">Male US (Neural2-D)</option>
+                                    <optgroup label="US English - Neural">
+                                        <option value="en-US-Neural2-F">Female US (Neural2-F)</option>
+                                        <option value="en-US-Neural2-A">Male US (Neural2-A)</option>
+                                        <option value="en-US-Neural2-C">Female US (Neural2-C)</option>
+                                        <option value="en-US-Neural2-D">Male US (Neural2-D)</option>
+                                        <option value="en-US-Neural2-E">Female US (Neural2-E)</option>
+                                        <option value="en-US-Neural2-G">Female US (Neural2-G)</option>
+                                        <option value="en-US-Neural2-H">Female US (Neural2-H)</option>
+                                        <option value="en-US-Neural2-I">Male US (Neural2-I)</option>
+                                        <option value="en-US-Neural2-J">Male US (Neural2-J)</option>
+                                    </optgroup>
+                                    <optgroup label="US English - Studio">
+                                        <option value="en-US-Studio-O">Female US (Studio-O)</option>
+                                        <option value="en-US-Studio-Q">Male US (Studio-Q)</option>
+                                    </optgroup>
+                                    <optgroup label="UK English">
+                                        <option value="en-GB-Neural2-A">Female UK (Neural2-A)</option>
+                                        <option value="en-GB-Neural2-B">Male UK (Neural2-B)</option>
+                                        <option value="en-GB-Neural2-C">Female UK (Neural2-C)</option>
+                                        <option value="en-GB-Neural2-D">Male UK (Neural2-D)</option>
+                                        <option value="en-GB-Neural2-F">Female UK (Neural2-F)</option>
+                                    </optgroup>
+                                    <optgroup label="Australian English">
+                                        <option value="en-AU-Neural2-A">Female AU (Neural2-A)</option>
+                                        <option value="en-AU-Neural2-B">Male AU (Neural2-B)</option>
+                                        <option value="en-AU-Neural2-C">Female AU (Neural2-C)</option>
+                                        <option value="en-AU-Neural2-D">Male AU (Neural2-D)</option>
+                                    </optgroup>
+                                    <optgroup label="Indian English">
+                                        <option value="en-IN-Neural2-A">Female IN (Neural2-A)</option>
+                                        <option value="en-IN-Neural2-B">Male IN (Neural2-B)</option>
+                                        <option value="en-IN-Neural2-C">Male IN (Neural2-C)</option>
+                                        <option value="en-IN-Neural2-D">Female IN (Neural2-D)</option>
+                                    </optgroup>
                                 </select>
                             </div>
                             <div class="voice-setting-group">
@@ -219,6 +262,9 @@
                 <div class="navigation controller-only">
                     <button id="prev-btn" class="nav-btn" disabled>
                         <span>←</span> Previous
+                    </button>
+                    <button id="start-quiz-btn" class="start-quiz-btn" style="display: none;">
+                        ▶ Start Quiz
                     </button>
                     <button id="next-btn" class="nav-btn" disabled>
                         Next <span>→</span>

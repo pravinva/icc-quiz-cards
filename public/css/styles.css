@@ -516,8 +516,12 @@ header h1 {
 .navigation {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-btn {
@@ -551,6 +555,31 @@ header h1 {
     cursor: not-allowed;
     opacity: 0.5;
     box-shadow: none;
+}
+
+.start-quiz-btn {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.start-quiz-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+.start-quiz-btn:active {
+    transform: translateY(0);
 }
 
 .stats {
