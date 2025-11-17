@@ -237,11 +237,14 @@ body:has(.game-screen) .container {
     flex-direction: column;
     gap: 20px;
     position: sticky;
-    top: 20px;
+    top: 0;
     background: rgba(236, 72, 153, 0.05);
     padding: 20px;
     border-radius: var(--border-radius);
     border: 1px solid rgba(236, 72, 153, 0.2);
+    min-width: 300px;
+    max-width: 350px;
+    align-self: flex-start;
 }
 
 .game-header {
@@ -287,6 +290,38 @@ body:has(.game-screen) .container {
     font-weight: 600;
     color: var(--text-secondary);
     flex: 1;
+    text-align: center;
+}
+
+/* Navigation buttons below chat window */
+.nav-buttons-below-chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nav-buttons-below-chat .nav-btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+}
+
+.nav-btn-left {
+    margin-right: auto;
+}
+
+.nav-btn-right {
+    margin-left: auto;
+}
+
+/* Start button container - center bottom below question card */
+.start-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .buzz-indicator.buzzed {
@@ -800,11 +835,12 @@ body:has(.game-screen) .container {
 
 .chat-input-container {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     margin-top: auto;
-    padding: 15px 20px;
+    padding: 12px 15px;
     background: rgba(30, 41, 59, 0.9);
     border-top: 2px solid var(--primary-color);
+    align-items: center;
 }
 
 .chat-input {
@@ -833,17 +869,17 @@ body:has(.game-screen) .container {
 }
 
 .chat-send-btn {
-    padding: 12px 24px;
+    padding: 12px 18px;
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: white;
     border: none;
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
@@ -978,24 +1014,52 @@ body.role-player .flashcard {
 
 /* Scoreboard */
 .scoreboard {
-    background: var(--surface);
+    background: rgba(30, 41, 59, 0.95);
     border-radius: var(--border-radius);
-    padding: 25px;
-    margin-bottom: 30px;
-    border: 2px solid var(--surface-light);
+    padding: 0;
+    margin-bottom: 0;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.5),
+                0 0 20px rgba(99, 102, 241, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.scoreboard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 50%,
+        var(--primary-color) 100%);
+    animation: chatGlow 3s ease-in-out infinite;
 }
 
 .scoreboard h3 {
     color: var(--text-primary);
-    margin-bottom: 20px;
-    font-size: 1.3rem;
+    margin: 0;
+    padding: 16px 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 .score-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 15px 20px;
+    background: rgba(15, 23, 42, 0.6);
 }
 
 .score-item {

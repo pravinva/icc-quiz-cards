@@ -205,13 +205,17 @@
                     <div class="game-content">
                         <!-- Buzz Status Bar -->
                         <div class="buzz-status" id="buzz-status">
-                    <div class="buzz-indicator" id="buzz-indicator">
-                        Waiting for buzz...
-                    </div>
-                    <button id="reset-buzz-btn" class="reset-buzz-btn" style="display: none;">
-                        Reset Buzz
-                    </button>
-                </div>
+                            <!-- Buzz Indicator - Center -->
+                            <div class="buzz-indicator" id="buzz-indicator">
+                                Waiting for buzz...
+                            </div>
+                            
+                            <!-- Reset Buzz Button -->
+                            <button id="reset-buzz-btn" class="reset-buzz-btn" style="display: none;">
+                                Reset Buzz
+                            </button>
+                        </div>
+
 
                 <!-- Microphone Indicator -->
                 <div class="mic-indicator" id="mic-indicator"></div>
@@ -244,6 +248,13 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Start Button - Center Bottom Below Question Card -->
+                <div class="start-button-container controller-only">
+                    <button id="start-quiz-btn" class="start-quiz-btn" style="display: none;">
+                        ▶ Start Quiz
+                    </button>
                 </div>
 
                 <!-- Player Buzz Button -->
@@ -285,41 +296,7 @@
                     </label>
                 </div>
 
-                <!-- Navigation -->
-                <div class="navigation controller-only">
-                    <button id="prev-btn" class="nav-btn" disabled>
-                        <span>←</span> Previous
-                    </button>
-                    <button id="start-quiz-btn" class="start-quiz-btn" style="display: none;">
-                        ▶ Start Quiz
-                    </button>
-                    <button id="next-btn" class="nav-btn" disabled>
-                        Next <span>→</span>
-                    </button>
-                </div>
 
-                <!-- Scoreboard -->
-                <div class="scoreboard">
-                    <h3>Scoreboard</h3>
-                    <div class="score-grid" id="score-grid">
-                        <div class="score-item">
-                            <span class="player-label">Player 1</span>
-                            <span class="player-score" id="score-player1">0</span>
-                        </div>
-                        <div class="score-item">
-                            <span class="player-label">Player 2</span>
-                            <span class="player-score" id="score-player2">0</span>
-                        </div>
-                        <div class="score-item">
-                            <span class="player-label">Player 3</span>
-                            <span class="player-score" id="score-player3">0</span>
-                        </div>
-                        <div class="score-item">
-                            <span class="player-label">Player 4</span>
-                            <span class="player-score" id="score-player4">0</span>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Stats -->
                 <div class="stats">
@@ -340,7 +317,7 @@
                     </div>
                     <!-- End of game-content -->
 
-                    <!-- Right Sidebar: Chat Only -->
+                    <!-- Right Sidebar: Chat and Scoreboard -->
                     <div class="game-sidebar-right">
                         <div class="chat-window">
                             <h4>Chat</h4>
@@ -357,6 +334,39 @@
                                 />
                                 <button id="chat-send" class="chat-send-btn">Send</button>
                             </div>
+                        </div>
+
+                        <!-- Scoreboard in Sidebar -->
+                        <div class="scoreboard">
+                            <h3>Scoreboard</h3>
+                            <div class="score-grid" id="score-grid">
+                                <div class="score-item">
+                                    <span class="player-label">Player 1</span>
+                                    <span class="player-score" id="score-player1">0</span>
+                                </div>
+                                <div class="score-item">
+                                    <span class="player-label">Player 2</span>
+                                    <span class="player-score" id="score-player2">0</span>
+                                </div>
+                                <div class="score-item">
+                                    <span class="player-label">Player 3</span>
+                                    <span class="player-score" id="score-player3">0</span>
+                                </div>
+                                <div class="score-item">
+                                    <span class="player-label">Player 4</span>
+                                    <span class="player-score" id="score-player4">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons Below Chat Window -->
+                        <div class="nav-buttons-below-chat controller-only">
+                            <button id="prev-btn" class="nav-btn nav-btn-left" disabled>
+                                <span>←</span> Previous
+                            </button>
+                            <button id="next-btn" class="nav-btn nav-btn-right" disabled>
+                                Next <span>→</span>
+                            </button>
                         </div>
                     </div>
                     <!-- End of right sidebar -->

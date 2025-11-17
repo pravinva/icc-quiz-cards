@@ -485,7 +485,22 @@ class MultiplayerQuizApp {
                         if (data.selectedAIVoice !== undefined) {
                             this.selectedAIVoice = data.selectedAIVoice;
                         }
+                        // Use controller's voice settings (AI or browser)
                         this.speak(data.text, false); // false = don't re-broadcast
+                    }
+                    break;
+
+                case 'voice-settings-update':
+                    // Sync AI voice settings from controller immediately when changed
+                    if (this.role !== 'controller') {
+                        if (data.useAIVoice !== undefined) {
+                            this.useAIVoice = data.useAIVoice;
+                            console.log('AI voice setting synced:', this.useAIVoice);
+                        }
+                        if (data.selectedAIVoice !== undefined) {
+                            this.selectedAIVoice = data.selectedAIVoice;
+                            console.log('AI voice selection synced:', this.selectedAIVoice);
+                        }
                     }
                     break;
 
@@ -762,12 +777,28 @@ class MultiplayerQuizApp {
                         browserVoiceGroup.style.display = 'flex';
                         aiVoiceGroup.style.display = 'none';
                     }
+                    // Broadcast AI voice setting change to all players immediately
+                    if (this.role === 'controller' && this.roomCode) {
+                        this.broadcast({
+                            type: 'voice-settings-update',
+                            useAIVoice: this.useAIVoice,
+                            selectedAIVoice: this.selectedAIVoice
+                        });
+                    }
                 });
             }
 
             if (aiVoiceSelect) {
                 aiVoiceSelect.addEventListener('change', (e) => {
                     this.selectedAIVoice = e.target.value;
+                    // Broadcast AI voice selection change to all players immediately
+                    if (this.role === 'controller' && this.roomCode) {
+                        this.broadcast({
+                            type: 'voice-settings-update',
+                            useAIVoice: this.useAIVoice,
+                            selectedAIVoice: this.selectedAIVoice
+                        });
+                    }
                 });
             }
         } else {
@@ -1592,7 +1623,11 @@ class MultiplayerQuizApp {
 
         try {
             // Call serverless function
-            const response = await fetch('/api/text-to-speech', {
+            // Use localhost:3000 for local API server, or relative URL for production
+            const apiUrl = window.location.hostname === 'localhost' && window.location.port !== '3000' 
+                ? 'http://localhost:3000/api/text-to-speech'
+                : '/api/text-to-speech';
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

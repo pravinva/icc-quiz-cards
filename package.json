@@ -4,12 +4,16 @@
   "description": "ICC Quiz Cards - Interactive flashcard quiz application",
   "private": true,
   "scripts": {
-    "build": "node scripts/build-config.js"
+    "build": "node scripts/build-config.js",
+    "dev": "node server.js",
+    "start": "vercel dev",
+    "server": "node server.js"
   },
   "dependencies": {
     "xlsx": "^0.18.5",
     "formidable": "^3.5.1",
-    "@octokit/rest": "^20.0.2"
+    "@octokit/rest": "^20.0.2",
+    "dotenv": "^16.0.0"
   },
   "devDependencies": {},
   "engines": {

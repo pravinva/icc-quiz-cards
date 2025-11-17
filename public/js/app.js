@@ -275,7 +275,11 @@ class QuizApp {
 
         try {
             // Call serverless function
-            const response = await fetch('/api/text-to-speech', {
+            // Use localhost:3000 for local API server, or relative URL for production
+            const apiUrl = window.location.hostname === 'localhost' && window.location.port !== '3000' 
+                ? 'http://localhost:3000/api/text-to-speech'
+                : '/api/text-to-speech';
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

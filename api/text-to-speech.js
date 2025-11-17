@@ -1,7 +1,17 @@
+// Load environment variables (for local development)
+// In Vercel, environment variables are automatically available via process.env
+try {
+    if (typeof require !== 'undefined') {
+        require('dotenv').config({ path: '.env.local' });
+    }
+} catch (e) {
+    // dotenv not available (Vercel environment)
+}
+
 // Vercel Serverless Function for Google Cloud Text-to-Speech
 // This securely calls the Google Cloud TTS API without exposing credentials in the frontend
 
-export default async function handler(req, res) {
+async function handler(req, res) {
     // Only allow POST requests
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
@@ -20,7 +30,7 @@ export default async function handler(req, res) {
         if (!apiKey) {
             // If no API key, return error instructing user to set it up
             return res.status(500).json({
-                error: 'Google Cloud TTS not configured. Please add GOOGLE_CLOUD_TTS_API_KEY to your Vercel environment variables.'
+                error: 'Google Cloud TTS not configured. Please add GOOGLE_CLOUD_TTS_API_KEY to your Vercel environment variables or .env.local file.'
             });
         }
 
@@ -73,4 +83,12 @@ export default async function handler(req, res) {
             message: error.message
         });
     }
+}
+
+// ES module export (for Vercel)
+export default handler;
+
+// CommonJS export (for local server)
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { default: handler };
 }
