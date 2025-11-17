@@ -91,13 +91,10 @@
             <header>
                 <h1>ICC Quiz Cards</h1>
                 
-                <!-- Navigation Buttons Below Header -->
-                <div class="nav-buttons-header controller-only">
+                <!-- Previous Button Below Header -->
+                <div class="nav-button-header controller-only">
                     <button id="prev-btn" class="nav-btn" disabled>
                         <span>←</span> Previous
-                    </button>
-                    <button id="next-btn" class="nav-btn" disabled>
-                        Next <span>→</span>
                     </button>
                 </div>
                 
@@ -330,6 +327,13 @@
 
                     <!-- Right Sidebar: Chat and Scoreboard -->
                     <div class="game-sidebar-right">
+                        <!-- Next Button Above Chat Window -->
+                        <div class="nav-button-above-chat controller-only">
+                            <button id="next-btn" class="nav-btn" disabled>
+                                Next <span>→</span>
+                            </button>
+                        </div>
+                        
                         <div class="chat-window">
                             <h4>Chat</h4>
                             <div class="chat-messages" id="chat-messages">

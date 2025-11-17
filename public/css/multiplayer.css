@@ -293,20 +293,32 @@ body:has(.game-screen) .container {
     text-align: center;
 }
 
-/* Navigation buttons below header */
-.nav-buttons-header {
+/* Previous button below header */
+.nav-button-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     margin: 20px 0;
     padding: 0 20px;
 }
 
-.nav-buttons-header .nav-btn {
+.nav-button-header .nav-btn {
     padding: 12px 24px;
     font-size: 0.95rem;
-    flex: 0 0 auto;
+}
+
+/* Next button above chat window */
+.nav-button-above-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.nav-button-above-chat .nav-btn {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    width: 100%;
 }
 
 /* Start button container - center bottom below question card */
