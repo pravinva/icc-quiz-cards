@@ -58,8 +58,13 @@ class QuizUploader {
     }
 
     async openModal() {
-        // Check authentication first
-        if (!this.isAuthenticated) {
+        // Check if we're on solo page (no password needed) or controller page (password required)
+        const isSoloPage = window.location.pathname.includes('solo.html') || 
+                          window.location.pathname === '/' ||
+                          !document.getElementById('upload-quiz-btn')?.closest('.controller-only');
+        
+        // Only require authentication for controller pages
+        if (!isSoloPage && !this.isAuthenticated) {
             const authenticated = await this.authenticate();
             if (!authenticated) {
                 return; // User cancelled or wrong password
@@ -271,11 +276,29 @@ class QuizUploader {
             // Success!
             this.showStatus(`✅ Quiz uploaded successfully! ${result.saved ? 'Saved to repository.' : 'Download the JSON file.'}`, 'success');
             
-            // Refresh quiz list if app exists
+            // Refresh quiz list if app exists (works for both multiplayer and solo)
             if (window.app && typeof window.app.loadQuizList === 'function') {
                 setTimeout(() => {
                     window.app.loadQuizList();
                 }, 1000);
+            }
+            
+            // Also refresh quiz selector dropdown directly
+            const quizSelect = document.getElementById('quiz-select');
+            if (quizSelect && result.quiz) {
+                // Reload quiz list
+                fetch('/data/quiz-index.json')
+                    .then(r => r.json())
+                    .then(index => {
+                        quizSelect.innerHTML = '<option value="">Select a quiz...</option>';
+                        index.quizzes.forEach((quiz, idx) => {
+                            const option = document.createElement('option');
+                            option.value = idx;
+                            option.textContent = quiz.name;
+                            quizSelect.appendChild(option);
+                        });
+                    })
+                    .catch(err => console.error('Error refreshing quiz list:', err));
             }
 
             // Close modal after 2 seconds
@@ -301,7 +324,7 @@ class QuizUploader {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Only initialize if we're on controller page
+    // Initialize if upload button exists (works for both solo and controller pages)
     if (document.getElementById('upload-quiz-btn')) {
         window.quizUploader = new QuizUploader();
     }

@@ -209,16 +209,6 @@ class QuizApp {
         this.autoReadCheckbox.addEventListener('change', (e) => {
             this.autoRead = e.target.checked;
         });
-        
-        // Buzzer button
-        if (this.buzzBtn) {
-            this.buzzBtn.addEventListener('click', () => this.handleBuzz());
-        }
-        
-        // Start quiz button
-        if (this.startQuizBtn) {
-            this.startQuizBtn.addEventListener('click', () => this.startQuiz());
-        }
 
         // Voice controls
         this.voiceSelect.addEventListener('change', (e) => {
