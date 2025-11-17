@@ -522,6 +522,7 @@ header h1 {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    flex-wrap: wrap;
 }
 
 .nav-btn {
@@ -642,11 +643,18 @@ footer {
 
     .navigation {
         flex-direction: column;
+        gap: 15px;
     }
 
     .nav-btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .start-quiz-btn {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
     }
 
     .stats {
