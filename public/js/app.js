@@ -49,6 +49,10 @@ class QuizApp {
         this.revealAnswerBtn = document.getElementById('reveal-answer-btn');
         this.streamingTimeout = null;
         this.currentStreamingElement = null;
+        this.streamingInterrupted = false;
+        this.remainingWords = [];
+        this.currentWordIndex = 0;
+        this.originalQuestionText = '';
 
         this.init();
     }
@@ -623,37 +627,45 @@ class QuizApp {
         return text.trim();
     }
 
-    streamText(element, text) {
+    streamText(element, text, startIndex = 0) {
         // Stop any existing streaming
         this.stopStreaming();
         
         // Store reference to current streaming element
         this.currentStreamingElement = element;
+        this.streamingInterrupted = false;
         
-        // Clear existing content
-        element.innerHTML = '';
+        // Clear existing content only if starting from beginning
+        if (startIndex === 0) {
+            element.innerHTML = '';
+        }
 
         // Normalize text to fix spacing issues from PDF extraction
         text = this.normalizeText(text);
+        this.originalQuestionText = text;
 
         // Split text into words
         const words = text.split(/\s+/);
+        this.remainingWords = words;
+        this.currentWordIndex = startIndex;
 
         // Use the configured word speed
         const delayPerWord = (60 * 1000) / this.wordSpeed;
 
-        words.forEach((word, index) => {
+        // Stream words starting from startIndex
+        for (let i = startIndex; i < words.length; i++) {
+            const word = words[i];
             const span = document.createElement('span');
             span.className = 'word';
             span.textContent = word;
-            span.style.animationDelay = `${index * delayPerWord}ms`;
+            span.style.animationDelay = `${(i - startIndex) * delayPerWord}ms`;
             element.appendChild(span);
 
             // Add space after word (except last word)
-            if (index < words.length - 1) {
+            if (i < words.length - 1) {
                 element.appendChild(document.createTextNode(' '));
             }
-        });
+        }
     }
     
     stopStreaming() {
@@ -663,15 +675,40 @@ class QuizApp {
             this.streamingTimeout = null;
         }
         
-        // If streaming was interrupted, show all remaining words immediately
+        // Mark streaming as interrupted (but don't show remaining words yet)
         if (this.currentStreamingElement) {
-            const words = this.currentStreamingElement.querySelectorAll('.word');
-            words.forEach(word => {
-                word.style.animationDelay = '0ms';
-                word.style.opacity = '1';
-            });
-            this.currentStreamingElement = null;
+            this.streamingInterrupted = true;
+            // Count how many words are already visible
+            const visibleWords = this.currentStreamingElement.querySelectorAll('.word[style*="opacity: 1"], .word:not([style*="opacity: 0"])');
+            this.currentWordIndex = visibleWords.length;
         }
+    }
+    
+    continueStreaming() {
+        if (!this.streamingInterrupted || !this.currentStreamingElement || !this.originalQuestionText) {
+            return Promise.resolve();
+        }
+        
+        const questionText = this.currentStreamingElement;
+        const startIndex = this.currentWordIndex;
+        const words = this.remainingWords;
+        const delayPerWord = (60 * 1000) / this.wordSpeed;
+        
+        // Calculate total time needed to finish streaming
+        const remainingWords = words.length - startIndex;
+        const totalTime = remainingWords * delayPerWord;
+        
+        // Continue streaming from where we left off
+        this.streamText(questionText, this.originalQuestionText, startIndex);
+        
+        // Return a promise that resolves when streaming completes
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                this.streamingInterrupted = false;
+                this.currentStreamingElement = null;
+                resolve();
+            }, totalTime + 100); // Add small buffer
+        });
     }
 
     flipCard(force = false) {
@@ -761,10 +798,31 @@ class QuizApp {
         }
     }
     
-    revealAnswer() {
+    async revealAnswer() {
         if (!this.buzzed) return;
         
-        // Flip card to show answer (force flip even when buzzed)
+        // If streaming was interrupted, continue streaming to completion first
+        if (this.streamingInterrupted) {
+            // Disable reveal button while streaming
+            if (this.revealAnswerBtn) {
+                this.revealAnswerBtn.disabled = true;
+                this.revealAnswerBtn.textContent = 'Streaming question...';
+            }
+            
+            // Continue streaming and wait for it to complete
+            await this.continueStreaming();
+            
+            // Re-enable reveal button
+            if (this.revealAnswerBtn) {
+                this.revealAnswerBtn.disabled = false;
+                const revealText = this.revealAnswerBtn.querySelector('.reveal-text');
+                if (revealText) {
+                    revealText.textContent = 'Reveal Answer';
+                }
+            }
+        }
+        
+        // Now flip card to show answer (force flip even when buzzed)
         if (!this.isFlipped) {
             this.flipCard(true);
         }
