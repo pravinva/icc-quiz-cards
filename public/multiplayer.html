@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#6366f1">
-    <meta name="description" content="Buzzer Quiz - Interactive multiplayer quiz flashcards with buzz-in functionality">
+    <meta name="description" content="ICC Quiz Cards - Interactive multiplayer quiz flashcards with buzz-in functionality">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Buzzer Quiz">
+    <meta name="apple-mobile-web-app-title" content="ICC Quiz">
 
-    <title>Buzzer Quiz - Multiplayer Buzz Mode</title>
+    <title>ICC Quiz Cards - Multiplayer Buzz Mode</title>
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/multiplayer.css">
@@ -23,7 +23,7 @@
         <!-- Role Selection Screen -->
         <div id="role-selection" class="role-selection">
             <header>
-                <h1>Buzzer Quiz</h1>
+                <h1>ICC Quiz Cards</h1>
                 <h2>Multiplayer Buzz Mode</h2>
             </header>
 
@@ -64,7 +64,7 @@
         <!-- Player Waiting Room -->
         <div id="waiting-room" class="role-selection" style="display: none;">
             <header>
-                <h1>Buzzer Quiz</h1>
+                <h1>ICC Quiz Cards</h1>
                 <h2>Waiting for Approval</h2>
             </header>
 
@@ -89,7 +89,7 @@
         <!-- Game Screen -->
         <div id="game-screen" class="game-screen" style="display: none;">
             <header>
-                <h1>Buzzer Quiz</h1>
+                <h1>ICC Quiz Cards</h1>
                 
                 <!-- Previous Button Below Header -->
                 <div class="nav-button-header controller-only">
@@ -105,6 +105,9 @@
                         <select id="quiz-select">
                             <option value="">Loading quizzes...</option>
                         </select>
+                        <button id="upload-quiz-btn" class="upload-quiz-btn" title="Upload XLSX Quiz">
+                            📤 Upload Quiz
+                        </button>
                     </div>
                 </div>
             </header>
@@ -381,7 +384,7 @@
             </main>
 
             <footer>
-                <p>Buzzer Quiz - Multiplayer Buzz Mode</p>
+                <p>ICC Quiz Cards - Multiplayer Buzz Mode</p>
                 <p style="margin-top: 10px;">
                     <a href="index.html" style="color: var(--primary-light); text-decoration: none; margin: 0 10px;">← Back to Solo Mode</a>
                     <span style="color: var(--text-secondary);">|</span>
@@ -412,5 +415,43 @@
             });
         }
     </script>
+
+    <!-- Upload Quiz Modal -->
+    <div id="upload-modal" class="upload-modal" style="display: none;">
+        <div class="upload-modal-content">
+            <div class="upload-modal-header">
+                <h2>Upload XLSX Quiz</h2>
+                <button id="close-upload-modal" class="close-btn">&times;</button>
+            </div>
+            <div class="upload-modal-body">
+                <p class="upload-info">
+                    Upload an Excel file (.xlsx) with 2 columns:<br>
+                    <strong>Column A:</strong> Questions<br>
+                    <strong>Column B:</strong> Answers
+                </p>
+                <form id="upload-quiz-form">
+                    <div class="form-group">
+                        <label for="upload-quiz-title">Quiz Title (optional):</label>
+                        <input type="text" id="upload-quiz-title" placeholder="Enter quiz title" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="upload-file-input" class="file-label">
+                            <span id="upload-file-label">Choose Excel file or drag & drop</span>
+                        </label>
+                        <input type="file" id="upload-file-input" accept=".xlsx,.xls" class="file-input">
+                    </div>
+                    <div id="upload-status" class="upload-status"></div>
+                    <div class="upload-modal-actions">
+                        <button type="submit" id="upload-submit-btn" class="btn btn-primary">Upload & Convert</button>
+                        <button type="button" id="cancel-upload-btn" class="btn btn-secondary">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- SheetJS library for XLSX parsing -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+    <script src="/js/quiz-upload.js"></script>
 </body>
 </html>

@@ -62,6 +62,41 @@ class SupabaseBackend {
         });
     }
 
+    // Save game results to database
+    async saveGameResults(gameData) {
+        if (!this.client) {
+            console.error('Supabase client not initialized');
+            return { error: 'Client not initialized' };
+        }
+
+        try {
+            const { data, error } = await this.client
+                .from('game_results')
+                .insert({
+                    room_code: this.roomCode,
+                    quiz_name: gameData.quizName || 'Unknown',
+                    started_at: gameData.startedAt || new Date().toISOString(),
+                    ended_at: new Date().toISOString(),
+                    player_scores: gameData.scores || {},
+                    player_names: gameData.playerNames || {},
+                    total_questions: gameData.totalQuestions || 0,
+                    completed_questions: gameData.completedQuestions || 0
+                })
+                .select();
+
+            if (error) {
+                console.error('Error saving game results:', error);
+                return { error: error.message };
+            }
+
+            console.log('✅ Game results saved:', data);
+            return { data };
+        } catch (error) {
+            console.error('Exception saving game results:', error);
+            return { error: error.message };
+        }
+    }
+
     // Clean up
     disconnect() {
         if (this.channel) {

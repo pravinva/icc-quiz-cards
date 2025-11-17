@@ -44,6 +44,8 @@ class MultiplayerQuizApp {
             player3: 0,
             player4: 0
         };
+        this.gameStartTime = null;
+        this.currentQuizName = null;
         this.connectedPlayers = new Set(['controller']);
         this.pendingPlayers = new Set(); // Players waiting for approval
         this.chatMessages = [];
@@ -1300,6 +1302,52 @@ class MultiplayerQuizApp {
 
         // Reset buzz (but don't auto-advance - controller presses next manually)
         this.resetBuzz();
+    }
+
+    async saveGameResults() {
+        // Only controller saves results
+        if (this.role !== 'controller' || this.backendType !== 'supabase') {
+            return;
+        }
+
+        if (!this.backend || typeof this.backend.saveGameResults !== 'function') {
+            console.log('Supabase backend not available for saving results');
+            return;
+        }
+
+        try {
+            const gameData = {
+                quizName: this.currentQuizName || 'Unknown Quiz',
+                startedAt: this.gameStartTime || new Date().toISOString(),
+                scores: this.scores,
+                playerNames: this.playerNames,
+                totalQuestions: this.allCards ? this.allCards.length : 0,
+                completedQuestions: this.currentCardIndex + 1
+            };
+
+            const result = await this.backend.saveGameResults(gameData);
+            if (result.error) {
+                console.error('Failed to save game results:', result.error);
+                alert('Failed to save game results: ' + result.error);
+            } else {
+                console.log('✅ Game results saved successfully');
+                alert('✅ Game results saved to database!');
+            }
+        } catch (error) {
+            console.error('Error saving game results:', error);
+            alert('Error saving game results: ' + error.message);
+        }
+    }
+
+    async endGame() {
+        // End game and save results
+        if (this.role !== 'controller') {
+            return;
+        }
+
+        if (confirm('End game and save results to database?')) {
+            await this.saveGameResults();
+        }
     }
 
     updateScoreDisplay(scores) {
