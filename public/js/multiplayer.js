@@ -9,7 +9,7 @@ class MultiplayerQuizApp {
         this.isFlipped = false;
         this.role = null;
         this.playerName = null;
-        this.roomCode = this.generateRoomCode();
+        this.roomCode = this.getRoomCodeFromURL(); // Only get from URL, don't auto-generate
         this.quizStarted = false;
 
         // Multiplayer state
@@ -53,51 +53,28 @@ class MultiplayerQuizApp {
     }
 
     async init() {
-        // Display room code
-        const roomCodeEl = document.getElementById('room-code');
-        if (roomCodeEl) {
-            roomCodeEl.textContent = this.roomCode;
-        }
-
         // Setup room management buttons
         this.setupRoomManagement();
 
-        // Initialize backend
-        await this.initializeBackend();
+        // Only initialize backend if we have a room code (i.e., player joining existing room)
+        if (this.roomCode) {
+            await this.initializeBackend();
+        }
 
         await this.loadQuizList();
         this.initializeVoice();
     }
 
     setupRoomManagement() {
+        const generateRoomBtn = document.getElementById('generate-room-btn');
         const copyBtn = document.getElementById('copy-room-code-btn');
-        const newRoomBtn = document.getElementById('new-room-btn');
-        const joinRoomBtn = document.getElementById('join-room-btn');
-        const joinRoomInput = document.getElementById('join-room-input');
+
+        if (generateRoomBtn) {
+            generateRoomBtn.addEventListener('click', () => this.generateRoomForController());
+        }
 
         if (copyBtn) {
             copyBtn.addEventListener('click', () => this.copyRoomCode());
-        }
-
-        if (newRoomBtn) {
-            newRoomBtn.addEventListener('click', () => this.createNewRoom());
-        }
-
-        if (joinRoomBtn) {
-            joinRoomBtn.addEventListener('click', () => this.joinRoom());
-        }
-
-        if (joinRoomInput) {
-            joinRoomInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    this.joinRoom();
-                }
-            });
-            // Auto-capitalize
-            joinRoomInput.addEventListener('input', (e) => {
-                e.target.value = e.target.value.toUpperCase();
-            });
         }
     }
 
@@ -119,31 +96,34 @@ class MultiplayerQuizApp {
         });
     }
 
-    createNewRoom() {
+    generateRoomForController() {
         // Generate new room code
         const newCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+        this.roomCode = newCode;
 
         // Update URL
-        window.location.href = `?room=${newCode}`;
-    }
+        window.history.replaceState({}, '', `?room=${newCode}`);
 
-    joinRoom() {
-        const joinRoomInput = document.getElementById('join-room-input');
-        if (!joinRoomInput) return;
-
-        const roomCode = joinRoomInput.value.trim().toUpperCase();
-        if (!roomCode) {
-            alert('Please enter a room code');
-            return;
+        // Display room code
+        const roomCodeEl = document.getElementById('room-code');
+        if (roomCodeEl) {
+            roomCodeEl.textContent = this.roomCode;
         }
 
-        if (roomCode.length !== 6) {
-            alert('Room code must be 6 characters');
-            return;
+        // Show room info section
+        const controllerRoomInfo = document.getElementById('controller-room-info');
+        if (controllerRoomInfo) {
+            controllerRoomInfo.style.display = 'block';
         }
 
-        // Join the room
-        window.location.href = `?room=${roomCode}`;
+        // Hide generate button
+        const generateBtn = document.getElementById('generate-room-btn');
+        if (generateBtn) {
+            generateBtn.style.display = 'none';
+        }
+
+        // Initialize backend now that we have a room code
+        this.initializeBackend();
     }
 
     async initializeBackend() {
@@ -206,22 +186,26 @@ class MultiplayerQuizApp {
         }
     }
 
-    generateRoomCode() {
-        // Check URL for room code
+    getRoomCodeFromURL() {
+        // Only get room code from URL, never generate automatically
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has('room')) {
-            return urlParams.get('room');
+            return urlParams.get('room').toUpperCase();
         }
-
-        // Generate new room code
-        const code = Math.random().toString(36).substring(2, 8).toUpperCase();
-
-        // Update URL without reload
-        window.history.replaceState({}, '', `?room=${code}`);
-        return code;
+        return null;
     }
 
     selectRole(role) {
+        // Check if room code exists
+        if (!this.roomCode) {
+            if (role === 'controller') {
+                alert('Please generate a room first before entering as controller');
+            } else {
+                alert('No room code found. Please ask the controller to share the room URL or code');
+            }
+            return;
+        }
+
         this.role = role;
         this.playerName = role === 'controller' ? 'Controller' : role.replace('player', 'Player ');
 
@@ -1766,6 +1750,10 @@ class MultiplayerQuizApp {
     addChatMessage(playerName, message, timestamp) {
         const chatMessages = document.getElementById('chat-messages');
         if (!chatMessages) return;
+
+        // Check for duplicate messages (same timestamp)
+        const isDuplicate = this.chatMessages.some(msg => msg.timestamp === timestamp);
+        if (isDuplicate) return;
 
         // Add to messages array
         this.chatMessages.push({ playerName, message, timestamp });

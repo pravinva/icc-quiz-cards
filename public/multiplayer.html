@@ -28,41 +28,34 @@
             </header>
 
             <div class="role-options">
-                <div class="role-card">
+                <div class="role-card controller-card">
                     <h3>🎮 Controller</h3>
                     <p>Run the quiz, reveal answers, manage the game</p>
-                    <button class="role-btn controller-btn" onclick="app.selectRole('controller')">
-                        Join as Controller
+                    <button id="generate-room-btn" class="role-btn controller-btn">
+                        Generate Room
                     </button>
+                    <div id="controller-room-info" class="room-info" style="display: none; margin-top: 1rem;">
+                        <div class="room-code-display">
+                            <p>Room Code: <strong id="room-code" class="room-code-value"></strong></p>
+                            <button id="copy-room-code-btn" class="copy-btn" title="Copy room code">📋 Copy</button>
+                        </div>
+                        <p class="hint">Share this code with players to join</p>
+                        <button class="role-btn controller-btn" onclick="app.selectRole('controller')">
+                            Enter Room as Controller
+                        </button>
+                    </div>
                 </div>
 
-                <div class="role-card">
+                <div class="role-card player-card">
                     <h3>🎯 Player</h3>
-                    <p>Buzz in to answer questions</p>
+                    <p>Choose your player number and enter the room</p>
                     <div class="player-selection">
                         <button class="role-btn player-btn" onclick="app.selectRole('player1')">Player 1</button>
                         <button class="role-btn player-btn" onclick="app.selectRole('player2')">Player 2</button>
                         <button class="role-btn player-btn" onclick="app.selectRole('player3')">Player 3</button>
                         <button class="role-btn player-btn" onclick="app.selectRole('player4')">Player 4</button>
                     </div>
-                </div>
-            </div>
-
-            <div class="room-info">
-                <div class="room-code-display">
-                    <p>Room Code: <strong id="room-code" class="room-code-value">Loading...</strong></p>
-                    <button id="copy-room-code-btn" class="copy-btn" title="Copy room code">📋 Copy</button>
-                    <button id="new-room-btn" class="new-room-btn" title="Create new room">🔄 New Room</button>
-                </div>
-                <p class="hint">Share this code with other players to join the same room</p>
-
-                <!-- Join Room Section -->
-                <div class="join-room-section">
-                    <p class="hint" style="margin-top: 1rem;">Or enter a room code to join an existing game:</p>
-                    <div class="join-room-input">
-                        <input type="text" id="join-room-input" placeholder="Enter room code..." maxlength="6" />
-                        <button id="join-room-btn" class="join-btn">Join Room</button>
-                    </div>
+                    <p class="hint" style="margin-top: 1rem;">Ask the controller for the room code before entering</p>
                 </div>
             </div>
         </div>
