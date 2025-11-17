@@ -440,6 +440,25 @@ class MultiplayerQuizApp {
 
                 case 'score-update':
                     this.updateScoreDisplay(data.scores);
+                    // Show scoring result to all players
+                    if (data.scoringResult) {
+                        this.showScoringResult(data.scoringResult);
+                    }
+                    break;
+
+                case 'card-flip':
+                    // Sync card flip state from controller
+                    if (this.role !== 'controller') {
+                        this.isFlipped = data.isFlipped;
+                        const flashcard = document.getElementById('flashcard');
+                        if (flashcard) {
+                            if (data.isFlipped) {
+                                flashcard.classList.add('flipped');
+                            } else {
+                                flashcard.classList.remove('flipped');
+                            }
+                        }
+                    }
                     break;
 
                 case 'quiz-load':
@@ -986,6 +1005,12 @@ class MultiplayerQuizApp {
         const flashcard = document.getElementById('flashcard');
         if (flashcard) flashcard.classList.remove('flipped');
 
+        // Hide scoring result display
+        const resultDisplay = document.getElementById('scoring-result-display');
+        if (resultDisplay) {
+            resultDisplay.style.display = 'none';
+        }
+
         // Update question
         const questionNumber = document.querySelector('.question-number');
         const questionText = document.querySelector('.question-text');
@@ -1287,13 +1312,38 @@ class MultiplayerQuizApp {
         const playerKey = `player${playerMatch[1]}`;
         this.scores[playerKey] += points;
 
+        // Determine scoring result type
+        let resultType = 'pass';
+        let resultText = 'Pass (0)';
+        if (points > 0) {
+            resultType = 'correct';
+            resultText = 'Correct (+1)';
+        } else if (points < 0) {
+            resultType = 'wrong';
+            resultText = 'Wrong (-1)';
+        }
+
         // Update score display
         this.updateScoreDisplay(this.scores);
 
-        // Broadcast score update
+        // Broadcast score update with scoring result
         this.broadcast({
             type: 'score-update',
-            scores: this.scores
+            scores: this.scores,
+            scoringResult: {
+                player: this.buzzedPlayer,
+                points: points,
+                resultType: resultType,
+                resultText: resultText
+            }
+        });
+
+        // Show scoring result on controller screen
+        this.showScoringResult({
+            player: this.buzzedPlayer,
+            points: points,
+            resultType: resultType,
+            resultText: resultText
         });
 
         // Hide scoring controls
@@ -1378,6 +1428,58 @@ class MultiplayerQuizApp {
                 }
             }
         }
+    }
+
+    showScoringResult(result) {
+        // Create or update scoring result display
+        let resultDisplay = document.getElementById('scoring-result-display');
+        if (!resultDisplay) {
+            resultDisplay = document.createElement('div');
+            resultDisplay.id = 'scoring-result-display';
+            resultDisplay.className = 'scoring-result-display';
+            
+            // Insert after buzz indicator
+            const buzzStatus = document.getElementById('buzz-status');
+            if (buzzStatus) {
+                buzzStatus.appendChild(resultDisplay);
+            } else {
+                // Fallback: insert in game content area
+                const gameContent = document.querySelector('.game-content');
+                if (gameContent) {
+                    gameContent.insertBefore(resultDisplay, gameContent.firstChild);
+                }
+            }
+        }
+
+        // Set result content
+        const iconMap = {
+            'correct': '✓',
+            'wrong': '✗',
+            'pass': '−'
+        };
+        const colorMap = {
+            'correct': '#10b981',
+            'wrong': '#ef4444',
+            'pass': '#f59e0b'
+        };
+
+        resultDisplay.innerHTML = `
+            <div class="scoring-result-content ${result.resultType}">
+                <span class="scoring-result-icon">${iconMap[result.resultType] || '−'}</span>
+                <span class="scoring-result-text">
+                    <strong>${result.player}</strong>: ${result.resultText}
+                </span>
+            </div>
+        `;
+        resultDisplay.style.display = 'block';
+        resultDisplay.style.borderColor = colorMap[result.resultType] || '#f59e0b';
+
+        // Auto-hide after 3 seconds
+        setTimeout(() => {
+            if (resultDisplay) {
+                resultDisplay.style.display = 'none';
+            }
+        }, 3000);
     }
 
     // ============ WebRTC Voice Answering Methods ============
@@ -1858,6 +1960,12 @@ class MultiplayerQuizApp {
         this.isFlipped = !this.isFlipped;
         const flashcard = document.getElementById('flashcard');
         if (flashcard) flashcard.classList.toggle('flipped');
+
+        // Broadcast card flip to all players
+        this.broadcast({
+            type: 'card-flip',
+            isFlipped: this.isFlipped
+        });
     }
 
     previousCard() {

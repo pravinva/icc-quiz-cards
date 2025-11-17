@@ -1419,3 +1419,67 @@ body.role-player .flashcard {
     background: var(--surface);
 }
 
+
+/* Scoring Result Display (visible to all players) */
+.scoring-result-display {
+    display: none;
+    margin: 15px 0;
+    padding: 15px 20px;
+    background: var(--surface);
+    border: 2px solid #f59e0b;
+    border-radius: 12px;
+    text-align: center;
+    animation: slideInScore 0.3s ease-out;
+}
+
+@keyframes slideInScore {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scoring-result-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.scoring-result-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.scoring-result-content.correct .scoring-result-icon {
+    color: #10b981;
+}
+
+.scoring-result-content.wrong .scoring-result-icon {
+    color: #ef4444;
+}
+
+.scoring-result-content.pass .scoring-result-icon {
+    color: #f59e0b;
+}
+
+.scoring-result-text {
+    color: var(--text-primary);
+}
+
+.scoring-result-content.correct {
+    border-color: #10b981;
+}
+
+.scoring-result-content.wrong {
+    border-color: #ef4444;
+}
+
+.scoring-result-content.pass {
+    border-color: #f59e0b;
+}
