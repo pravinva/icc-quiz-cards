@@ -516,7 +516,7 @@ header h1 {
 .navigation {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     max-width: 800px;
@@ -643,18 +643,20 @@ footer {
 
     .navigation {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     .nav-btn {
         width: 100%;
         justify-content: center;
+        flex-shrink: 0;
     }
 
     .start-quiz-btn {
         width: 100%;
         justify-content: center;
-        margin: 10px 0;
+        margin: 15px 0;
+        flex-shrink: 0;
     }
 
     .stats {

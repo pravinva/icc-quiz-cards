@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="description" content="ICC Quiz Cards - Controller Mode">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ICC Quiz Controller">
+
+    <title>Controller - ICC Quiz Cards</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/multiplayer.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <!-- Role Selection Screen -->
+        <div id="role-selection" class="role-selection">
+            <header>
+                <h1>ICC Quiz Cards</h1>
+                <h2>Controller Mode</h2>
+            </header>
+
+            <div class="role-options">
+                <div class="role-card">
+                    <h3>🎮 Quiz Controller</h3>
+                    <p>Run the quiz, reveal answers, and manage the game</p>
+                    <button class="role-btn controller-btn" onclick="app.selectRole('controller')">
+                        Start as Controller
+                    </button>
+                </div>
+            </div>
+
+            <div class="room-info">
+                <div class="room-code-display">
+                    <p>Room Code: <strong id="room-code" class="room-code-value">Loading...</strong></p>
+                    <button id="copy-room-code-btn" class="copy-btn" title="Copy room code">📋 Copy</button>
+                    <button id="new-room-btn" class="new-room-btn" title="Create new room">🔄 New Room</button>
+                </div>
+                <p class="hint">Share this code and the player link with your players</p>
+
+                <div style="background: rgba(99, 102, 241, 0.1); padding: 15px; border-radius: 8px; margin-top: 20px;">
+                    <p style="margin: 0 0 10px 0; font-weight: 600; color: var(--primary-light);">Player Link:</p>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <code id="player-link" style="flex: 1; background: var(--surface); padding: 10px; border-radius: 6px; font-size: 0.9rem;">Loading...</code>
+                        <button id="copy-player-link-btn" class="copy-btn" title="Copy player link">📋 Copy Link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="game-screen" style="display: none;">
+            <header>
+                <h1>ICC Quiz Cards</h1>
+                <div class="game-header">
+                    <div class="role-badge" id="role-badge">Controller</div>
+                    <div class="quiz-selector controller-only">
+                        <label for="quiz-select">Select Quiz:</label>
+                        <select id="quiz-select">
+                            <option value="">Loading quizzes...</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="game-layout">
+                    <!-- Left Sidebar -->
+                    <div class="game-sidebar-left">
+                        <!-- Player Name Editor -->
+                        <div class="name-editor">
+                            <h4>Your Name</h4>
+                            <div class="name-edit-container">
+                                <input
+                                    type="text"
+                                    id="player-name-input"
+                                    class="name-input"
+                                    placeholder="Enter your name..."
+                                    maxlength="20"
+                                />
+                                <button id="name-save-btn" class="name-save-btn">Save</button>
+                            </div>
+                        </div>
+
+                        <!-- Connected Players -->
+                        <div class="connected-players">
+                            <h4>Players</h4>
+                            <div id="players-list" class="players-list">
+                                <!-- Will be populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Voice Settings (Controller Only) -->
+                        <div class="voice-settings controller-only">
+                            <h4>Voice Settings</h4>
+                            <div class="voice-setting-group">
+                                <label class="voice-type-toggle">
+                                    <input type="checkbox" id="use-ai-voice" />
+                                    <span>Use AI Voice</span>
+                                </label>
+                            </div>
+                            <div class="voice-setting-group" id="browser-voice-group">
+                                <label for="voice-select">Browser Voice:</label>
+                                <select id="voice-select" class="voice-select">
+                                    <option value="">Loading voices...</option>
+                                </select>
+                            </div>
+                            <div class="voice-setting-group" id="ai-voice-group" style="display: none;">
+                                <label for="ai-voice-select">AI Voice:</label>
+                                <select id="ai-voice-select" class="voice-select">
+                                    <optgroup label="US English - Neural">
+                                        <option value="en-US-Neural2-F">Female US (Neural2-F)</option>
+                                        <option value="en-US-Neural2-A">Male US (Neural2-A)</option>
+                                        <option value="en-US-Neural2-C">Female US (Neural2-C)</option>
+                                        <option value="en-US-Neural2-D">Male US (Neural2-D)</option>
+                                        <option value="en-US-Neural2-E">Female US (Neural2-E)</option>
+                                        <option value="en-US-Neural2-G">Female US (Neural2-G)</option>
+                                        <option value="en-US-Neural2-H">Female US (Neural2-H)</option>
+                                        <option value="en-US-Neural2-I">Male US (Neural2-I)</option>
+                                        <option value="en-US-Neural2-J">Male US (Neural2-J)</option>
+                                    </optgroup>
+                                    <optgroup label="US English - Studio">
+                                        <option value="en-US-Studio-O">Female US (Studio-O)</option>
+                                        <option value="en-US-Studio-Q">Male US (Studio-Q)</option>
+                                    </optgroup>
+                                    <optgroup label="UK English">
+                                        <option value="en-GB-Neural2-A">Female UK (Neural2-A)</option>
+                                        <option value="en-GB-Neural2-B">Male UK (Neural2-B)</option>
+                                        <option value="en-GB-Neural2-C">Female UK (Neural2-C)</option>
+                                        <option value="en-GB-Neural2-D">Male UK (Neural2-D)</option>
+                                        <option value="en-GB-Neural2-F">Female UK (Neural2-F)</option>
+                                    </optgroup>
+                                    <optgroup label="Australian English">
+                                        <option value="en-AU-Neural2-A">Female AU (Neural2-A)</option>
+                                        <option value="en-AU-Neural2-B">Male AU (Neural2-B)</option>
+                                        <option value="en-AU-Neural2-C">Female AU (Neural2-C)</option>
+                                        <option value="en-AU-Neural2-D">Male AU (Neural2-D)</option>
+                                    </optgroup>
+                                    <optgroup label="Indian English">
+                                        <option value="en-IN-Neural2-A">Female IN (Neural2-A)</option>
+                                        <option value="en-IN-Neural2-B">Male IN (Neural2-B)</option>
+                                        <option value="en-IN-Neural2-C">Male IN (Neural2-C)</option>
+                                        <option value="en-IN-Neural2-D">Female IN (Neural2-D)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="voice-setting-group">
+                                <label for="voice-speed">Voice Speed: <span id="voice-speed-value">1.2x</span></label>
+                                <input type="range" id="voice-speed" class="speed-dial" min="0.5" max="2.0" step="0.1" value="1.2" />
+                            </div>
+                            <div class="voice-setting-group">
+                                <label for="word-speed">Word Speed: <span id="word-speed-value">200 wpm</span></label>
+                                <input type="range" id="word-speed" class="speed-dial" min="100" max="400" step="10" value="200" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Game Area -->
+                    <div class="game-content">
+                        <!-- Buzz Status Bar -->
+                        <div class="buzz-status" id="buzz-status">
+                    <div class="buzz-indicator" id="buzz-indicator">
+                        Waiting for buzz...
+                    </div>
+                    <button id="reset-buzz-btn" class="reset-buzz-btn" style="display: none;">
+                        Reset Buzz
+                    </button>
+                </div>
+
+                <!-- Microphone Indicator -->
+                <div class="mic-indicator" id="mic-indicator"></div>
+
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                    <span class="progress-text" id="progress-text">0 / 0</span>
+                </div>
+
+                <!-- Flashcard -->
+                <div class="card-container" id="card-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-content">
+                                    <div class="question-number"></div>
+                                    <p class="question-text">Select a quiz to begin</p>
+                                </div>
+                                <div class="card-hint controller-only">Click to reveal answer</div>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-content">
+                                    <h3>Answer:</h3>
+                                    <p class="answer-text"></p>
+                                    <div class="accept-answers"></div>
+                                    <div class="translations"></div>
+                                </div>
+                                <div class="card-hint controller-only">Click to see question</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controller Scoring (shown when someone has buzzed) -->
+                <div class="scoring-controls controller-only" id="scoring-controls" style="display: none;">
+                    <h3>Judge Answer</h3>
+                    <div class="scoring-buttons">
+                        <button id="correct-btn" class="score-btn correct-btn">
+                            <span class="score-icon">✓</span>
+                            <span class="score-text">Correct (+1)</span>
+                        </button>
+                        <button id="pass-btn" class="score-btn pass-btn">
+                            <span class="score-icon">−</span>
+                            <span class="score-text">Pass (0)</span>
+                        </button>
+                        <button id="wrong-btn" class="score-btn wrong-btn">
+                            <span class="score-icon">✗</span>
+                            <span class="score-text">Wrong (−1)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Controller Controls -->
+                <div class="controls controller-only" id="controller-controls">
+                    <button id="voice-btn" class="voice-btn" title="Read question aloud">
+                        <span class="voice-icon">🔊</span>
+                        <span class="voice-text">Read Aloud</span>
+                    </button>
+                    <label class="auto-read-toggle">
+                        <input type="checkbox" id="auto-read" />
+                        <span>Auto-read questions</span>
+                    </label>
+                </div>
+
+                <!-- Navigation -->
+                <div class="navigation controller-only">
+                    <button id="prev-btn" class="nav-btn" disabled>
+                        <span>←</span> Previous
+                    </button>
+                    <button id="start-quiz-btn" class="start-quiz-btn" style="display: none;">
+                        ▶ Start Quiz
+                    </button>
+                    <button id="next-btn" class="nav-btn" disabled>
+                        Next <span>→</span>
+                    </button>
+                </div>
+
+                <!-- Scoreboard -->
+                <div class="scoreboard">
+                    <h3>Scoreboard</h3>
+                    <div class="score-grid" id="score-grid">
+                        <div class="score-item">
+                            <span class="player-label">Player 1</span>
+                            <span class="player-score" id="score-player1">0</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="player-label">Player 2</span>
+                            <span class="player-score" id="score-player2">0</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="player-label">Player 3</span>
+                            <span class="player-score" id="score-player3">0</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="player-label">Player 4</span>
+                            <span class="player-score" id="score-player4">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Round:</span>
+                        <span id="current-round">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Player:</span>
+                        <span id="current-player">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Cards:</span>
+                        <span id="total-cards">0</span>
+                    </div>
+                </div>
+
+                    </div>
+                    <!-- End of game-content -->
+
+                    <!-- Right Sidebar: Chat Only -->
+                    <div class="game-sidebar-right">
+                        <div class="chat-window">
+                            <h4>Chat</h4>
+                            <div class="chat-messages" id="chat-messages">
+                                <!-- Messages will be added here -->
+                            </div>
+                            <div class="chat-input-container">
+                                <input
+                                    type="text"
+                                    id="chat-input"
+                                    class="chat-input"
+                                    placeholder="Type a message..."
+                                    maxlength="200"
+                                />
+                                <button id="chat-send" class="chat-send-btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of right sidebar -->
+                </div>
+                <!-- End of game-layout -->
+            </main>
+
+            <footer>
+                <p>ICC Quiz Cards - Controller Mode</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Configuration (Supabase credentials) -->
+    <script>
+        // Try to load local config first (gitignored), fall back to default config
+        const loadConfig = () => {
+            return fetch('/config.local.js')
+                .then(r => r.ok ? '/config.local.js' : '/config.js')
+                .catch(() => '/config.js');
+        };
+    </script>
+    <script src="/config.js"></script>
+    <script src="/js/multiplayer.js"></script>
+    <script>
+        // Auto-populate player link after app initializes
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const playerLink = window.location.origin + '/play.html';
+                const playerLinkEl = document.getElementById('player-link');
+                if (playerLinkEl) {
+                    playerLinkEl.textContent = playerLink;
+                }
+
+                const copyPlayerLinkBtn = document.getElementById('copy-player-link-btn');
+                if (copyPlayerLinkBtn) {
+                    copyPlayerLinkBtn.addEventListener('click', () => {
+                        navigator.clipboard.writeText(playerLink).then(() => {
+                            const originalText = copyPlayerLinkBtn.textContent;
+                            copyPlayerLinkBtn.textContent = '✓ Copied!';
+                            setTimeout(() => {
+                                copyPlayerLinkBtn.textContent = originalText;
+                            }, 2000);
+                        });
+                    });
+                }
+            }, 100);
+        });
+
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered:', registration))
+                    .catch(error => console.log('SW registration failed:', error));
+            });
+        }
+    </script>
+</body>
+</html>

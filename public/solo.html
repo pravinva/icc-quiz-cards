@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="description" content="ICC Quiz Cards - Interactive quiz flashcards with voice reading">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ICC Quiz">
+
+    <title>ICC Quiz Cards - Interactive Flashcards</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ICC Quiz Cards</h1>
+            <div class="quiz-selector">
+                <label for="quiz-select">Select Quiz:</label>
+                <select id="quiz-select">
+                    <option value="">Loading quizzes...</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+                <span class="progress-text" id="progress-text">0 / 0</span>
+            </div>
+
+            <div class="card-container" id="card-container">
+                <div class="flashcard" id="flashcard">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-content">
+                                <div class="question-number"></div>
+                                <p class="question-text">Select a quiz to begin</p>
+                            </div>
+                            <div class="card-hint">Click to reveal answer</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>Answer:</h3>
+                                <p class="answer-text"></p>
+                                <div class="accept-answers"></div>
+                                <div class="translations"></div>
+                            </div>
+                            <div class="card-hint">Click to see question</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="voice-btn" class="voice-btn" title="Read question aloud">
+                    <span class="voice-icon">🔊</span>
+                    <span class="voice-text">Read Aloud</span>
+                </button>
+                <label class="auto-read-toggle">
+                    <input type="checkbox" id="auto-read" />
+                    <span>Auto-read questions</span>
+                </label>
+            </div>
+
+            <div class="voice-settings">
+                <div class="voice-setting-group">
+                    <label class="voice-type-toggle">
+                        <input type="checkbox" id="use-ai-voice" />
+                        <span>Use AI Voice (Google Cloud)</span>
+                    </label>
+                </div>
+                <div class="voice-setting-group" id="browser-voice-group">
+                    <label for="voice-select">Browser Voice:</label>
+                    <select id="voice-select" class="voice-select">
+                        <option value="">Loading voices...</option>
+                    </select>
+                </div>
+                <div class="voice-setting-group" id="ai-voice-group" style="display: none;">
+                    <label for="ai-voice-select">AI Voice:</label>
+                    <select id="ai-voice-select" class="voice-select">
+                        <option value="en-US-Neural2-F">Female US (Neural2-F) - Natural</option>
+                        <option value="en-US-Neural2-A">Male US (Neural2-A) - Natural</option>
+                        <option value="en-US-Neural2-C">Female US (Neural2-C) - Warm</option>
+                        <option value="en-US-Neural2-D">Male US (Neural2-D) - Deep</option>
+                        <option value="en-US-Neural2-E">Female US (Neural2-E) - Energetic</option>
+                        <option value="en-US-Neural2-G">Female US (Neural2-G) - Soft</option>
+                        <option value="en-US-Neural2-H">Female US (Neural2-H) - Professional</option>
+                        <option value="en-US-Neural2-I">Male US (Neural2-I) - Friendly</option>
+                        <option value="en-US-Neural2-J">Male US (Neural2-J) - Authoritative</option>
+                        <option value="en-GB-Neural2-A">Female UK (Neural2-A)</option>
+                        <option value="en-GB-Neural2-B">Male UK (Neural2-B)</option>
+                        <option value="en-GB-Neural2-C">Female UK (Neural2-C)</option>
+                        <option value="en-GB-Neural2-D">Male UK (Neural2-D)</option>
+                        <option value="en-IN-Neural2-A">Female IN (Neural2-A)</option>
+                        <option value="en-IN-Neural2-B">Male IN (Neural2-B)</option>
+                        <option value="en-IN-Neural2-C">Male IN (Neural2-C)</option>
+                        <option value="en-IN-Neural2-D">Female IN (Neural2-D)</option>
+                        <option value="en-AU-Neural2-A">Female AU (Neural2-A)</option>
+                        <option value="en-AU-Neural2-B">Male AU (Neural2-B)</option>
+                        <option value="en-AU-Neural2-C">Female AU (Neural2-C)</option>
+                        <option value="en-AU-Neural2-D">Male AU (Neural2-D)</option>
+                    </select>
+                </div>
+                <div class="voice-setting-group">
+                    <label for="voice-speed">Voice Speed: <span id="voice-speed-value">1.2x</span></label>
+                    <input type="range" id="voice-speed" class="speed-dial" min="0.5" max="2.0" step="0.1" value="1.2" />
+                </div>
+                <div class="voice-setting-group">
+                    <label for="word-speed">Word Speed: <span id="word-speed-value">200 wpm</span></label>
+                    <input type="range" id="word-speed" class="speed-dial" min="100" max="400" step="10" value="200" />
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prev-btn" class="nav-btn" disabled>
+                    <span>←</span> Previous
+                </button>
+                <button id="next-btn" class="nav-btn" disabled>
+                    Next <span>→</span>
+                </button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Round:</span>
+                    <span id="current-round">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Player:</span>
+                    <span id="current-player">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Total Cards:</span>
+                    <span id="total-cards">0</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>ICC Quiz Cards - Interactive Learning Platform</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">
+                <a href="/multiplayer.html" style="color: var(--primary-light); text-decoration: none; margin: 0 10px;">Multiplayer Mode</a>
+                <span style="color: var(--text-secondary);">|</span>
+                <a href="/admin.html" style="color: var(--primary-light); text-decoration: none; margin: 0 10px;">Upload Quiz</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script>
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered:', registration))
+                    .catch(error => console.log('SW registration failed:', error));
+            });
+        }
+    </script>
+</body>
+</html>
