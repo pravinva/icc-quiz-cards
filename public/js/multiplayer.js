@@ -32,8 +32,8 @@ class MultiplayerQuizApp {
         this.currentUtterance = null;
         this.autoRead = false;
         this.selectedVoice = null;
-        this.voiceSpeed = 1.2;
-        this.wordSpeed = 200;
+        this.voiceSpeed = 1.0;
+        this.wordSpeed = 160;
         this.useAIVoice = false;
         this.selectedAIVoice = 'en-US-Neural2-F';
         this.currentAudio = null;
