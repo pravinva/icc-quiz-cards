@@ -46,6 +46,9 @@ class QuizApp {
         this.buzzBtn = document.getElementById('buzz-btn');
         this.startQuizBtn = document.getElementById('start-quiz-btn');
         this.buzzIndicator = document.getElementById('buzz-indicator');
+        this.revealAnswerBtn = document.getElementById('reveal-answer-btn');
+        this.streamingTimeout = null;
+        this.currentStreamingElement = null;
 
         this.init();
     }
@@ -218,6 +221,11 @@ class QuizApp {
         // Buzz button
         if (this.buzzBtn) {
             this.buzzBtn.addEventListener('click', () => this.handleBuzz());
+        }
+        
+        // Reveal answer button
+        if (this.revealAnswerBtn) {
+            this.revealAnswerBtn.addEventListener('click', () => this.revealAnswer());
         }
 
         // Voice controls
@@ -616,6 +624,12 @@ class QuizApp {
     }
 
     streamText(element, text) {
+        // Stop any existing streaming
+        this.stopStreaming();
+        
+        // Store reference to current streaming element
+        this.currentStreamingElement = element;
+        
         // Clear existing content
         element.innerHTML = '';
 
@@ -641,8 +655,30 @@ class QuizApp {
             }
         });
     }
+    
+    stopStreaming() {
+        // Clear any pending streaming animations
+        if (this.streamingTimeout) {
+            clearTimeout(this.streamingTimeout);
+            this.streamingTimeout = null;
+        }
+        
+        // If streaming was interrupted, show all remaining words immediately
+        if (this.currentStreamingElement) {
+            const words = this.currentStreamingElement.querySelectorAll('.word');
+            words.forEach(word => {
+                word.style.animationDelay = '0ms';
+                word.style.opacity = '1';
+            });
+            this.currentStreamingElement = null;
+        }
+    }
 
-    flipCard() {
+    flipCard(force = false) {
+        // If buzzed and not forced (from reveal button), don't allow card flip
+        if (this.buzzed && !this.isFlipped && !force) {
+            return;
+        }
         this.isFlipped = !this.isFlipped;
         this.flashcard.classList.toggle('flipped');
     }
@@ -699,6 +735,12 @@ class QuizApp {
         
         this.buzzed = true;
         
+        // Stop streaming immediately
+        this.stopStreaming();
+        
+        // Stop voice/speech immediately
+        this.stopSpeaking();
+        
         // Play buzz sound
         this.playBuzzSound();
         
@@ -713,11 +755,23 @@ class QuizApp {
             this.buzzIndicator.classList.add('buzzed');
         }
         
-        // Auto-reveal answer
+        // Show reveal answer button instead of auto-revealing
+        if (this.revealAnswerBtn) {
+            this.revealAnswerBtn.style.display = 'block';
+        }
+    }
+    
+    revealAnswer() {
+        if (!this.buzzed) return;
+        
+        // Flip card to show answer (force flip even when buzzed)
         if (!this.isFlipped) {
-            setTimeout(() => {
-                this.flipCard();
-            }, 500);
+            this.flipCard(true);
+        }
+        
+        // Hide reveal button
+        if (this.revealAnswerBtn) {
+            this.revealAnswerBtn.style.display = 'none';
         }
     }
     
@@ -752,6 +806,10 @@ class QuizApp {
         if (this.buzzIndicator) {
             this.buzzIndicator.textContent = 'Waiting for buzz...';
             this.buzzIndicator.classList.remove('buzzed');
+        }
+        
+        if (this.revealAnswerBtn) {
+            this.revealAnswerBtn.style.display = 'none';
         }
         
         if (this.flashcard) {

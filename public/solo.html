@@ -45,41 +45,57 @@
                 </div>
             </div>
 
-            <div class="card-container" id="card-container">
-                <div class="flashcard" id="flashcard">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-content">
-                                <div class="question-number"></div>
-                                <p class="question-text">Select a quiz to begin</p>
+            <!-- Buzzer Button -->
+            <div class="buzz-button-container">
+                <button id="buzz-btn" class="buzz-btn" disabled>
+                    <span class="buzz-icon">🔔</span>
+                    <span class="buzz-text">BUZZ!</span>
+                </button>
+                <button id="reveal-answer-btn" class="reveal-answer-btn" style="display: none;">
+                    <span class="reveal-icon">👁️</span>
+                    <span class="reveal-text">Reveal Answer</span>
+                </button>
+            </div>
+
+            <div class="card-wrapper">
+                <!-- Previous Button -->
+                <button id="prev-btn" class="nav-btn nav-btn-left" disabled>
+                    <span>←</span>
+                </button>
+                
+                <div class="card-container" id="card-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-content">
+                                    <div class="question-number"></div>
+                                    <p class="question-text">Select a quiz to begin</p>
+                                </div>
+                                <div class="card-hint">Click to reveal answer</div>
                             </div>
-                            <div class="card-hint">Click to reveal answer</div>
-                        </div>
-                        <div class="card-back">
-                            <div class="card-content">
-                                <h3>Answer:</h3>
-                                <p class="answer-text"></p>
-                                <div class="accept-answers"></div>
-                                <div class="translations"></div>
+                            <div class="card-back">
+                                <div class="card-content">
+                                    <h3>Answer:</h3>
+                                    <p class="answer-text"></p>
+                                    <div class="accept-answers"></div>
+                                    <div class="translations"></div>
+                                </div>
+                                <div class="card-hint">Click to see question</div>
                             </div>
-                            <div class="card-hint">Click to see question</div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Next Button -->
+                <button id="next-btn" class="nav-btn nav-btn-right" disabled>
+                    <span>→</span>
+                </button>
             </div>
 
             <!-- Start Button -->
             <div class="start-button-container">
                 <button id="start-quiz-btn" class="start-quiz-btn" style="display: none;">
                     ▶ Start Quiz
-                </button>
-            </div>
-
-            <!-- Buzzer Button (at bottom) -->
-            <div class="buzz-button-container">
-                <button id="buzz-btn" class="buzz-btn" disabled>
-                    <span class="buzz-icon">🔔</span>
-                    <span class="buzz-text">BUZZ!</span>
                 </button>
             </div>
 
@@ -143,15 +159,6 @@
                 </div>
             </div>
 
-            <!-- Navigation Buttons -->
-            <div class="navigation">
-                <button id="prev-btn" class="nav-btn" disabled>
-                    <span>←</span> Previous
-                </button>
-                <button id="next-btn" class="nav-btn" disabled>
-                    Next <span>→</span>
-                </button>
-            </div>
 
             <div class="stats">
                 <div class="stat-item">
