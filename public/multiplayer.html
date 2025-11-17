@@ -28,9 +28,9 @@
             </header>
 
             <div class="role-options">
-                <div class="role-card controller-card">
-                    <h3>🎮 Controller</h3>
-                    <p>Run the quiz, reveal answers, manage the game</p>
+                <div class="role-card controller-card" style="max-width: 600px; margin: 0 auto;">
+                    <h3>🎮 Controller Setup</h3>
+                    <p>Generate a room and share the code with your players</p>
                     <button id="generate-room-btn" class="role-btn controller-btn">
                         Generate Room
                     </button>
@@ -39,23 +39,49 @@
                             <p>Room Code: <strong id="room-code" class="room-code-value"></strong></p>
                             <button id="copy-room-code-btn" class="copy-btn" title="Copy room code">📋 Copy</button>
                         </div>
-                        <p class="hint">Share this code with players to join</p>
-                        <button class="role-btn controller-btn" onclick="app.selectRole('controller')">
+
+                        <div class="room-code-display" style="margin-top: 1rem;">
+                            <p style="font-size: 0.9rem;">Player Link:</p>
+                            <input
+                                type="text"
+                                id="player-link"
+                                readonly
+                                style="width: 100%; padding: 0.5rem; margin: 0.5rem 0; font-size: 0.85rem; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9;"
+                            />
+                            <button id="copy-player-link-btn" class="copy-btn" title="Copy player link">📋 Copy Link</button>
+                        </div>
+
+                        <p class="hint" style="margin-top: 1rem;">Share the room code OR player link with your players</p>
+
+                        <button class="role-btn controller-btn" onclick="app.selectRole('controller')" style="margin-top: 1rem;">
                             Enter Room as Controller
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="role-card player-card">
-                    <h3>🎯 Player</h3>
-                    <p>Choose your player number and enter the room</p>
-                    <div class="player-selection">
-                        <button class="role-btn player-btn" onclick="app.selectRole('player1')">Player 1</button>
-                        <button class="role-btn player-btn" onclick="app.selectRole('player2')">Player 2</button>
-                        <button class="role-btn player-btn" onclick="app.selectRole('player3')">Player 3</button>
-                        <button class="role-btn player-btn" onclick="app.selectRole('player4')">Player 4</button>
+        <!-- Player Waiting Room -->
+        <div id="waiting-room" class="role-selection" style="display: none;">
+            <header>
+                <h1>ICC Quiz Cards</h1>
+                <h2>Waiting for Approval</h2>
+            </header>
+
+            <div class="role-options">
+                <div class="role-card" style="max-width: 500px; margin: 0 auto; text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">⏳</div>
+                    <h3>Waiting Room</h3>
+                    <p style="margin: 1rem 0;">You've joined room: <strong id="waiting-room-code"></strong></p>
+                    <p style="margin: 1rem 0;">Player: <strong id="waiting-player-name"></strong></p>
+                    <p class="hint" style="margin-top: 2rem;">
+                        Waiting for the controller to approve your entry...
+                    </p>
+                    <div style="margin-top: 2rem; padding: 1rem; background: #f0f9ff; border-radius: 8px;">
+                        <p style="font-size: 0.9rem; color: #0369a1;">
+                            💡 The controller will see your request and approve you shortly
+                        </p>
                     </div>
-                    <p class="hint" style="margin-top: 1rem;">Ask the controller for the room code before entering</p>
                 </div>
             </div>
         </div>
@@ -91,6 +117,14 @@
                                     maxlength="20"
                                 />
                                 <button id="name-save-btn" class="name-save-btn">Save</button>
+                            </div>
+                        </div>
+
+                        <!-- Pending Players (Controller Only) -->
+                        <div class="pending-players controller-only" id="pending-players-section" style="display: none;">
+                            <h4>🔔 Pending Players</h4>
+                            <div id="pending-players-list" class="pending-players-list">
+                                <!-- Will be populated dynamically -->
                             </div>
                         </div>
 
