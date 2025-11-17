@@ -1,9 +1,10 @@
 // Service Worker for ICC Quiz Cards PWA
 
-const CACHE_NAME = 'icc-quiz-cards-v1';
+const CACHE_NAME = 'icc-quiz-cards-v2'; // Bumped version to force cache refresh
 const urlsToCache = [
   '/',
   '/index.html',
+  '/play.html',
   '/multiplayer.html',
   '/css/styles.css',
   '/css/multiplayer.css',
@@ -28,26 +29,45 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// Fetch event - serve from cache, fallback to network
+// Fetch event - network-first for HTML, cache-first for assets
 self.addEventListener('fetch', (event) => {
+  const url = new URL(event.request.url);
+
+  // Network-first strategy for HTML files to avoid stale content
+  if (event.request.destination === 'document' || url.pathname.endsWith('.html')) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          // Clone and cache the response
+          const responseToCache = response.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
+          return response;
+        })
+        .catch(() => {
+          // Fallback to cache if offline
+          return caches.match(event.request);
+        })
+    );
+    return;
+  }
+
+  // Cache-first strategy for assets (CSS, JS, images)
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
-        // Cache hit - return response
         if (response) {
           return response;
         }
 
         return fetch(event.request).then(
           (response) => {
-            // Check if we received a valid response
             if (!response || response.status !== 200 || response.type !== 'basic') {
               return response;
             }
 
-            // Clone the response
             const responseToCache = response.clone();
-
             caches.open(CACHE_NAME)
               .then((cache) => {
                 cache.put(event.request, responseToCache);
@@ -69,6 +89,7 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
+            console.log('Deleting old cache:', cacheName);
             return caches.delete(cacheName);
           }
         })
