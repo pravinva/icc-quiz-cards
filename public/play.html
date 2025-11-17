@@ -104,6 +104,23 @@
                 joinAsPlayer('player1');
             }
         });
+
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered:', registration))
+                    .catch(error => console.log('SW registration failed:', error));
+            });
+        }
+
+        // Allow Enter key to submit from first player button
+        roomCodeInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                joinAsPlayer('player1');
+            }
+        });
     </script>
 </body>
 </html>
