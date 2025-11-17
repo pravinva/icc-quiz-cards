@@ -677,29 +677,47 @@ class QuizApp {
         }
         
         // Immediately stop all animations and show all words that should be visible
-        if (this.currentStreamingElement && this.streamingStartTime) {
+        if (this.currentStreamingElement) {
             this.streamingInterrupted = true;
-            // Calculate how many words should be visible based on elapsed time
-            const elapsedTime = Date.now() - this.streamingStartTime;
-            const delayPerWord = (60 * 1000) / this.wordSpeed;
-            const wordsDisplayed = Math.floor(elapsedTime / delayPerWord);
-            this.currentWordIndex = Math.min(wordsDisplayed, this.remainingWords.length);
             
-            // Immediately stop all animations and show words up to currentWordIndex
+            // Calculate how many words should be visible based on elapsed time
+            if (this.streamingStartTime) {
+                const elapsedTime = Date.now() - this.streamingStartTime;
+                const delayPerWord = (60 * 1000) / this.wordSpeed;
+                const wordsDisplayed = Math.floor(elapsedTime / delayPerWord);
+                this.currentWordIndex = Math.min(wordsDisplayed, this.remainingWords.length);
+            } else {
+                // Fallback: count visible words
+                const visibleWords = this.currentStreamingElement.querySelectorAll('.word');
+                this.currentWordIndex = Math.max(0, visibleWords.length - 1);
+            }
+            
+            // Immediately stop ALL CSS animations and show/hide words
             const allWords = this.currentStreamingElement.querySelectorAll('.word');
             allWords.forEach((wordSpan, index) => {
                 const wordIndex = parseInt(wordSpan.getAttribute('data-word-index') || index);
-                // Cancel any ongoing animations
-                wordSpan.style.animation = 'none';
-                wordSpan.style.animationDelay = '0ms';
+                
+                // Forcefully cancel all CSS animations
+                wordSpan.style.setProperty('animation', 'none', 'important');
+                wordSpan.style.setProperty('animation-name', 'none', 'important');
+                wordSpan.style.setProperty('animation-delay', '0ms', 'important');
+                wordSpan.style.setProperty('animation-duration', '0ms', 'important');
+                
+                // Remove animation class if it exists
+                wordSpan.classList.remove('word');
+                wordSpan.classList.add('word');
+                
+                // Force reflow to cancel animations immediately
+                void wordSpan.offsetHeight;
                 
                 if (wordIndex < this.currentWordIndex) {
                     // Words that should already be visible - make them visible immediately
-                    wordSpan.style.opacity = '1';
+                    wordSpan.style.setProperty('opacity', '1', 'important');
+                    wordSpan.style.setProperty('display', '', 'important');
                 } else {
-                    // Words that haven't been shown yet - keep them hidden
-                    wordSpan.style.opacity = '0';
-                    wordSpan.style.display = 'none';
+                    // Words that haven't been shown yet - hide them completely
+                    wordSpan.style.setProperty('opacity', '0', 'important');
+                    wordSpan.style.setProperty('display', 'none', 'important');
                 }
             });
         }
