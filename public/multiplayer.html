@@ -49,8 +49,21 @@
             </div>
 
             <div class="room-info">
-                <p>Room Code: <strong id="room-code">Loading...</strong></p>
+                <div class="room-code-display">
+                    <p>Room Code: <strong id="room-code" class="room-code-value">Loading...</strong></p>
+                    <button id="copy-room-code-btn" class="copy-btn" title="Copy room code">📋 Copy</button>
+                    <button id="new-room-btn" class="new-room-btn" title="Create new room">🔄 New Room</button>
+                </div>
                 <p class="hint">Share this code with other players to join the same room</p>
+
+                <!-- Join Room Section -->
+                <div class="join-room-section">
+                    <p class="hint" style="margin-top: 1rem;">Or enter a room code to join an existing game:</p>
+                    <div class="join-room-input">
+                        <input type="text" id="join-room-input" placeholder="Enter room code..." maxlength="6" />
+                        <button id="join-room-btn" class="join-btn">Join Room</button>
+                    </div>
+                </div>
             </div>
         </div>
 

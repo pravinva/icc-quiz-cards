@@ -58,11 +58,91 @@ class MultiplayerQuizApp {
             roomCodeEl.textContent = this.roomCode;
         }
 
+        // Setup room management buttons
+        this.setupRoomManagement();
+
         // Initialize backend
         await this.initializeBackend();
 
         await this.loadQuizList();
         this.initializeVoice();
+    }
+
+    setupRoomManagement() {
+        const copyBtn = document.getElementById('copy-room-code-btn');
+        const newRoomBtn = document.getElementById('new-room-btn');
+        const joinRoomBtn = document.getElementById('join-room-btn');
+        const joinRoomInput = document.getElementById('join-room-input');
+
+        if (copyBtn) {
+            copyBtn.addEventListener('click', () => this.copyRoomCode());
+        }
+
+        if (newRoomBtn) {
+            newRoomBtn.addEventListener('click', () => this.createNewRoom());
+        }
+
+        if (joinRoomBtn) {
+            joinRoomBtn.addEventListener('click', () => this.joinRoom());
+        }
+
+        if (joinRoomInput) {
+            joinRoomInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    this.joinRoom();
+                }
+            });
+            // Auto-capitalize
+            joinRoomInput.addEventListener('input', (e) => {
+                e.target.value = e.target.value.toUpperCase();
+            });
+        }
+    }
+
+    copyRoomCode() {
+        navigator.clipboard.writeText(this.roomCode).then(() => {
+            const copyBtn = document.getElementById('copy-room-code-btn');
+            if (copyBtn) {
+                const originalText = copyBtn.textContent;
+                copyBtn.textContent = '✓ Copied!';
+                copyBtn.style.backgroundColor = '#10b981';
+                setTimeout(() => {
+                    copyBtn.textContent = originalText;
+                    copyBtn.style.backgroundColor = '';
+                }, 2000);
+            }
+        }).catch(err => {
+            console.error('Failed to copy:', err);
+            alert('Failed to copy room code. Please copy manually: ' + this.roomCode);
+        });
+    }
+
+    createNewRoom() {
+        // Generate new room code
+        const newCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+
+        // Update URL
+        window.location.href = `?room=${newCode}`;
+    }
+
+    joinRoom() {
+        const joinRoomInput = document.getElementById('join-room-input');
+        if (!joinRoomInput) return;
+
+        const roomCode = joinRoomInput.value.trim().toUpperCase();
+        if (!roomCode) {
+            alert('Please enter a room code');
+            return;
+        }
+
+        if (roomCode.length !== 6) {
+            alert('Room code must be 6 characters');
+            return;
+        }
+
+        // Join the room
+        window.location.href = `?room=${roomCode}`;
     }
 
     async initializeBackend() {
@@ -225,12 +305,20 @@ class MultiplayerQuizApp {
                 case 'next-question':
                     if (this.role !== 'controller') {
                         this.currentCardIndex = data.index;
+                        // Sync word speed from controller
+                        if (data.wordSpeed !== undefined) {
+                            this.wordSpeed = data.wordSpeed;
+                        }
                         this.displayCard();
                     }
                     break;
 
                 case 'play-sound':
                     if (this.role !== 'controller') {
+                        // Sync word speed from controller if provided
+                        if (data.wordSpeed !== undefined) {
+                            this.wordSpeed = data.wordSpeed;
+                        }
                         this.speak(data.text, false); // false = don't re-broadcast
                     }
                     break;
@@ -253,6 +341,15 @@ class MultiplayerQuizApp {
 
                 case 'stop-voice-answer':
                     this.stopRemoteVoiceAnswer(data.from);
+                    break;
+
+                case 'player-evict':
+                    this.handlePlayerEvicted(data.player);
+                    break;
+
+                case 'player-leave':
+                    this.connectedPlayers.delete(data.player);
+                    this.updateConnectedPlayers();
                     break;
             }
         };
@@ -603,7 +700,8 @@ class MultiplayerQuizApp {
                 });
                 this.broadcast({
                     type: 'next-question',
-                    index: this.currentCardIndex
+                    index: this.currentCardIndex,
+                    wordSpeed: this.wordSpeed
                 });
             }
         } catch (error) {
@@ -1415,7 +1513,8 @@ class MultiplayerQuizApp {
         if (broadcast && this.role === 'controller') {
             this.broadcast({
                 type: 'play-sound',
-                text: text
+                text: text,
+                wordSpeed: this.wordSpeed
             });
         }
 
@@ -1471,7 +1570,8 @@ class MultiplayerQuizApp {
             this.displayCard();
             this.broadcast({
                 type: 'next-question',
-                index: this.currentCardIndex
+                index: this.currentCardIndex,
+                wordSpeed: this.wordSpeed
             });
         }
     }
@@ -1483,7 +1583,8 @@ class MultiplayerQuizApp {
             this.displayCard();
             this.broadcast({
                 type: 'next-question',
-                index: this.currentCardIndex
+                index: this.currentCardIndex,
+                wordSpeed: this.wordSpeed
             });
         }
     }
@@ -1510,6 +1611,46 @@ class MultiplayerQuizApp {
         if (currentPlayer) currentPlayer.textContent = card.player;
     }
 
+    evictPlayer(player) {
+        if (this.role !== 'controller') return; // Only controller can evict
+
+        if (!confirm(`Are you sure you want to evict ${this.getDisplayName(player)}?`)) {
+            return;
+        }
+
+        // Remove from connected players
+        this.connectedPlayers.delete(player);
+
+        // Broadcast eviction
+        this.broadcast({
+            type: 'player-evict',
+            player: player
+        });
+
+        // Update UI
+        this.updateConnectedPlayers();
+    }
+
+    handlePlayerEvicted(player) {
+        // Check if this player is being evicted
+        if (this.role === player) {
+            alert('You have been removed from the game by the controller.');
+
+            // Broadcast that we're leaving
+            this.broadcast({
+                type: 'player-leave',
+                player: this.role
+            });
+
+            // Disconnect and reload to role selection
+            window.location.href = window.location.pathname + '?room=' + this.roomCode;
+        } else {
+            // Another player was evicted, just remove them from the list
+            this.connectedPlayers.delete(player);
+            this.updateConnectedPlayers();
+        }
+    }
+
     updateConnectedPlayers() {
         const playersList = document.getElementById('players-list');
         if (!playersList) return;
@@ -1524,9 +1665,16 @@ class MultiplayerQuizApp {
             const displayName = this.getDisplayName(player);
             const playerItem = document.createElement('div');
             playerItem.className = `player-item ${isConnected ? 'online' : 'offline'} ${player === 'controller' ? 'controller' : ''}`;
+
+            // Add evict button for controller (but not for themselves)
+            const evictButton = (this.role === 'controller' && isConnected && player !== 'controller' && player !== this.role)
+                ? `<button class="evict-btn" onclick="app.evictPlayer('${player}')" title="Remove player">❌</button>`
+                : '';
+
             playerItem.innerHTML = `
                 <div class="player-status ${isConnected ? 'online' : 'offline'}"></div>
                 <div class="player-name">${displayName}</div>
+                ${evictButton}
             `;
             playersList.appendChild(playerItem);
         });
