@@ -46,11 +46,6 @@
             </div>
 
             <div class="card-wrapper">
-                <!-- Previous Button -->
-                <button id="prev-btn" class="nav-btn nav-btn-left" disabled>
-                    <span>←</span>
-                </button>
-                
                 <div class="card-container" id="card-container">
                     <div class="flashcard" id="flashcard">
                         <div class="card-inner">
@@ -62,22 +57,28 @@
                                 <div class="card-hint">Click to reveal answer</div>
                             </div>
                             <div class="card-back">
+                                <!-- Previous Button (left side) -->
+                                <button id="prev-btn" class="nav-btn nav-btn-left" disabled>
+                                    <span>←</span> Previous
+                                </button>
+                                
                                 <div class="card-content">
                                     <h3>Answer:</h3>
                                     <p class="answer-text"></p>
                                     <div class="accept-answers"></div>
                                     <div class="translations"></div>
                                 </div>
+                                
+                                <!-- Next Button (right side) -->
+                                <button id="next-btn" class="nav-btn nav-btn-right" disabled>
+                                    Next <span>→</span>
+                                </button>
+                                
                                 <div class="card-hint">Click to see question</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Next Button -->
-                <button id="next-btn" class="nav-btn nav-btn-right" disabled>
-                    <span>→</span>
-                </button>
             </div>
 
             <!-- Start Button -->
