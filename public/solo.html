@@ -35,6 +35,21 @@
                 <span class="progress-text" id="progress-text">0 / 0</span>
             </div>
 
+            <!-- Buzz Status Bar -->
+            <div class="buzz-status" id="buzz-status">
+                <div class="buzz-indicator" id="buzz-indicator">
+                    Ready to start
+                </div>
+            </div>
+
+            <!-- Buzzer Button -->
+            <div class="buzz-button-container">
+                <button id="buzz-btn" class="buzz-btn" disabled>
+                    <span class="buzz-icon">🔔</span>
+                    <span class="buzz-text">BUZZ!</span>
+                </button>
+            </div>
+
             <div class="card-container" id="card-container">
                 <div class="flashcard" id="flashcard">
                     <div class="card-inner">
@@ -56,6 +71,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Start Button -->
+            <div class="start-button-container">
+                <button id="start-quiz-btn" class="start-quiz-btn" style="display: none;">
+                    ▶ Start Quiz
+                </button>
             </div>
 
             <div class="controls">
@@ -118,6 +140,7 @@
                 </div>
             </div>
 
+            <!-- Navigation Buttons -->
             <div class="navigation">
                 <button id="prev-btn" class="nav-btn" disabled>
                     <span>←</span> Previous

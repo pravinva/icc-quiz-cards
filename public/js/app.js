@@ -7,6 +7,8 @@ class QuizApp {
         this.allCards = [];
         this.currentCardIndex = 0;
         this.isFlipped = false;
+        this.quizStarted = false;
+        this.buzzed = false;
 
         // Text-to-speech
         this.synthesis = window.speechSynthesis;
@@ -41,6 +43,9 @@ class QuizApp {
         this.aiVoiceSelect = document.getElementById('ai-voice-select');
         this.browserVoiceGroup = document.getElementById('browser-voice-group');
         this.aiVoiceGroup = document.getElementById('ai-voice-group');
+        this.buzzBtn = document.getElementById('buzz-btn');
+        this.startQuizBtn = document.getElementById('start-quiz-btn');
+        this.buzzIndicator = document.getElementById('buzz-indicator');
 
         this.init();
     }
@@ -204,6 +209,16 @@ class QuizApp {
         this.autoReadCheckbox.addEventListener('change', (e) => {
             this.autoRead = e.target.checked;
         });
+        
+        // Buzzer button
+        if (this.buzzBtn) {
+            this.buzzBtn.addEventListener('click', () => this.handleBuzz());
+        }
+        
+        // Start quiz button
+        if (this.startQuizBtn) {
+            this.startQuizBtn.addEventListener('click', () => this.startQuiz());
+        }
 
         // Voice controls
         this.voiceSelect.addEventListener('change', (e) => {
@@ -463,8 +478,33 @@ class QuizApp {
 
             this.currentQuiz = await response.json();
             this.prepareCards();
+            
+            // Show start button instead of auto-starting
+            if (this.startQuizBtn) {
+                this.startQuizBtn.style.display = 'block';
+            }
+            
+            // Reset quiz state
+            this.quizStarted = false;
+            this.buzzed = false;
             this.currentCardIndex = 0;
-            this.displayCard();
+            this.isFlipped = false;
+            
+            // Update UI
+            const questionText = document.querySelector('.question-text');
+            if (questionText) {
+                questionText.textContent = 'Click "Start Quiz" to begin';
+            }
+            
+            // Disable navigation and buzzer until quiz starts
+            if (this.prevBtn) this.prevBtn.disabled = true;
+            if (this.nextBtn) this.nextBtn.disabled = true;
+            if (this.buzzBtn) this.buzzBtn.disabled = true;
+            
+            if (this.buzzIndicator) {
+                this.buzzIndicator.textContent = 'Ready to start';
+            }
+            
             this.updateStats();
         } catch (error) {
             console.error('Error loading quiz:', error);
@@ -496,9 +536,11 @@ class QuizApp {
 
         const card = this.allCards[this.currentCardIndex];
 
-        // Reset flip state
-        this.isFlipped = false;
-        this.flashcard.classList.remove('flipped');
+        // Reset flip state (unless buzzed)
+        if (!this.buzzed) {
+            this.isFlipped = false;
+            this.flashcard.classList.remove('flipped');
+        }
 
         // Update question side
         const questionNumber = document.querySelector('.question-number');
@@ -606,16 +648,112 @@ class QuizApp {
     }
 
     previousCard() {
+        if (!this.quizStarted) return;
         if (this.currentCardIndex > 0) {
             this.currentCardIndex--;
+            this.resetBuzzState();
             this.displayCard();
         }
     }
 
     nextCard() {
+        if (!this.quizStarted) return;
         if (this.currentCardIndex < this.allCards.length - 1) {
             this.currentCardIndex++;
+            this.resetBuzzState();
             this.displayCard();
+        }
+    }
+    
+    startQuiz() {
+        if (this.allCards.length === 0) return;
+        
+        this.quizStarted = true;
+        this.currentCardIndex = 0;
+        this.buzzed = false;
+        this.isFlipped = false;
+        
+        // Hide start button
+        if (this.startQuizBtn) {
+            this.startQuizBtn.style.display = 'none';
+        }
+        
+        // Enable navigation and buzzer
+        if (this.prevBtn) this.prevBtn.disabled = false;
+        if (this.nextBtn) this.nextBtn.disabled = false;
+        if (this.buzzBtn) this.buzzBtn.disabled = false;
+        
+        // Update buzz indicator
+        if (this.buzzIndicator) {
+            this.buzzIndicator.textContent = 'Waiting for buzz...';
+        }
+        
+        // Display first card
+        this.displayCard();
+    }
+    
+    handleBuzz() {
+        if (!this.quizStarted || this.buzzed) return;
+        
+        this.buzzed = true;
+        
+        // Play buzz sound
+        this.playBuzzSound();
+        
+        // Update UI
+        if (this.buzzBtn) {
+            this.buzzBtn.disabled = true;
+            this.buzzBtn.classList.add('buzzed');
+        }
+        
+        if (this.buzzIndicator) {
+            this.buzzIndicator.textContent = 'You buzzed!';
+            this.buzzIndicator.classList.add('buzzed');
+        }
+        
+        // Auto-reveal answer
+        if (!this.isFlipped) {
+            setTimeout(() => {
+                this.flipCard();
+            }, 500);
+        }
+    }
+    
+    playBuzzSound() {
+        // Create a simple buzz sound using Web Audio API
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.frequency.value = 800;
+        oscillator.type = 'sine';
+        
+        gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+        
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.3);
+    }
+    
+    resetBuzzState() {
+        this.buzzed = false;
+        this.isFlipped = false;
+        
+        if (this.buzzBtn) {
+            this.buzzBtn.disabled = false;
+            this.buzzBtn.classList.remove('buzzed');
+        }
+        
+        if (this.buzzIndicator) {
+            this.buzzIndicator.textContent = 'Waiting for buzz...';
+            this.buzzIndicator.classList.remove('buzzed');
+        }
+        
+        if (this.flashcard) {
+            this.flashcard.classList.remove('flipped');
         }
     }
 

@@ -723,3 +723,128 @@ footer {
         font-size: 1.1rem;
     }
 }
+
+/* Buzzer Button Styles */
+.buzz-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.buzz-btn {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--secondary-color), #ec4899);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 8px 20px rgba(236, 72, 153, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.buzz-btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(236, 72, 153, 0.6);
+}
+
+.buzz-btn:active:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+.buzz-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.buzz-btn.buzzed {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    animation: buzzPulse 0.5s ease-out;
+}
+
+@keyframes buzzPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.buzz-icon {
+    font-size: 1.8rem;
+}
+
+.buzz-text {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+/* Buzz Status Bar */
+.buzz-status {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--surface);
+    border-radius: 12px;
+}
+
+.buzz-indicator {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.buzz-indicator.buzzed {
+    color: var(--secondary-color);
+    font-weight: bold;
+    animation: buzzFlash 0.5s ease-out;
+}
+
+@keyframes buzzFlash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Start Button */
+.start-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.start-quiz-btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.start-quiz-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+}
+
+.start-quiz-btn:active {
+    transform: translateY(0);
+}
