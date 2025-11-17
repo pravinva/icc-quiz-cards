@@ -119,8 +119,8 @@ class MultiplayerQuizApp {
             roomCodeEl.textContent = this.roomCode;
         }
 
-        // Generate and display player link
-        const playerLink = `${window.location.origin}/play.html`;
+        // Generate and display player link (root URL is the player join page)
+        const playerLink = window.location.origin;
         const playerLinkInput = document.getElementById('player-link');
         if (playerLinkInput) {
             playerLinkInput.value = playerLink;
