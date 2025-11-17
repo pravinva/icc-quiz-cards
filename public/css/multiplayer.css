@@ -785,6 +785,31 @@ body:has(.game-screen) .container {
     box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
 }
 
+/* Button positioning for multiplayer mode */
+/* Position Previous button at top-left of buzz status area */
+#prev-btn {
+    top: 10px !important;
+    bottom: auto !important;
+    left: 10px !important;
+}
+
+/* Position Next button at top-right of buzz status area */
+#next-btn {
+    top: 10px !important;
+    bottom: auto !important;
+    right: 10px !important;
+}
+
+/* Position Start button below the question card */
+#start-quiz-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 80px);
+    pointer-events: auto;
+    z-index: 15;
+}
+
 /* Controller-only elements */
 .controller-only {
     display: none;
