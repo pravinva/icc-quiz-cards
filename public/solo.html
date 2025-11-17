@@ -57,23 +57,12 @@
                                 <div class="card-hint">Click to reveal answer</div>
                             </div>
                             <div class="card-back">
-                                <!-- Previous Button (left side) -->
-                                <button id="prev-btn" class="nav-btn nav-btn-left" disabled>
-                                    <span>←</span> Previous
-                                </button>
-                                
                                 <div class="card-content">
                                     <h3>Answer:</h3>
                                     <p class="answer-text"></p>
                                     <div class="accept-answers"></div>
                                     <div class="translations"></div>
                                 </div>
-                                
-                                <!-- Next Button (right side) -->
-                                <button id="next-btn" class="nav-btn nav-btn-right" disabled>
-                                    Next <span>→</span>
-                                </button>
-                                
                                 <div class="card-hint">Click to see question</div>
                             </div>
                         </div>
@@ -88,15 +77,27 @@
                 </button>
             </div>
 
-            <!-- Buzzer Button -->
+            <!-- Buzzer Button with Navigation -->
             <div class="buzz-button-container">
-                <button id="buzz-btn" class="buzz-btn" disabled>
-                    <span class="buzz-icon">🔔</span>
-                    <span class="buzz-text">BUZZ!</span>
+                <!-- Previous Button -->
+                <button id="prev-btn" class="nav-btn nav-btn-left" disabled>
+                    <span>←</span> Previous
                 </button>
-                <button id="reveal-answer-btn" class="reveal-answer-btn" style="display: none;">
-                    <span class="reveal-icon">👁️</span>
-                    <span class="reveal-text">Reveal Answer</span>
+                
+                <div class="buzz-button-wrapper">
+                    <button id="buzz-btn" class="buzz-btn" disabled>
+                        <span class="buzz-icon">🔔</span>
+                        <span class="buzz-text">BUZZ!</span>
+                    </button>
+                    <button id="reveal-answer-btn" class="reveal-answer-btn" style="display: none;">
+                        <span class="reveal-icon">👁️</span>
+                        <span class="reveal-text">Reveal Answer</span>
+                    </button>
+                </div>
+                
+                <!-- Next Button -->
+                <button id="next-btn" class="nav-btn nav-btn-right" disabled>
+                    Next <span>→</span>
                 </button>
             </div>
 
