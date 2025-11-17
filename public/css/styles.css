@@ -123,6 +123,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .flashcard {
@@ -514,15 +515,16 @@ header h1 {
 }
 
 .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    pointer-events: none;
+    z-index: 10;
 }
 
 .nav-btn {
@@ -539,6 +541,19 @@ header h1 {
     align-items: center;
     gap: 10px;
     box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    pointer-events: auto;
+}
+
+#prev-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#next-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .nav-btn:hover:not(:disabled) {
@@ -641,15 +656,19 @@ footer {
         font-size: 1.3rem;
     }
 
-    .navigation {
-        flex-direction: column;
-        gap: 15px;
+    .nav-btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 
-    .nav-btn {
-        width: 100%;
-        justify-content: center;
-        flex-shrink: 0;
+    #prev-btn {
+        top: 5px;
+        left: 5px;
+    }
+
+    #next-btn {
+        bottom: 5px;
+        right: 5px;
     }
 
     .start-quiz-btn {
