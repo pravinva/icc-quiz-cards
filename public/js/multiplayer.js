@@ -23,6 +23,7 @@ class MultiplayerQuizApp {
             player4: 0
         };
         this.connectedPlayers = new Set(['controller']);
+        this.pendingPlayers = new Set(); // Players waiting for approval
         this.chatMessages = [];
         this.playerNames = {}; // Map of role -> custom display name
 
@@ -215,6 +216,21 @@ class MultiplayerQuizApp {
         // Set body class for CSS targeting
         document.body.classList.add(`role-${role.includes('player') ? 'player' : 'controller'}`);
 
+        // If player, send join request and show waiting room
+        if (role !== 'controller') {
+            this.showWaitingRoom();
+
+            // Send join request to controller
+            this.broadcast({
+                type: 'player-join-request',
+                player: this.role,
+                displayName: this.playerName,
+                timestamp: Date.now()
+            });
+            return;
+        }
+
+        // Controller enters directly
         // Hide role selection, show game screen
         document.getElementById('role-selection').style.display = 'none';
         document.getElementById('game-screen').style.display = 'block';
@@ -222,7 +238,7 @@ class MultiplayerQuizApp {
         // Update role badge
         const roleBadge = document.getElementById('role-badge');
         roleBadge.textContent = this.playerName;
-        roleBadge.classList.add(role === 'controller' ? 'controller' : 'player');
+        roleBadge.classList.add('controller');
 
         // Initialize name input
         const nameInput = document.getElementById('player-name-input');
@@ -233,16 +249,27 @@ class MultiplayerQuizApp {
         // Setup event listeners
         this.setupEventListeners();
 
-        // Announce join
-        this.broadcast({
-            type: 'player-join',
-            player: this.role,
-            displayName: this.playerName
-        });
-
-        // Add to connected players
+        // Add controller to connected players
         this.connectedPlayers.add(this.role);
         this.updateConnectedPlayers();
+    }
+
+    showWaitingRoom() {
+        // Hide role selection
+        document.getElementById('role-selection').style.display = 'none';
+
+        // Show waiting room
+        const waitingRoom = document.getElementById('waiting-room');
+        if (waitingRoom) {
+            waitingRoom.style.display = 'block';
+
+            // Update waiting room info
+            const roomCodeEl = document.getElementById('waiting-room-code');
+            const playerNameEl = document.getElementById('waiting-player-name');
+
+            if (roomCodeEl) roomCodeEl.textContent = this.roomCode;
+            if (playerNameEl) playerNameEl.textContent = this.playerName;
+        }
     }
 
     setupChannelListeners() {
@@ -250,6 +277,28 @@ class MultiplayerQuizApp {
             const data = event.data;
 
             switch (data.type) {
+                case 'player-join-request':
+                    // Controller receives join request
+                    if (this.role === 'controller') {
+                        this.handlePlayerJoinRequest(data);
+                    }
+                    break;
+
+                case 'player-approved':
+                    // Player receives approval
+                    if (this.role !== 'controller' && data.player === this.role) {
+                        this.enterGame();
+                    }
+                    break;
+
+                case 'player-rejected':
+                    // Player receives rejection
+                    if (this.role !== 'controller' && data.player === this.role) {
+                        alert('Your join request was declined by the controller.');
+                        window.location.href = '/play.html';
+                    }
+                    break;
+
                 case 'player-join':
                     this.connectedPlayers.add(data.player);
                     if (data.displayName) {
@@ -1820,6 +1869,147 @@ class MultiplayerQuizApp {
 
     getDisplayName(role) {
         return this.playerNames[role] || (role === 'controller' ? 'Controller' : role.replace('player', 'Player '));
+    }
+
+    handlePlayerJoinRequest(data) {
+        // Add to pending players
+        this.pendingPlayers.add(data.player);
+        this.playerNames[data.player] = data.displayName || data.player;
+
+        // Play notification sound
+        this.playNotificationSound();
+
+        // Update pending players UI
+        this.updatePendingPlayers();
+    }
+
+    playNotificationSound() {
+        // Create a simple bell sound using Web Audio API
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        oscillator.frequency.value = 800;
+        oscillator.type = 'sine';
+
+        gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.5);
+    }
+
+    updatePendingPlayers() {
+        const pendingSection = document.getElementById('pending-players-section');
+        const pendingList = document.getElementById('pending-players-list');
+
+        if (!pendingList) return;
+
+        // Show/hide section based on pending players
+        if (this.pendingPlayers.size > 0) {
+            pendingSection.style.display = 'block';
+        } else {
+            pendingSection.style.display = 'none';
+        }
+
+        // Clear and rebuild list
+        pendingList.innerHTML = '';
+
+        this.pendingPlayers.forEach(playerRole => {
+            const playerDiv = document.createElement('div');
+            playerDiv.className = 'pending-player-item';
+            playerDiv.style.cssText = 'display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; margin: 0.5rem 0; background: #fff3cd; border-radius: 4px;';
+
+            const playerName = this.playerNames[playerRole] || playerRole;
+
+            playerDiv.innerHTML = `
+                <span style="font-weight: 500;">${playerName}</span>
+                <div>
+                    <button class="approve-btn" data-player="${playerRole}" style="padding: 0.25rem 0.75rem; margin-left: 0.5rem; background: #10b981; color: white; border: none; border-radius: 4px; cursor: pointer;">✓ Approve</button>
+                    <button class="reject-btn" data-player="${playerRole}" style="padding: 0.25rem 0.75rem; margin-left: 0.5rem; background: #ef4444; color: white; border: none; border-radius: 4px; cursor: pointer;">✗ Reject</button>
+                </div>
+            `;
+
+            pendingList.appendChild(playerDiv);
+        });
+
+        // Add event listeners to approve/reject buttons
+        pendingList.querySelectorAll('.approve-btn').forEach(btn => {
+            btn.addEventListener('click', () => this.approvePlayer(btn.dataset.player));
+        });
+
+        pendingList.querySelectorAll('.reject-btn').forEach(btn => {
+            btn.addEventListener('click', () => this.rejectPlayer(btn.dataset.player));
+        });
+    }
+
+    approvePlayer(playerRole) {
+        // Remove from pending
+        this.pendingPlayers.delete(playerRole);
+
+        // Add to connected players
+        this.connectedPlayers.add(playerRole);
+
+        // Broadcast approval
+        this.broadcast({
+            type: 'player-approved',
+            player: playerRole
+        });
+
+        // Broadcast join to all players
+        this.broadcast({
+            type: 'player-join',
+            player: playerRole,
+            displayName: this.playerNames[playerRole]
+        });
+
+        // Update UI
+        this.updatePendingPlayers();
+        this.updateConnectedPlayers();
+    }
+
+    rejectPlayer(playerRole) {
+        // Remove from pending
+        this.pendingPlayers.delete(playerRole);
+        delete this.playerNames[playerRole];
+
+        // Broadcast rejection
+        this.broadcast({
+            type: 'player-rejected',
+            player: playerRole
+        });
+
+        // Update UI
+        this.updatePendingPlayers();
+    }
+
+    enterGame() {
+        // Hide waiting room
+        document.getElementById('waiting-room').style.display = 'none';
+
+        // Show game screen
+        document.getElementById('game-screen').style.display = 'block';
+
+        // Update role badge
+        const roleBadge = document.getElementById('role-badge');
+        roleBadge.textContent = this.playerName;
+        roleBadge.classList.add('player');
+
+        // Initialize name input
+        const nameInput = document.getElementById('player-name-input');
+        if (nameInput) {
+            nameInput.value = this.playerName;
+        }
+
+        // Setup event listeners
+        this.setupEventListeners();
+
+        // Add to connected players
+        this.connectedPlayers.add(this.role);
+        this.updateConnectedPlayers();
     }
 }
 
