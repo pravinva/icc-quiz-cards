@@ -61,6 +61,14 @@ class MultiplayerQuizApp {
         const urlParams = new URLSearchParams(window.location.search);
         const autoRole = urlParams.get('role');
 
+        // If player is arriving with a role, hide role-selection immediately
+        if (this.roomCode && autoRole && autoRole.startsWith('player')) {
+            const roleSelection = document.getElementById('role-selection');
+            if (roleSelection) {
+                roleSelection.style.display = 'none';
+            }
+        }
+
         // Only initialize backend if we have a room code (i.e., player joining existing room)
         if (this.roomCode) {
             await this.initializeBackend();
