@@ -629,15 +629,13 @@ class QuizApp {
     }
 
     streamText(element, text, startIndex = 0) {
-        // Stop any existing streaming
-        this.stopStreaming();
-        
         // Store reference to current streaming element
         this.currentStreamingElement = element;
         this.streamingInterrupted = false;
         
         // Record start time for streaming
         if (startIndex === 0) {
+            this.stopStreaming();
             this.streamingStartTime = Date.now();
             element.innerHTML = '';
         }
@@ -703,16 +701,24 @@ class QuizApp {
         const remainingWords = words.length - startIndex;
         const totalTime = remainingWords * delayPerWord;
         
-        // Continue streaming from where we left off
-        this.streamText(questionText, this.originalQuestionText, startIndex);
+        // If there are remaining words, continue streaming from where we left off
+        if (remainingWords > 0) {
+            // Continue streaming from where we left off (don't clear existing content)
+            this.streamText(questionText, this.originalQuestionText, startIndex);
+        }
         
         // Return a promise that resolves when streaming completes
         return new Promise((resolve) => {
-            setTimeout(() => {
+            if (remainingWords > 0) {
+                setTimeout(() => {
+                    this.streamingInterrupted = false;
+                    resolve();
+                }, totalTime + 100); // Add small buffer
+            } else {
+                // Already complete
                 this.streamingInterrupted = false;
-                this.currentStreamingElement = null;
                 resolve();
-            }, totalTime + 100); // Add small buffer
+            }
         });
     }
 
