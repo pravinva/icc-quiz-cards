@@ -10,6 +10,7 @@ class MultiplayerQuizApp {
         this.role = null;
         this.playerName = null;
         this.roomCode = this.generateRoomCode();
+        this.quizStarted = false;
 
         // Multiplayer state
         this.buzzedPlayer = null;
@@ -313,6 +314,18 @@ class MultiplayerQuizApp {
                     }
                     break;
 
+                case 'start-quiz':
+                    if (this.role !== 'controller') {
+                        this.quizStarted = true;
+                        this.currentCardIndex = data.index;
+                        // Sync word speed from controller
+                        if (data.wordSpeed !== undefined) {
+                            this.wordSpeed = data.wordSpeed;
+                        }
+                        this.displayCard();
+                    }
+                    break;
+
                 case 'play-sound':
                     if (this.role !== 'controller') {
                         // Sync word speed from controller if provided
@@ -523,10 +536,12 @@ class MultiplayerQuizApp {
         const correctBtn = document.getElementById('correct-btn');
         const passBtn = document.getElementById('pass-btn');
         const wrongBtn = document.getElementById('wrong-btn');
+        const startQuizBtn = document.getElementById('start-quiz-btn');
 
         if (quizSelect) quizSelect.addEventListener('change', () => this.loadQuiz());
-        if (prevBtn) prevBtn.addEventListener('change', () => this.previousCard());
+        if (prevBtn) prevBtn.addEventListener('click', () => this.previousCard());
         if (nextBtn) nextBtn.addEventListener('click', () => this.nextCard());
+        if (startQuizBtn) startQuizBtn.addEventListener('click', () => this.startQuiz());
 
         // Controller-only controls
         if (this.role === 'controller') {
@@ -666,7 +681,14 @@ class MultiplayerQuizApp {
             this.currentQuiz = await response.json();
             this.prepareCards();
             this.currentCardIndex = 0;
-            this.displayCard();
+            this.quizStarted = false;
+
+            // Players wait for controller to start
+            const questionText = document.querySelector('.question-text');
+            if (questionText) {
+                questionText.textContent = 'Waiting for controller to start quiz...';
+            }
+
             this.updateStats();
         } catch (error) {
             console.error('Error loading quiz from file:', error);
@@ -689,24 +711,60 @@ class MultiplayerQuizApp {
             this.currentQuiz = await response.json();
             this.prepareCards();
             this.currentCardIndex = 0;
-            this.displayCard();
-            this.updateStats();
-            
-            // Broadcast quiz load to all players
+            this.quizStarted = false;
+
+            // Show start button for controller, don't display card yet
             if (this.role === 'controller') {
+                const startQuizBtn = document.getElementById('start-quiz-btn');
+                if (startQuizBtn) {
+                    startQuizBtn.style.display = 'flex';
+                }
+
+                // Show placeholder
+                const questionText = document.querySelector('.question-text');
+                if (questionText) {
+                    questionText.textContent = 'Press "Start Quiz" to begin';
+                }
+
+                // Broadcast quiz load to all players (but not the first question yet)
                 this.broadcast({
                     type: 'quiz-load',
                     quizFile: quiz.file
                 });
-                this.broadcast({
-                    type: 'next-question',
-                    index: this.currentCardIndex,
-                    wordSpeed: this.wordSpeed
-                });
+            } else {
+                // Players wait for controller to start
+                const questionText = document.querySelector('.question-text');
+                if (questionText) {
+                    questionText.textContent = 'Waiting for controller to start quiz...';
+                }
             }
+
+            this.updateStats();
         } catch (error) {
             console.error('Error loading quiz:', error);
         }
+    }
+
+    startQuiz() {
+        if (this.role !== 'controller' || this.quizStarted) return;
+
+        this.quizStarted = true;
+
+        // Hide start button
+        const startQuizBtn = document.getElementById('start-quiz-btn');
+        if (startQuizBtn) {
+            startQuizBtn.style.display = 'none';
+        }
+
+        // Display first card
+        this.displayCard();
+
+        // Broadcast to players to start
+        this.broadcast({
+            type: 'start-quiz',
+            index: this.currentCardIndex,
+            wordSpeed: this.wordSpeed
+        });
     }
 
     prepareCards() {
