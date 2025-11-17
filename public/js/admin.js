@@ -1,4 +1,4 @@
-// Admin Upload Handler for ICC Quiz Cards
+// Admin Upload Handler for Buzzer Quiz
 // Handles Excel file uploads and conversion to quiz JSON format
 
 class QuizUploader {

@@ -1,6 +1,6 @@
 {
-  "name": "ICC Quiz Cards",
-  "short_name": "ICC Quiz",
+  "name": "Buzzer Quiz",
+  "short_name": "Buzzer Quiz",
   "description": "Interactive quiz flashcards with buzz-in multiplayer mode",
   "start_url": "/",
   "display": "standalone",

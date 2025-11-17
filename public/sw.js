@@ -1,6 +1,6 @@
-// Service Worker for ICC Quiz Cards PWA
+// Service Worker for Buzzer Quiz PWA
 
-const CACHE_NAME = 'icc-quiz-cards-v4'; // Updated: No HTML caching // Updated to clear cache // Bumped version to force cache refresh
+const CACHE_NAME = 'buzzer-quiz-v4'; // Updated: No HTML caching // Updated to clear cache // Bumped version to force cache refresh
 const urlsToCache = [
   // Don't cache HTML files - always fetch fresh
   // '/',

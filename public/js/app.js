@@ -1,4 +1,4 @@
-// ICC Quiz Cards - Interactive Flashcard App
+// Buzzer Quiz - Interactive Flashcard App
 
 class QuizApp {
     constructor() {

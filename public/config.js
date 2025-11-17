@@ -1,4 +1,4 @@
-// Configuration for ICC Quiz Cards
+// Configuration for Buzzer Quiz
 // For production (Vercel): Add your Supabase credentials here
 // For local dev: Create config.local.js (gitignored) which loads first
 

@@ -1,4 +1,4 @@
-// ICC Quiz Cards - Multiplayer Buzz Mode
+// Buzzer Quiz - Multiplayer Buzz Mode
 
 class MultiplayerQuizApp {
     constructor() {
