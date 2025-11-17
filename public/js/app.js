@@ -629,16 +629,16 @@ class QuizApp {
     }
 
     streamText(element, text, startIndex = 0) {
-        // Store reference to current streaming element
-        this.currentStreamingElement = element;
-        this.streamingInterrupted = false;
-        
-        // Record start time for streaming
+        // Only stop streaming and clear if starting from beginning
         if (startIndex === 0) {
             this.stopStreaming();
             this.streamingStartTime = Date.now();
             element.innerHTML = '';
         }
+        
+        // Store reference to current streaming element
+        this.currentStreamingElement = element;
+        this.streamingInterrupted = false;
 
         // Normalize text to fix spacing issues from PDF extraction
         text = this.normalizeText(text);
@@ -652,7 +652,7 @@ class QuizApp {
         // Use the configured word speed
         const delayPerWord = (60 * 1000) / this.wordSpeed;
 
-        // Stream words starting from startIndex
+        // Stream words starting from startIndex (append to existing content if continuing)
         for (let i = startIndex; i < words.length; i++) {
             const word = words[i];
             const span = document.createElement('span');
