@@ -328,9 +328,12 @@ class MultiplayerQuizApp {
 
                 case 'play-sound':
                     if (this.role !== 'controller') {
-                        // Sync word speed from controller if provided
+                        // Sync word speed and voice speed from controller if provided
                         if (data.wordSpeed !== undefined) {
                             this.wordSpeed = data.wordSpeed;
+                        }
+                        if (data.voiceSpeed !== undefined) {
+                            this.voiceSpeed = data.voiceSpeed;
                         }
                         this.speak(data.text, false); // false = don't re-broadcast
                     }
@@ -1572,7 +1575,8 @@ class MultiplayerQuizApp {
             this.broadcast({
                 type: 'play-sound',
                 text: text,
-                wordSpeed: this.wordSpeed
+                wordSpeed: this.wordSpeed,
+                voiceSpeed: this.voiceSpeed
             });
         }
 
@@ -1755,10 +1759,7 @@ class MultiplayerQuizApp {
             timestamp: timestamp
         });
 
-        // Add to local chat
-        this.addChatMessage(this.playerName, message, timestamp);
-
-        // Clear input
+        // Clear input (message will be added when broadcast comes back)
         chatInput.value = '';
     }
 
