@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="description" content="ICC Quiz Cards - Join as Player">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ICC Quiz">
+
+    <title>ICC Quiz Cards - Join as Player</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/multiplayer.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <!-- Player Join Screen -->
+        <div id="player-join" class="role-selection">
+            <header>
+                <h1>ICC Quiz Cards</h1>
+                <h2>Join as Player</h2>
+            </header>
+
+            <div class="role-options">
+                <div class="role-card player-card" style="max-width: 500px; margin: 0 auto;">
+                    <h3>🎯 Enter Room Code</h3>
+                    <p>Ask the controller for the room code</p>
+
+                    <div class="join-room-section" style="margin-top: 1.5rem;">
+                        <div class="join-room-input" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                            <input
+                                type="text"
+                                id="room-code-input"
+                                placeholder="Enter 6-character room code"
+                                maxlength="6"
+                                style="flex: 1; padding: 0.75rem; font-size: 1.1rem; text-align: center; text-transform: uppercase; border: 2px solid #6366f1; border-radius: 8px;"
+                            />
+                        </div>
+
+                        <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Choose Your Player Number</h4>
+                        <div class="player-selection">
+                            <button class="role-btn player-btn" id="player1-btn">Player 1</button>
+                            <button class="role-btn player-btn" id="player2-btn">Player 2</button>
+                            <button class="role-btn player-btn" id="player3-btn">Player 3</button>
+                            <button class="role-btn player-btn" id="player4-btn">Player 4</button>
+                        </div>
+                    </div>
+
+                    <p class="hint" style="margin-top: 1.5rem; color: #666;">
+                        Enter the room code from your controller, then click your player number to join
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-capitalize room code input
+        const roomCodeInput = document.getElementById('room-code-input');
+        roomCodeInput.addEventListener('input', (e) => {
+            e.target.value = e.target.value.toUpperCase();
+        });
+
+        // Handle player button clicks
+        document.getElementById('player1-btn').addEventListener('click', () => joinAsPlayer('player1'));
+        document.getElementById('player2-btn').addEventListener('click', () => joinAsPlayer('player2'));
+        document.getElementById('player3-btn').addEventListener('click', () => joinAsPlayer('player3'));
+        document.getElementById('player4-btn').addEventListener('click', () => joinAsPlayer('player4'));
+
+        function joinAsPlayer(playerRole) {
+            const roomCode = roomCodeInput.value.trim().toUpperCase();
+
+            if (!roomCode) {
+                alert('Please enter a room code first');
+                roomCodeInput.focus();
+                return;
+            }
+
+            if (roomCode.length !== 6) {
+                alert('Room code must be 6 characters');
+                roomCodeInput.focus();
+                return;
+            }
+
+            // Redirect to multiplayer page with room code and auto-select player role
+            window.location.href = `/multiplayer.html?room=${roomCode}&role=${playerRole}`;
+        }
+
+        // Allow Enter key to submit from first player button
+        roomCodeInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                joinAsPlayer('player1');
+            }
+        });
+    </script>
+</body>
+</html>

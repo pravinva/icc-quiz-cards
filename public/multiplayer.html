@@ -39,7 +39,19 @@
                             <p>Room Code: <strong id="room-code" class="room-code-value"></strong></p>
                             <button id="copy-room-code-btn" class="copy-btn" title="Copy room code">📋 Copy</button>
                         </div>
-                        <p class="hint">Share this code with players to join</p>
+                        <p class="hint">Share this code OR the player link below with your players</p>
+
+                        <div class="room-code-display" style="margin-top: 1rem;">
+                            <p style="font-size: 0.9rem;">Player Link:</p>
+                            <input
+                                type="text"
+                                id="player-link"
+                                readonly
+                                style="width: 100%; padding: 0.5rem; margin: 0.5rem 0; font-size: 0.85rem; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9;"
+                            />
+                            <button id="copy-player-link-btn" class="copy-btn" title="Copy player link">📋 Copy Link</button>
+                        </div>
+
                         <button class="role-btn controller-btn" onclick="app.selectRole('controller')">
                             Enter Room as Controller
                         </button>

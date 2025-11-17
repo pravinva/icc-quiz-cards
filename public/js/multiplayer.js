@@ -56,9 +56,18 @@ class MultiplayerQuizApp {
         // Setup room management buttons
         this.setupRoomManagement();
 
+        // Check for auto-role selection from URL (from play.html)
+        const urlParams = new URLSearchParams(window.location.search);
+        const autoRole = urlParams.get('role');
+
         // Only initialize backend if we have a room code (i.e., player joining existing room)
         if (this.roomCode) {
             await this.initializeBackend();
+
+            // Auto-select role if specified
+            if (autoRole && autoRole.startsWith('player')) {
+                this.selectRole(autoRole);
+            }
         }
 
         await this.loadQuizList();
@@ -110,6 +119,19 @@ class MultiplayerQuizApp {
             roomCodeEl.textContent = this.roomCode;
         }
 
+        // Generate and display player link
+        const playerLink = `${window.location.origin}/play.html`;
+        const playerLinkInput = document.getElementById('player-link');
+        if (playerLinkInput) {
+            playerLinkInput.value = playerLink;
+        }
+
+        // Setup copy player link button
+        const copyPlayerLinkBtn = document.getElementById('copy-player-link-btn');
+        if (copyPlayerLinkBtn) {
+            copyPlayerLinkBtn.addEventListener('click', () => this.copyPlayerLink());
+        }
+
         // Show room info section
         const controllerRoomInfo = document.getElementById('controller-room-info');
         if (controllerRoomInfo) {
@@ -124,6 +146,27 @@ class MultiplayerQuizApp {
 
         // Initialize backend now that we have a room code
         this.initializeBackend();
+    }
+
+    copyPlayerLink() {
+        const playerLinkInput = document.getElementById('player-link');
+        if (!playerLinkInput) return;
+
+        navigator.clipboard.writeText(playerLinkInput.value).then(() => {
+            const copyBtn = document.getElementById('copy-player-link-btn');
+            if (copyBtn) {
+                const originalText = copyBtn.textContent;
+                copyBtn.textContent = '✓ Copied!';
+                copyBtn.style.backgroundColor = '#10b981';
+                setTimeout(() => {
+                    copyBtn.textContent = originalText;
+                    copyBtn.style.backgroundColor = '';
+                }, 2000);
+            }
+        }).catch(err => {
+            console.error('Failed to copy:', err);
+            alert('Failed to copy player link. Please copy manually: ' + playerLinkInput.value);
+        });
     }
 
     async initializeBackend() {
