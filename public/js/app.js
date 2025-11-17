@@ -209,6 +209,16 @@ class QuizApp {
         this.autoReadCheckbox.addEventListener('change', (e) => {
             this.autoRead = e.target.checked;
         });
+        
+        // Start quiz button
+        if (this.startQuizBtn) {
+            this.startQuizBtn.addEventListener('click', () => this.startQuiz());
+        }
+        
+        // Buzz button
+        if (this.buzzBtn) {
+            this.buzzBtn.addEventListener('click', () => this.handleBuzz());
+        }
 
         // Voice controls
         this.voiceSelect.addEventListener('change', (e) => {
@@ -678,8 +688,10 @@ class QuizApp {
             this.buzzIndicator.textContent = 'Waiting for buzz...';
         }
         
-        // Display first card
-        this.displayCard();
+        // Display first card with a small delay to ensure DOM is ready
+        setTimeout(() => {
+            this.displayCard();
+        }, 100);
     }
     
     handleBuzz() {
