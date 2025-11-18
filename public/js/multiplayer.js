@@ -78,6 +78,8 @@ class MultiplayerQuizApp {
         this.recognition = null;
         this.isListening = false;
         this.recognitionTimeout = null;
+        this.pendingAnswer = null; // Store recognized answer waiting for confirmation
+        this.confirmationAttempted = false; // Track if we've asked for confirmation once
 
         this.init();
     }
@@ -1288,6 +1290,10 @@ class MultiplayerQuizApp {
         // Stop listening for answer
         this.stopListeningForAnswer();
 
+        // Clear pending answer and confirmation state
+        this.pendingAnswer = null;
+        this.confirmationAttempted = false;
+
         // Reset UI
         const buzzIndicator = document.getElementById('buzz-indicator');
         if (buzzIndicator) {
@@ -1774,20 +1780,39 @@ class MultiplayerQuizApp {
         // Handle recognition results
         this.recognition.onresult = (event) => {
             const transcript = event.results[0][0].transcript.trim();
-            console.log('Recognized answer:', transcript);
-            this.checkAnswer(transcript);
+            console.log('Recognized:', transcript);
+            
+            // Check if we're waiting for confirmation
+            if (this.pendingAnswer !== null) {
+                // This is a confirmation response
+                this.handleConfirmation(transcript);
+            } else {
+                // This is the initial answer
+                this.handleInitialAnswer(transcript);
+            }
         };
 
         // Handle errors
         this.recognition.onerror = (event) => {
             console.error('Speech recognition error:', event.error);
             if (event.error === 'no-speech') {
-                // No speech detected within timeout - mark as wrong
-                console.log('No speech detected - marking as wrong');
-                this.checkAnswer('');
+                // No speech detected
+                if (this.pendingAnswer !== null) {
+                    // Waiting for confirmation - timeout, proceed with answer
+                    console.log('No confirmation received - proceeding with answer');
+                    this.finalizeAnswer(this.pendingAnswer, true);
+                } else {
+                    // No initial answer - mark as wrong
+                    console.log('No speech detected - marking as wrong');
+                    this.finalizeAnswer('', false);
+                }
             } else {
                 // Other errors - stop listening and show manual controls
                 this.stopListeningForAnswer();
+                if (this.pendingAnswer !== null) {
+                    // If we had a pending answer, proceed with it
+                    this.finalizeAnswer(this.pendingAnswer, true);
+                }
             }
         };
 
@@ -1843,8 +1868,8 @@ class MultiplayerQuizApp {
             console.log('7 second timeout reached - stopping recognition');
             this.stopListeningForAnswer();
             // If still listening, mark as wrong (no answer received)
-            if (this.isListening) {
-                this.checkAnswer('');
+            if (this.isListening && this.pendingAnswer === null) {
+                this.finalizeAnswer('', false);
             }
         }, 7000);
     }
