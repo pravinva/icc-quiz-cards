@@ -55,12 +55,21 @@ class QuizApp {
         this.originalQuestionText = '';
         this.streamingStartTime = null;
 
+        // Speech Recognition for auto-answering
+        this.recognition = null;
+        this.isListening = false;
+        this.recognitionTimeout = null;
+        this.pendingAnswer = null; // Store recognized answer waiting for confirmation
+        this.confirmationAttempted = false; // Track if we've asked for confirmation once
+        this.score = 0; // Solo play score
+
         this.init();
     }
 
     async init() {
         await this.loadQuizList();
         this.initializeVoice();
+        this.initializeSpeechRecognition();
         this.setupEventListeners();
     }
 
@@ -785,6 +794,319 @@ class QuizApp {
         return Promise.resolve();
     }
 
+    // ============ Speech Recognition for Auto-Answering ============
+
+    initializeSpeechRecognition() {
+        // Check if Speech Recognition API is available
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            console.warn('Speech Recognition API not available in this browser');
+            return false;
+        }
+
+        this.recognition = new SpeechRecognition();
+        this.recognition.continuous = false; // Stop after first result
+        this.recognition.interimResults = false; // Only final results
+        this.recognition.lang = 'en-US'; // Set language
+
+        // Handle recognition results
+        this.recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript.trim();
+            console.log('Recognized:', transcript);
+            
+            // Check if we're waiting for confirmation
+            if (this.pendingAnswer !== null) {
+                // This is a confirmation response
+                this.handleConfirmation(transcript);
+            } else {
+                // This is the initial answer
+                this.handleInitialAnswer(transcript);
+            }
+        };
+
+        // Handle errors
+        this.recognition.onerror = (event) => {
+            console.error('Speech recognition error:', event.error);
+            if (event.error === 'no-speech') {
+                // No speech detected
+                if (this.pendingAnswer !== null) {
+                    // Waiting for confirmation - timeout, proceed with answer
+                    console.log('No confirmation received - proceeding with answer');
+                    this.finalizeAnswer(this.pendingAnswer, true);
+                } else {
+                    // No initial answer - mark as wrong
+                    console.log('No speech detected - marking as wrong');
+                    this.finalizeAnswer('', false);
+                }
+            } else {
+                // Other errors - stop listening and show manual controls
+                this.stopListeningForAnswer();
+                if (this.pendingAnswer !== null) {
+                    // If we had a pending answer, proceed with it
+                    this.finalizeAnswer(this.pendingAnswer, true);
+                }
+            }
+        };
+
+        // Handle end of recognition
+        this.recognition.onend = () => {
+            this.isListening = false;
+            console.log('Speech recognition ended');
+        };
+
+        return true;
+    }
+
+    startListeningForAnswer() {
+        if (!this.recognition) {
+            if (!this.initializeSpeechRecognition()) {
+                console.warn('Cannot start listening - Speech Recognition not available');
+                return;
+            }
+        }
+
+        if (this.isListening) {
+            console.log('Already listening for answer');
+            return;
+        }
+
+        // Get current card answer
+        const card = this.allCards[this.currentCardIndex];
+        if (!card || !card.answer) {
+            console.warn('No answer available for current card');
+            return;
+        }
+
+        console.log('Starting to listen for answer...');
+        this.isListening = true;
+
+        // Update buzz indicator to show listening status
+        if (this.buzzIndicator) {
+            this.buzzIndicator.innerHTML = 'Listening for answer... 🎤';
+        }
+
+        // Start recognition
+        try {
+            this.recognition.start();
+        } catch (error) {
+            console.error('Error starting speech recognition:', error);
+            this.isListening = false;
+            return;
+        }
+
+        // Set timeout for 7 seconds
+        this.recognitionTimeout = setTimeout(() => {
+            console.log('7 second timeout reached - stopping recognition');
+            this.stopListeningForAnswer();
+            // If still listening, mark as wrong (no answer received)
+            if (this.isListening && this.pendingAnswer === null) {
+                this.finalizeAnswer('', false);
+            }
+        }, 7000);
+    }
+
+    stopListeningForAnswer() {
+        if (this.recognition && this.isListening) {
+            try {
+                this.recognition.stop();
+            } catch (error) {
+                console.error('Error stopping speech recognition:', error);
+            }
+            this.isListening = false;
+        }
+
+        if (this.recognitionTimeout) {
+            clearTimeout(this.recognitionTimeout);
+            this.recognitionTimeout = null;
+        }
+    }
+
+    handleInitialAnswer(recognizedText) {
+        // Stop listening
+        this.stopListeningForAnswer();
+
+        if (recognizedText.length === 0) {
+            // No answer recognized - mark as wrong
+            this.finalizeAnswer('', false);
+            return;
+        }
+
+        // Store the recognized answer and ask for confirmation
+        this.pendingAnswer = recognizedText;
+        this.confirmationAttempted = false;
+
+        // Update buzz indicator to show recognized answer and ask for confirmation
+        if (this.buzzIndicator) {
+            this.buzzIndicator.innerHTML = `
+                <div style="margin-bottom: 8px;">
+                    You said: <strong>"${recognizedText}"</strong>
+                </div>
+                <div style="font-size: 0.9em; color: #666;">
+                    Say "yes" to confirm, or "no" to repeat
+                </div>
+            `;
+        }
+
+        // Start listening for confirmation
+        this.startListeningForConfirmation();
+    }
+
+    startListeningForConfirmation() {
+        if (!this.recognition) {
+            return;
+        }
+
+        // Set timeout for 5 seconds for confirmation
+        this.recognitionTimeout = setTimeout(() => {
+            console.log('Confirmation timeout - proceeding with answer');
+            // If no confirmation received, proceed with the answer
+            this.finalizeAnswer(this.pendingAnswer, true);
+        }, 5000);
+
+        // Start recognition for confirmation
+        try {
+            this.recognition.start();
+        } catch (error) {
+            console.error('Error starting confirmation recognition:', error);
+            // If error, proceed with answer
+            this.finalizeAnswer(this.pendingAnswer, true);
+        }
+    }
+
+    handleConfirmation(confirmationText) {
+        const confirmation = confirmationText.toLowerCase().trim();
+        const isConfirmed = confirmation === 'yes' || confirmation === 'yeah' || confirmation === 'yep' || 
+                           confirmation === 'correct' || confirmation === 'right' || confirmation.includes('yes');
+        const isRejected = confirmation === 'no' || confirmation === 'nope' || confirmation === 'wrong' || 
+                          confirmation === 'incorrect' || confirmation.includes('no');
+
+        if (isConfirmed) {
+            // Confirmed - proceed with scoring
+            console.log('Answer confirmed - proceeding with scoring');
+            this.finalizeAnswer(this.pendingAnswer, true);
+        } else if (isRejected && !this.confirmationAttempted) {
+            // Rejected and haven't asked to repeat yet - ask to repeat once
+            console.log('Answer rejected - asking to repeat');
+            this.confirmationAttempted = true;
+            this.pendingAnswer = null; // Clear pending answer
+            
+            if (this.buzzIndicator) {
+                this.buzzIndicator.innerHTML = 'Please repeat your answer... 🎤';
+            }
+
+            // Stop current recognition and start listening again
+            this.stopListeningForAnswer();
+            setTimeout(() => {
+                this.startListeningForAnswer();
+            }, 500);
+        } else {
+            // Unclear response or already attempted once - proceed with answer
+            console.log('Unclear confirmation or already attempted - proceeding with answer');
+            this.finalizeAnswer(this.pendingAnswer, true);
+        }
+    }
+
+    finalizeAnswer(recognizedText, proceedAnyway) {
+        // Stop listening
+        this.stopListeningForAnswer();
+
+        // Get current card
+        const card = this.allCards[this.currentCardIndex];
+        if (!card || !card.answer) {
+            console.warn('No answer available for current card');
+            return;
+        }
+
+        const correctAnswer = card.answer.toLowerCase().trim();
+        const recognizedAnswer = recognizedText.toLowerCase().trim();
+
+        // Check if answer matches (exact or fuzzy match)
+        let isCorrect = false;
+        let points = 0;
+
+        if (recognizedAnswer.length === 0) {
+            // No answer recognized - mark as wrong
+            points = -1;
+        } else {
+            // Check exact match
+            if (recognizedAnswer === correctAnswer) {
+                isCorrect = true;
+                points = 1;
+            } else {
+                // Check against alternative answers if available
+                if (card.accept && Array.isArray(card.accept)) {
+                    const alternativeMatches = card.accept.some(alt => {
+                        const altLower = alt.toLowerCase().trim();
+                        return recognizedAnswer === altLower || 
+                               recognizedAnswer.includes(altLower) || 
+                               altLower.includes(recognizedAnswer);
+                    });
+                    if (alternativeMatches) {
+                        isCorrect = true;
+                        points = 1;
+                    }
+                }
+
+                // Fuzzy matching - check if recognized text contains correct answer or vice versa
+                if (!isCorrect) {
+                    if (recognizedAnswer.includes(correctAnswer) || 
+                        correctAnswer.includes(recognizedAnswer)) {
+                        isCorrect = true;
+                        points = 1;
+                    } else {
+                        // Check word-by-word match (for multi-word answers)
+                        const correctWords = correctAnswer.split(/\s+/);
+                        const recognizedWords = recognizedAnswer.split(/\s+/);
+                        const matchingWords = correctWords.filter(word => 
+                            recognizedWords.some(rWord => 
+                                rWord.includes(word) || word.includes(rWord)
+                            )
+                        );
+                        // If 80% of words match, consider it correct
+                        if (matchingWords.length / correctWords.length >= 0.8) {
+                            isCorrect = true;
+                            points = 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        console.log(`Answer check: "${recognizedText}" vs "${correctAnswer}" - ${isCorrect ? 'CORRECT' : 'WRONG'}`);
+
+        // Update score
+        this.score += points;
+
+        // Update buzz indicator with result
+        if (this.buzzIndicator) {
+            const resultText = isCorrect ? '✓ Correct!' : '✗ Wrong';
+            const scoreText = `Score: ${this.score}`;
+            this.buzzIndicator.innerHTML = `
+                <div style="margin-bottom: 4px;">
+                    ${resultText}
+                </div>
+                <div style="font-size: 0.9em; color: #666;">
+                    ${scoreText}
+                </div>
+            `;
+        }
+
+        // Clear pending answer
+        this.pendingAnswer = null;
+        this.confirmationAttempted = false;
+
+        // Auto-reveal answer after showing result
+        setTimeout(() => {
+            if (!this.isFlipped) {
+                this.flipCard(true);
+            }
+            // Hide reveal button
+            if (this.revealAnswerBtn) {
+                this.revealAnswerBtn.style.display = 'none';
+            }
+        }, 2000); // Show result for 2 seconds before revealing answer
+    }
+
     flipCard(force = false) {
         // If buzzed and not forced (from reveal button), don't allow card flip
         if (this.buzzed && !this.isFlipped && !force) {
@@ -843,7 +1165,7 @@ class QuizApp {
     
     handleBuzz() {
         if (!this.quizStarted || this.buzzed) return;
-        
+
         this.buzzed = true;
         
         // Stop streaming immediately
@@ -870,6 +1192,9 @@ class QuizApp {
         if (this.revealAnswerBtn) {
             this.revealAnswerBtn.style.display = 'block';
         }
+
+        // Start listening for answer (speech recognition)
+        this.startListeningForAnswer();
     }
     
     async revealAnswer() {
