@@ -1270,7 +1270,15 @@ class QuizApp {
     
     resetBuzzState() {
         this.buzzed = false;
-        this.isFlipped = false;
+        
+        // Stop listening for answer
+        this.stopListeningForAnswer();
+        
+        // Clear pending answer and confirmation state
+        this.pendingAnswer = null;
+        this.confirmationAttempted = false;
+        
+        // Reset streaming state
         this.streamingInterrupted = false;
         this.currentStreamingElement = null;
         this.remainingWords = [];
@@ -1278,22 +1286,30 @@ class QuizApp {
         this.originalQuestionText = '';
         this.streamingStartTime = null;
         
+        // Enable navigation and buzzer
+        if (this.prevBtn) this.prevBtn.disabled = false;
+        if (this.nextBtn) this.nextBtn.disabled = false;
+        
         if (this.buzzBtn) {
             this.buzzBtn.disabled = false;
             this.buzzBtn.classList.remove('buzzed');
         }
         
+        // Update buzz indicator
         if (this.buzzIndicator) {
             this.buzzIndicator.textContent = 'Waiting for buzz...';
             this.buzzIndicator.classList.remove('buzzed');
         }
         
+        // Hide reveal answer button
         if (this.revealAnswerBtn) {
             this.revealAnswerBtn.style.display = 'none';
             this.revealAnswerBtn.disabled = false;
             const revealText = this.revealAnswerBtn.querySelector('.reveal-text');
             if (revealText) {
                 revealText.textContent = 'Reveal Answer';
+            } else {
+                this.revealAnswerBtn.textContent = '👁️ Reveal Answer';
             }
         }
         
