@@ -838,12 +838,24 @@ class QuizApp {
                     console.log('No speech detected - marking as wrong');
                     this.finalizeAnswer('', false);
                 }
+            } else if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+                // Microphone permission denied
+                console.error('Microphone permission denied');
+                this.isListening = false;
+                if (this.buzzIndicator) {
+                    this.buzzIndicator.innerHTML = 'Microphone access denied. Please allow microphone access in browser settings.';
+                }
             } else {
                 // Other errors - stop listening and show manual controls
                 this.stopListeningForAnswer();
                 if (this.pendingAnswer !== null) {
                     // If we had a pending answer, proceed with it
                     this.finalizeAnswer(this.pendingAnswer, true);
+                } else {
+                    // Show error message
+                    if (this.buzzIndicator) {
+                        this.buzzIndicator.innerHTML = `Error: ${event.error}. Click "Reveal Answer" to continue.`;
+                    }
                 }
             }
         };
@@ -857,7 +869,7 @@ class QuizApp {
         return true;
     }
 
-    startListeningForAnswer() {
+    async startListeningForAnswer() {
         if (!this.recognition) {
             if (!this.initializeSpeechRecognition()) {
                 console.warn('Cannot start listening - Speech Recognition not available');
@@ -877,12 +889,27 @@ class QuizApp {
             return;
         }
 
+        // Request microphone permission first (required for some browsers)
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            // Stop the stream immediately - we just needed permission
+            stream.getTracks().forEach(track => track.stop());
+            console.log('Microphone permission granted');
+        } catch (error) {
+            console.error('Microphone permission denied:', error);
+            if (this.buzzIndicator) {
+                this.buzzIndicator.innerHTML = 'Microphone access required. Please allow microphone access and try again.';
+            }
+            this.isListening = false;
+            return;
+        }
+
         console.log('Starting to listen for answer...');
         this.isListening = true;
 
         // Update buzz indicator to show listening status
         if (this.buzzIndicator) {
-            this.buzzIndicator.innerHTML = 'Listening for answer... 🎤';
+            this.buzzIndicator.innerHTML = 'Listening for answer... 🎤 Speak now!';
         }
 
         // Start recognition
@@ -890,7 +917,23 @@ class QuizApp {
             this.recognition.start();
         } catch (error) {
             console.error('Error starting speech recognition:', error);
-            this.isListening = false;
+            if (error.message && error.message.includes('already started')) {
+                // Recognition already started, stop and restart
+                this.recognition.stop();
+                setTimeout(() => {
+                    try {
+                        this.recognition.start();
+                    } catch (retryError) {
+                        console.error('Error restarting recognition:', retryError);
+                        this.isListening = false;
+                    }
+                }, 100);
+            } else {
+                this.isListening = false;
+                if (this.buzzIndicator) {
+                    this.buzzIndicator.innerHTML = 'Error starting speech recognition. Please try again.';
+                }
+            }
             return;
         }
 
