@@ -1890,7 +1890,97 @@ class MultiplayerQuizApp {
         }
     }
 
-    checkAnswer(recognizedText) {
+    handleInitialAnswer(recognizedText) {
+        // Stop listening
+        this.stopListeningForAnswer();
+
+        if (recognizedText.length === 0) {
+            // No answer recognized - mark as wrong
+            this.finalizeAnswer('', false);
+            return;
+        }
+
+        // Store the recognized answer and ask for confirmation
+        this.pendingAnswer = recognizedText;
+        this.confirmationAttempted = false;
+
+        // Update buzz indicator to show recognized answer and ask for confirmation
+        const buzzIndicator = document.getElementById('buzz-indicator');
+        if (buzzIndicator) {
+            buzzIndicator.innerHTML = `
+                <div style="margin-bottom: 8px;">
+                    <span class="buzzer-name">${this.buzzedPlayer}</span> said: 
+                    <strong>"${recognizedText}"</strong>
+                </div>
+                <div style="font-size: 0.9em; color: #666;">
+                    Say "yes" to confirm, or "no" to repeat
+                </div>
+            `;
+        }
+
+        // Start listening for confirmation
+        this.startListeningForConfirmation();
+    }
+
+    startListeningForConfirmation() {
+        if (!this.recognition) {
+            return;
+        }
+
+        // Set timeout for 5 seconds for confirmation
+        this.recognitionTimeout = setTimeout(() => {
+            console.log('Confirmation timeout - proceeding with answer');
+            // If no confirmation received, proceed with the answer
+            this.finalizeAnswer(this.pendingAnswer, true);
+        }, 5000);
+
+        // Start recognition for confirmation
+        try {
+            this.recognition.start();
+        } catch (error) {
+            console.error('Error starting confirmation recognition:', error);
+            // If error, proceed with answer
+            this.finalizeAnswer(this.pendingAnswer, true);
+        }
+    }
+
+    handleConfirmation(confirmationText) {
+        const confirmation = confirmationText.toLowerCase().trim();
+        const isConfirmed = confirmation === 'yes' || confirmation === 'yeah' || confirmation === 'yep' || 
+                           confirmation === 'correct' || confirmation === 'right' || confirmation.includes('yes');
+        const isRejected = confirmation === 'no' || confirmation === 'nope' || confirmation === 'wrong' || 
+                          confirmation === 'incorrect' || confirmation.includes('no');
+
+        if (isConfirmed) {
+            // Confirmed - proceed with scoring
+            console.log('Answer confirmed - proceeding with scoring');
+            this.finalizeAnswer(this.pendingAnswer, true);
+        } else if (isRejected && !this.confirmationAttempted) {
+            // Rejected and haven't asked to repeat yet - ask to repeat once
+            console.log('Answer rejected - asking to repeat');
+            this.confirmationAttempted = true;
+            this.pendingAnswer = null; // Clear pending answer
+            
+            const buzzIndicator = document.getElementById('buzz-indicator');
+            if (buzzIndicator) {
+                buzzIndicator.innerHTML = `
+                    <span class="buzzer-name">${this.buzzedPlayer}</span> - Please repeat your answer... 🎤
+                `;
+            }
+
+            // Stop current recognition and start listening again
+            this.stopListeningForAnswer();
+            setTimeout(() => {
+                this.startListeningForAnswer();
+            }, 500);
+        } else {
+            // Unclear response or already attempted once - proceed with answer
+            console.log('Unclear confirmation or already attempted - proceeding with answer');
+            this.finalizeAnswer(this.pendingAnswer, true);
+        }
+    }
+
+    finalizeAnswer(recognizedText, proceedAnyway) {
         // Stop listening
         this.stopListeningForAnswer();
 
@@ -1964,6 +2054,10 @@ class MultiplayerQuizApp {
             const resultText = isCorrect ? '✓ Correct!' : '✗ Wrong';
             buzzIndicator.innerHTML = `<span class="buzzer-name">${this.buzzedPlayer}</span> - ${resultText}`;
         }
+
+        // Clear pending answer
+        this.pendingAnswer = null;
+        this.confirmationAttempted = false;
 
         // Auto-score the answer
         setTimeout(() => {
