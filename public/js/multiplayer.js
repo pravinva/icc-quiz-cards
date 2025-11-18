@@ -1756,6 +1756,196 @@ class MultiplayerQuizApp {
         }
     }
 
+    // ============ Speech Recognition for Auto-Answering ============
+
+    initializeSpeechRecognition() {
+        // Check if Speech Recognition API is available
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            console.warn('Speech Recognition API not available in this browser');
+            return false;
+        }
+
+        this.recognition = new SpeechRecognition();
+        this.recognition.continuous = false; // Stop after first result
+        this.recognition.interimResults = false; // Only final results
+        this.recognition.lang = 'en-US'; // Set language
+
+        // Handle recognition results
+        this.recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript.trim();
+            console.log('Recognized answer:', transcript);
+            this.checkAnswer(transcript);
+        };
+
+        // Handle errors
+        this.recognition.onerror = (event) => {
+            console.error('Speech recognition error:', event.error);
+            if (event.error === 'no-speech') {
+                // No speech detected within timeout - mark as wrong
+                console.log('No speech detected - marking as wrong');
+                this.checkAnswer('');
+            } else {
+                // Other errors - stop listening and show manual controls
+                this.stopListeningForAnswer();
+            }
+        };
+
+        // Handle end of recognition
+        this.recognition.onend = () => {
+            this.isListening = false;
+            console.log('Speech recognition ended');
+        };
+
+        return true;
+    }
+
+    startListeningForAnswer() {
+        if (!this.recognition) {
+            if (!this.initializeSpeechRecognition()) {
+                console.warn('Cannot start listening - Speech Recognition not available');
+                return;
+            }
+        }
+
+        if (this.isListening) {
+            console.log('Already listening for answer');
+            return;
+        }
+
+        // Get current card answer
+        const card = this.allCards[this.currentCardIndex];
+        if (!card || !card.answer) {
+            console.warn('No answer available for current card');
+            return;
+        }
+
+        console.log('Starting to listen for answer...');
+        this.isListening = true;
+
+        // Update buzz indicator to show listening status
+        const buzzIndicator = document.getElementById('buzz-indicator');
+        if (buzzIndicator) {
+            buzzIndicator.innerHTML = `<span class="buzzer-name">${this.buzzedPlayer}</span> - Listening for answer... 🎤`;
+        }
+
+        // Start recognition
+        try {
+            this.recognition.start();
+        } catch (error) {
+            console.error('Error starting speech recognition:', error);
+            this.isListening = false;
+            return;
+        }
+
+        // Set timeout for 7 seconds
+        this.recognitionTimeout = setTimeout(() => {
+            console.log('7 second timeout reached - stopping recognition');
+            this.stopListeningForAnswer();
+            // If still listening, mark as wrong (no answer received)
+            if (this.isListening) {
+                this.checkAnswer('');
+            }
+        }, 7000);
+    }
+
+    stopListeningForAnswer() {
+        if (this.recognition && this.isListening) {
+            try {
+                this.recognition.stop();
+            } catch (error) {
+                console.error('Error stopping speech recognition:', error);
+            }
+            this.isListening = false;
+        }
+
+        if (this.recognitionTimeout) {
+            clearTimeout(this.recognitionTimeout);
+            this.recognitionTimeout = null;
+        }
+    }
+
+    checkAnswer(recognizedText) {
+        // Stop listening
+        this.stopListeningForAnswer();
+
+        // Get current card
+        const card = this.allCards[this.currentCardIndex];
+        if (!card || !card.answer) {
+            console.warn('No answer available for current card');
+            return;
+        }
+
+        const correctAnswer = card.answer.toLowerCase().trim();
+        const recognizedAnswer = recognizedText.toLowerCase().trim();
+
+        // Check if answer matches (exact or fuzzy match)
+        let isCorrect = false;
+        let points = -1; // Default to wrong
+
+        if (recognizedAnswer.length === 0) {
+            // No answer recognized - mark as wrong
+            points = -1;
+        } else {
+            // Check exact match
+            if (recognizedAnswer === correctAnswer) {
+                isCorrect = true;
+                points = 1;
+            } else {
+                // Check against alternative answers if available
+                if (card.accept && Array.isArray(card.accept)) {
+                    const alternativeMatches = card.accept.some(alt => {
+                        const altLower = alt.toLowerCase().trim();
+                        return recognizedAnswer === altLower || 
+                               recognizedAnswer.includes(altLower) || 
+                               altLower.includes(recognizedAnswer);
+                    });
+                    if (alternativeMatches) {
+                        isCorrect = true;
+                        points = 1;
+                    }
+                }
+
+                // Fuzzy matching - check if recognized text contains correct answer or vice versa
+                if (!isCorrect) {
+                    if (recognizedAnswer.includes(correctAnswer) || 
+                        correctAnswer.includes(recognizedAnswer)) {
+                        isCorrect = true;
+                        points = 1;
+                    } else {
+                        // Check word-by-word match (for multi-word answers)
+                        const correctWords = correctAnswer.split(/\s+/);
+                        const recognizedWords = recognizedAnswer.split(/\s+/);
+                        const matchingWords = correctWords.filter(word => 
+                            recognizedWords.some(rWord => 
+                                rWord.includes(word) || word.includes(rWord)
+                            )
+                        );
+                        // If 80% of words match, consider it correct
+                        if (matchingWords.length / correctWords.length >= 0.8) {
+                            isCorrect = true;
+                            points = 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        console.log(`Answer check: "${recognizedText}" vs "${correctAnswer}" - ${isCorrect ? 'CORRECT' : 'WRONG'}`);
+
+        // Update buzz indicator with result
+        const buzzIndicator = document.getElementById('buzz-indicator');
+        if (buzzIndicator) {
+            const resultText = isCorrect ? '✓ Correct!' : '✗ Wrong';
+            buzzIndicator.innerHTML = `<span class="buzzer-name">${this.buzzedPlayer}</span> - ${resultText}`;
+        }
+
+        // Auto-score the answer
+        setTimeout(() => {
+            this.scoreAnswer(points);
+        }, 1000); // Small delay to show the result before auto-scoring
+    }
+
     updateRemoteVoiceIndicator(peerId, isSpeaking) {
         const buzzIndicator = document.getElementById('buzz-indicator');
         if (buzzIndicator && isSpeaking) {
